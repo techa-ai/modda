@@ -1,0 +1,2613 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fannie Mae Form 1008 / Freddie Mac Form 1077",
+  "description": "Uniform Underwriting and Transmittal Summary",
+  "type": "object",
+  "properties": {
+    "borrower_information": {
+      "type": "object",
+      "title": "Borrower Information",
+      "description": "Primary Borrower Information",
+      "properties": {
+        "personal_information": {
+          "type": "object",
+          "title": "Borrower Personal Information",
+          "description": "Personal details of the primary borrower",
+          "properties": {
+            "borrower_name": {
+              "type": "string",
+              "title": "Borrower Name",
+              "description": "Full name of the primary borrower",
+              "definition": "The legal full name of the primary borrower applying for the mortgage loan. This includes first name, middle name or initial, and last name as it appears on official identification documents.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Government-Issued ID",
+                  "Social Security Card"
+                ],
+                "notes": "Name must match across all loan documents and identification"
+              }
+            },
+            "borrower_ssn": {
+              "type": "string",
+              "title": "Borrower SSN",
+              "description": "Social Security Number of the borrower",
+              "definition": "The nine-digit Social Security Number assigned to the primary borrower by the Social Security Administration. This unique identifier is used for credit reporting, income verification, and identity verification purposes throughout the mortgage process.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Social Security Card",
+                  "W-2",
+                  "Tax Returns"
+                ],
+                "notes": "SSN must be verified against SSA records and match credit report"
+              }
+            }
+          }
+        },
+        "income_information": {
+          "type": "object",
+          "title": "Borrower Income Information",
+          "description": "Income details of the primary borrower",
+          "properties": {
+            "borrower_base_income": {
+              "type": "number",
+              "title": "Borrower Base Income",
+              "definition": "The primary borrower's stable monthly base income from employment, including regular salary or hourly wages. This is the foundation of qualifying income and must be verified as likely to continue.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "W-2",
+                  "Paystub",
+                  "VOE",
+                  "Tax Returns",
+                  "1003 Loan Application"
+                ],
+                "notes": "Must demonstrate 2-year history and likelihood of continuance"
+              }
+            },
+            "borrower_other_income": {
+              "type": "number",
+              "title": "Borrower Other Income",
+              "definition": "The primary borrower's stable monthly income from sources other than base employment, including overtime, bonus, commission, self-employment, rental income, retirement, disability, and other documented sources.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "W-2",
+                  "Paystub",
+                  "Tax Returns",
+                  "1099",
+                  "VOE",
+                  "Bank Statements",
+                  "Award Letters",
+                  "1003 Loan Application"
+                ],
+                "notes": "Each income type has specific documentation requirements"
+              }
+            },
+            "borrower_positive_cash_flow_subject_property": {
+              "type": "number",
+              "title": "Borrower Positive Cash Flow",
+              "definition": "Net positive rental income from the subject property attributed to the borrower after deducting PITIA (Principal, Interest, Taxes, Insurance, and Association dues) from gross rental income.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Appraisal Report",
+                  "Lease Agreement",
+                  "Tax Returns",
+                  "Schedule E",
+                  "1007 Rent Schedule"
+                ],
+                "notes": "Only positive cash flow can be added to income"
+              }
+            },
+            "borrower_total_income": {
+              "type": "number",
+              "title": "Borrower Total Income",
+              "definition": "The sum of all qualifying monthly income for the primary borrower, including base income, other income, and positive cash flow from the subject property.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form",
+                  "Underwriting Transmittal",
+                  "Income Documentation"
+                ],
+                "notes": "Total of all borrower income sources"
+              }
+            }
+          }
+        },
+        "assets_information": {
+          "type": "object",
+          "title": "Borrower Assets Information",
+          "description": "Asset details of the primary borrower",
+          "properties": {
+            "borrower_verified_assets": {
+              "type": "number",
+              "title": "Verified Assets",
+              "definition": "The total amount of borrower assets that have been verified and documented as available for the transaction, including checking, savings, investments, and gift funds.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Bank Statements",
+                  "Investment Statements",
+                  "Gift Letter",
+                  "VOD"
+                ],
+                "notes": "Must verify sufficient assets to close"
+              }
+            },
+            "borrower_source_of_funds": {
+              "type": "string",
+              "title": "Source of Funds",
+              "definition": "Description of where the borrower's funds for closing will come from, such as checking/savings accounts, sale of assets, gift funds, employer assistance, or other acceptable sources.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Bank Statements",
+                  "Gift Letter",
+                  "Asset Documentation",
+                  "1003 Loan Application"
+                ],
+                "notes": "All fund sources must be documented and acceptable"
+              }
+            },
+            "borrower_no_of_months_reserves": {
+              "type": "string",
+              "title": "No. of Months Reserves",
+              "definition": "The number of months of mortgage payments (PITIA) that the borrower will have remaining in verified liquid assets after closing. Reserve requirements vary by property type and occupancy.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Bank Statements",
+                  "Investment Statements",
+                  "Underwriting System Findings"
+                ],
+                "notes": "Reserves calculated after funds to close"
+              }
+            }
+          }
+        },
+        "liabilities_information": {
+          "type": "object",
+          "title": "Borrower Liabilities Information",
+          "description": "Liability details of the primary borrower",
+          "properties": {
+            "borrower_present_housing_payment": {
+              "type": "number",
+              "title": "Present Housing Payment",
+              "definition": "The borrower's current monthly housing expense including rent or mortgage payment, property taxes, insurance, HOA fees, and other housing-related costs. Used to assess payment shock.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Credit Report",
+                  "Mortgage Statement",
+                  "Lease Agreement"
+                ],
+                "notes": "Verify current housing payment for payment shock analysis"
+              }
+            },
+            "borrower_all_other_monthly_payments": {
+              "type": "number",
+              "title": "All Other Monthly Payments",
+              "definition": "The total of all other monthly debt obligations from the credit report and loan application, including auto loans, student loans, credit cards, child support, alimony, and other recurring debts.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Credit Report",
+                  "1003 Loan Application",
+                  "Divorce Decree",
+                  "Court Orders"
+                ],
+                "notes": "Include all debts with more than 10 months remaining"
+              }
+            }
+          }
+        },
+        "credit_information": {
+          "type": "object",
+          "title": "Borrower Credit Information",
+          "description": "Credit details of the primary borrower",
+          "properties": {
+            "borrower_representative_credit_indicator_score": {
+              "type": "string",
+              "title": "Representative Credit/Indicator Score",
+              "definition": "The credit score used for underwriting and pricing decisions, typically the middle score for a single borrower or the lower of the two middle scores for multiple borrowers.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Credit Report",
+                  "DU Findings",
+                  "LP Findings"
+                ],
+                "notes": "Representative score per agency guidelines"
+              }
+            }
+          }
+        }
+      }
+    },
+    "co_borrower_1_information": {
+      "type": "object",
+      "title": "Co-Borrower-1 Information",
+      "description": "Co-Borrower Information (if applicable)",
+      "properties": {
+        "personal_information": {
+          "type": "object",
+          "title": "Co-Borrower-1 Personal Information",
+          "description": "Personal details of the co-borrower",
+          "properties": {
+            "co_borrower_1_co_borrower_name": {
+              "type": "string",
+              "title": "Co-Borrower Name",
+              "description": "Full name of the co-borrower",
+              "definition": "The legal full name of the co-borrower who shares responsibility for the mortgage loan. A co-borrower's income, assets, and credit history are considered in the loan qualification process.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Government-Issued ID",
+                  "Social Security Card"
+                ],
+                "notes": "Required only if there is a co-borrower on the loan"
+              }
+            },
+            "co_borrower_1_co_borrower_ssn": {
+              "type": "string",
+              "title": "Co-Borrower SSN",
+              "description": "Social Security Number of the co-borrower",
+              "definition": "The nine-digit Social Security Number assigned to the co-borrower by the Social Security Administration. Used for credit reporting and verification purposes for the co-borrower.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Social Security Card",
+                  "W-2",
+                  "Tax Returns"
+                ],
+                "notes": "Required only if there is a co-borrower on the loan"
+              }
+            }
+          }
+        },
+        "income_information": {
+          "type": "object",
+          "title": "Co-Borrower-1 Income Information",
+          "description": "Income details of the co-borrower",
+          "properties": {
+            "co_borrower_1_base_income": {
+              "type": "number",
+              "title": "Co-Borrower Base Income",
+              "definition": "The co-borrower's stable monthly base income from employment, including regular salary or hourly wages. Combined with borrower income for qualification purposes.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "W-2",
+                  "Paystub",
+                  "VOE",
+                  "Tax Returns",
+                  "1003 Loan Application"
+                ],
+                "notes": "Required only if co-borrower income is used for qualification"
+              }
+            },
+            "co_borrower_1_other_income": {
+              "type": "number",
+              "title": "Co-Borrower Other Income",
+              "definition": "The co-borrower's stable monthly income from sources other than base employment, including overtime, bonus, commission, self-employment, rental income, retirement, disability, and other documented sources.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "W-2",
+                  "Paystub",
+                  "Tax Returns",
+                  "1099",
+                  "VOE",
+                  "Bank Statements",
+                  "Award Letters",
+                  "1003 Loan Application"
+                ],
+                "notes": "Required only if co-borrower other income is used for qualification"
+              }
+            },
+            "co_borrower_1_positive_cash_flow_subject_property": {
+              "type": "number",
+              "title": "Co-Borrower Positive Cash Flow",
+              "definition": "Net positive rental income from the subject property attributed to the co-borrower after deducting PITIA from gross rental income.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Appraisal Report",
+                  "Lease Agreement",
+                  "Tax Returns",
+                  "Schedule E",
+                  "1007 Rent Schedule"
+                ],
+                "notes": "Allocation between borrowers if applicable"
+              }
+            },
+            "co_borrower_1_total_income": {
+              "type": "number",
+              "title": "Co-Borrower Total Income",
+              "definition": "The sum of all qualifying monthly income for the co-borrower, including base income, other income, and positive cash flow from the subject property.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form",
+                  "Underwriting Transmittal",
+                  "Income Documentation"
+                ],
+                "notes": "Total of all co-borrower income sources"
+              }
+            }
+          }
+        },
+        "assets_information": {
+          "type": "object",
+          "title": "Co-Borrower-1 Assets Information",
+          "description": "Asset details of the co-borrower",
+          "properties": {}
+        },
+        "liabilities_information": {
+          "type": "object",
+          "title": "Co-Borrower-1 Liabilities Information",
+          "description": "Liability details of the co-borrower",
+          "properties": {}
+        }
+      }
+    },
+    "property_information": {
+      "type": "object",
+      "title": "Property Information",
+      "description": "Subject Property Information",
+      "properties": {
+        "property_details": {
+          "type": "object",
+          "title": "Property Details",
+          "description": "Address, type, and unit information",
+          "properties": {
+            "property_address": {
+              "type": "string",
+              "title": "Property Address",
+              "description": "Full address of the subject property",
+              "definition": "The complete street address of the property being financed, including street number, street name, unit number (if applicable), city, state, and ZIP code. This is the collateral property securing the mortgage loan.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Appraisal Report",
+                  "Title Commitment",
+                  "Purchase Agreement",
+                  "1003 Loan Application"
+                ],
+                "notes": "Address must be consistent across all documents"
+              }
+            },
+            "property_number_of_units": {
+              "type": "string",
+              "title": "Number of Units",
+              "definition": "The total number of dwelling units contained within the subject property. For single-family homes this is one; for multi-family properties this ranges from two to four units for residential financing eligibility.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Appraisal Report",
+                  "1003 Loan Application"
+                ],
+                "notes": "Determines property type classification and applicable guidelines"
+              }
+            },
+            "property_type": {
+              "type": "object",
+              "title": "Property Type",
+              "description": "Type of property",
+              "properties": {
+                "property_one_unit": {
+                  "type": "boolean",
+                  "title": "1 Unit",
+                  "description": "Single unit property",
+                  "definition": "Indicates the subject property is a single-family dwelling designed for occupancy by one household. This is the most common residential property type for conventional mortgage financing.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Property type determines applicable guidelines and LTV limits"
+                  }
+                },
+                "property_two_to_four_units": {
+                  "type": "boolean",
+                  "title": "2-to 4-units",
+                  "description": "2 to 4 unit property",
+                  "definition": "Indicates the subject property contains two to four separate dwelling units. These properties are still considered residential for mortgage purposes but have different underwriting requirements and LTV limitations.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Rental income from additional units may be considered for qualification"
+                  }
+                },
+                "property_condominium": {
+                  "type": "boolean",
+                  "title": "Condominium",
+                  "description": "Condominium property",
+                  "definition": "Indicates the subject property is a condominium unit where the borrower owns the individual unit and shares ownership of common areas with other unit owners through a homeowners association.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "1003 Loan Application",
+                      "Condo Questionnaire",
+                      "HOA Documents"
+                    ],
+                    "notes": "Project must meet agency warrantability requirements"
+                  }
+                },
+                "property_pud": {
+                  "type": "boolean",
+                  "title": "PUD",
+                  "description": "Planned Unit Development",
+                  "definition": "Indicates the subject property is located within a Planned Unit Development, which is a residential community with shared common areas and amenities managed by a homeowners association.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "1003 Loan Application",
+                      "HOA Documents"
+                    ],
+                    "notes": "PUD attachment must be completed on appraisal"
+                  }
+                },
+                "property_co_op": {
+                  "type": "boolean",
+                  "title": "Co-op",
+                  "description": "Cooperative property",
+                  "definition": "Indicates the subject property is a cooperative housing unit where the borrower purchases shares in a corporation that owns the building, granting the right to occupy a specific unit under a proprietary lease.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "1003 Loan Application",
+                      "Co-op Recognition Agreement",
+                      "Proprietary Lease"
+                    ],
+                    "notes": "Co-op must be approved by the applicable agency"
+                  }
+                },
+                "property_manufactured_housing": {
+                  "type": "boolean",
+                  "title": "Manufactured Housing",
+                  "description": "Manufactured housing property",
+                  "definition": "Indicates the subject property is a manufactured home built to HUD standards after June 15, 1976, and transported to the site. Must be permanently affixed to a foundation and titled as real property.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "1003 Loan Application",
+                      "HUD Data Plate",
+                      "Engineer Certification"
+                    ],
+                    "notes": "Must meet agency manufactured housing requirements"
+                  }
+                },
+                "property_single_wide": {
+                  "type": "boolean",
+                  "title": "Single Wide",
+                  "description": "Single wide manufactured home",
+                  "definition": "Indicates the manufactured home consists of a single transportable section, typically 18 feet or less in width. Single-wide units have more restrictive financing options.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "HUD Data Plate",
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Single-wide eligibility varies by agency and program"
+                  }
+                },
+                "property_multiwide": {
+                  "type": "boolean",
+                  "title": "Multiwide",
+                  "description": "Multiwide manufactured home",
+                  "definition": "Indicates the manufactured home consists of two or more transportable sections joined together at the site to form a single dwelling unit, commonly referred to as double-wide or triple-wide.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "HUD Data Plate",
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Multi-section homes generally have broader eligibility"
+                  }
+                }
+              }
+            },
+            "occupancy_status": {
+              "type": "object",
+              "title": "Occupancy Status",
+              "description": "Occupancy status of the property",
+              "properties": {
+                "property_primary_residence": {
+                  "type": "boolean",
+                  "title": "Primary Residence",
+                  "definition": "Indicates the borrower intends to occupy the subject property as their principal dwelling. Primary residence occupancy typically qualifies for the most favorable loan terms and lowest down payment requirements.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "Occupancy Affidavit"
+                    ],
+                    "notes": "Borrower must certify intent to occupy within 60 days of closing"
+                  }
+                },
+                "property_second_home": {
+                  "type": "boolean",
+                  "title": "Second Home",
+                  "definition": "Indicates the subject property will be occupied by the borrower for a portion of the year but is not their primary residence. Second homes must be suitable for year-round occupancy and located a reasonable distance from the primary residence.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "Second Home Affidavit"
+                    ],
+                    "notes": "Property must meet second home eligibility requirements"
+                  }
+                },
+                "property_investment_property": {
+                  "type": "boolean",
+                  "title": "Investment Property",
+                  "definition": "Indicates the subject property will not be occupied by the borrower and is being acquired for rental income or investment purposes. Investment properties have stricter underwriting requirements and higher down payment requirements.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "Lease Agreement"
+                    ],
+                    "notes": "Investment properties have higher LTV restrictions"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "property_rights": {
+          "type": "object",
+          "title": "Property Rights",
+          "description": "Fee simple, leasehold, and other property rights",
+          "properties": {
+            "property_fee_simple": {
+              "type": "boolean",
+              "title": "Fee Simple",
+              "definition": "Indicates the borrower will hold absolute ownership of the property and land with no limitations on transfer or use other than governmental restrictions. This is the most complete form of property ownership.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Title Commitment",
+                  "Appraisal Report",
+                  "1003 Loan Application"
+                ],
+                "notes": "Most common ownership type for residential properties"
+              }
+            },
+            "property_leasehold": {
+              "type": "boolean",
+              "title": "Leasehold",
+              "definition": "Indicates the borrower will own the improvements but lease the underlying land from a third party under a ground lease. Leasehold properties have specific eligibility requirements regarding lease terms and provisions.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Title Commitment",
+                  "Ground Lease",
+                  "Appraisal Report",
+                  "1003 Loan Application"
+                ],
+                "notes": "Ground lease must meet agency requirements for term and provisions"
+              }
+            }
+          }
+        },
+        "property_valuation": {
+          "type": "object",
+          "title": "Property Valuation",
+          "description": "Appraised value and sale price information",
+          "properties": {
+            "property_sales_price": {
+              "type": "number",
+              "title": "Sales Price",
+              "definition": "The agreed-upon purchase price for the subject property as stated in the executed purchase agreement between the buyer and seller. This amount is used in calculating LTV ratios for purchase transactions.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Purchase Agreement",
+                  "Sales Contract",
+                  "1003 Loan Application"
+                ],
+                "notes": "Must match the contract sales price; adjustments for seller concessions may apply"
+              }
+            },
+            "property_appraised_value": {
+              "type": "number",
+              "title": "Appraised Value",
+              "definition": "The market value of the subject property as determined by a licensed appraiser in the appraisal report. This value represents the appraiser's opinion of the property's worth based on comparable sales and market analysis.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Appraisal Report"
+                ],
+                "notes": "LTV calculations use the lesser of appraised value or sales price for purchases"
+              }
+            }
+          }
+        },
+        "project_information": {
+          "type": "object",
+          "title": "Project Information",
+          "description": "Project classification and details for condos, PUDs, and co-ops",
+          "properties": {
+            "property_project_name": {
+              "type": "string",
+              "title": "Project Name",
+              "description": "Name of the project",
+              "definition": "The official name of the condominium, PUD, or cooperative project as registered with the applicable homeowners association or cooperative corporation. Used for project identification and eligibility verification.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Condo Questionnaire",
+                  "HOA Documents",
+                  "Appraisal Report"
+                ],
+                "notes": "Must match project name in agency databases"
+              }
+            },
+            "property_cpm_project_id": {
+              "type": "string",
+              "title": "CPM Project ID# (if any)",
+              "description": "CPM Project identification number",
+              "definition": "The Condo Project Manager (CPM) identification number assigned by Fannie Mae or Freddie Mac to approved condominium projects. This unique identifier is used to track project eligibility status.",
+              "evidence": {
+                "required": false,
+                "document_types": [
+                  "Fannie Mae CPM Database",
+                  "Freddie Mac Project Database",
+                  "PERS Approval Letter"
+                ],
+                "notes": "Only applicable for projects with agency approval"
+              }
+            },
+            "project_classification": {
+              "type": "object",
+              "title": "Project Classification",
+              "description": "Classification of the project",
+              "properties": {
+                "freddie_mac": {
+                  "type": "object",
+                  "title": "Freddie Mac Classifications",
+                  "properties": {
+                    "property_streamlined_review": {
+                      "type": "boolean",
+                      "title": "Streamlined Review",
+                      "definition": "A Freddie Mac project review type for established condominium projects that meet specific eligibility criteria, allowing for a simplified review process with reduced documentation requirements.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "HOA Documents",
+                          "Freddie Mac Project Review"
+                        ],
+                        "notes": "Project must meet Freddie Mac streamlined review eligibility"
+                      }
+                    },
+                    "property_established_project": {
+                      "type": "boolean",
+                      "title": "Established Project",
+                      "definition": "A Freddie Mac classification for condominium or PUD projects that have been completed, are no longer under developer control, and have an established track record of owner occupancy and financial stability.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "HOA Documents",
+                          "Freddie Mac Project Review"
+                        ],
+                        "notes": "Project must demonstrate established status criteria"
+                      }
+                    },
+                    "property_new_project": {
+                      "type": "boolean",
+                      "title": "New Project",
+                      "definition": "A Freddie Mac classification for newly constructed or converted condominium projects that may still be under developer control or have not yet established a sufficient operating history.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "HOA Documents",
+                          "Freddie Mac Project Review",
+                          "Developer Documentation"
+                        ],
+                        "notes": "New projects require additional review and documentation"
+                      }
+                    },
+                    "property_detached_project": {
+                      "type": "boolean",
+                      "title": "Detached Project",
+                      "definition": "A Freddie Mac classification for condominium or PUD projects consisting entirely of detached single-family dwellings, which typically have simplified review requirements.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Appraisal Report",
+                          "HOA Documents",
+                          "Freddie Mac Project Review"
+                        ],
+                        "notes": "Detached projects may qualify for limited review"
+                      }
+                    },
+                    "property_two_to_four_unit_project": {
+                      "type": "boolean",
+                      "title": "2- to 4-unit Project",
+                      "definition": "A Freddie Mac classification for condominium projects where individual units contain two to four dwelling units, subject to specific eligibility and review requirements.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Appraisal Report",
+                          "Condo Questionnaire",
+                          "Freddie Mac Project Review"
+                        ],
+                        "notes": "Multi-unit condos have specific eligibility criteria"
+                      }
+                    },
+                    "property_reciprocal_review": {
+                      "type": "boolean",
+                      "title": "Reciprocal Review",
+                      "definition": "A Freddie Mac project review type that accepts project approvals previously completed by Fannie Mae under their PERS (Project Eligibility Review Service) process.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Fannie Mae PERS Approval",
+                          "Condo Questionnaire"
+                        ],
+                        "notes": "Requires valid Fannie Mae project approval"
+                      }
+                    }
+                  }
+                },
+                "fannie_mae": {
+                  "type": "object",
+                  "title": "Fannie Mae Classifications",
+                  "properties": {
+                    "property_p_limited_review_new_detached": {
+                      "type": "boolean",
+                      "title": "P Limited Review New Detached",
+                      "definition": "Fannie Mae project classification P for new detached condominium units that qualify for limited project review due to the detached nature of the units and reduced project risk.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Appraisal Report",
+                          "Condo Questionnaire",
+                          "Fannie Mae Project Review"
+                        ],
+                        "notes": "Applicable to detached condo units in new projects"
+                      }
+                    },
+                    "property_q_limited_review_established": {
+                      "type": "boolean",
+                      "title": "Q Limited Review Established",
+                      "definition": "Fannie Mae project classification Q for established condominium projects that qualify for limited project review based on meeting specific eligibility criteria including owner occupancy and financial stability.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "HOA Documents",
+                          "Fannie Mae Project Review"
+                        ],
+                        "notes": "Project must meet established project criteria"
+                      }
+                    },
+                    "property_r_expedited_review_new": {
+                      "type": "boolean",
+                      "title": "R Expedited Review New",
+                      "definition": "Fannie Mae project classification R for new condominium projects requiring expedited review, which involves a more thorough analysis than limited review but less than full review.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "HOA Documents",
+                          "Developer Documentation",
+                          "Fannie Mae Project Review"
+                        ],
+                        "notes": "New projects not qualifying for limited review"
+                      }
+                    },
+                    "property_s_expedited_review_established": {
+                      "type": "boolean",
+                      "title": "S Expedited Review Established",
+                      "definition": "Fannie Mae project classification S for established condominium projects requiring expedited review due to not meeting all limited review criteria but not requiring full review.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "HOA Documents",
+                          "Fannie Mae Project Review"
+                        ],
+                        "notes": "Established projects not qualifying for limited review"
+                      }
+                    },
+                    "property_t_fannie_mae_review": {
+                      "type": "boolean",
+                      "title": "T Fannie Mae Review",
+                      "definition": "Fannie Mae project classification T indicating the project requires full review by Fannie Mae through their Project Eligibility Review Service (PERS) due to complexity or risk factors.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "HOA Documents",
+                          "Fannie Mae PERS Approval",
+                          "Complete Project Documentation"
+                        ],
+                        "notes": "Full PERS review required for project approval"
+                      }
+                    },
+                    "property_u_fha_approved": {
+                      "type": "boolean",
+                      "title": "U FHA-approved",
+                      "definition": "Fannie Mae project classification U for condominium projects that have received FHA approval, which may be accepted by Fannie Mae under certain circumstances.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "FHA Project Approval",
+                          "Condo Questionnaire",
+                          "HOA Documents"
+                        ],
+                        "notes": "FHA approval must be current and valid"
+                      }
+                    },
+                    "property_v_refi_plus": {
+                      "type": "boolean",
+                      "title": "V Refi Plus\u2122",
+                      "definition": "Fannie Mae project classification V for condominium units being refinanced under the Refi Plus program, which has specific project review requirements for refinance transactions.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Condo Questionnaire",
+                          "DU Findings",
+                          "Fannie Mae Project Review"
+                        ],
+                        "notes": "Applicable to Refi Plus refinance transactions only"
+                      }
+                    },
+                    "property_e_pud": {
+                      "type": "boolean",
+                      "title": "E PUD",
+                      "definition": "Fannie Mae project classification E for Planned Unit Development projects that meet established project criteria and qualify for standard PUD review.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Appraisal Report",
+                          "HOA Documents",
+                          "Fannie Mae Project Review"
+                        ],
+                        "notes": "Standard PUD classification"
+                      }
+                    },
+                    "property_f_pud": {
+                      "type": "boolean",
+                      "title": "F PUD",
+                      "definition": "Fannie Mae project classification F for Planned Unit Development projects requiring additional review due to specific project characteristics or risk factors.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Appraisal Report",
+                          "HOA Documents",
+                          "Fannie Mae Project Review"
+                        ],
+                        "notes": "PUD requiring enhanced review"
+                      }
+                    },
+                    "property_t_pud": {
+                      "type": "boolean",
+                      "title": "T PUD",
+                      "definition": "Fannie Mae project classification T for Planned Unit Development projects requiring full Fannie Mae review through PERS due to complexity or risk factors.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Appraisal Report",
+                          "HOA Documents",
+                          "Fannie Mae PERS Approval"
+                        ],
+                        "notes": "Full PERS review required for PUD"
+                      }
+                    },
+                    "property_one_co_op": {
+                      "type": "boolean",
+                      "title": "1 Co-op",
+                      "definition": "Fannie Mae project classification 1 for cooperative housing projects that meet standard eligibility requirements and have been approved for Fannie Mae financing.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Co-op Questionnaire",
+                          "Recognition Agreement",
+                          "Fannie Mae Co-op Approval"
+                        ],
+                        "notes": "Standard co-op project classification"
+                      }
+                    },
+                    "property_two_co_op": {
+                      "type": "boolean",
+                      "title": "2 Co-op",
+                      "definition": "Fannie Mae project classification 2 for cooperative housing projects requiring additional review or having specific characteristics that differentiate them from standard co-op projects.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Co-op Questionnaire",
+                          "Recognition Agreement",
+                          "Fannie Mae Co-op Approval"
+                        ],
+                        "notes": "Co-op requiring enhanced review"
+                      }
+                    },
+                    "property_t_co_op": {
+                      "type": "boolean",
+                      "title": "T Co-op",
+                      "definition": "Fannie Mae project classification T for cooperative housing projects requiring full Fannie Mae review due to complexity, risk factors, or not meeting standard approval criteria.",
+                      "evidence": {
+                        "required": true,
+                        "document_types": [
+                          "Co-op Questionnaire",
+                          "Recognition Agreement",
+                          "Fannie Mae PERS Approval",
+                          "Complete Project Documentation"
+                        ],
+                        "notes": "Full PERS review required for co-op"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "loan_information": {
+      "type": "object",
+      "title": "Loan Information",
+      "description": "Mortgage Loan Information",
+      "properties": {
+        "loan_terms": {
+          "type": "object",
+          "title": "Loan Terms",
+          "description": "Amount, rate, term, and type information",
+          "properties": {
+            "loan_original_loan_amount": {
+              "type": "number",
+              "title": "Original Loan Amount",
+              "definition": "The principal amount of the mortgage loan as stated on the promissory note. This is the total amount borrowed before any payments are made and is used to calculate LTV ratios.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Promissory Note",
+                  "1003 Loan Application",
+                  "Loan Estimate",
+                  "Closing Disclosure"
+                ],
+                "notes": "Must match the note amount exactly"
+              }
+            },
+            "loan_initial_note_rate": {
+              "type": "number",
+              "title": "Initial Note Rate",
+              "description": "Interest rate as percentage",
+              "definition": "The initial interest rate stated on the promissory note, expressed as an annual percentage. For fixed-rate loans this rate applies for the entire term; for ARMs this is the rate during the initial fixed period.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Promissory Note",
+                  "Loan Estimate",
+                  "Closing Disclosure"
+                ],
+                "notes": "Rate must match the promissory note"
+              }
+            },
+            "loan_initial_p_and_i_payment": {
+              "type": "number",
+              "title": "Initial P&I Payment",
+              "definition": "The initial monthly principal and interest payment amount due on the mortgage loan. For fixed-rate loans this remains constant; for ARMs this is the payment during the initial fixed period.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Promissory Note",
+                  "Loan Estimate",
+                  "Closing Disclosure"
+                ],
+                "notes": "Does not include taxes, insurance, or other escrows"
+              }
+            },
+            "loan_term_in_months": {
+              "type": "integer",
+              "title": "Loan Term (in months)",
+              "definition": "The total duration of the mortgage loan expressed in months, representing the time period over which the loan will be fully amortized. Common terms are 360 months (30 years) and 180 months (15 years).",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Promissory Note",
+                  "1003 Loan Application",
+                  "Loan Estimate"
+                ],
+                "notes": "Term affects payment amount and total interest paid"
+              }
+            },
+            "loan_type": {
+              "type": "object",
+              "title": "Loan Type",
+              "properties": {
+                "loan_conventional": {
+                  "type": "boolean",
+                  "title": "Conventional",
+                  "definition": "Indicates the mortgage loan is not insured or guaranteed by a government agency. Conventional loans are originated and funded by private lenders and may be sold to Fannie Mae or Freddie Mac.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "Loan Estimate",
+                      "Promissory Note"
+                    ],
+                    "notes": "Conventional loans follow agency guidelines"
+                  }
+                },
+                "loan_fha": {
+                  "type": "boolean",
+                  "title": "FHA",
+                  "definition": "Indicates the mortgage loan is insured by the Federal Housing Administration, a government agency within HUD. FHA loans have specific requirements and mortgage insurance premiums.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "FHA Case Number Assignment",
+                      "Loan Estimate"
+                    ],
+                    "notes": "FHA loans require upfront and annual MIP"
+                  }
+                },
+                "loan_va": {
+                  "type": "boolean",
+                  "title": "VA",
+                  "definition": "Indicates the mortgage loan is guaranteed by the Department of Veterans Affairs for eligible veterans, active-duty service members, and surviving spouses. VA loans offer favorable terms including no down payment.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "Certificate of Eligibility",
+                      "VA Loan Estimate"
+                    ],
+                    "notes": "Borrower must have valid VA entitlement"
+                  }
+                },
+                "loan_usda_rhs": {
+                  "type": "boolean",
+                  "title": "USDA/RHS",
+                  "definition": "Indicates the mortgage loan is guaranteed by the United States Department of Agriculture Rural Housing Service for properties in eligible rural areas. USDA loans offer 100% financing for qualified borrowers.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "USDA Eligibility Documentation",
+                      "Property Eligibility"
+                    ],
+                    "notes": "Property must be in USDA-eligible rural area"
+                  }
+                }
+              }
+            },
+            "amortization_type": {
+              "type": "object",
+              "title": "Amortization Type",
+              "properties": {
+                "loan_fixed_rate_monthly_payments": {
+                  "type": "boolean",
+                  "title": "Fixed-Rate\u2014Monthly Payments",
+                  "definition": "Indicates the mortgage has a fixed interest rate that remains constant throughout the loan term with equal monthly principal and interest payments. This is the most common amortization type.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "1003 Loan Application",
+                      "Loan Estimate"
+                    ],
+                    "notes": "Rate and payment remain constant for loan term"
+                  }
+                },
+                "loan_fixed_rate_biweekly_payments": {
+                  "type": "boolean",
+                  "title": "Fixed-Rate\u2014Biweekly Payments",
+                  "definition": "Indicates the mortgage has a fixed interest rate with payments made every two weeks instead of monthly, resulting in 26 half-payments per year and accelerated principal paydown.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "1003 Loan Application",
+                      "Loan Estimate"
+                    ],
+                    "notes": "Results in equivalent of 13 monthly payments per year"
+                  }
+                },
+                "loan_balloon": {
+                  "type": "boolean",
+                  "title": "Balloon",
+                  "definition": "Indicates the mortgage has a large lump-sum payment due at the end of the loan term, with regular payments during the term that do not fully amortize the loan balance.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "Balloon Rider",
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Balloon mortgages have limited eligibility"
+                  }
+                },
+                "loan_arm": {
+                  "type": "boolean",
+                  "title": "ARM (type)",
+                  "definition": "Indicates the mortgage is an Adjustable-Rate Mortgage where the interest rate may change periodically based on a specified index plus margin, subject to rate caps and adjustment periods.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "ARM Rider",
+                      "1003 Loan Application",
+                      "Loan Estimate"
+                    ],
+                    "notes": "ARM terms must be clearly disclosed"
+                  }
+                },
+                "loan_arm_type": {
+                  "type": "string",
+                  "title": "ARM Type Description",
+                  "definition": "Specifies the particular ARM product structure including the initial fixed-rate period and subsequent adjustment frequency, such as 5/1 ARM (fixed for 5 years, adjusts annually thereafter).",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "ARM Rider",
+                      "Loan Estimate"
+                    ],
+                    "notes": "Common types include 3/1, 5/1, 7/1, and 10/1 ARMs"
+                  }
+                },
+                "loan_other": {
+                  "type": "boolean",
+                  "title": "Other (specify)",
+                  "definition": "Indicates the mortgage has an amortization type other than the standard options listed, requiring specification of the unique payment or amortization structure.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "1003 Loan Application",
+                      "Loan Estimate"
+                    ],
+                    "notes": "Must specify the amortization type"
+                  }
+                },
+                "loan_other_specify": {
+                  "type": "string",
+                  "title": "Other Amortization Type Specification",
+                  "definition": "Description of the non-standard amortization type when 'Other' is selected, providing details on the specific payment structure or amortization method.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Required when Other amortization is selected"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "loan_purpose": {
+          "type": "object",
+          "title": "Loan Purpose",
+          "description": "Purchase, refinance, or construction purpose",
+          "properties": {
+            "loan_purchase": {
+              "type": "boolean",
+              "title": "Purchase",
+              "definition": "Indicates the loan proceeds will be used to acquire the subject property. Purchase transactions require a sales contract and use the lesser of sales price or appraised value for LTV calculations.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Purchase Agreement",
+                  "Loan Estimate"
+                ],
+                "notes": "Requires executed purchase contract"
+              }
+            },
+            "loan_cash_out_refinance": {
+              "type": "boolean",
+              "title": "Cash-Out Refinance",
+              "definition": "Indicates the loan is a refinance transaction where the borrower receives cash proceeds exceeding the payoff of existing liens, closing costs, and prepaids. Cash-out refinances have stricter LTV limits.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Payoff Statement",
+                  "Loan Estimate",
+                  "Closing Disclosure"
+                ],
+                "notes": "Cash-out amount subject to agency limits"
+              }
+            },
+            "loan_limited_cash_out_refinance_fannie": {
+              "type": "boolean",
+              "title": "Limited Cash-Out Refinance (Fannie)",
+              "definition": "A Fannie Mae refinance transaction where cash back to the borrower is limited to the lesser of 2% of the new loan amount or $2,000. Used to refinance existing debt without significant cash extraction.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Payoff Statement",
+                  "Loan Estimate",
+                  "DU Findings"
+                ],
+                "notes": "Fannie Mae specific refinance type"
+              }
+            },
+            "loan_no_cash_out_refinance_freddie": {
+              "type": "boolean",
+              "title": "No Cash-Out Refinance (Freddie)",
+              "definition": "A Freddie Mac refinance transaction where the borrower does not receive cash proceeds beyond a minimal amount for incidental costs. Similar to Fannie Mae's limited cash-out refinance.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Payoff Statement",
+                  "Loan Estimate",
+                  "LP Findings"
+                ],
+                "notes": "Freddie Mac specific refinance type"
+              }
+            },
+            "loan_home_improvement": {
+              "type": "boolean",
+              "title": "Home Improvement",
+              "definition": "Indicates loan proceeds will be used for renovations, repairs, or improvements to the subject property. May be combined with purchase or refinance transactions.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Contractor Bids",
+                  "Renovation Plans",
+                  "Loan Estimate"
+                ],
+                "notes": "May require renovation loan program"
+              }
+            },
+            "loan_construction_to_permanent": {
+              "type": "boolean",
+              "title": "Construction to Permanent",
+              "definition": "Indicates a loan that converts from a construction loan to permanent mortgage financing upon completion of construction. Combines construction and permanent financing into a single transaction.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Construction Contract",
+                  "Plans and Specifications",
+                  "Builder Certification"
+                ],
+                "notes": "Requires construction loan documentation"
+              }
+            }
+          }
+        },
+        "loan_ratios": {
+          "type": "object",
+          "title": "Loan Ratios",
+          "description": "LTV, CLTV, and DTI ratios",
+          "properties": {
+            "loan_ltv": {
+              "type": "number",
+              "title": "LTV",
+              "description": "Loan-to-Value percentage",
+              "definition": "The Loan-to-Value ratio calculated by dividing the first mortgage loan amount by the lesser of the appraised value or sales price (for purchases), expressed as a percentage.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Underwriting System Findings",
+                  "1008 Form",
+                  "Appraisal Report",
+                  "Purchase Agreement"
+                ],
+                "notes": "Primary LTV ratio for first mortgage"
+              }
+            },
+            "loan_cltv_tltv": {
+              "type": "number",
+              "title": "CLTV/TLTV",
+              "description": "Combined/Total Loan-to-Value percentage",
+              "definition": "The Combined Loan-to-Value ratio calculated by dividing the total of all mortgage liens (first mortgage plus subordinate financing balances) by the property value, expressed as a percentage.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Underwriting System Findings",
+                  "1008 Form",
+                  "Credit Report",
+                  "Title Commitment"
+                ],
+                "notes": "Includes all mortgage liens on property"
+              }
+            },
+            "loan_hcltv_htltv": {
+              "type": "number",
+              "title": "HCLTV/HTLTV",
+              "description": "HELOC Combined/Total Loan-to-Value percentage",
+              "definition": "The HELOC Combined Loan-to-Value ratio calculated using the full credit limit of any HELOC (not just the balance) plus all other mortgage liens, divided by property value.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Underwriting System Findings",
+                  "1008 Form",
+                  "Credit Report",
+                  "HELOC Statement"
+                ],
+                "notes": "Uses full HELOC credit limit, not balance"
+              }
+            },
+            "loan_primary_housing_expense_income": {
+              "type": "number",
+              "title": "Primary Housing Expense/Income",
+              "description": "Front-end DTI Percentage",
+              "definition": "The front-end debt-to-income ratio calculated by dividing the total primary housing expense by the total qualifying monthly income, expressed as a percentage. Also known as the housing ratio.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form",
+                  "Underwriting System Findings",
+                  "Underwriting Transmittal"
+                ],
+                "notes": "Front-end DTI ratio"
+              }
+            },
+            "loan_total_obligations_income": {
+              "type": "number",
+              "title": "Total Obligations/Income",
+              "description": "Back-end DTI Percentage",
+              "definition": "The back-end debt-to-income ratio calculated by dividing total monthly obligations (housing plus all other debts) by total qualifying monthly income, expressed as a percentage.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form",
+                  "Underwriting System Findings",
+                  "Underwriting Transmittal"
+                ],
+                "notes": "Back-end DTI ratio - primary qualifying ratio"
+              }
+            },
+            "loan_debt_to_housing_gap_ratio_freddie": {
+              "type": "number",
+              "title": "Debt-to-Housing Gap Ratio (Freddie)",
+              "description": "Percentage",
+              "definition": "A Freddie Mac-specific ratio that measures the difference between the total DTI and housing DTI, indicating the proportion of non-housing debt relative to income.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form",
+                  "LP Findings"
+                ],
+                "notes": "Freddie Mac specific calculation"
+              }
+            }
+          }
+        },
+        "lien_position": {
+          "type": "object",
+          "title": "Lien Position",
+          "description": "First or second mortgage position",
+          "properties": {
+            "loan_first_mortgage": {
+              "type": "boolean",
+              "title": "First Mortgage",
+              "definition": "Indicates the mortgage being originated will hold first lien position on the subject property, having priority over all other liens except property taxes and special assessments.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Title Commitment",
+                  "1003 Loan Application"
+                ],
+                "notes": "First lien position must be confirmed by title"
+              }
+            },
+            "loan_second_mortgage": {
+              "type": "boolean",
+              "title": "Second Mortgage",
+              "definition": "Indicates the mortgage being originated will hold second lien position on the subject property, subordinate to an existing first mortgage that will remain in place.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Title Commitment",
+                  "1003 Loan Application",
+                  "First Mortgage Note"
+                ],
+                "notes": "Second mortgages have specific eligibility requirements"
+              }
+            },
+            "loan_amount_of_subordinate_financing": {
+              "type": "number",
+              "title": "Amount of Subordinate Financing",
+              "definition": "The total outstanding balance of all subordinate liens (second mortgages, HELOCs, etc.) that will remain on the property after closing. Used in calculating CLTV ratios.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Credit Report",
+                  "Title Commitment",
+                  "Subordination Agreement",
+                  "Payoff Statement"
+                ],
+                "notes": "All subordinate liens must be disclosed"
+              }
+            },
+            "loan_heloc_include_balance_and_credit_limit": {
+              "type": "string",
+              "title": "If HELOC, include balance and credit limit",
+              "definition": "For Home Equity Lines of Credit, both the current outstanding balance and the total credit limit must be disclosed as the full credit limit is used in HCLTV calculations.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Credit Report",
+                  "HELOC Statement",
+                  "Title Commitment"
+                ],
+                "notes": "HCLTV uses full credit limit, not just balance"
+              }
+            }
+          }
+        },
+        "mortgage_originator": {
+          "type": "object",
+          "title": "Mortgage Originator",
+          "description": "Origination channel information",
+          "properties": {
+            "loan_seller": {
+              "type": "boolean",
+              "title": "Seller",
+              "definition": "Indicates the loan was originated directly by the seller/servicer who will be delivering the loan to Fannie Mae or Freddie Mac, without involvement of a third-party broker or correspondent.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Loan Origination Documentation"
+                ],
+                "notes": "Direct lending channel"
+              }
+            },
+            "loan_broker": {
+              "type": "boolean",
+              "title": "Broker",
+              "definition": "Indicates the loan was originated through a mortgage broker who facilitated the transaction but did not fund the loan. The broker acts as an intermediary between the borrower and the funding lender.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Broker Agreement",
+                  "Loan Origination Documentation"
+                ],
+                "notes": "Broker compensation must be disclosed"
+              }
+            },
+            "loan_correspondent": {
+              "type": "boolean",
+              "title": "Correspondent",
+              "definition": "Indicates the loan was originated by a correspondent lender who funded the loan in their own name and subsequently sells it to a larger lender or aggregator for delivery to the agencies.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Correspondent Agreement",
+                  "Loan Origination Documentation"
+                ],
+                "notes": "Correspondent funded the loan initially"
+              }
+            },
+            "loan_broker_correspondent_name_and_company_name": {
+              "type": "string",
+              "title": "Broker/Correspondent Name and Company Name",
+              "definition": "The name of the individual loan originator and their company when the loan was originated through a broker or correspondent channel. Required for tracking and compliance purposes.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "NMLS Documentation",
+                  "Broker/Correspondent Agreement"
+                ],
+                "notes": "Must include NMLS ID numbers"
+              }
+            }
+          }
+        },
+        "buydown": {
+          "type": "object",
+          "title": "Buydown",
+          "description": "Buydown information",
+          "properties": {
+            "loan_yes": {
+              "type": "boolean",
+              "title": "Yes",
+              "definition": "Indicates the loan includes a temporary or permanent buydown where discount points or funds are used to reduce the interest rate below the standard market rate.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Promissory Note",
+                  "Buydown Agreement",
+                  "Closing Disclosure",
+                  "1003 Loan Application"
+                ],
+                "notes": "Buydown terms must be documented"
+              }
+            },
+            "loan_no": {
+              "type": "boolean",
+              "title": "No",
+              "definition": "Indicates the loan does not include any buydown arrangement and the borrower is paying the standard note rate without any rate reduction from discount points or buydown funds.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Promissory Note",
+                  "1003 Loan Application"
+                ],
+                "notes": "Standard rate without buydown"
+              }
+            },
+            "loan_terms": {
+              "type": "string",
+              "title": "Terms",
+              "definition": "Description of the buydown structure including the initial reduced rate, the duration of the buydown period, and the rate adjustment schedule (e.g., 2-1 buydown, 3-2-1 buydown).",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Buydown Agreement",
+                  "Promissory Note",
+                  "Closing Disclosure"
+                ],
+                "notes": "Required when buydown is selected"
+              }
+            }
+          }
+        },
+        "if_second_mortgage": {
+          "type": "object",
+          "title": "If Second Mortgage",
+          "description": "Information when loan is a second mortgage",
+          "properties": {
+            "owner_of_first_mortgage": {
+              "type": "object",
+              "title": "Owner of First Mortgage",
+              "properties": {
+                "loan_fannie_mae": {
+                  "type": "boolean",
+                  "title": "Fannie Mae",
+                  "definition": "Indicates the first mortgage on the subject property is owned or securitized by Fannie Mae. This information is relevant for subordinate financing eligibility and CLTV calculations.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "First Mortgage Documentation",
+                      "Fannie Mae Loan Lookup",
+                      "Title Commitment"
+                    ],
+                    "notes": "Can be verified through Fannie Mae loan lookup"
+                  }
+                },
+                "loan_freddie_mac": {
+                  "type": "boolean",
+                  "title": "Freddie Mac",
+                  "definition": "Indicates the first mortgage on the subject property is owned or securitized by Freddie Mac. This information is relevant for subordinate financing eligibility and CLTV calculations.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "First Mortgage Documentation",
+                      "Freddie Mac Loan Lookup",
+                      "Title Commitment"
+                    ],
+                    "notes": "Can be verified through Freddie Mac loan lookup"
+                  }
+                },
+                "loan_seller_other": {
+                  "type": "boolean",
+                  "title": "Seller/Other",
+                  "definition": "Indicates the first mortgage on the subject property is owned by the seller, a portfolio lender, or another entity other than Fannie Mae or Freddie Mac.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "First Mortgage Documentation",
+                      "Title Commitment"
+                    ],
+                    "notes": "Identify the specific owner/servicer"
+                  }
+                }
+              }
+            },
+            "loan_original_loan_amount_of_first_mortgage": {
+              "type": "number",
+              "title": "Original Loan Amount of First Mortgage",
+              "definition": "The original principal balance of the first mortgage at origination. Used in conjunction with current balance to understand the equity position and calculate combined loan-to-value ratios.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "First Mortgage Note",
+                  "Title Commitment",
+                  "Credit Report"
+                ],
+                "notes": "Original amount, not current balance"
+              }
+            }
+          }
+        }
+      }
+    },
+    "underwriting_information": {
+      "type": "object",
+      "title": "Underwriting Information",
+      "description": "Underwriting findings, risk assessment, and conditions",
+      "properties": {
+        "underwriting_findings": {
+          "type": "object",
+          "title": "Underwriting Findings",
+          "description": "Underwriter details and income/expense analysis",
+          "properties": {
+            "underwriters_name": {
+              "type": "string",
+              "title": "Underwriter's Name",
+              "definition": "The name of the mortgage underwriter who reviewed and approved the loan file. The underwriter is responsible for verifying that the loan meets all applicable guidelines and represents an acceptable credit risk.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Underwriting Approval",
+                  "1008 Form"
+                ],
+                "notes": "Underwriter must be authorized to approve loans"
+              }
+            },
+            "stable_monthly_income": {
+              "type": "object",
+              "title": "Stable Monthly Income",
+              "properties": {
+                "base_income_total": {
+                  "type": "number",
+                  "title": "Total Base Income",
+                  "definition": "The combined total monthly base income from both borrower and co-borrower. This sum represents the primary qualifying income before adding other income sources.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1008 Form",
+                      "Underwriting Transmittal"
+                    ],
+                    "notes": "Calculated field - sum of borrower and co-borrower base income"
+                  }
+                },
+                "other_income_total": {
+                  "type": "number",
+                  "title": "Total Other Income",
+                  "definition": "The combined total monthly other income from both borrower and co-borrower from all non-base income sources used for qualification.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1008 Form",
+                      "Underwriting Transmittal"
+                    ],
+                    "notes": "Calculated field - sum of borrower and co-borrower other income"
+                  }
+                },
+                "positive_cash_flow_total": {
+                  "type": "number",
+                  "title": "Total Positive Cash Flow",
+                  "definition": "The combined total positive cash flow from the subject property that can be added to qualifying income for both borrower and co-borrower.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1008 Form",
+                      "Underwriting Transmittal"
+                    ],
+                    "notes": "Calculated field - only positive amounts included"
+                  }
+                },
+                "total_income": {
+                  "type": "number",
+                  "title": "Total Income",
+                  "definition": "The combined total qualifying monthly income from all borrowers used for debt-to-income ratio calculations and loan qualification.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1008 Form",
+                      "Underwriting Transmittal"
+                    ],
+                    "notes": "Primary income figure for DTI calculations"
+                  }
+                }
+              }
+            },
+            "proposed_monthly_payments": {
+              "type": "object",
+              "title": "Proposed Monthly Payments",
+              "description": "Borrower's Primary Residence",
+              "properties": {
+                "first_mortgage_p_and_i": {
+                  "type": "number",
+                  "title": "First Mortgage P&I",
+                  "definition": "The proposed monthly principal and interest payment on the first mortgage for the subject property. This is the base housing payment before adding taxes, insurance, and other costs.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "Loan Estimate",
+                      "Closing Disclosure"
+                    ],
+                    "notes": "Must match note P&I payment"
+                  }
+                },
+                "second_mortgage_p_and_i": {
+                  "type": "number",
+                  "title": "Second Mortgage P&I",
+                  "definition": "The monthly principal and interest payment on any second mortgage or subordinate financing on the subject property that will exist after closing.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Second Mortgage Note",
+                      "Credit Report",
+                      "Subordination Agreement"
+                    ],
+                    "notes": "Include if subordinate financing exists"
+                  }
+                },
+                "hazard_insurance": {
+                  "type": "number",
+                  "title": "Hazard Insurance",
+                  "definition": "The monthly amount for property hazard insurance (homeowners insurance) that protects against fire, wind, and other covered perils. Required for all mortgage loans.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Insurance Binder",
+                      "Insurance Declaration Page",
+                      "Loan Estimate"
+                    ],
+                    "notes": "Must meet agency minimum coverage requirements"
+                  }
+                },
+                "taxes": {
+                  "type": "number",
+                  "title": "Taxes",
+                  "definition": "The monthly amount for real estate property taxes on the subject property, calculated by dividing the annual tax amount by twelve months.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Tax Certificate",
+                      "Appraisal Report",
+                      "Title Commitment",
+                      "Loan Estimate"
+                    ],
+                    "notes": "Use current or estimated annual taxes divided by 12"
+                  }
+                },
+                "mortgage_insurance": {
+                  "type": "number",
+                  "title": "Mortgage Insurance",
+                  "definition": "The monthly mortgage insurance premium required when the LTV exceeds 80% for conventional loans, or the monthly portion of FHA MIP or VA funding fee if applicable.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "MI Certificate",
+                      "Loan Estimate",
+                      "Closing Disclosure"
+                    ],
+                    "notes": "Required when LTV exceeds 80% for conventional"
+                  }
+                },
+                "hoa_fees": {
+                  "type": "number",
+                  "title": "HOA Fees",
+                  "definition": "The monthly homeowners association fees or condominium association dues required for properties in planned communities, condominiums, or cooperatives.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "HOA Documents",
+                      "Condo Questionnaire",
+                      "Appraisal Report"
+                    ],
+                    "notes": "Include all mandatory HOA/condo fees"
+                  }
+                },
+                "lease_ground_rent": {
+                  "type": "number",
+                  "title": "Lease/Ground Rent",
+                  "definition": "The monthly ground rent payment for leasehold properties where the borrower owns the improvements but leases the underlying land from a third party.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Ground Lease",
+                      "Appraisal Report"
+                    ],
+                    "notes": "Only applicable for leasehold properties"
+                  }
+                },
+                "other": {
+                  "type": "number",
+                  "title": "Other",
+                  "definition": "Any other monthly housing expenses not captured in the standard categories, such as special assessments, flood insurance, or other property-related charges.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Supporting Documentation",
+                      "Loan Estimate"
+                    ],
+                    "notes": "Specify the nature of other expenses"
+                  }
+                },
+                "total_primary_housing_expense": {
+                  "type": "number",
+                  "title": "Total Primary Housing Expense",
+                  "definition": "The sum of all proposed monthly housing expenses (PITIA) for the subject property, used as the numerator in the front-end debt-to-income ratio calculation.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1008 Form",
+                      "Underwriting Transmittal"
+                    ],
+                    "notes": "Sum of all housing expense components"
+                  }
+                }
+              }
+            },
+            "other_obligations": {
+              "type": "object",
+              "title": "Other Obligations",
+              "properties": {
+                "negative_cash_flow_subject_property": {
+                  "type": "number",
+                  "title": "Negative Cash Flow (subject property)",
+                  "definition": "Net negative rental income from the subject property when the PITIA expenses exceed the gross rental income. This amount is added to monthly obligations for DTI calculations.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report",
+                      "Lease Agreement",
+                      "1007 Rent Schedule"
+                    ],
+                    "notes": "Negative cash flow increases total obligations"
+                  }
+                },
+                "all_other_monthly_payments": {
+                  "type": "number",
+                  "title": "All Other Monthly Payments",
+                  "definition": "The total of all other monthly debt obligations from the credit report and loan application, including auto loans, student loans, credit cards, child support, alimony, and other recurring debts.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Credit Report",
+                      "1003 Loan Application",
+                      "Divorce Decree",
+                      "Court Orders"
+                    ],
+                    "notes": "Include all debts with more than 10 months remaining"
+                  }
+                },
+                "total_all_monthly_payments": {
+                  "type": "number",
+                  "title": "Total All Monthly Payments",
+                  "definition": "The sum of total primary housing expense, negative cash flow, and all other monthly payments. This is the total monthly debt obligation used in the back-end DTI ratio calculation.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1008 Form",
+                      "Underwriting Transmittal",
+                      "Credit Report"
+                    ],
+                    "notes": "Total obligations for DTI calculation"
+                  }
+                }
+              }
+            },
+            "borrower_funds_to_close": {
+              "type": "object",
+              "title": "Borrower Funds to Close",
+              "properties": {
+                "required": {
+                  "type": "number",
+                  "title": "Required",
+                  "definition": "The total amount of funds the borrower must bring to closing, including down payment, closing costs, prepaids, and reserves minus any credits or seller contributions.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Closing Disclosure",
+                      "Loan Estimate",
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Net funds required from borrower"
+                  }
+                },
+                "verified_assets": {
+                  "type": "number",
+                  "title": "Verified Assets",
+                  "definition": "The total amount of borrower assets that have been verified and documented as available for the transaction, including checking, savings, investments, and gift funds.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Bank Statements",
+                      "Investment Statements",
+                      "Gift Letter",
+                      "VOD"
+                    ],
+                    "notes": "Must verify sufficient assets to close"
+                  }
+                }
+              }
+            },
+            "interested_party_contributions": {
+              "type": "number",
+              "title": "Interested Party Contributions",
+              "description": "Percentage",
+              "definition": "The total amount of closing costs, prepaids, and other fees paid by interested parties (seller, real estate agent, builder, etc.) expressed as a percentage of the sales price or appraised value.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Purchase Agreement",
+                  "Closing Disclosure",
+                  "Loan Estimate"
+                ],
+                "notes": "IPC limits vary by LTV and occupancy"
+              }
+            }
+          }
+        },
+        "risk_assessment": {
+          "type": "object",
+          "title": "Risk Assessment",
+          "description": "AUS findings and risk evaluation",
+          "properties": {
+            "manual_underwriting": {
+              "type": "boolean",
+              "title": "Manual Underwriting",
+              "definition": "Indicates the loan was underwritten manually by a human underwriter without reliance on an automated underwriting system recommendation, typically due to AUS referral or ineligibility.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Underwriting Decision",
+                  "Manual Underwriting Worksheet"
+                ],
+                "notes": "Manual UW has specific documentation requirements"
+              }
+            },
+            "aus": {
+              "type": "boolean",
+              "title": "AUS",
+              "definition": "Indicates the loan was submitted to an Automated Underwriting System for risk assessment and received a recommendation that was used in the underwriting decision.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "DU Findings",
+                  "LP Findings"
+                ],
+                "notes": "AUS findings must be in file"
+              }
+            },
+            "du": {
+              "type": "boolean",
+              "title": "DU",
+              "definition": "Indicates the loan was submitted to Fannie Mae's Desktop Underwriter (DU) automated underwriting system for risk assessment and eligibility determination.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "DU Findings",
+                  "DU Underwriting Findings Report"
+                ],
+                "notes": "Fannie Mae's automated underwriting system"
+              }
+            },
+            "lp": {
+              "type": "boolean",
+              "title": "LP",
+              "definition": "Indicates the loan was submitted to Freddie Mac's Loan Product Advisor (LP) automated underwriting system for risk assessment and eligibility determination.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "LP Findings",
+                  "Loan Product Advisor Feedback Certificate"
+                ],
+                "notes": "Freddie Mac's automated underwriting system"
+              }
+            },
+            "other": {
+              "type": "boolean",
+              "title": "Other",
+              "definition": "Indicates the loan was submitted to an automated underwriting system other than DU or LP, such as a proprietary system or government AUS.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "AUS Findings"
+                ],
+                "notes": "Specify the AUS system used"
+              }
+            },
+            "other_specify": {
+              "type": "string",
+              "title": "Other AUS Specification",
+              "definition": "The name of the automated underwriting system used when 'Other' is selected, such as FHA TOTAL Scorecard, VA LAPP, or a proprietary system.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "AUS Findings"
+                ],
+                "notes": "Required when Other AUS is selected"
+              }
+            },
+            "aus_recommendation": {
+              "type": "string",
+              "title": "AUS Recommendation",
+              "definition": "The risk assessment recommendation returned by the automated underwriting system, such as Approve/Eligible, Accept, Refer, or Caution. This recommendation guides underwriting decisions.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "DU Findings",
+                  "LP Findings",
+                  "AUS Certificate"
+                ],
+                "notes": "Must document the AUS recommendation"
+              }
+            },
+            "du_case_id_lp_aus_key": {
+              "type": "string",
+              "title": "DU Case ID/LP AUS Key#",
+              "definition": "The unique identifier assigned by the automated underwriting system to the loan submission, used to retrieve findings and track the loan through the system.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "DU Findings",
+                  "LP Findings"
+                ],
+                "notes": "Required for AUS-underwritten loans"
+              }
+            },
+            "lp_doc_class_freddie": {
+              "type": "string",
+              "title": "LP Doc Class (Freddie)",
+              "definition": "The documentation classification assigned by Freddie Mac's Loan Product Advisor indicating the level of income and asset documentation required, such as Standard or Streamlined.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "LP Findings"
+                ],
+                "notes": "Freddie Mac specific documentation classification"
+              }
+            },
+            "qualifying_rate": {
+              "type": "object",
+              "title": "Qualifying Rate",
+              "properties": {
+                "note_rate": {
+                  "type": "boolean",
+                  "title": "Note Rate",
+                  "definition": "Indicates the borrower is being qualified at the actual note rate stated on the promissory note, typically used for fixed-rate mortgages.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note",
+                      "Underwriting System Findings"
+                    ],
+                    "notes": "Standard qualification for fixed-rate loans"
+                  }
+                },
+                "note_rate_value": {
+                  "type": "number",
+                  "title": "Note Rate Value",
+                  "description": "Percentage",
+                  "definition": "The actual interest rate from the promissory note used for qualifying the borrower when qualifying at the note rate.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Promissory Note"
+                    ],
+                    "notes": "Must match the promissory note rate"
+                  }
+                },
+                "percent_above_note_rate": {
+                  "type": "number",
+                  "title": "% Above Note Rate",
+                  "definition": "The percentage added to the note rate for qualification purposes, typically used for ARM loans where borrowers must qualify at a rate higher than the initial rate.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Underwriting System Findings",
+                      "Agency Guidelines"
+                    ],
+                    "notes": "ARM qualification may require qualifying at higher rate"
+                  }
+                },
+                "percent_below_note_rate": {
+                  "type": "number",
+                  "title": "% Below Note Rate",
+                  "definition": "The percentage subtracted from the note rate for qualification purposes, which may apply in certain buydown scenarios or special programs.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Underwriting System Findings",
+                      "Buydown Agreement"
+                    ],
+                    "notes": "Rare - typically for buydown qualification"
+                  }
+                },
+                "bought_down_rate": {
+                  "type": "boolean",
+                  "title": "Bought-Down Rate",
+                  "definition": "Indicates the borrower is being qualified at a temporarily reduced interest rate due to a buydown arrangement where funds are deposited to subsidize payments.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Buydown Agreement",
+                      "Promissory Note",
+                      "Underwriting System Findings"
+                    ],
+                    "notes": "Buydown qualification requirements vary by program"
+                  }
+                },
+                "bought_down_rate_value": {
+                  "type": "number",
+                  "title": "Bought-Down Rate Value",
+                  "description": "Percentage",
+                  "definition": "The reduced interest rate used for qualification when a buydown is in effect, representing the initial subsidized rate during the buydown period.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Buydown Agreement",
+                      "Promissory Note"
+                    ],
+                    "notes": "Initial rate during buydown period"
+                  }
+                },
+                "other": {
+                  "type": "boolean",
+                  "title": "Other",
+                  "definition": "Indicates the borrower is being qualified at a rate other than the standard note rate or bought-down rate, requiring specification of the qualifying rate used.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Underwriting System Findings",
+                      "Agency Guidelines"
+                    ],
+                    "notes": "Must specify the qualifying rate methodology"
+                  }
+                },
+                "other_value": {
+                  "type": "number",
+                  "title": "Other Rate Value",
+                  "description": "Percentage",
+                  "definition": "The specific interest rate used for qualification when 'Other' qualifying rate is selected, with documentation of the basis for using this rate.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Underwriting System Findings"
+                    ],
+                    "notes": "Required when Other qualifying rate is selected"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "conditions": {
+          "type": "object",
+          "title": "Conditions",
+          "description": "Underwriting conditions and requirements",
+          "properties": {
+            "escrow_t_and_i": {
+              "type": "object",
+              "title": "Escrow (T&I)",
+              "properties": {
+                "yes": {
+                  "type": "boolean",
+                  "title": "Yes",
+                  "definition": "Indicates the loan will include an escrow account for the collection and payment of property taxes and hazard insurance, with monthly escrow deposits included in the mortgage payment.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "Loan Estimate",
+                      "Closing Disclosure"
+                    ],
+                    "notes": "Escrow may be required based on LTV or state law"
+                  }
+                },
+                "no": {
+                  "type": "boolean",
+                  "title": "No",
+                  "definition": "Indicates the loan will not include an escrow account, and the borrower will be responsible for paying property taxes and insurance directly. Escrow waivers have specific eligibility requirements.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application",
+                      "Escrow Waiver Agreement"
+                    ],
+                    "notes": "Escrow waiver eligibility varies by LTV and state"
+                  }
+                }
+              }
+            },
+            "community_lending_affordable_housing_initiative": {
+              "type": "object",
+              "title": "Community Lending/Affordable Housing Initiative",
+              "properties": {
+                "yes": {
+                  "type": "boolean",
+                  "title": "Yes",
+                  "definition": "Indicates the loan is being originated under a community lending or affordable housing program designed to expand homeownership opportunities for low-to-moderate income borrowers or underserved communities.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Program Documentation",
+                      "1003 Loan Application",
+                      "Income Eligibility Documentation"
+                    ],
+                    "notes": "Must meet program eligibility requirements"
+                  }
+                },
+                "no": {
+                  "type": "boolean",
+                  "title": "No",
+                  "definition": "Indicates the loan is not being originated under any community lending or affordable housing initiative and follows standard underwriting guidelines.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Standard loan not under special program"
+                  }
+                }
+              }
+            },
+            "home_buyers_homeownership_education_certificate_in_file": {
+              "type": "object",
+              "title": "Home Buyers/Homeownership Education Certificate in file",
+              "properties": {
+                "yes": {
+                  "type": "boolean",
+                  "title": "Yes",
+                  "definition": "Indicates the borrower has completed a homebuyer education or homeownership counseling course and a certificate of completion is included in the loan file.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Homebuyer Education Certificate",
+                      "Counseling Certificate"
+                    ],
+                    "notes": "May be required for certain programs or first-time buyers"
+                  }
+                },
+                "no": {
+                  "type": "boolean",
+                  "title": "No",
+                  "definition": "Indicates no homebuyer education certificate is in the loan file, either because it was not required or the borrower did not complete a course.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "1003 Loan Application"
+                    ],
+                    "notes": "Document if education was required but waived"
+                  }
+                }
+              }
+            },
+            "underwriter_comments": {
+              "type": "string",
+              "title": "Underwriter Comments",
+              "description": "Additional comments from the underwriter",
+              "definition": "Free-form text field for the underwriter to document any additional information, explanations, compensating factors, or conditions related to the loan approval decision.",
+              "evidence": {
+                "required": false,
+                "document_types": [
+                  "1008 Form",
+                  "Underwriting Transmittal"
+                ],
+                "notes": "Used to document compensating factors and special circumstances"
+              }
+            }
+          }
+        }
+      }
+    },
+    "appraiser_information": {
+      "type": "object",
+      "title": "Appraiser Information",
+      "description": "Appraiser details and appraisal data",
+      "properties": {
+        "appraiser_details": {
+          "type": "object",
+          "title": "Appraiser Details",
+          "description": "Appraiser identification and company information",
+          "properties": {
+            "appraisers_name_license_number": {
+              "type": "string",
+              "title": "Appraiser's Name/License #",
+              "definition": "The name and state license number of the appraiser who completed the property appraisal. Appraisers must be state-licensed or certified and meet agency appraiser independence requirements.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Appraisal Report"
+                ],
+                "notes": "License must be verified as active and in good standing"
+              }
+            },
+            "appraisal_company_name": {
+              "type": "string",
+              "title": "Appraisal Company Name",
+              "definition": "The name of the appraisal management company or appraisal firm that assigned or employed the appraiser. Required for tracking appraiser independence and compliance with USPAP standards.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Appraisal Report"
+                ],
+                "notes": "AMC must be properly registered if applicable"
+              }
+            }
+          }
+        },
+        "appraisal_data": {
+          "type": "object",
+          "title": "Appraisal Data",
+          "description": "Level of property review and appraisal form information",
+          "properties": {
+            "level_of_property_review": {
+              "type": "object",
+              "title": "Level of Property Review",
+              "properties": {
+                "exterior_interior": {
+                  "type": "boolean",
+                  "title": "Exterior/Interior",
+                  "definition": "Indicates a full appraisal was completed with both exterior and interior inspection of the subject property, providing the most comprehensive property valuation.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report"
+                    ],
+                    "notes": "Standard full appraisal with interior inspection"
+                  }
+                },
+                "exterior_only": {
+                  "type": "boolean",
+                  "title": "Exterior Only",
+                  "definition": "Indicates an appraisal was completed with only an exterior inspection of the subject property, without interior access. Used for certain refinance transactions or when interior access is not required.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report"
+                    ],
+                    "notes": "Drive-by or exterior-only appraisal"
+                  }
+                },
+                "no_appraisal": {
+                  "type": "boolean",
+                  "title": "No Appraisal",
+                  "definition": "Indicates no traditional appraisal was required for the transaction, typically due to an appraisal waiver from the automated underwriting system based on data confidence.",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "DU Findings",
+                      "LP Findings",
+                      "Property Inspection Waiver"
+                    ],
+                    "notes": "PIW or appraisal waiver from AUS"
+                  }
+                },
+                "form_number": {
+                  "type": "string",
+                  "title": "Form Number",
+                  "definition": "The specific appraisal form number used for the property valuation, such as Form 1004 (URAR), Form 1073 (Condo), Form 1025 (Small Income), or Form 2055 (Exterior-Only).",
+                  "evidence": {
+                    "required": true,
+                    "document_types": [
+                      "Appraisal Report"
+                    ],
+                    "notes": "Form type must be appropriate for property type"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "transaction_information": {
+      "type": "object",
+      "title": "Transaction Information",
+      "description": "Purchase details and closing information",
+      "properties": {
+        "seller_contract_and_contact_information": {
+          "type": "object",
+          "title": "Seller, Contract, and Contact Information",
+          "description": "Seller/servicer details for loan delivery",
+          "properties": {
+            "transaction_seller_name": {
+              "type": "string",
+              "title": "Seller Name",
+              "definition": "The name of the mortgage seller/servicer or correspondent lender delivering the loan to Fannie Mae or Freddie Mac for purchase or securitization.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Seller/Servicer Agreement",
+                  "1008 Form"
+                ],
+                "notes": "Must be an approved seller/servicer"
+              }
+            },
+            "transaction_seller_address": {
+              "type": "string",
+              "title": "Seller Address",
+              "definition": "The business address of the mortgage seller/servicer delivering the loan, used for correspondence and contract purposes.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Seller/Servicer Agreement",
+                  "1008 Form"
+                ],
+                "notes": "Corporate address of seller/servicer"
+              }
+            },
+            "transaction_seller_no": {
+              "type": "string",
+              "title": "Seller No.",
+              "definition": "The unique identification number assigned to the seller/servicer by Fannie Mae or Freddie Mac for tracking and contract purposes.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Seller/Servicer Agreement",
+                  "Agency Assignment"
+                ],
+                "notes": "Agency-assigned seller number"
+              }
+            },
+            "transaction_investor_loan_no": {
+              "type": "string",
+              "title": "Investor Loan No.",
+              "definition": "The loan identification number assigned by the investor or agency purchasing the loan, used for tracking after delivery.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "Investor Commitment",
+                  "Delivery Documentation"
+                ],
+                "notes": "Assigned upon loan delivery"
+              }
+            },
+            "transaction_seller_loan_no": {
+              "type": "string",
+              "title": "Seller Loan No.",
+              "definition": "The internal loan identification number assigned by the seller/servicer's loan origination system for tracking throughout the origination and delivery process.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1003 Loan Application",
+                  "Loan Origination System"
+                ],
+                "notes": "Internal tracking number"
+              }
+            },
+            "transaction_contact_name": {
+              "type": "string",
+              "title": "Contact Name",
+              "definition": "The name of the individual at the seller/servicer organization who can be contacted regarding questions about the loan file or delivery.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form"
+                ],
+                "notes": "Primary contact for loan inquiries"
+              }
+            },
+            "transaction_contact_title": {
+              "type": "string",
+              "title": "Contact Title",
+              "definition": "The job title or position of the contact person at the seller/servicer organization.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form"
+                ],
+                "notes": "Title of primary contact"
+              }
+            },
+            "transaction_contact_phone_number": {
+              "type": "string",
+              "title": "Contact Phone Number",
+              "definition": "The telephone number for the contact person at the seller/servicer organization for loan-related inquiries.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form"
+                ],
+                "notes": "Direct phone number for contact"
+              }
+            },
+            "transaction_contact_phone_ext": {
+              "type": "string",
+              "title": "Contact Phone Extension",
+              "definition": "The telephone extension number for the contact person, if applicable.",
+              "evidence": {
+                "required": false,
+                "document_types": [
+                  "1008 Form"
+                ],
+                "notes": "Extension if applicable"
+              }
+            },
+            "transaction_contact_signature": {
+              "type": "string",
+              "title": "Contact Signature",
+              "definition": "The signature of the authorized representative of the seller/servicer certifying the accuracy of the information on the transmittal summary and compliance with applicable guidelines.",
+              "evidence": {
+                "required": true,
+                "document_types": [
+                  "1008 Form"
+                ],
+                "notes": "Authorized signature required for delivery"
+              }
+            }
+          }
+        }
+      }
+    },
+    "form_metadata": {
+      "type": "object",
+      "title": "Form Metadata",
+      "description": "Form identification and version information",
+      "properties": {
+        "freddie_mac_form_number": {
+          "type": "string",
+          "title": "Freddie Mac Form Number",
+          "default": "1077",
+          "definition": "The official Freddie Mac form number for the Uniform Underwriting and Transmittal Summary, which is Form 1077.",
+          "evidence": {
+            "required": false,
+            "document_types": [
+              "1008/1077 Form"
+            ],
+            "notes": "Standard form number"
+          }
+        },
+        "fannie_mae_form_number": {
+          "type": "string",
+          "title": "Fannie Mae Form Number",
+          "default": "1008",
+          "definition": "The official Fannie Mae form number for the Uniform Underwriting and Transmittal Summary, which is Form 1008.",
+          "evidence": {
+            "required": false,
+            "document_types": [
+              "1008/1077 Form"
+            ],
+            "notes": "Standard form number"
+          }
+        },
+        "form_revision_date": {
+          "type": "string",
+          "title": "Form Revision Date",
+          "description": "Date of form revision",
+          "definition": "The date of the most recent revision to the form, indicating which version of the form is being used for the loan file.",
+          "evidence": {
+            "required": false,
+            "document_types": [
+              "1008/1077 Form"
+            ],
+            "notes": "Form version tracking"
+          }
+        },
+        "page_number": {
+          "type": "string",
+          "title": "Page Number",
+          "definition": "The page number within the form document, used for multi-page forms to ensure completeness.",
+          "evidence": {
+            "required": false,
+            "document_types": [
+              "1008/1077 Form"
+            ],
+            "notes": "Page tracking for form completeness"
+          }
+        }
+      }
+    }
+  }
+}

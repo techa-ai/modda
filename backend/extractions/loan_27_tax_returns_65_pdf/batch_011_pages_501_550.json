@@ -1,0 +1,1684 @@
+{
+  "batch": 11,
+  "pages_range": [
+    501,
+    550
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 511,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "218-59-5390",
+        "sh": 30,
+        "l55": 4,
+        "page_number": 511
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 50
+      }
+    },
+    {
+      "success": true,
+      "page": 508,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "id": "220-57-4916",
+        "sh": 29,
+        "steps": [
+          5,
+          6,
+          7
+        ],
+        "note": "all fields blank",
+        "page_number": 508
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 505,
+      "data": {
+        "t": "K1sup",
+        "form": "K-1-P",
+        "st": "IL",
+        "sh": 28,
+        "ssn4": "2988",
+        "steps": [
+          5,
+          6,
+          7
+        ],
+        "l55": 5,
+        "page_number": 505
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 53
+      }
+    },
+    {
+      "success": true,
+      "page": 524,
+      "data": {
+        "t": "stmt",
+        "form": "IL SCH K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 34,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2598
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 2598
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 2598
+          }
+        ],
+        "page_number": 524
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 520,
+      "data": {
+        "t": "form",
+        "form": "K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "686-56-6726",
+        "sh": 33,
+        "l55": 4,
+        "page_number": 520
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 48
+      }
+    },
+    {
+      "success": true,
+      "page": 527,
+      "data": {
+        "t": "stmt",
+        "form": "IL SCH K-1-P",
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 35,
+        "y": 2023,
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 3190
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 3190
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 3190
+          }
+        ],
+        "page_number": 527
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 507,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "PAUL T. PIVIROTTO",
+        "ssn4": "4916",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "entity": "individual",
+        "b20a": 2658,
+        "b20b": 91,
+        "sh_num": 29,
+        "page_number": 507
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 127
+      }
+    },
+    {
+      "success": true,
+      "page": 530,
+      "data": {
+        "t": "stmt",
+        "ref": "IL SCH K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 36,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "items": [
+          {
+            "l": "1",
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 186114
+          },
+          {
+            "l": "2",
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": "3",
+            "d": "Add lines 1 and 2",
+            "v": 186114
+          },
+          {
+            "l": "4",
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": "5",
+            "d": "Subtract line 4 from line 3",
+            "v": 186114
+          }
+        ],
+        "page_number": 530
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 526,
+      "data": {
+        "t": "K1_IL",
+        "form": "K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "324-34-3920",
+        "sh": 35,
+        "steps": [
+          5,
+          6,
+          7
+        ],
+        "lines_empty": true,
+        "page_number": 526
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 62
+      }
+    },
+    {
+      "success": true,
+      "page": 512,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "desc": "IL SCH K-1-P MEMBER'S SHARE OF DISTRIBUTABLE BASE INCOME OR LOSS",
+        "sh": 30,
+        "y": 2023,
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2659
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 2659
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 2659
+          }
+        ],
+        "page_number": 512
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 174
+      }
+    },
+    {
+      "success": true,
+      "page": 523,
+      "data": {
+        "t": "K1sup",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "ein": "756-93-2105",
+        "sh": 34,
+        "y": 2024,
+        "l55": 4,
+        "page_number": 523
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 52
+      }
+    },
+    {
+      "success": true,
+      "page": 529,
+      "data": {
+        "t": "form",
+        "form": "K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "578-54-0025",
+        "sh": 36,
+        "b55": 410,
+        "page_number": 529
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 48
+      }
+    },
+    {
+      "success": true,
+      "page": 521,
+      "data": {
+        "t": "stmt",
+        "ref": "IL SCH K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 33,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "y": 2023,
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2597
+          },
+          {
+            "l": 2,
+            "d": "Additions distributable",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Lines 1 and 2",
+            "v": 2597
+          },
+          {
+            "l": 4,
+            "d": "Subtractions distributable",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Line 3 minus line 4",
+            "v": 2597
+          }
+        ],
+        "page_number": 521
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 171
+      }
+    },
+    {
+      "success": true,
+      "page": 506,
+      "data": {
+        "t": "stmt",
+        "ref": "IL SCH K-1-P",
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 28,
+        "y": 2023,
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2659
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 2659
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 2659
+          }
+        ],
+        "page_number": 506
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 514,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "219-69-5908",
+        "sh": 31,
+        "steps": [
+          5,
+          6,
+          7
+        ],
+        "note": "all fields blank",
+        "page_number": 514
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 502,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "215-49-6434",
+        "sh": 27,
+        "steps": [
+          5,
+          6,
+          7
+        ],
+        "lines_empty": true,
+        "page_number": 502
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 515,
+      "data": {
+        "t": "stmt",
+        "form": "IL SCH K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 31,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2659
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 2659
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 2659
+          }
+        ],
+        "page_number": 515
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 522,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "attach": 12,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "FINLEY TOWNSEND",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "ssn4": "2105",
+        "pct": 0.651333,
+        "entity": "individual",
+        "b20a": 2598,
+        "b20b": 88,
+        "sh_num": 34,
+        "page_number": 522
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 133
+      }
+    },
+    {
+      "success": true,
+      "page": 513,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apportion": 0.034153,
+        "sh": "CHRISTOPHER B. BROPHY",
+        "ssn4": "5908",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "entity": "individual",
+        "b20a": 2659,
+        "b20b": 91,
+        "sh_num": 31,
+        "page_number": 513
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 127
+      }
+    },
+    {
+      "success": true,
+      "page": 503,
+      "data": {
+        "t": "stmt",
+        "form": "IL K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 27,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "y": 2023,
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2659
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 2659
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 2659
+          }
+        ],
+        "page_number": 503
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 517,
+      "data": {
+        "t": "K1sup",
+        "form": "K-1-P",
+        "st": "IL",
+        "sh": 32,
+        "ein": "037-20-4148",
+        "pg": 2,
+        "steps": [
+          5,
+          6,
+          7
+        ],
+        "desc": "IL additions/subtractions and credits worksheet",
+        "vals": {
+          "l55": 5
+        },
+        "page_number": 517
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 501,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "OLIVIA B. PIVIROTTO",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "ssn4": "6434",
+        "pct": 0.666667,
+        "entity": "individual",
+        "b20a": 2659,
+        "b20b": 91,
+        "sh_num": 27,
+        "page_number": 501
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 128
+      }
+    },
+    {
+      "success": true,
+      "page": 504,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "THEODORA F. BROPHY",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "ssn": "212-57-2988",
+        "pct": 0.666667,
+        "entity": "individual",
+        "b20a": 2659,
+        "b20b": 91,
+        "sh_num": 28,
+        "page_number": 504
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 131
+      }
+    },
+    {
+      "success": true,
+      "page": 509,
+      "data": {
+        "t": "stmt",
+        "ref": "IL SCH K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 29,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2658
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 2658
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 2658
+          }
+        ],
+        "page_number": 509
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 510,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "JULIETTE I. BROPHY",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "ssn4": "5390",
+        "pct": 0.666667,
+        "entity": "individual",
+        "b20a": 2659,
+        "b20b": 90,
+        "sh_num": 30,
+        "page_number": 510
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 129
+      }
+    },
+    {
+      "success": true,
+      "page": 528,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apportion": 0.034153,
+        "sh": "PETER L TOWNSEND REVOCABLE TRUST U/A/D 6/8/22",
+        "sh_addr": "PO BOX 1954, HOBE SOUND, FL 33475",
+        "sh_id": "578-54-0025",
+        "sh_pct": 46.666667,
+        "entity": "trust",
+        "sh_num": 36,
+        "b20a": 186114,
+        "b20b": 6357,
+        "page_number": 528
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 150
+      }
+    },
+    {
+      "success": true,
+      "page": 518,
+      "data": {
+        "t": "stmt",
+        "form": "IL SCH K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 32,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 2659
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 2659
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 2659
+          }
+        ],
+        "page_number": 518
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 516,
+      "data": {
+        "t": "form",
+        "form": "IL K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "RAYMOND C. BROPHY",
+        "ssn4": "4148",
+        "addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+        "pct": 0.666667,
+        "entity": "individual",
+        "sh_num": 32,
+        "b20a": 2659,
+        "b20b": 91,
+        "page_number": 516
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 125
+      }
+    },
+    {
+      "success": true,
+      "page": 519,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "attach": 12,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "PARKER TOWNSEND",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "ssn4": "6726",
+        "pct": 0.651333,
+        "entity": "individual",
+        "b20a": 2597,
+        "b20b": 89,
+        "sh_num": 33,
+        "page_number": 519
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 132
+      }
+    },
+    {
+      "success": true,
+      "page": 525,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "MARY ANN FURUTA",
+        "sh_addr": "27101 WEST COVENTRY COURT, BARRINGTON, IL 62305",
+        "ssn": "324-34-3920",
+        "pct": 0.8,
+        "entity": "individual",
+        "b20a": 3190,
+        "b20b": 109,
+        "sh_num": 35,
+        "page_number": 525
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 129
+      }
+    },
+    {
+      "success": true,
+      "page": 532,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "id": "332-34-0530",
+        "sh": 37,
+        "steps": [
+          5,
+          6,
+          7
+        ],
+        "desc": "IL additions/subtractions and credits - blank form",
+        "page_number": 532
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 69
+      }
+    },
+    {
+      "success": true,
+      "page": 531,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apportion": 0.034153,
+        "sh": "JUDY JAN",
+        "sh_addr": "121 WILLOW BRANCH LANE, CHELSEA, AL 35043",
+        "ssn4": "0530",
+        "pct": 0.066666,
+        "entity": "individual",
+        "b20a": 266,
+        "b20b": 9,
+        "sh_num": 37,
+        "page_number": 531
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 121
+      }
+    },
+    {
+      "success": true,
+      "page": 537,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "TYLER M. TOWNSEND",
+        "ssn": "569-23-2044",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 91,
+        "l8": 91,
+        "l9": 0,
+        "l10": 91,
+        "l11": 0,
+        "l12": 91,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 5,
+        "l17": 0,
+        "l18": 5,
+        "l19": 5,
+        "page_number": 537
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 145
+      }
+    },
+    {
+      "success": true,
+      "page": 533,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "desc": "IL SCH K-1-P MEMBER'S SHARE OF DISTRIBUTABLE BASE INCOME OR LOSS",
+        "sh": 37,
+        "y": 2023,
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 266
+          },
+          {
+            "l": 2,
+            "d": "Additions distributable",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 266
+          },
+          {
+            "l": 4,
+            "d": "Subtractions distributable",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 266
+          }
+        ],
+        "page_number": 533
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 171
+      }
+    },
+    {
+      "success": true,
+      "page": 540,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "LYNN D. JULIAN",
+        "ssn": "076-46-8274",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 6,
+        "l8": 6,
+        "l9": 0,
+        "l10": 6,
+        "l11": 0,
+        "l12": 6,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 0,
+        "l17": 0,
+        "l18": 0,
+        "l19": 0,
+        "page_number": 540
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 143
+      }
+    },
+    {
+      "success": true,
+      "page": 539,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "SUSAN DUGAN",
+        "ssn": "353-36-8523",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 8,
+        "l8": 8,
+        "l9": 0,
+        "l10": 8,
+        "l11": 0,
+        "l12": 8,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 0,
+        "l17": 0,
+        "l18": 0,
+        "l19": 0,
+        "page_number": 539
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 142
+      }
+    },
+    {
+      "success": true,
+      "page": 536,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "ROBERT DUGAN",
+        "ssn": "018-44-0380",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 3665,
+        "l8": 3665,
+        "l9": 0,
+        "l10": 3665,
+        "l11": 0,
+        "l12": 3665,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 181,
+        "l17": 0,
+        "l18": 181,
+        "l19": 181,
+        "page_number": 536
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 146
+      }
+    },
+    {
+      "success": true,
+      "page": 545,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "DAVID REDANZ",
+        "ssn": "108-54-4953",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 91,
+        "l8": 91,
+        "l9": 0,
+        "l10": 91,
+        "l11": 0,
+        "l12": 91,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 5,
+        "l17": 0,
+        "l18": 5,
+        "l19": 5,
+        "page_number": 545
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 142
+      }
+    },
+    {
+      "success": true,
+      "page": 544,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "JASON G. WOLK",
+        "ssn": "267-69-8469",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 635,
+        "l8": 635,
+        "l9": 0,
+        "l10": 635,
+        "l11": 0,
+        "l12": 635,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 31,
+        "l17": 0,
+        "l18": 31,
+        "l19": 31,
+        "page_number": 544
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 144
+      }
+    },
+    {
+      "success": true,
+      "page": 538,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "state": "IL",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "member": "PAUL T. TOWNSEND",
+        "ssn4": "5516",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 91,
+        "l8": 91,
+        "l9": 0,
+        "l10": 91,
+        "l11": 0,
+        "l12": 91,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 5,
+        "l17": 0,
+        "l18": 5,
+        "l19": 5,
+        "page_number": 538
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 146
+      }
+    },
+    {
+      "success": true,
+      "page": 548,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "ANDREW T. BROPHY",
+        "ssn": "577-68-2637",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 136,
+        "l8": 136,
+        "l9": 0,
+        "l10": 136,
+        "l11": 0,
+        "l12": 136,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 7,
+        "l17": 0,
+        "l18": 7,
+        "l19": 7,
+        "page_number": 548
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 144
+      }
+    },
+    {
+      "success": true,
+      "page": 534,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "st": "IL",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "JEANNETTE BROPHY",
+        "ssn": "578-54-9478",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 636,
+        "l8": 636,
+        "l9": 0,
+        "l10": 636,
+        "l11": 0,
+        "l12": 636,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 31,
+        "l17": 0,
+        "l18": 31,
+        "l19": 31,
+        "page_number": 534
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 148
+      }
+    },
+    {
+      "success": true,
+      "page": 547,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "CHRISTOPHER CROSSAN",
+        "ssn4": "0931",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 91,
+        "l8": 91,
+        "l9": 0,
+        "l10": 91,
+        "l11": 0,
+        "l12": 91,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 5,
+        "l17": 0,
+        "l18": 5,
+        "l19": 5,
+        "page_number": 547
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 139
+      }
+    },
+    {
+      "success": true,
+      "page": 535,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "WILLIAM P. WEIL",
+        "ssn": "121-36-5311",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 613,
+        "l8": 613,
+        "l9": 0,
+        "l10": 613,
+        "l11": 0,
+        "l12": 613,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 30,
+        "l17": 0,
+        "l18": 30,
+        "l19": 30,
+        "page_number": 535
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 144
+      }
+    },
+    {
+      "success": true,
+      "page": 541,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "state": "IL",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "PETER L. TOWNSEND, JR",
+        "ssn4": "2267",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 91,
+        "l8": 91,
+        "l9": 0,
+        "l10": 91,
+        "l11": 0,
+        "l12": 91,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 5,
+        "l17": 0,
+        "l18": 5,
+        "l19": 5,
+        "page_number": 541
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 149
+      }
+    },
+    {
+      "success": true,
+      "page": 549,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "BRENDA B. PIVIROTTO",
+        "ssn": "577-76-5503",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 136,
+        "l8": 136,
+        "l9": 0,
+        "l10": 136,
+        "l11": 0,
+        "l12": 136,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 7,
+        "l17": 0,
+        "l18": 7,
+        "l19": 7,
+        "page_number": 549
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 146
+      }
+    },
+    {
+      "success": true,
+      "page": 550,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "OLIVIA B. PIVIROTTO",
+        "ssn": "215-49-6434",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 91,
+        "l8": 91,
+        "l9": 0,
+        "l10": 91,
+        "l11": 0,
+        "l12": 91,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 5,
+        "l17": 0,
+        "l18": 5,
+        "l19": 5,
+        "page_number": 550
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 146
+      }
+    },
+    {
+      "success": true,
+      "page": 546,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "member": "JACOB SWICK",
+        "ssn": "219-13-5963",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 91,
+        "l8": 91,
+        "l9": 0,
+        "l10": 91,
+        "l11": 0,
+        "l12": 91,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 5,
+        "l17": 0,
+        "l18": 5,
+        "l19": 5,
+        "page_number": 546
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 142
+      }
+    },
+    {
+      "success": true,
+      "page": 542,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "DEBRA MALOY-WALSH",
+        "ssn": "105-46-9344",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 9,
+        "l8": 9,
+        "l9": 0,
+        "l10": 9,
+        "l11": 0,
+        "l12": 9,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 0,
+        "l17": 0,
+        "l18": 0,
+        "l19": 0,
+        "page_number": 542
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 146
+      }
+    },
+    {
+      "success": true,
+      "page": 543,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P(3)",
+        "y": 2023,
+        "st": "IL",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ssn": "105-46-9318",
+        "entity": "individual",
+        "l6": 0,
+        "l7": 9,
+        "l8": 9,
+        "l9": 0,
+        "l10": 9,
+        "l11": 0,
+        "l12": 9,
+        "l13": 0,
+        "l14": 0,
+        "l15": 0,
+        "l16": 0,
+        "l17": 0,
+        "l18": 0,
+        "l19": 0,
+        "page_number": 543
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 151
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 550,
+    "pages_successful": 550,
+    "cache_read_tokens": 7033146,
+    "cache_write_tokens": 320904,
+    "input_tokens": 842600,
+    "output_tokens": 66971,
+    "errors": 0
+  },
+  "cost": 11.409498000000001
+}

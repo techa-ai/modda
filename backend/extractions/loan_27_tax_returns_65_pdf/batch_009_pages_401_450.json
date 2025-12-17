@@ -1,0 +1,1865 @@
+{
+  "batch": 9,
+  "pages_range": [
+    401,
+    450
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 410,
+      "data": {
+        "t": "blank",
+        "r": "page 223 separator",
+        "page_number": 410
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 405,
+      "data": {
+        "t": "blank",
+        "page_number": 405
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 412,
+      "data": {
+        "t": "blank",
+        "page_number": 412
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 403,
+      "data": {
+        "t": "blank",
+        "r": "page 216 separator",
+        "page_number": 403
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 414,
+      "data": {
+        "t": "instr",
+        "r": "GA extension instructions",
+        "page_number": 414
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 15
+      }
+    },
+    {
+      "success": true,
+      "page": 422,
+      "data": {
+        "t": "form",
+        "form": "GA-600S",
+        "sch": "13",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "fein": "65-0057716",
+        "desc": "Assigned Tax Credits",
+        "data": "none",
+        "page_number": 422
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 420,
+      "data": {
+        "t": "form",
+        "form": "GA-600S",
+        "sch": "11",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "fein": "65-0057716",
+        "title": "Credit Usage and Carryover",
+        "page_number": 420
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 60
+      }
+    },
+    {
+      "success": true,
+      "page": 408,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "pg": 3,
+        "y": 2023,
+        "sh": "JUDY JAN",
+        "ssn": "332-34-0530",
+        "b39": 0,
+        "page_number": 408
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 55
+      }
+    },
+    {
+      "success": true,
+      "page": 401,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "pg": "3of3",
+        "sh": "PETER L TOWNSEND REVOCABLE TRU",
+        "ssn4": "0025",
+        "b39": 0,
+        "page_number": 401
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 59
+      }
+    },
+    {
+      "success": true,
+      "page": 421,
+      "data": {
+        "t": "form",
+        "form": "GA 600S",
+        "y": 2023,
+        "sch": "12",
+        "corp": "THOR GUARD, INC.",
+        "fein": "65-0057716",
+        "desc": "Credit Allocation to Owners",
+        "data": "none",
+        "page_number": 421
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 63
+      }
+    },
+    {
+      "success": true,
+      "page": 419,
+      "data": {
+        "t": "form",
+        "form": "GA-600S",
+        "sch": "10",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "desc": "GA NOL Carry Forward Worksheet",
+        "data": "blank",
+        "page_number": 419
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 64
+      }
+    },
+    {
+      "success": true,
+      "page": 407,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2023,
+        "sh": "JUDY JAN",
+        "ssn": "332-34-0530",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 407
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 262
+      }
+    },
+    {
+      "success": true,
+      "page": 423,
+      "data": {
+        "t": "form",
+        "form": "IL-1120-ST",
+        "y": 2023,
+        "st": "IL",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co": "JASON WOLK",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "state": "FL",
+        "zip": "33323",
+        "naics": "334500",
+        "il_charter": "F6261-956-2",
+        "rec_city": "SUNRISE",
+        "rec_st": "FL",
+        "rec_zip": "33323",
+        "apportion": "sales",
+        "l1": 398815,
+        "l7": 398815,
+        "l13": 398815,
+        "pg": "1 of 5",
+        "page_number": 423
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 156
+      }
+    },
+    {
+      "success": true,
+      "page": 415,
+      "data": {
+        "t": "form",
+        "form": "IT-560C",
+        "y": 2023,
+        "st": "GA",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "state": "FL",
+        "zip": "33323",
+        "type": "Corporate",
+        "tax_type": "Net Worth Tax",
+        "period_beg": "01-01-2023",
+        "period_end": "12-31-2023",
+        "vendor": "150",
+        "amt": 750.0,
+        "page_number": 415
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 122
+      }
+    },
+    {
+      "success": true,
+      "page": 425,
+      "data": {
+        "t": "form",
+        "form": "IL-1120-ST",
+        "y": 2023,
+        "pg": 3,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "l47": 7264,
+        "l48": 0,
+        "l49": 7264,
+        "l50": 7264,
+        "l51": 0,
+        "l59": 764,
+        "l62": 764,
+        "l64": 764,
+        "l65b": 773,
+        "l66": 773,
+        "l67": 9,
+        "l68": 0,
+        "l69": 9,
+        "preparer": "MEREDITH TUCKER, CPA",
+        "prep_date": "03/28/2024",
+        "prep_ptin": "P00848596",
+        "firm": "KAUFMAN, ROSSIN & CO., P.A",
+        "firm_ein": "59-1818353",
+        "firm_addr": "100 SE 3RD AVENUE, SUITE 2400 FT",
+        "firm_phone": "954-566-4400",
+        "page_number": 425
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 213
+      }
+    },
+    {
+      "success": true,
+      "page": 404,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity_type": "Estate or Trust (FEIN)",
+        "fein": "578-54-0025",
+        "name": "PETER L TOWNSEND REVOCABLE TRU",
+        "addr": "PO BOX 1954",
+        "city": "HOBE SOUND",
+        "state": "FL",
+        "zip": "33475",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_state": "FL",
+        "pte_zip": "33323",
+        "l1": 2823,
+        "l2": 124,
+        "page_number": 404
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 201
+      }
+    },
+    {
+      "success": true,
+      "page": 402,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "desc": "CO Nonresident Partner/Shareholder Agreement",
+        "partner": {
+          "name": "PETER L TOWNSEND REVOCABLE TRUST U/A",
+          "fein": "57-8540025",
+          "addr": "PO BOX 1954",
+          "city": "HOBE SOUND",
+          "st": "FL",
+          "zip": "33475"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "co_acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 402
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 181
+      }
+    },
+    {
+      "success": true,
+      "page": 406,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR 0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JUDY JAN",
+        "ssn": "332-34-0530",
+        "sh_addr": "121 WILLOW BRANCH LANE",
+        "sh_city": "CHELSEA",
+        "sh_st": "AL",
+        "sh_zip": "35043",
+        "resident": false,
+        "dr0108": true,
+        "dr0107": true,
+        "b1a": 266,
+        "b1b": 4,
+        "b13a": 3380,
+        "b13b": 51,
+        "page_number": 406
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 182
+      }
+    },
+    {
+      "success": true,
+      "page": 424,
+      "data": {
+        "t": "form",
+        "form": "IL-1120-ST",
+        "y": 2023,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "step4": {
+          "l14": 398815,
+          "l22": 398815
+        },
+        "step5": {
+          "l24": 186114,
+          "l34": 186114,
+          "l35": 212701
+        },
+        "step6": {
+          "l36": 0,
+          "l37": 0,
+          "l38": 0,
+          "l39": 212701,
+          "l40": 5644406,
+          "l41": 192771,
+          "l42": 0.034153,
+          "l43": 7264,
+          "l44": 0,
+          "l45": 0,
+          "l46": 7264
+        },
+        "unitary": "B",
+        "page_number": 424
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 164
+      }
+    },
+    {
+      "success": true,
+      "page": 427,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": "5 of 5",
+        "members": [
+          {
+            "name": "JEANNETTE BROPHY",
+            "addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+            "type": "I",
+            "ssn": "578-54-9478",
+            "E": 18611,
+            "G": 636,
+            "H": 31,
+            "I": 0,
+            "J": 31,
+            "K": 0
+          },
+          {
+            "name": "WILLIAM P. WEIL",
+            "addr": "1624 DUBLIN DRIVE, RICHMOND HILL, GA 31324",
+            "type": "I",
+            "ssn": "121-36-5311",
+            "E": 17958,
+            "G": 613,
+            "H": 30,
+            "I": 0,
+            "J": 30,
+            "K": 0
+          },
+          {
+            "name": "ROBERT DUGAN",
+            "addr": "1821 CANBY COURT, MARCO ISLAND, FL 34145",
+            "type": "I",
+            "ssn": "018-44-0380",
+            "E": 107314,
+            "G": 3665,
+            "H": 181,
+            "I": 0,
+            "J": 181,
+            "K": 0
+          }
+        ],
+        "page_number": 427
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 269
+      }
+    },
+    {
+      "success": true,
+      "page": 426,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "l3": 186114.0,
+        "l4a": 354.0,
+        "l4d": 410.0,
+        "l5": 764.0,
+        "page_number": 426
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 75
+      }
+    },
+    {
+      "success": true,
+      "page": 418,
+      "data": {
+        "t": "form",
+        "form": "GA-600S",
+        "y": 2023,
+        "pg": 3,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sch9": {
+          "ga": 204035,
+          "everywhere": 5644406,
+          "ratio": 0.036148
+        },
+        "preparer": "MEREDITH TUCKER, CPA",
+        "firm": "KAUFMAN, ROSSIN & CO., P.A.",
+        "firm_ein": "59-1818353",
+        "date": "03/28/2024",
+        "auth_discuss": true,
+        "page_number": 418
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 127
+      }
+    },
+    {
+      "success": true,
+      "page": 409,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "desc": "CO Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "JAN JUDY",
+          "ssn4": "0530",
+          "addr": "121 WILLOW BRANCH LANE",
+          "city": "CHELSEA",
+          "st": "AL",
+          "zip": "35043"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 409
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 430,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": "5 of 5",
+        "members": [
+          {
+            "name": "PETER L. TOWNSEND",
+            "addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+            "type": "I",
+            "ssn4": "2267",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "J": 5
+          },
+          {
+            "name": "MEGAN RYAN",
+            "addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+            "type": "I",
+            "ssn4": "5170",
+            "E": 89,
+            "F": "R",
+            "G": 0,
+            "H": 0,
+            "I": 0,
+            "J": 0,
+            "K": 0
+          },
+          {
+            "name": "PATRICK RYAN",
+            "addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+            "type": "I",
+            "ssn4": "8526",
+            "E": 88,
+            "F": "R",
+            "G": 0,
+            "H": 0,
+            "I": 0,
+            "J": 0,
+            "K": 0
+          }
+        ],
+        "page_number": 430
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 261
+      }
+    },
+    {
+      "success": true,
+      "page": 416,
+      "data": {
+        "t": "form",
+        "form": "GA-600S",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "st": "FL",
+        "zip": "33323",
+        "naics": "334500",
+        "inc_date": "04/26/1988",
+        "inc_st": "FL",
+        "ga_admit": "04/26/1988",
+        "bus_type": "MANUFACTURING",
+        "phone": "954-835-0900",
+        "sh_total": 31,
+        "sh_nonres": 30,
+        "rep": "JASON WOLK",
+        "period": {
+          "beg": "01/01/2024",
+          "end": "12/31/2024"
+        },
+        "original": true,
+        "init_net_worth": true,
+        "extension": true,
+        "page_number": 416
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 187
+      }
+    },
+    {
+      "success": true,
+      "page": 411,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity": "Individual",
+        "ssn": "332-34-0530",
+        "name": "JUDY JAN",
+        "addr": "121 WILLOW BRANCH LANE",
+        "city": "CHELSEA",
+        "state": "AL",
+        "zip": "35043",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_state": "FL",
+        "pte_zip": "33323",
+        "l1": 4.0,
+        "l2": 0.0,
+        "page_number": 411
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 184
+      }
+    },
+    {
+      "success": true,
+      "page": 428,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "name": "TYLER M. TOWNSEND",
+            "addr": "319 VIA DE LINDA",
+            "city": "SAN JUAN CAPISTRANO",
+            "st": "CA",
+            "zip": "92675",
+            "type": "I",
+            "ssn": "569-23-2044",
+            "E": 2658,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "PAUL T. TOWNSEND",
+            "addr": "319 VIA DE LINDA",
+            "city": "SAN JUAN CAPISTRANO",
+            "st": "CA",
+            "zip": "92675",
+            "type": "I",
+            "ssn": "573-77-5516",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "DONALD JAN",
+            "addr": "2247 SUTTON DRIVE",
+            "city": "SOUTH ELGIN",
+            "st": "IL",
+            "zip": "60177",
+            "type": "I",
+            "ssn": "355-30-2864",
+            "E": 0,
+            "F": "R",
+            "G": 0,
+            "H": 0,
+            "I": 0,
+            "J": 0,
+            "K": 0
+          }
+        ],
+        "page_number": 428
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 292
+      }
+    },
+    {
+      "success": true,
+      "page": 429,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "name": "SUSAN DUGAN",
+            "addr": "1821 CANBY COURT",
+            "city": "MARCO ISLAND",
+            "st": "FL",
+            "zip": "34145",
+            "type": "I",
+            "ssn4": "8523",
+            "E": 256,
+            "G": 8
+          },
+          {
+            "name": "OSCAR L. MILES",
+            "addr": "918 PAWN AVENUE",
+            "city": "QUINCY",
+            "st": "IL",
+            "zip": "62305",
+            "type": "I",
+            "ssn4": "9122",
+            "E": 532,
+            "F": "R",
+            "G": 0
+          },
+          {
+            "name": "LYNN D. JULIAN",
+            "addr": "3724 S. LORETTA DRI",
+            "city": "SALT LAKE CITY",
+            "st": "UT",
+            "zip": "84106",
+            "type": "I",
+            "ssn4": "8274",
+            "E": 177,
+            "G": 6
+          }
+        ],
+        "page_number": 429
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 226
+      }
+    },
+    {
+      "success": true,
+      "page": 417,
+      "data": {
+        "t": "form",
+        "form": "GA-600S",
+        "y": 2023,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sch3": {
+          "l1": 150000,
+          "l2": 691884,
+          "l3": 514456,
+          "l4": 1356340,
+          "l5": 1.0,
+          "l6": 1356340,
+          "l7": 750
+        },
+        "sch4": {
+          "l1_tax": 750,
+          "l1_nwt": 750,
+          "l2": 750
+        },
+        "sch5": {
+          "l4": 0.036148
+        },
+        "sch6": {},
+        "page_number": 417
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 146
+      }
+    },
+    {
+      "success": true,
+      "page": 432,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "name": "DAVID REDANZ",
+            "addr": "9428 LAKE SERENA DR",
+            "city": "BOCA RATON",
+            "st": "FL",
+            "zip": "33496",
+            "type": "I",
+            "ssn": "108-54-4953",
+            "E": 2658,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "JACOB SWICK",
+            "addr": "4088 GREEN ORCHARD",
+            "city": "WINTER GARDEN",
+            "st": "FL",
+            "zip": "34787",
+            "type": "I",
+            "ssn": "219-13-5963",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "CHRISTOPHER CROSSAN",
+            "addr": "321 18TH AVE NE",
+            "city": "NAPLES",
+            "st": "FL",
+            "zip": "34120",
+            "type": "I",
+            "ssn": "264-69-0931",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          }
+        ],
+        "page_number": 432
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 279
+      }
+    },
+    {
+      "success": true,
+      "page": 439,
+      "data": {
+        "t": "form",
+        "form": "IL Schedule NLD",
+        "pg": 2,
+        "y": 2023,
+        "desc": "Net Loss Deduction - Step 2 & Discharge Worksheet",
+        "blank": true,
+        "page_number": 439
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 51
+      }
+    },
+    {
+      "success": true,
+      "page": 442,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "578-54-9478",
+        "sh": 3,
+        "b55": 31,
+        "page_number": 442
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 50
+      }
+    },
+    {
+      "success": true,
+      "page": 437,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "name": "JUDY JAN",
+            "addr": "121 WILLOW BRANCH L",
+            "city": "CHELSEA",
+            "st": "AL",
+            "zip": "35043",
+            "type": "I",
+            "ssn": "332-34-0530",
+            "E": 266,
+            "G": 9,
+            "H": 0,
+            "I": 0,
+            "J": 0,
+            "K": 0
+          }
+        ],
+        "page_number": 437
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 123
+      }
+    },
+    {
+      "success": true,
+      "page": 431,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "name": "DEBRA MALOY-WALSH",
+            "addr": "14 MACAFFER DRIVE",
+            "city": "MENANDA",
+            "st": "NY",
+            "zip": "12204",
+            "type": "I",
+            "ssn4": "9344",
+            "E": 266,
+            "G": 9,
+            "H": 0,
+            "I": 0,
+            "J": 0,
+            "K": 0
+          },
+          {
+            "name": "JENNIFER MALOY-KEOG",
+            "addr": "54 COLLYER PLACE",
+            "city": "WHITE PLAINS",
+            "st": "NY",
+            "zip": "10605",
+            "type": "I",
+            "ssn4": "9318",
+            "E": 266,
+            "G": 9,
+            "H": 0,
+            "I": 0,
+            "J": 0,
+            "K": 0
+          },
+          {
+            "name": "JASON G. WOLK",
+            "addr": "2573 JARDIN PL",
+            "city": "WESTON",
+            "st": "FL",
+            "zip": "33327",
+            "type": "I",
+            "ssn4": "8469",
+            "E": 18612,
+            "G": 635,
+            "H": 31,
+            "I": 0,
+            "J": 31,
+            "K": 0
+          }
+        ],
+        "page_number": 431
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 272
+      }
+    },
+    {
+      "success": true,
+      "page": 433,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": "5 of 5",
+        "members": [
+          {
+            "name": "ANDREW T. BROPHY",
+            "addr": "3213 PICKWICK LANE",
+            "city": "CHEVY CHASE",
+            "st": "MD",
+            "zip": "20815",
+            "type": "I",
+            "ssn4": "2637",
+            "E": 3988,
+            "G": 136,
+            "H": 7,
+            "I": 0,
+            "J": 7,
+            "K": 0
+          },
+          {
+            "name": "BRENDA B. PIVIROTTO",
+            "addr": "3711 BRADLEY LANE",
+            "city": "CHEVY CHASE",
+            "st": "MD",
+            "zip": "20815",
+            "type": "I",
+            "ssn4": "5503",
+            "E": 3988,
+            "G": 136,
+            "H": 7,
+            "I": 0,
+            "J": 7,
+            "K": 0
+          },
+          {
+            "name": "OLIVIA B. PIVIROTTO",
+            "addr": "3711 BRADLEY LANE",
+            "city": "CHEVY CHASE",
+            "st": "MD",
+            "zip": "20815",
+            "type": "I",
+            "ssn4": "6434",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          }
+        ],
+        "page_number": 433
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 283
+      }
+    },
+    {
+      "success": true,
+      "page": 448,
+      "data": {
+        "t": "K1sup",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "sh": 5,
+        "ssn4": "0380",
+        "b55": 181,
+        "page_number": 448
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 45
+      }
+    },
+    {
+      "success": true,
+      "page": 434,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "name": "THEODORA F. BROPHY",
+            "addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+            "type": "I",
+            "ssn": "212-57-2988",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "PAUL T. PIVIROTTO",
+            "addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+            "type": "I",
+            "ssn": "220-57-4916",
+            "E": 2658,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "JULIETTE I. BROPHY",
+            "addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+            "type": "I",
+            "ssn": "218-59-5390",
+            "E": 2659,
+            "G": 90,
+            "H": 4,
+            "I": 0,
+            "J": 4,
+            "K": 0
+          }
+        ],
+        "page_number": 434
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 271
+      }
+    },
+    {
+      "success": true,
+      "page": 440,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 1",
+        "form": "IL-1120-ST",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "desc": "Income/Loss of Shareholders Subject to Replacement Tax",
+        "items": [
+          {
+            "sh": 36,
+            "name": "PETER L TOWNSEND REVOCABLE TRUST U/A/D 6/8/22",
+            "v": 186114
+          }
+        ],
+        "total": 186114,
+        "page_number": 440
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 107
+      }
+    },
+    {
+      "success": true,
+      "page": 436,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "n": 1,
+            "name": "FINLEY TOWNSEND",
+            "addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+            "type": "I",
+            "ssn4": "2105",
+            "E": 2598,
+            "G": 88,
+            "H": 4,
+            "I": 0,
+            "J": 4,
+            "K": 0
+          },
+          {
+            "n": 2,
+            "name": "MARY ANN FURUTA",
+            "addr": "27101 WEST COVENTRY, BARRINGTON, IL 62305",
+            "type": "I",
+            "ssn4": "3920",
+            "E": 3190,
+            "F": "R",
+            "G": 0,
+            "H": 0,
+            "I": 0,
+            "J": 0,
+            "K": 0
+          },
+          {
+            "n": 3,
+            "name": "PETER L TOWNSEND RE TRUST U/A/D 6/8/22",
+            "addr": "PO BOX 1954, HOBE SOUND, FL 33475",
+            "type": "T",
+            "ssn4": "0025",
+            "D": true,
+            "E": 186114,
+            "G": 6357,
+            "H": 410,
+            "I": 0,
+            "J": 410,
+            "K": 0
+          }
+        ],
+        "page_number": 436
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 293
+      }
+    },
+    {
+      "success": true,
+      "page": 443,
+      "data": {
+        "t": "stmt",
+        "form": "IL-K1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 3,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "y": 2023,
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 18611
+          },
+          {
+            "l": 2,
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Add lines 1 and 2",
+            "v": 18611
+          },
+          {
+            "l": 4,
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Subtract line 4 from line 3",
+            "v": 18611
+          }
+        ],
+        "page_number": 443
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 441,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "state": "IL",
+        "attach": 12,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "JEANNETTE BROPHY",
+        "sh_addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+        "ssn4": "9478",
+        "pct": 4.666667,
+        "entity": "individual",
+        "sh_num": 3,
+        "b20a": 18611,
+        "b20b": 636,
+        "page_number": 441
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 136
+      }
+    },
+    {
+      "success": true,
+      "page": 438,
+      "data": {
+        "t": "form",
+        "form": "IL-NLD",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "st": "IL",
+        "attach": 6,
+        "carry_end": "12/23",
+        "colA": {
+          "loss_yr": "12/20",
+          "l1": 21546,
+          "l2a_yr": "12/22",
+          "l2a": 1342,
+          "l2b": 0,
+          "l2c": 0,
+          "l2d": 1342,
+          "l3": 20204,
+          "l4": 7264,
+          "l5": 7264,
+          "l6": 7264,
+          "l7": 7264,
+          "l8": 0,
+          "l9": 0,
+          "l10": 12940
+        },
+        "colC": {
+          "l5": 7264
+        },
+        "page_number": 438
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 171
+      }
+    },
+    {
+      "success": true,
+      "page": 445,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "pg": 2,
+        "y": 2024,
+        "ein": "121-36-5311",
+        "sh": 4,
+        "b55": 30,
+        "page_number": 445
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 50
+      }
+    },
+    {
+      "success": true,
+      "page": 446,
+      "data": {
+        "t": "stmt",
+        "ref": "IL SCH K-1-P",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": 4,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "y": 2023,
+        "items": [
+          {
+            "l": "1",
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 17958
+          },
+          {
+            "l": "2",
+            "d": "Share of additions",
+            "v": 0
+          },
+          {
+            "l": "3",
+            "d": "Add lines 1 and 2",
+            "v": 17958
+          },
+          {
+            "l": "4",
+            "d": "Share of subtractions",
+            "v": 0
+          },
+          {
+            "l": "5",
+            "d": "Subtract line 4 from line 3",
+            "v": 17958
+          }
+        ],
+        "page_number": 446
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 435,
+      "data": {
+        "t": "form",
+        "form": "IL-SchB",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 5,
+        "members": [
+          {
+            "name": "CHRISTOPHER B. BROP",
+            "addr": "3213 PICKWICK LANE",
+            "city": "CHEVY CHASE",
+            "st": "MD",
+            "zip": "20815",
+            "type": "I",
+            "ssn4": "5908",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "RAYMOND C. BROPHY",
+            "addr": "480 SABAL PALM LANE",
+            "city": "VERO BEACH",
+            "st": "FL",
+            "zip": "32963",
+            "type": "I",
+            "ssn4": "4148",
+            "E": 2659,
+            "G": 91,
+            "H": 5,
+            "I": 0,
+            "J": 5,
+            "K": 0
+          },
+          {
+            "name": "PARKER TOWNSEND",
+            "addr": "319 VIA DE LINDA",
+            "city": "SAN JUAN CAPISTRANO",
+            "st": "CA",
+            "zip": "92675",
+            "type": "I",
+            "ssn4": "6726",
+            "E": 2597,
+            "G": 89,
+            "H": 4,
+            "I": 0,
+            "J": 4,
+            "K": 0
+          }
+        ],
+        "page_number": 435
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 279
+      }
+    },
+    {
+      "success": true,
+      "page": 450,
+      "data": {
+        "t": "form",
+        "form": "IL-K1P",
+        "y": 2023,
+        "state": "IL",
+        "attach": 12,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apportion": 0.034153,
+        "sh": "TYLER M. TOWNSEND",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "ssn4": "2044",
+        "pct": 0.666667,
+        "entity": "individual",
+        "sh_num": 6,
+        "b20a": 2658,
+        "b20b": 91,
+        "page_number": 450
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 136
+      }
+    },
+    {
+      "success": true,
+      "page": 449,
+      "data": {
+        "t": "stmt",
+        "ref": "IL SCH K-1-P",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 5,
+        "desc": "Member's Share of Distributable Base Income or Loss",
+        "items": [
+          {
+            "l": 1,
+            "d": "Share of income from IL-1120-ST line 14",
+            "v": 107314
+          },
+          {
+            "l": 2,
+            "d": "Additions distributable",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Lines 1 and 2",
+            "v": 107314
+          },
+          {
+            "l": 4,
+            "d": "Subtractions distributable",
+            "v": 0
+          },
+          {
+            "l": 5,
+            "d": "Line 3 minus line 4",
+            "v": 107314
+          }
+        ],
+        "page_number": 449
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 164
+      }
+    },
+    {
+      "success": true,
+      "page": 447,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "st": "IL",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "type": "S corporation",
+        "apport": 0.034153,
+        "sh": "ROBERT DUGAN",
+        "sh_addr": "1821 CANBY COURT, MARCO ISLAND, FL 34145",
+        "ssn4": "0380",
+        "pct": 26.908174,
+        "entity": "individual",
+        "b20a": 107314,
+        "b20b": 3665,
+        "sh_num": 5,
+        "page_number": 447
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 134
+      }
+    },
+    {
+      "success": true,
+      "page": 444,
+      "data": {
+        "t": "form",
+        "form": "IL-K-1-P",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "apport": 0.034153,
+        "sh": "WILLIAM P. WEIL",
+        "ssn4": "5311",
+        "sh_addr": "1624 DUBLIN DRIVE, RICHMOND HILL, GA 31324",
+        "pct": 4.502667,
+        "entity": "individual",
+        "b20a": 17958,
+        "b20b": 613,
+        "sh_num": 4,
+        "page_number": 444
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 125
+      }
+    },
+    {
+      "success": true,
+      "page": 413,
+      "data": {
+        "t": "form",
+        "form": "IT-303",
+        "st": "GA",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "state": "FL",
+        "zip": "33323",
+        "type": [
+          "Corporate Income Tax",
+          "Net Worth Tax"
+        ],
+        "period_beg": "01/01/24",
+        "period_end": "12/31/23",
+        "ext_to": "09/16/24",
+        "signed": "03/28/24",
+        "page_number": 413
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 127
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 450,
+    "pages_successful": 450,
+    "cache_read_tokens": 5696046,
+    "cache_write_tokens": 320904,
+    "input_tokens": 689400,
+    "output_tokens": 54863,
+    "errors": 0
+  },
+  "cost": 9.672248
+}

@@ -1,0 +1,2031 @@
+{
+  "batch": 17,
+  "pages_range": [
+    801,
+    850
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 814,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 814
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 817,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 817
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 829,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 829
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 811,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 811
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 808,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 808
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 826,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 826
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 823,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 823
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 802,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 802
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 801,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "SUSAN DUGAN",
+        "sh_id": "353-36-8523",
+        "sh_addr": "1821 CANBY COURT, MARCO ISLAND, FL 34145",
+        "pct": 0.064292,
+        "final": true,
+        "nonres": true,
+        "b1_fed": 256,
+        "b1_sc": 251,
+        "b1_sc_alloc": 5,
+        "b14_sc": 5,
+        "page_number": 801
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 164
+      }
+    },
+    {
+      "success": true,
+      "page": 803,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "SUSAN DUGAN",
+        "ssn": "353-36-8523",
+        "corp": "THOR GUARD, INC.",
+        "pct": 0.064,
+        "items": [
+          {
+            "l": 1,
+            "a": 256,
+            "b": 5,
+            "c": 5
+          },
+          {
+            "l": 2,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 3,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 5,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 7,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 10,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 11,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 12,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 16,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 20,
+            "a": -76,
+            "b": -1
+          },
+          {
+            "l": 22,
+            "c": 5
+          }
+        ],
+        "page_number": 803
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 246
+      }
+    },
+    {
+      "success": true,
+      "page": 805,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 805
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 820,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 820
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 813,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "MEGAN RYAN",
+        "sh_id": "343-82-5170",
+        "sh_addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+        "pct": 0.022267,
+        "nonres": true,
+        "b1_a": 89,
+        "b1_c": 87,
+        "b1_d": 2,
+        "b14": 2,
+        "page_number": 813
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 162
+      }
+    },
+    {
+      "success": true,
+      "page": 806,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "ws": 2,
+        "name": "OSCAR L. MILES",
+        "ssn": "326-32-9122",
+        "corp": "THOR GUARD, INC.",
+        "own_pct": 0.133,
+        "cols": {
+          "A": {
+            "l1": 532,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -71,
+            "l21": 0
+          },
+          "B": {
+            "l1": 11,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -1,
+            "l21": 0
+          },
+          "C": {
+            "l1": 11,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 11
+          }
+        },
+        "page_number": 806
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 335
+      }
+    },
+    {
+      "success": true,
+      "page": 830,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "DAVID REDANZ",
+        "ssn": "108-54-4953",
+        "bus": "THOR GUARD, INC.",
+        "pct": 0.667,
+        "cols": {
+          "A": {
+            "l1": 2658,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": -1,
+            "l20": -356,
+            "l21": 0
+          },
+          "B": {
+            "l1": 51,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -7,
+            "l21": 0
+          },
+          "C": {
+            "l1": 51,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 51
+          }
+        },
+        "page_number": 830
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 330
+      }
+    },
+    {
+      "success": true,
+      "page": 824,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "JENNIFER MALOY-KEOGH",
+        "ssn4": "9318",
+        "corp": "THOR GUARD, INC.",
+        "pct": 0.067,
+        "cols": {
+          "A": {
+            "l1": 266,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -35,
+            "l21": 0
+          },
+          "B": {
+            "l1": 6,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -1,
+            "l21": 0
+          },
+          "C": {
+            "l1": 6,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 6
+          }
+        },
+        "page_number": 824
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 330
+      }
+    },
+    {
+      "success": true,
+      "page": 827,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "JASON G. WOLK",
+        "ssn": "267-69-8469",
+        "bus": "THOR GUARD, INC.",
+        "pct": 4.667,
+        "cols": {
+          "A": "Federal K-1",
+          "B": "SC K-1",
+          "C": "SC active trade"
+        },
+        "items": [
+          {
+            "l": 1,
+            "a": 18612,
+            "b": 363,
+            "c": 363
+          },
+          {
+            "l": 2,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 3,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 5,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 7,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 10,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 11,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 12,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 16,
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "l": 17,
+            "a": -3,
+            "b": 0
+          },
+          {
+            "l": 20,
+            "a": -2492,
+            "b": -49
+          },
+          {
+            "l": 21,
+            "a": 0,
+            "b": 0
+          },
+          {
+            "l": 22,
+            "c": 363
+          }
+        ],
+        "page_number": 827
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 301
+      }
+    },
+    {
+      "success": true,
+      "page": 832,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 832
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 822,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "sh_id": "105-46-9318",
+        "sh_addr": "54 COLLYER PLACE, WHITE PLAINS, NY 10605",
+        "pct": 0.066667,
+        "nonres": true,
+        "b1_fed": 266,
+        "b1_sc": 260,
+        "b1_alloc": 6,
+        "b14": 6,
+        "page_number": 822
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 164
+      }
+    },
+    {
+      "success": true,
+      "page": 807,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "LYNN D. JULIAN",
+        "sh_id": "076-46-8274",
+        "sh_addr": "3724 S. LORETTA DRIVE, SALT LAKE CITY, UT 84106",
+        "pct": 0.0444,
+        "nonres": true,
+        "b1a": 177,
+        "b1c": 174,
+        "b1d": 3,
+        "b14": 3,
+        "page_number": 807
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 163
+      }
+    },
+    {
+      "success": true,
+      "page": 815,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "MEGAN RYAN",
+        "ssn4": "5170",
+        "corp": "THOR GUARD, INC.",
+        "pct": 0.022,
+        "cols": {
+          "A": {
+            "l1": 89,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -12,
+            "l21": 0
+          },
+          "B": {
+            "l1": 2,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": 0,
+            "l21": 0
+          },
+          "C": {
+            "l1": 2,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 2
+          }
+        },
+        "page_number": 815
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 324
+      }
+    },
+    {
+      "success": true,
+      "page": 810,
+      "data": {
+        "t": "K1_SC",
+        "y": 2023,
+        "form": "SC1120S K-1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "PETER L. TOWNSEND, JR",
+        "sh_id": "557-92-2267",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1a": 2659,
+        "b1c": 2607,
+        "b1d": 52,
+        "b14": 52,
+        "b15": 3,
+        "page_number": 810
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 169
+      }
+    },
+    {
+      "success": true,
+      "page": 812,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "PETER L. TOWNSEND, JR",
+        "ssn4": "2267",
+        "corp": "THOR GUARD, INC.",
+        "pct": 0.667,
+        "fed": {
+          "b1": 2659,
+          "b2": 0,
+          "b3": 0,
+          "b5": 0,
+          "b6": 0,
+          "b7": 0,
+          "b8": 0,
+          "b9a": 0,
+          "b9b": 0,
+          "b9c": 0,
+          "b10": 0,
+          "b11": 0,
+          "b12": 0,
+          "b13": 0,
+          "b15": 0,
+          "b16": 0,
+          "b17": 0,
+          "b20": -356,
+          "b21": 0
+        },
+        "sc": {
+          "b1": 52,
+          "b2": 0,
+          "b3": 0,
+          "b5": 0,
+          "b7": 0,
+          "b10": 0,
+          "b11": 0,
+          "b12": 0,
+          "b16": 0,
+          "b20": -7,
+          "b21": 0
+        },
+        "sc_active": {
+          "b1": 52,
+          "b2": 0,
+          "b3": 0,
+          "b5": 0,
+          "b7": 0,
+          "b10": 0,
+          "b11": 0,
+          "b12": 0,
+          "b16": 0,
+          "total": 52
+        },
+        "page_number": 812
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 286
+      }
+    },
+    {
+      "success": true,
+      "page": 809,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "LYNN D. JULIAN",
+        "ssn4": "8274",
+        "bus": "THOR GUARD, INC.",
+        "pct": 0.044,
+        "cols": {
+          "A": {
+            "l1": 177,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -24,
+            "l21": 0
+          },
+          "B": {
+            "l1": 3,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": 0,
+            "l21": 0
+          },
+          "C": {
+            "l1": 3,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 3
+          }
+        },
+        "page_number": 809
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 325
+      }
+    },
+    {
+      "success": true,
+      "page": 819,
+      "data": {
+        "t": "K1_SC",
+        "y": 2023,
+        "form": "SC1120S K-1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "DEBRA MALOY-WALSH",
+        "sh_id": "105-46-9344",
+        "sh_addr": "14 MACAFFER DRIVE, MENANDA, NY 12204",
+        "pct": 0.066667,
+        "nonres": true,
+        "b1a": 266,
+        "b1c": 261,
+        "b1d": 5,
+        "b14d": 5,
+        "page_number": 819
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 157
+      }
+    },
+    {
+      "success": true,
+      "page": 818,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "PATRICK RYAN",
+        "ssn4": "8526",
+        "bus": "THOR GUARD, INC.",
+        "pct": 0.022,
+        "cols": {
+          "A": {
+            "l1": 88,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -11,
+            "l21": 0
+          },
+          "B": {
+            "l1": 1,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": 0,
+            "l21": 0
+          },
+          "C": {
+            "l1": 1,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 1
+          }
+        },
+        "page_number": 818
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 323
+      }
+    },
+    {
+      "success": true,
+      "page": 816,
+      "data": {
+        "t": "K1_SC",
+        "y": 2023,
+        "form": "SC1120S K-1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "PATRICK RYAN",
+        "sh_id": "357-88-8526",
+        "sh_addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+        "pct": 0.0222,
+        "nonres": true,
+        "b1_a": 88,
+        "b1_c": 87,
+        "b1_d": 1,
+        "b14_d": 1,
+        "page_number": 816
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 159
+      }
+    },
+    {
+      "success": true,
+      "page": 821,
+      "data": {
+        "t": "form",
+        "form": "SC I-335B",
+        "y": 2023,
+        "ws": 2,
+        "name": "DEBRA MALOY-WALSH",
+        "ssn4": "9344",
+        "corp": "THOR GUARD, INC.",
+        "pct": 0.067,
+        "colA": {
+          "l1": 266,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": 0,
+          "l20": -36,
+          "l21": 0
+        },
+        "colB": {
+          "l1": 5,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": 0,
+          "l20": -1,
+          "l21": 0
+        },
+        "colC": {
+          "l1": 5,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l7": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l16": 0,
+          "l22": 5
+        },
+        "page_number": 821
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 329
+      }
+    },
+    {
+      "success": true,
+      "page": 825,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "y": 2023,
+        "form": "SC1120S K-1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "JASON G. WOLK",
+        "sh_id": "267-69-8469",
+        "sh_addr": "2573 JARDIN PL, WESTON, FL 33327",
+        "pct": 4.666667,
+        "nonres": true,
+        "b1_fed": 18612,
+        "b1_sc": 18249,
+        "b1_alloc": 363,
+        "b14": 363,
+        "b15": 18,
+        "page_number": 825
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 169
+      }
+    },
+    {
+      "success": true,
+      "page": 804,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "OSCAR L. MILES",
+        "sh_id": "326-32-9122",
+        "sh_addr": "918 PAWN AVENUE, QUINCY, IL 62305",
+        "pct": 0.133333,
+        "nonres": true,
+        "b1a": 532,
+        "b1c": 521,
+        "b1d": 11,
+        "b14d": 11,
+        "b15d": 1,
+        "page_number": 804
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 163
+      }
+    },
+    {
+      "success": true,
+      "page": 828,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "DAVID REDANZ",
+        "sh_id": "108-54-4953",
+        "sh_addr": "9428 LAKE SERENA DR, BOCA RATON, FL 33496",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1_fed": 2658,
+        "b1_sc": 2607,
+        "b1_alloc": 51,
+        "b14": 51,
+        "b15": 3,
+        "page_number": 828
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 166
+      }
+    },
+    {
+      "success": true,
+      "page": 835,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 835
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 831,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "JACOB SWICK",
+        "sh_id": "219-13-5963",
+        "sh_addr": "4088 GREEN ORCHARD AVE, WINTER GARDEN, FL 34787",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1a": 2659,
+        "b1c": 2606,
+        "b1d": 53,
+        "b14": 53,
+        "b15": 3,
+        "page_number": 831
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 165
+      }
+    },
+    {
+      "success": true,
+      "page": 838,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 838
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 841,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 841
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 834,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "sh_id": "264-69-0931",
+        "sh": "CHRISTOPHER CROSSAN",
+        "sh_addr": "321 18TH AVE NE, NAPLES, FL 34120",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1_fed": 2659,
+        "b1_sc": 2607,
+        "b1_alloc": 52,
+        "b14": 52,
+        "b15": 3,
+        "page_number": 834
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 168
+      }
+    },
+    {
+      "success": true,
+      "page": 844,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 844
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 850,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 850
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 839,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "ANDREW T. BROPHY",
+        "ssn4": "2637",
+        "corp": "THOR GUARD, INC.",
+        "pct": 1.0,
+        "cols": {
+          "A": {
+            "l1": 3988,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": -1,
+            "l20": -534,
+            "l21": 0
+          },
+          "B": {
+            "l1": 77,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -10,
+            "l21": 0
+          },
+          "C": {
+            "l1": 77,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 77
+          }
+        },
+        "page_number": 839
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 329
+      }
+    },
+    {
+      "success": true,
+      "page": 842,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "BRENDA B. PIVIROTTO",
+        "ssn4": "5503",
+        "corp": "THOR GUARD, INC.",
+        "pct": 1.0,
+        "colA": {
+          "l1": 3988,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": -1,
+          "l20": -534,
+          "l21": 0
+        },
+        "colB": {
+          "l1": 78,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": 0,
+          "l20": -10,
+          "l21": 0
+        },
+        "colC": {
+          "l1": 78,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l7": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l16": 0,
+          "l22": 78
+        },
+        "page_number": 842
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 330
+      }
+    },
+    {
+      "success": true,
+      "page": 836,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "ws": 2,
+        "name": "CHRISTOPHER CROSSAN",
+        "ssn4": "0931",
+        "bus": "THOR GUARD, INC.",
+        "pct": 0.667,
+        "colA": {
+          "l1": 2659,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": 0,
+          "l20": -356,
+          "l21": 0
+        },
+        "colB": {
+          "l1": 52,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": 0,
+          "l20": -7,
+          "l21": 0
+        },
+        "colC": {
+          "l1": 52,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l7": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l16": 0,
+          "l22": 52
+        },
+        "page_number": 836
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 329
+      }
+    },
+    {
+      "success": true,
+      "page": 847,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 847
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 843,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "OLIVIA B. PIVIROTTO",
+        "sh_id": "215-49-6434",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1_a": 2659,
+        "b1_c": 2607,
+        "b1_d": 52,
+        "b14": 52,
+        "b15": 3,
+        "page_number": 843
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 166
+      }
+    },
+    {
+      "success": true,
+      "page": 845,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "ws": 2,
+        "name": "OLIVIA B. PIVIROTTO",
+        "ssn4": "6434",
+        "bus": "THOR GUARD, INC.",
+        "pct": 0.667,
+        "colA": {
+          "l1": 2659,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": 0,
+          "l20": -356,
+          "l21": 0
+        },
+        "colB": {
+          "l1": 52,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9a": 0,
+          "l9b": 0,
+          "l9c": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l13": 0,
+          "l15": 0,
+          "l16": 0,
+          "l17": 0,
+          "l20": -7,
+          "l21": 0
+        },
+        "colC": {
+          "l1": 52,
+          "l2": 0,
+          "l3": 0,
+          "l5": 0,
+          "l7": 0,
+          "l10": 0,
+          "l11": 0,
+          "l12": 0,
+          "l16": 0,
+          "l22": 52
+        },
+        "page_number": 845
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 333
+      }
+    },
+    {
+      "success": true,
+      "page": 840,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "BRENDA B. PIVIROTTO",
+        "sh_id": "577-76-5503",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "pct": 1.0,
+        "nonres": true,
+        "b1a": 3988,
+        "b1c": 3910,
+        "b1d": 78,
+        "b14": 78,
+        "b15": 4,
+        "page_number": 840
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 162
+      }
+    },
+    {
+      "success": true,
+      "page": 833,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "name": "JACOB SWICK",
+        "ssn": "219-13-5963",
+        "bus": "THOR GUARD, INC.",
+        "pct": 0.667,
+        "cols": {
+          "A": {
+            "l1": 2659,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -356,
+            "l21": 0
+          },
+          "B": {
+            "l1": 53,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l6": 0,
+            "l7": 0,
+            "l8": 0,
+            "l9a": 0,
+            "l9b": 0,
+            "l9c": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l13": 0,
+            "l15": 0,
+            "l16": 0,
+            "l17": 0,
+            "l20": -7,
+            "l21": 0
+          },
+          "C": {
+            "l1": 53,
+            "l2": 0,
+            "l3": 0,
+            "l5": 0,
+            "l7": 0,
+            "l10": 0,
+            "l11": 0,
+            "l12": 0,
+            "l16": 0,
+            "l22": 53
+          }
+        },
+        "page_number": 833
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 329
+      }
+    },
+    {
+      "success": true,
+      "page": 849,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "PAUL T. PIVIROTTO",
+        "sh_id": "220-57-4916",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1_fed": 2658,
+        "b1_sc": 2607,
+        "b1_alloc": 51,
+        "b14": 51,
+        "b15": 3,
+        "page_number": 849
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 171
+      }
+    },
+    {
+      "success": true,
+      "page": 837,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2023,
+        "sh": "ANDREW T. BROPHY",
+        "sh_id": "577-68-2637",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "pct": 1.0,
+        "nonres": true,
+        "colA": {
+          "b1": 3988
+        },
+        "colC": {
+          "b1": 3911
+        },
+        "colD": {
+          "b1": 77,
+          "b14": 77,
+          "b15": 4
+        },
+        "page_number": 837
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 178
+      }
+    },
+    {
+      "success": true,
+      "page": 848,
+      "data": {
+        "t": "form",
+        "form": "I-335B",
+        "st": "SC",
+        "y": 2023,
+        "ws": 2,
+        "name": "THEODORA F. BROPHY",
+        "ssn4": "2988",
+        "bus": "THOR GUARD, INC.",
+        "pct": 0.667,
+        "colA": {
+          "b1": 2659,
+          "b2": 0,
+          "b3": 0,
+          "b5": 0,
+          "b6": 0,
+          "b7": 0,
+          "b8": 0,
+          "b9a": 0,
+          "b9b": 0,
+          "b9c": 0,
+          "b10": 0,
+          "b11": 0,
+          "b12": 0,
+          "b13": 0,
+          "b15": 0,
+          "b16": 0,
+          "b17": -1,
+          "b20": -356,
+          "b21": 0
+        },
+        "colB": {
+          "b1": 52,
+          "b2": 0,
+          "b3": 0,
+          "b5": 0,
+          "b6": 0,
+          "b7": 0,
+          "b8": 0,
+          "b9a": 0,
+          "b9b": 0,
+          "b9c": 0,
+          "b10": 0,
+          "b11": 0,
+          "b12": 0,
+          "b13": 0,
+          "b15": 0,
+          "b16": 0,
+          "b17": 0,
+          "b20": -7,
+          "b21": 0
+        },
+        "colC": {
+          "b1": 52,
+          "b2": 0,
+          "b3": 0,
+          "b5": 0,
+          "b7": 0,
+          "b10": 0,
+          "b11": 0,
+          "b12": 0,
+          "b16": 0,
+          "b22": 52
+        },
+        "page_number": 848
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 333
+      }
+    },
+    {
+      "success": true,
+      "page": 846,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "THEODORA F. BROPHY",
+        "sh_id": "212-57-2988",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1_a": 2659,
+        "b1_c": 2607,
+        "b1_d": 52,
+        "b14_d": 52,
+        "b15_d": 3,
+        "page_number": 846
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 850,
+    "pages_successful": 850,
+    "cache_read_tokens": 11044446,
+    "cache_write_tokens": 320904,
+    "input_tokens": 1302200,
+    "output_tokens": 112054,
+    "errors": 0
+  },
+  "cost": 16.840223
+}

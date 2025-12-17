@@ -1,0 +1,123 @@
+{
+  "I. Borrower and Property Information": {
+    "Borrower Name": "Toby J Lason",
+    "Co-Borrower Name": "Christina M Lason",
+    "Property Address": "33025 Christina Dr. Dana Point, CA 92629",
+    "Property Type": {
+      "1 unit": "True",
+      "Manufactured Housing": "False",
+      "Single Wide": "False",
+      "Multiwide": "False"
+    },
+    "Project Classification": {
+      "Freddie Mac": "True",
+      "Fannie Mae": "False"
+    },
+    "Occupancy Status": {
+      "Primary Residence": "True",
+      "Second Home": "False",
+      "Investment Property": "False"
+    },
+    "Additional Property Information": {
+      "Number of Units": "1",
+      "Sales Price": "$1,595,000",
+      "Appraised Value": "$1,600,000",
+      "Property Rights": {
+        "Fee Simple": "True",
+        "Leasehold": "False"
+      }
+    }
+  },
+  "II. Mortgage Information": {
+    "Loan Type": {
+      "Conventional": "True",
+      "FHA": "False",
+      "VA": "False",
+      "USDA/RHS": "False"
+    },
+    "Amortization Type": {
+      "Fixed-Rate--Monthly Payments": "True",
+      "Fixed-Rate--Biweekly Payments": "False",
+      "Balloon": "False",
+      "ARM (type)": "False",
+      "Other (specify)": "False"
+    },
+    "Loan Purpose": {
+      "Purchase": "True",
+      "Cash-Out Refinance": "False",
+      "Limited Cash-Out Refinance (Fannie)": "False",
+      "No Cash-Out Refinance (Freddie)": "False",
+      "Home Improvement": "False",
+      "Construction to Permanent": "False"
+    },
+    "Lien Position": {
+      "First Mortgage": "True",
+      "Second Mortgage": "False"
+    },
+    "Note Information": {
+      "Original Loan Amount": "$1,276,000.00",
+      "Initial Note Rate": "6.875%",
+      "Loan Term": "360"
+    },
+    "Buydown": {
+      "Yes": "False",
+      "No": "True",
+      "Terms": "False"
+    }
+  },
+  "III. Underwriting Information": {
+    "Underwriter's Name": "Toni Kessler",
+    "Appraiser's Name/License #": "Jeffrey Carrillo / AR034216",
+    "Appraisal Company Name": "TAG The Appraisal Group, Inc.",
+    "Stable Monthly Income": {
+      "Base Income": "$21,759.79",
+      "Other Income": "$0.00",
+      "Positive Cash Flow": "$0.00",
+      "Total Income": "$21,759.79"
+    },
+    "Qualifying Ratios": {
+      "Primary Housing Expense/Income": "46.663%",
+      "Total Obligations/Income": "47.669%",
+      "Debt-to-Housing Gap Ratio (Freddie)": "1.006%",
+      "LTV": "80.000%",
+      "CLTV/TLTV": "80.000%",
+      "HCLTV/HLTV": "80.000%"
+    },
+    "Qualifying Rate": {
+      "Note Rate": "True",
+      "% Above Note Rate": "False",
+      "% Below Note Rate": "False",
+      "Bought-Down Rate": "False",
+      "Other": "False"
+    },
+    "Level of Property Review": {
+      "Exterior/Interior": "True",
+      "Exterior Only": "False",
+      "No Appraisal": "False"
+    },
+    "Present Housing Payment": "$2,838.00",
+    "Proposed Monthly Payments": {
+      "First Mortgage P&I": "$8,382.41",
+      "Second Mortgage P&I": "$0.00",
+      "Hazard Insurance": "$267.93",
+      "Taxes": "$1,503.40",
+      "Mortgage Insurance": "$0.00",
+      "HOA Fees": "$0.00",
+      "Lease/Ground Rent": "$0.00",
+      "Other": "$219.00",
+      "Total Primary Housing Expense": "$10,153.74",
+      "Other Obligations": "$0.00",
+      "Negative Cash Flow": "$0.00",
+      "All Other Monthly Payments": "$219.00",
+      "Total All Monthly Payments": "$10,372.74"
+    },
+    "Borrower Funds to Close": "$289,905.81",
+    "Verified Assets": "$646,592.15",
+    "Source of Funds": "34",
+    "No. of Months Reserves": "34",
+    "Interested Party Contributions": "No",
+    "Community Lending/Affordable Housing Initiative": "No",
+    "Home Buyers/Homeownership Education Certificate": "No"
+  },
+  "IV. Seller, Contract, and Contact Information": {}
+}

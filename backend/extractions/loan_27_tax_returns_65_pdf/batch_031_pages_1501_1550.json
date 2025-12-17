@@ -1,0 +1,1640 @@
+{
+  "batch": 31,
+  "pages_range": [
+    1501,
+    1550
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 1502,
+      "data": {
+        "t": "form",
+        "form": "MN S Corp Est Tax Worksheet",
+        "st": "MN",
+        "l1": 605,
+        "l3": 605,
+        "l5": 605,
+        "vouchers": {
+          "a": {
+            "v1": 610,
+            "total": 610
+          },
+          "c": {
+            "v1": 610,
+            "total": 610
+          }
+        },
+        "page_number": 1502
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 1514,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "y": 2024,
+        "pg": 2,
+        "sh": "JEANNETTE BROPHY",
+        "ssn": "578549478",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "cont": true,
+        "page_number": 1514
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 1527,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "TYLER M TOWNSEND",
+        "ssn4": "2044",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 308,
+        "l40": 41,
+        "l50": 0.00852,
+        "l51": 41,
+        "l52": 4,
+        "l52_elect": true,
+        "page_number": 1527
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 104
+      }
+    },
+    {
+      "success": true,
+      "page": 1530,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "y": 2024,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "sh": "PAUL T TOWNSEND",
+        "sh_id": "573775516",
+        "cont": true,
+        "page_number": 1530
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 77
+      }
+    },
+    {
+      "success": true,
+      "page": 1503,
+      "data": {
+        "t": "form",
+        "form": "MN-1116",
+        "desc": "S Corp Estimated Tax Payment Voucher",
+        "y": 2025,
+        "q": 1,
+        "corp": "THOR GUARD, INC.",
+        "preparer": "JASON WOLK",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE FL 33323",
+        "ptin": "P00848596",
+        "mn_id": "9083842",
+        "ein": "650057716",
+        "tax_yr_end": "123125",
+        "amt": 610,
+        "page_number": 1503
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 119
+      }
+    },
+    {
+      "success": true,
+      "page": 1511,
+      "data": {
+        "t": "form",
+        "form": "MN-EST",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650057716",
+        "mn_id": "9083842",
+        "l1": 605,
+        "l3": 605,
+        "l4": 545,
+        "l5": 147,
+        "l6": 147,
+        "l13": {
+          "A": 36,
+          "B": 37,
+          "C": 37,
+          "D": 37
+        },
+        "l16": {
+          "A": 36,
+          "B": 37,
+          "C": 37,
+          "D": 37
+        },
+        "l17": {
+          "A": "03152025",
+          "B": "03152025",
+          "C": "03152025",
+          "D": "03152025"
+        },
+        "l22": 8,
+        "stmt": "1",
+        "page_number": 1511
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 156
+      }
+    },
+    {
+      "success": true,
+      "page": 1523,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "ROBERT DUGAN",
+        "ssn": "018440380",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 12453,
+        "l40": 1664,
+        "l42": 5,
+        "l50": 0.00852,
+        "l51": 1669,
+        "l52": 164,
+        "l52_x": true,
+        "page_number": 1523
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 110
+      }
+    },
+    {
+      "success": true,
+      "page": 1507,
+      "data": {
+        "t": "voucher",
+        "st": "MN",
+        "form": "1116",
+        "desc": "S Corporation Return Payment",
+        "corp": "THOR GUARD, INC.",
+        "contact": "JASON WOLK",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE FL 33323",
+        "ptin": "P00848596",
+        "mn_id": "9083842",
+        "ein": "650057716",
+        "ye": "123124",
+        "amt": 8.0,
+        "page_number": 1507
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 105
+      }
+    },
+    {
+      "success": true,
+      "page": 1519,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "WILLIAM P WEIL",
+        "sh_fed_id": "121365311",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 2079,
+        "l40": 278,
+        "l42": 1,
+        "l50": 0.00852,
+        "l51": 279,
+        "l52": 27,
+        "l52_elect": true,
+        "page_number": 1519
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 112
+      }
+    },
+    {
+      "success": true,
+      "page": 1505,
+      "data": {
+        "t": "form",
+        "form": "MN-1116",
+        "desc": "S Corp Estimated Tax Payment Voucher",
+        "voucher": 3,
+        "corp": "THOR GUARD, INC.",
+        "contact": "JASON WOLK",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE FL 33323",
+        "preparer_id": "P00848596",
+        "mn_tax_id": "9083842",
+        "ein": "650057716",
+        "tax_year_end": "123125",
+        "amt": 0,
+        "page_number": 1505
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 1526,
+      "data": {
+        "t": "state_K1",
+        "st": "MN",
+        "y": 2024,
+        "pg": 2,
+        "sh": "TYLER M TOWNSEND",
+        "ssn": "569232044",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "cont": true,
+        "page_number": 1526
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 1509,
+      "data": {
+        "t": "form",
+        "form": "M8",
+        "y": 2024,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "st": "MN",
+        "l14": 605,
+        "l16": 605,
+        "l18": 605,
+        "l19": 605,
+        "l23": 8,
+        "l24": 8,
+        "pay_method": "Check",
+        "officer": "JASON WOLK",
+        "officer_phone": "9548350900",
+        "preparer": "MEREDITH TUCKER, CPA",
+        "ptin": "P00848596",
+        "prep_date": "03/21/2025",
+        "prep_phone": "9545664400",
+        "page_number": 1509
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 151
+      }
+    },
+    {
+      "success": true,
+      "page": 1520,
+      "data": {
+        "t": "form",
+        "form": "MN_KS_WS",
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 4,
+        "steps": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 40-48",
+            "v": 279
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 279
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 279
+          }
+        ],
+        "page_number": 1520
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 186
+      }
+    },
+    {
+      "success": true,
+      "page": 1525,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2024,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "TYLER M TOWNSEND",
+        "sh_id": "569232044",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "cont": true,
+        "page_number": 1525
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 1515,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "JEANNETTE BROPHY",
+        "ssn": "578549478",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 2155,
+        "l40": 288,
+        "l42": 1,
+        "l50": 0.00852,
+        "l51": 289,
+        "l52": 28,
+        "l52_elect": true,
+        "page_number": 1515
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 110
+      }
+    },
+    {
+      "success": true,
+      "page": 1504,
+      "data": {
+        "t": "form",
+        "form": "MN-1116",
+        "desc": "S Corp Estimated Tax Payment Voucher",
+        "voucher": 2,
+        "corp": "THOR GUARD, INC.",
+        "officer": "JASON WOLK",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE FL 33323",
+        "preparer_id": "P00848596",
+        "mn_tax_id": "9083842",
+        "ein": "650057716",
+        "tax_year_end": "123125",
+        "amt": 0,
+        "page_number": 1504
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 1510,
+      "data": {
+        "t": "form",
+        "form": "M8A",
+        "y": 2024,
+        "st": "MN",
+        "desc": "Apportionment and Minimum Fee",
+        "l5": {
+          "a": 55910,
+          "b": 6564366,
+          "c": 0.00852
+        },
+        "l6": 55910,
+        "l8": 55910,
+        "page_number": 1510
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 1522,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "y": 2024,
+        "pg": 2,
+        "sh": "ROBERT DUGAN",
+        "ssn4": "0380",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "cont": true,
+        "page_number": 1522
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 1513,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2024,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "JEANNETTE BROPHY",
+        "sh_id": "578549478",
+        "sh_addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 4.6667,
+        "cont": true,
+        "page_number": 1513
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 142
+      }
+    },
+    {
+      "success": true,
+      "page": 1506,
+      "data": {
+        "t": "form",
+        "form": "MN-1116",
+        "desc": "S Corp Estimated Tax Payment Voucher",
+        "voucher": 4,
+        "corp": "THOR GUARD, INC.",
+        "contact": "JASON WOLK",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE FL 33323",
+        "preparer_id": "P00848596",
+        "mn_tax_id": "9083842",
+        "fein": "650057716",
+        "tax_year_end": "123125",
+        "amt": 0,
+        "page_number": 1506
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 119
+      }
+    },
+    {
+      "success": true,
+      "page": 1518,
+      "data": {
+        "t": "K1_state",
+        "st": "KS",
+        "pg": 2,
+        "y": 2024,
+        "sh": "WILLIAM P WEIL",
+        "ssn": "121365311",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "cont": true,
+        "page_number": 1518
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 75
+      }
+    },
+    {
+      "success": true,
+      "page": 1501,
+      "data": {
+        "t": "form",
+        "form": "LA-1120",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "state": "LA",
+        "l1": 6564365,
+        "l2": 1147374,
+        "l3": 5416991,
+        "l5": 2206,
+        "l11": 5419197,
+        "l12": 459344,
+        "l13": 1632839,
+        "l14": 16732,
+        "l16": 155918,
+        "l17": 158902,
+        "l18": 97855,
+        "l20": 4437,
+        "l23": 80968,
+        "l25": 69492,
+        "l27": 2016327,
+        "l28": 4692814,
+        "l29": 726383,
+        "page_number": 1501
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 149
+      }
+    },
+    {
+      "success": true,
+      "page": 1524,
+      "data": {
+        "t": "stmt",
+        "form": "MN Source Income",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 5,
+        "desc": "Nonresident Shareholder",
+        "items": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 40-48",
+            "v": 1669
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 1669
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 1669
+          }
+        ],
+        "page_number": 1524
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 181
+      }
+    },
+    {
+      "success": true,
+      "page": 1508,
+      "data": {
+        "t": "form",
+        "form": "M8",
+        "st": "MN",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083838",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "state": "FL",
+        "zip": "33323",
+        "k1_count": 29,
+        "sh_count": 29,
+        "type": "Composite Income Tax",
+        "l4": 605,
+        "l6": 605,
+        "page_number": 1508
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 112
+      }
+    },
+    {
+      "success": true,
+      "page": 1516,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 3,
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "steps": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 40-48",
+            "v": 289
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 289
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 289
+          }
+        ],
+        "page_number": 1516
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 189
+      }
+    },
+    {
+      "success": true,
+      "page": 1517,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2024,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "WILLIAM P WEIL",
+        "sh_id": "121365311",
+        "sh_addr": "1624 DUBLIN DRIVE, RICHMOND HILL, GA 31324",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 4.5027,
+        "cont": true,
+        "page_number": 1517
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1521,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2024,
+        "state": "MN",
+        "sh": "ROBERT DUGAN",
+        "ssn": "018440380",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh_addr": "1821 CANBY COURT, MARCO ISLAND, FL 34145",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 26.9725,
+        "cont": true,
+        "page_number": 1521
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 137
+      }
+    },
+    {
+      "success": true,
+      "page": 1529,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2024,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "PAUL T TOWNSEND",
+        "sh_id": "573775516",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "cont": true,
+        "page_number": 1529
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 143
+      }
+    },
+    {
+      "success": true,
+      "page": 1528,
+      "data": {
+        "t": "stmt",
+        "form": "MN_Source",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "sh": 6,
+        "items": [
+          {
+            "step": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "step": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "step": 8,
+            "d": "Add Schedule KS lines 40-48",
+            "v": 41
+          },
+          {
+            "step": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 41
+          },
+          {
+            "step": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "step": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 41
+          }
+        ],
+        "page_number": 1528
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 182
+      }
+    },
+    {
+      "success": true,
+      "page": 1512,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "desc": "MN SCHEDULE EST - COMPUTATION OF UNDERPAYMENT PENALTY",
+        "items": [
+          {
+            "qtr": "A",
+            "events": [
+              {
+                "type": "Q",
+                "rem": 36,
+                "start": "04/15/2024",
+                "end": "12/31/2024",
+                "days": 260,
+                "rate": 8.0,
+                "pen": 2
+              },
+              {
+                "type": "L",
+                "rem": 36,
+                "start": "12/31/2024",
+                "end": "03/15/2025",
+                "days": 74,
+                "rate": 8.0,
+                "pen": 1
+              }
+            ]
+          },
+          {
+            "qtr": "B",
+            "events": [
+              {
+                "type": "Q",
+                "rem": 37,
+                "start": "06/17/2024",
+                "end": "12/31/2024",
+                "days": 197,
+                "rate": 8.0,
+                "pen": 2
+              },
+              {
+                "type": "L",
+                "rem": 37,
+                "start": "12/31/2024",
+                "end": "03/15/2025",
+                "days": 74,
+                "rate": 8.0,
+                "pen": 1
+              }
+            ]
+          },
+          {
+            "qtr": "C",
+            "events": [
+              {
+                "type": "Q",
+                "rem": 37,
+                "start": "09/16/2024",
+                "end": "12/31/2024",
+                "days": 106,
+                "rate": 8.0,
+                "pen": 1
+              },
+              {
+                "type": "L",
+                "rem": 37,
+                "start": "12/31/2024",
+                "end": "03/15/2025",
+                "days": 74,
+                "rate": 8.0,
+                "pen": 1
+              }
+            ]
+          },
+          {
+            "qtr": "D",
+            "events": [
+              {
+                "type": "Q",
+                "rem": 37,
+                "start": "01/15/2025",
+                "end": "03/15/2025",
+                "days": 59,
+                "rate": 8.0,
+                "pen": 0
+              }
+            ]
+          }
+        ],
+        "total": 8,
+        "page_number": 1512
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 397
+      }
+    },
+    {
+      "success": true,
+      "page": 1531,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "PAUL T TOWNSEND",
+        "ssn": "573775516",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 308,
+        "l40": 41,
+        "l50": 0.00852,
+        "l51": 41,
+        "l52": 4,
+        "l52_elect": true,
+        "page_number": 1531
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 104
+      }
+    },
+    {
+      "success": true,
+      "page": 1532,
+      "data": {
+        "t": "stmt",
+        "form": "MN_Source",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 7,
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "items": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 40-48",
+            "v": 41
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 41
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 41
+          }
+        ],
+        "page_number": 1532
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 182
+      }
+    },
+    {
+      "success": true,
+      "page": 1533,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "st": "MN",
+        "y": 2024,
+        "period": {
+          "beg": "2024-01-01",
+          "end": "2024-12-31"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "OSCAR L MILES",
+        "sh_id": "326329122",
+        "sh_addr": "918 PAWN AVENUE, QUINCY, IL 62305",
+        "entity": "Individual",
+        "pct": 0.1333,
+        "cont": true,
+        "page_number": 1533
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 154
+      }
+    },
+    {
+      "success": true,
+      "page": 1538,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "st": "MN",
+        "form": "KS",
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "sh": "LYNN D JULIAN",
+        "ssn": "076468274",
+        "cont": true,
+        "page_number": 1538
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 78
+      }
+    },
+    {
+      "success": true,
+      "page": 1539,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "pg": 3,
+        "y": 2024,
+        "sh": "LYNN D JULIAN",
+        "sh_id": "076468274",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 20,
+        "l40": 3,
+        "l50": 0.00852,
+        "l51": 3,
+        "l52": "X",
+        "page_number": 1539
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 96
+      }
+    },
+    {
+      "success": true,
+      "page": 1535,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "OSCAR L MILES",
+        "ssn": "326329122",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 62,
+        "l40": 8,
+        "l50": 0.00852,
+        "l51": 8,
+        "l52": 1,
+        "l52_elect": true,
+        "page_number": 1535
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 102
+      }
+    },
+    {
+      "success": true,
+      "page": 1543,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "PETER L TOWNSEND",
+        "ssn4": "2267",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 308,
+        "l40": 41,
+        "l50": 0.00852,
+        "l51": 41,
+        "l52": 4,
+        "l52_elect": true,
+        "page_number": 1543
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 104
+      }
+    },
+    {
+      "success": true,
+      "page": 1550,
+      "data": {
+        "t": "K1_state",
+        "st": "KS",
+        "y": 2024,
+        "pg": 2,
+        "sh": "PATRICK RYAN",
+        "ssn": "357888526",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "cont": true,
+        "page_number": 1550
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 73
+      }
+    },
+    {
+      "success": true,
+      "page": 1534,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "y": 2024,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "sh": "OSCAR L MILES",
+        "ssn": "326329122",
+        "cont": true,
+        "page_number": 1534
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 1540,
+      "data": {
+        "t": "form",
+        "form": "MN_KS",
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "corp": "THOR GUARD INC",
+        "ein": "650057716",
+        "sh": 14,
+        "steps": {
+          "s3_pct": 0.8,
+          "s6_pct": 0.00852,
+          "s8": 3,
+          "s9": 3,
+          "s13_pct": 0.00852,
+          "s17": 3
+        },
+        "page_number": 1540
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 105
+      }
+    },
+    {
+      "success": true,
+      "page": 1546,
+      "data": {
+        "t": "state_K1",
+        "st": "MN",
+        "y": 2024,
+        "pg": 2,
+        "sh": "MEGAN RYAN",
+        "ssn": "343825170",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "cont": true,
+        "page_number": 1546
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 1545,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2024,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "mn_tax_id": "9083842",
+        "sh": "MEGAN RYAN",
+        "sh_id": "343825170",
+        "sh_addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+        "entity": "Individual",
+        "pct": 0.0223,
+        "cont": true,
+        "page_number": 1545
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 117
+      }
+    },
+    {
+      "success": true,
+      "page": 1536,
+      "data": {
+        "t": "stmt",
+        "form": "MN Source Income",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 13,
+        "desc": "Nonresident Shareholder",
+        "items": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 40-48",
+            "v": 8
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 8
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 8
+          }
+        ],
+        "page_number": 1536
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 178
+      }
+    },
+    {
+      "success": true,
+      "page": 1542,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "y": 2024,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "sh": "PETER L TOWNSEND",
+        "ssn": "557922267",
+        "cont": true,
+        "page_number": 1542
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 1547,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2024,
+        "pg": 3,
+        "sh": "MEGAN RYAN",
+        "ssn": "343825170",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l39": 10,
+        "l40": 2,
+        "l50": 0.00852,
+        "l51": 2,
+        "l52": "X",
+        "page_number": 1547
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 95
+      }
+    },
+    {
+      "success": true,
+      "page": 1549,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "st": "MN",
+        "y": 2024,
+        "period": {
+          "beg": "01/01/2024",
+          "end": "12/31/2024"
+        },
+        "sh": "PATRICK RYAN",
+        "sh_id": "357888526",
+        "sh_addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+        "entity": "Individual",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "pct": 0.0222,
+        "cont": true,
+        "page_number": 1549
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 159
+      }
+    },
+    {
+      "success": true,
+      "page": 1537,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "st": "MN",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "LYNN D JULIAN",
+        "sh_id": "076468274",
+        "sh_addr": "3724 S. LORETTA DRIVE, SALT LAKE CITY, UT 84106",
+        "entity": "Individual",
+        "pct": 0.0444,
+        "cont": true,
+        "page_number": 1537
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 115
+      }
+    },
+    {
+      "success": true,
+      "page": 1544,
+      "data": {
+        "t": "stmt",
+        "form": "MN Source Income",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 15,
+        "desc": "Nonresident Shareholder",
+        "items": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 8,
+            "d": "Schedule KS lines 40-48",
+            "v": 41
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 41
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 41
+          }
+        ],
+        "page_number": 1544
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 177
+      }
+    },
+    {
+      "success": true,
+      "page": 1548,
+      "data": {
+        "t": "stmt",
+        "form": "MN_Source_Income",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 16,
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "items": [
+          {
+            "step": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "step": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "step": 8,
+            "d": "Add Schedule KS lines 40-48",
+            "v": 2
+          },
+          {
+            "step": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 2
+          },
+          {
+            "step": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00852
+          },
+          {
+            "step": 17,
+            "d": "Total to Schedule KS line 51",
+            "v": 2
+          }
+        ],
+        "page_number": 1548
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 184
+      }
+    },
+    {
+      "success": true,
+      "page": 1541,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2024,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "PETER L TOWNSEND",
+        "sh_id": "557922267",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "cont": true,
+        "page_number": 1541
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 143
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 1550,
+    "pages_successful": 1550,
+    "cache_read_tokens": 20404146,
+    "cache_write_tokens": 320904,
+    "input_tokens": 2375151,
+    "output_tokens": 215980,
+    "errors": 0
+  },
+  "cost": 29.482978000000003
+}

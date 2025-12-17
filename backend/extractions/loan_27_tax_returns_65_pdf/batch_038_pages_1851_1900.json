@@ -1,0 +1,2011 @@
+{
+  "batch": 38,
+  "pages_range": [
+    1851,
+    1900
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 1860,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1860
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1852,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1852
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1870,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1870
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1868,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1868
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1858,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1858
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1856,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1856
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1878,
+      "data": {
+        "t": "form",
+        "form": "1125-A",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "l1": 1907601,
+        "l2": 861621,
+        "l4": 248872,
+        "l5": 27618,
+        "l6": 3045712,
+        "l7": 1898338,
+        "l8": 1147374,
+        "inv_method": "cost",
+        "s263a": "no",
+        "inv_change": "no",
+        "page_number": 1878
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 108
+      }
+    },
+    {
+      "success": true,
+      "page": 1862,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1862
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1853,
+      "data": {
+        "t": "K1_SC",
+        "y": 2024,
+        "form": "SC1120S K-1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "THEODORA F. BROPHY",
+        "sh_id": "212-57-2988",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1_a": 4828,
+        "b1_c": 4645,
+        "b1_d": 183,
+        "b4_a": 15,
+        "b4_c": 14,
+        "b4_d": 1,
+        "b14": 184,
+        "b15": 9,
+        "page_number": 1853
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 188
+      }
+    },
+    {
+      "success": true,
+      "page": 1851,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "OLIVIA B. PIVIROTTO",
+        "sh_id": "215-49-6434",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1": {
+          "fed": 4828,
+          "sc": 4645,
+          "alloc": 183
+        },
+        "b4": {
+          "fed": 15,
+          "sc": 14,
+          "alloc": 1
+        },
+        "b14": 184,
+        "b15": 9,
+        "page_number": 1851
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1874,
+      "data": {
+        "t": "1120S",
+        "sch": "B",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "acct": "Accrual",
+        "bus": "MANUFACTURING",
+        "prod": "ELECTRONIC EQUIP",
+        "q3": "X",
+        "q4a": "X",
+        "q4b": "X",
+        "q5a": "X",
+        "q5b": "X",
+        "q6": "X",
+        "q9": "X",
+        "q10": "X",
+        "q11": "X",
+        "page_number": 1874
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 114
+      }
+    },
+    {
+      "success": true,
+      "page": 1872,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1872
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1866,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1866
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1879,
+      "data": {
+        "t": "form",
+        "form": "1125-E",
+        "y": 2024,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "officers": [
+          {
+            "name": "ROBERT M. DUGAN",
+            "ssn": "018-44-0380",
+            "pct_time": 100,
+            "pct_stock": 26.84,
+            "comp": 162000
+          },
+          {
+            "name": "JASON G. WOLK",
+            "ssn": "267-69-8469",
+            "pct_time": 100,
+            "pct_stock": 4.67,
+            "comp": 157846
+          },
+          {
+            "name": "JACOB A. SWICK",
+            "ssn": "219-13-5963",
+            "pct_time": 100,
+            "pct_stock": 0.67,
+            "comp": 139498
+          }
+        ],
+        "total": 459344,
+        "line4": 459344,
+        "page_number": 1879
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 184
+      }
+    },
+    {
+      "success": true,
+      "page": 1864,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1864
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1855,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "PAUL T. PIVIROTTO",
+        "sh_id": "220-57-4916",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1a": 4827,
+        "b1c": 4645,
+        "b1d": 182,
+        "b4a": 15,
+        "b4c": 14,
+        "b4d": 1,
+        "b14": 183,
+        "b15": 9,
+        "page_number": 1855
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 185
+      }
+    },
+    {
+      "success": true,
+      "page": 1875,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "K",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "b1": 724177,
+        "b4": 2206,
+        "b15a": 1297,
+        "b16c": 7243,
+        "b16d": 540000,
+        "page_number": 1875
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 77
+      }
+    },
+    {
+      "success": true,
+      "page": 1880,
+      "data": {
+        "t": "1120S",
+        "sch": "B-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "shareholders": [
+          {
+            "name": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+            "tin": "578-54-0025",
+            "type": "TRUST",
+            "responsible": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+            "resp_tin": "578-54-0025"
+          }
+        ],
+        "page_number": 1880
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 116
+      }
+    },
+    {
+      "success": true,
+      "page": 1859,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "CHRISTOPHER B. BROPHY",
+        "sh_id": "219-69-5908",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "nonres": true,
+        "colA": {
+          "b1": 4828,
+          "b4": 15
+        },
+        "colC": {
+          "b1": 4645,
+          "b4": 15
+        },
+        "colD": {
+          "b1": 183
+        },
+        "b14": 183,
+        "b15": 9,
+        "page_number": 1859
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 184
+      }
+    },
+    {
+      "success": true,
+      "page": 1865,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2024,
+        "sh": "FINLEY TOWNSEND",
+        "sh_id": "756-93-2105",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "pct": 0.651333,
+        "nonres": true,
+        "colA": {
+          "b1": 4717,
+          "b4": 14
+        },
+        "colC": {
+          "b1": 4538,
+          "b4": 13
+        },
+        "colD": {
+          "b1": 179,
+          "b4": 1
+        },
+        "b14": 180,
+        "b15": 9,
+        "page_number": 1865
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 196
+      }
+    },
+    {
+      "success": true,
+      "page": 1877,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "M1M2",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "m1": {
+          "l1": 710838,
+          "l3a": 8302,
+          "l3b": 7243,
+          "l3_total": 15545,
+          "l4": 726383,
+          "l8": 726383
+        },
+        "m2": {
+          "l1": 1429420,
+          "l2": 724177,
+          "l3": 2206,
+          "l5": 7243,
+          "l6": 2148560,
+          "l7": 540000,
+          "l8": 1608560,
+          "d1": 10000,
+          "d6": 10000,
+          "d8": 10000
+        },
+        "page_number": 1877
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 159
+      }
+    },
+    {
+      "success": true,
+      "page": 1857,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "JULIETTE I. BROPHY",
+        "sh_id": "218-59-5390",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "pct": 0.666667,
+        "nonres": true,
+        "colA": {
+          "b1": 4828,
+          "b4": 14
+        },
+        "colC": {
+          "b1": 4645,
+          "b4": 14
+        },
+        "colD": {
+          "b1": 183
+        },
+        "L14": 183,
+        "L15": 9,
+        "page_number": 1857
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 186
+      }
+    },
+    {
+      "success": true,
+      "page": 1871,
+      "data": {
+        "t": "K1",
+        "form": "SC1120S",
+        "st": "SC",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "JUDY JAN",
+        "sh_id": "332-34-0530",
+        "sh_addr": "121 WILLOW BRANCH LANE, CHELSEA, AL 35043",
+        "pct": 0.066662,
+        "nonres": true,
+        "colA": {
+          "b1": 483,
+          "b4": 1
+        },
+        "colC": {
+          "b1": 464,
+          "b4": 1
+        },
+        "colD": {
+          "b1": 19,
+          "b14": 19,
+          "b15": 1
+        },
+        "page_number": 1871
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 176
+      }
+    },
+    {
+      "success": true,
+      "page": 1869,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "PETER L TOWNSEND REVOCABLE",
+        "sh_id": "578-54-0025",
+        "sh_addr": "PO BOX 1954, HOBE SOUND, FL 33475",
+        "pct": 46.666666,
+        "nonres": true,
+        "cols": {
+          "A": {
+            "b1": 337949,
+            "b4": 1030
+          },
+          "C": {
+            "b1": 325150,
+            "b4": 991
+          },
+          "D": {
+            "b1": 12799,
+            "b4": 39
+          }
+        },
+        "b14": 12838,
+        "b15": 642,
+        "page_number": 1869
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 200
+      }
+    },
+    {
+      "success": true,
+      "page": 1867,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "MARY ANN FURUTA",
+        "sh_id": "324-34-3920",
+        "sh_addr": "96 WATERVIEW COURT, LAKE BARRINGTON, IL 60010",
+        "pct": 0.8,
+        "nonres": true,
+        "b1": {
+          "a": 5793,
+          "c": 5574,
+          "d": 219
+        },
+        "b4": {
+          "a": 18,
+          "c": 17,
+          "d": 1
+        },
+        "b14": 220,
+        "b15": 11,
+        "page_number": 1867
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 181
+      }
+    },
+    {
+      "success": true,
+      "page": 1861,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "RAYMOND C. BROPHY",
+        "sh_id": "037-20-4148",
+        "sh_addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+        "pct": 0.666667,
+        "nonres": true,
+        "b1_fed": 4828,
+        "b1_sc": 4645,
+        "b1_apport": 183,
+        "b4_fed": 15,
+        "b4_sc": 14,
+        "b4_apport": 1,
+        "b14_net": 184,
+        "b15_wh": 9,
+        "page_number": 1861
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 199
+      }
+    },
+    {
+      "success": true,
+      "page": 1863,
+      "data": {
+        "t": "K1_state",
+        "st": "SC",
+        "form": "SC1120S K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "sh": "PARKER TOWNSEND",
+        "sh_id": "686-56-6726",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "pct": 0.651333,
+        "nonres": true,
+        "colA": {
+          "b1": 4717,
+          "b4": 14
+        },
+        "colC": {
+          "b1": 4538,
+          "b4": 14
+        },
+        "colD": {
+          "b1": 179
+        },
+        "L14": 179,
+        "L15": 9,
+        "page_number": 1863
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 190
+      }
+    },
+    {
+      "success": true,
+      "page": 1882,
+      "data": {
+        "t": "4562",
+        "y": 2024,
+        "pg": 2,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "l24a": true,
+        "l26": "SEE ATTACHED OVERFLOW",
+        "l26_depr": 4437,
+        "l28": 4437,
+        "page_number": 1882
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 71
+      }
+    },
+    {
+      "success": true,
+      "page": 1876,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "L",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "pg": 4,
+        "b17a": 2206,
+        "b18": 726383,
+        "assets": {
+          "l1": {
+            "b": 353352,
+            "d": 689532
+          },
+          "l2a": {
+            "a": 997522,
+            "c": 679553
+          },
+          "l2b": {
+            "b": 997522,
+            "d": 679553
+          },
+          "l3": {
+            "b": 1907601,
+            "d": 1898338
+          },
+          "l6": {
+            "a": "STMT6",
+            "b": 192315,
+            "d": 71741
+          },
+          "l10a": {
+            "a": 822887,
+            "c": 822887
+          },
+          "l10b": {
+            "a": 784672,
+            "b": 38215,
+            "c": 797411,
+            "d": 25476
+          },
+          "l13a": {
+            "a": 1996618,
+            "c": 1996618
+          },
+          "l13b": {
+            "a": 1996618,
+            "b": 0,
+            "c": 1996618,
+            "d": 0
+          },
+          "l15": {
+            "b": 3489005,
+            "d": 3364640
+          }
+        },
+        "liab": {
+          "l16": {
+            "b": 266034,
+            "d": 255638
+          },
+          "l17": {
+            "b": 15820,
+            "d": 0
+          },
+          "l18": {
+            "a": "STMT7",
+            "b": 178259,
+            "d": 9272
+          },
+          "l19": {
+            "b": 400000,
+            "d": 300000
+          },
+          "l20": {
+            "b": 967300,
+            "d": 967300
+          },
+          "l22": {
+            "b": 150000,
+            "d": 150000
+          },
+          "l23": {
+            "b": 691884,
+            "d": 691884
+          },
+          "l24": {
+            "a": "STMT8",
+            "b": 819708,
+            "d": 990546
+          },
+          "l27": {
+            "b": 3489005,
+            "d": 3364640
+          }
+        },
+        "page_number": 1876
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 402
+      }
+    },
+    {
+      "success": true,
+      "page": 1891,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 3,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 338
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 33795
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 97635
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 9829
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 306440
+          }
+        ],
+        "page_number": 1891
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1889,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 13",
+        "form": "1125-A",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "desc": "OTHER COSTS",
+        "items": [
+          {
+            "d": "CGS - OTHER COSTS",
+            "v": 27618
+          }
+        ],
+        "total": 27618,
+        "line": 5,
+        "page_number": 1889
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 81
+      }
+    },
+    {
+      "success": true,
+      "page": 1887,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 11",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "desc": "Reconciliation of Ending Schedule M-2 and Retained Earnings",
+        "items": [
+          {
+            "d": "Sch. M-2 Balances",
+            "aaa": 1608560,
+            "oaa": 10000
+          },
+          {
+            "d": "Prior Year Differences",
+            "aaa": -619712
+          },
+          {
+            "d": "Book to Tax Depreciation",
+            "aaa": -8302
+          }
+        ],
+        "subtotals": {
+          "aaa": 980546,
+          "oaa": 10000
+        },
+        "total_m2": 990546,
+        "re_sch_l": 990546,
+        "page_number": 1887
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 157
+      }
+    },
+    {
+      "success": true,
+      "page": 1888,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 12",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "form": "1125-A",
+        "desc": "ADDITIONAL SECTION 263A COSTS",
+        "items": [
+          {
+            "d": "CGS - ADDITIONAL SEC 263A COSTS",
+            "v": 248872
+          }
+        ],
+        "total": 248872,
+        "line": 4,
+        "page_number": 1888
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 92
+      }
+    },
+    {
+      "success": true,
+      "page": 1873,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "main",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "inc_date": "04/26/1988",
+        "s_date": "04/26/1988",
+        "assets": 3364640,
+        "gross": 6564365,
+        "cogs": 1147374,
+        "profit": 5416991,
+        "inc": 5416991,
+        "comp": 459344,
+        "wages": 1632839,
+        "repairs": 16732,
+        "bad_debt": 0,
+        "rents": 155918,
+        "taxes": 158902,
+        "interest": 97855,
+        "depr": 4437,
+        "adv": 80968,
+        "benefits": 69492,
+        "other_ded": 2016327,
+        "ded": 4692814,
+        "ord": 724177,
+        "preparer": "MEREDITH TUCKER, CPA",
+        "prep_firm": "KAUFMAN, ROSSIN & CO., P.A.",
+        "prep_addr": "100 SE 3RD AVENUE, SUITE 2400, FT. LAUDERDALE, FL 33394",
+        "prep_phone": "954-566-4400",
+        "prep_ein": "59-1818353",
+        "ptin": "P00848596",
+        "prep_date": "03/21/25",
+        "page_number": 1873
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 300
+      }
+    },
+    {
+      "success": true,
+      "page": 1894,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 4,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 326
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 32607
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 94204
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 9484
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 295671
+          }
+        ],
+        "page_number": 1894
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1886,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "stmts": [
+          {
+            "ref": "8",
+            "sch": "L",
+            "desc": "Analysis of Total Retained Earnings Per Books",
+            "items": [
+              {
+                "d": "Balance at beginning of year",
+                "v": 819708
+              },
+              {
+                "d": "Net income per books",
+                "v": 710838
+              },
+              {
+                "d": "Distributions",
+                "v": -540000
+              }
+            ],
+            "total": 990546
+          },
+          {
+            "ref": "9",
+            "sch": "M-2",
+            "desc": "AAA Other Additions",
+            "items": [
+              {
+                "d": "Portfolio interest income",
+                "v": 2206
+              }
+            ],
+            "total": 2206
+          },
+          {
+            "ref": "10",
+            "sch": "M-2",
+            "desc": "AAA Other Reductions",
+            "items": [
+              {
+                "d": "Nondeductible expenses",
+                "v": 7243
+              }
+            ],
+            "total": 7243
+          }
+        ],
+        "page_number": 1886
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 195
+      }
+    },
+    {
+      "success": true,
+      "page": 1898,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 5,
+        "k3": "not prepared",
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 1461096
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 1265767
+          }
+        ],
+        "page_number": 1898
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 101
+      }
+    },
+    {
+      "success": true,
+      "page": 1892,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 3,
+        "items": [
+          {
+            "b": "17AJ",
+            "d": "Aggregate gross income/gain",
+            "v": 252793
+          },
+          {
+            "b": "17AJ",
+            "d": "Aggregate deductions",
+            "v": 218998
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1892
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 90
+      }
+    },
+    {
+      "success": true,
+      "page": 1883,
+      "data": {
+        "t": "4562",
+        "y": 2024,
+        "part": "V",
+        "line": 26,
+        "title": "Listed Property >50% Business Use",
+        "vehicles": [
+          {
+            "desc": "LEXUS RC350",
+            "date": "08/10/15",
+            "bus_pct": 70,
+            "cost": 66612,
+            "basis": 41028,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #2",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 29111,
+            "basis": 21111,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1085
+          },
+          {
+            "desc": "2016 AUDI",
+            "date": "05/01/16",
+            "bus_pct": 70,
+            "cost": 52879,
+            "basis": 31415,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #1",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 28730,
+            "basis": 20730,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 726
+          },
+          {
+            "desc": "2022 CHEVROLET",
+            "date": "01/14/22",
+            "bus_pct": 70,
+            "cost": 63695,
+            "basis": 31146,
+            "life": 5,
+            "method": "200DB-HY"
+          }
+        ],
+        "total": 4437,
+        "page_number": 1883
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 311
+      }
+    },
+    {
+      "success": true,
+      "page": 1900,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 6,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 48
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4827
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13947
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1405
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1900
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1895,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 4,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate business activity gross income or gain",
+            "v": 243909
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate business activity deductions",
+            "v": 211302
+          }
+        ],
+        "page_number": 1895
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 90
+      }
+    },
+    {
+      "success": true,
+      "page": 1881,
+      "data": {
+        "t": "4562",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "bus": "OTHER DEPRECIATION",
+        "macrs": [
+          {
+            "class": "25-year",
+            "rec": "25 yrs.",
+            "method": "S/L"
+          },
+          {
+            "class": "Residential rental",
+            "rec": "27.5 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "Residential rental",
+            "rec": "27.5 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "Nonresidential real",
+            "rec": "39 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "Nonresidential real",
+            "conv": "MM",
+            "method": "S/L"
+          }
+        ],
+        "ads": [
+          {
+            "class": "Class life",
+            "method": "S/L"
+          },
+          {
+            "class": "12-year",
+            "rec": "12 yrs.",
+            "method": "S/L"
+          },
+          {
+            "class": "30-year",
+            "rec": "30 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "40-year",
+            "rec": "40 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          }
+        ],
+        "b21": 4437,
+        "b22": 4437,
+        "page_number": 1881
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 274
+      }
+    },
+    {
+      "success": true,
+      "page": 1893,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "WILLIAM P. WEIL",
+        "ein_sh": "121-36-5311",
+        "entity": "INDIVIDUAL",
+        "pct": 4.502667,
+        "sh_shares_beg": 67540,
+        "sh_shares_end": 67540,
+        "b1": 32607,
+        "b4": 99,
+        "b15": [
+          {
+            "c": "A",
+            "v": 58
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 326
+          },
+          {
+            "c": "D",
+            "v": 24314
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 99
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1893
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 214
+      }
+    },
+    {
+      "success": true,
+      "page": 1890,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "JEANNETTE BROPHY",
+        "ssn4": "9478",
+        "sh_addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+        "entity": "INDIVIDUAL",
+        "pct": 4.666667,
+        "sh_shares_beg": 70000,
+        "sh_shares_end": 70000,
+        "b1": 33795,
+        "b4": 103,
+        "b15": [
+          {
+            "c": "A",
+            "v": 61
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 338
+          },
+          {
+            "c": "D",
+            "v": 25200
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 103
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1890
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 235
+      }
+    },
+    {
+      "success": true,
+      "page": 1897,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 5,
+        "y": 2024,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 1954
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 195329
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 564314
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 56812
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 1771166
+          }
+        ],
+        "page_number": 1897
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 145
+      }
+    },
+    {
+      "success": true,
+      "page": 1896,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "ROBERT DUGAN",
+        "ssn4": "0380",
+        "entity": "INDIVIDUAL",
+        "pct": 26.972467,
+        "sh_shares_beg": 404587,
+        "sh_shares_end": 404587,
+        "loans_beg": 100000,
+        "b1": 195329,
+        "b4": 595,
+        "b15": [
+          {
+            "c": "A",
+            "v": 350
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 1954
+          },
+          {
+            "c": "D",
+            "v": 145652
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 595
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1896
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 217
+      }
+    },
+    {
+      "success": true,
+      "page": 1885,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "stmts": [
+          {
+            "ref": "4",
+            "sch": "K",
+            "line": "16C",
+            "desc": "Nondeductible Expenses",
+            "items": [
+              {
+                "d": "Excluded Meals Expenses",
+                "v": 7243
+              }
+            ],
+            "total": 7243
+          },
+          {
+            "ref": "5",
+            "sch": "K",
+            "line": "17D",
+            "desc": "Other Items",
+            "items": [
+              {
+                "d": "Aggregate Business Activity Gross Income or Gain",
+                "v": 5416991
+              },
+              {
+                "d": "Aggregate Business Activity Deductions",
+                "v": 4692814
+              },
+              {
+                "d": "Section 199A - Ordinary Income (Loss)",
+                "v": 724177
+              },
+              {
+                "d": "Section 199A - W-2 Wages",
+                "v": 2092183
+              },
+              {
+                "d": "Section 199A - Unadjusted Basis of Assets",
+                "v": 210630
+              }
+            ]
+          },
+          {
+            "ref": "6",
+            "sch": "L",
+            "line": "6",
+            "desc": "Other Current Assets",
+            "items": [
+              {
+                "d": "Prepaid Expenses",
+                "beg": 192315,
+                "end": 71741
+              },
+              {
+                "d": "Employee Advance",
+                "beg": 0,
+                "end": 0
+              }
+            ],
+            "total_beg": 192315,
+            "total_end": 71741
+          },
+          {
+            "ref": "7",
+            "sch": "L",
+            "line": "18",
+            "desc": "Other Current Liabilities",
+            "items": [
+              {
+                "d": "Accrued Liabilities",
+                "beg": 131776,
+                "end": 0
+              },
+              {
+                "d": "Sales Tax Payable",
+                "beg": 8168,
+                "end": 9272
+              },
+              {
+                "d": "Other Current Liabilities",
+                "beg": 38315,
+                "end": 0
+              }
+            ],
+            "total_beg": 178259,
+            "total_end": 9272
+          }
+        ],
+        "page_number": 1885
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 391
+      }
+    },
+    {
+      "success": true,
+      "page": 1884,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "y": 2024,
+        "stmts": [
+          {
+            "ref": "1",
+            "form": "1120S",
+            "line": "12",
+            "desc": "TAXES AND LICENSES",
+            "items": [
+              {
+                "d": "LICENSES AND PERMITS",
+                "v": 8301
+              },
+              {
+                "d": "PAYROLL TAXES",
+                "v": 150601
+              }
+            ],
+            "total": 158902
+          },
+          {
+            "ref": "2",
+            "form": "1120S",
+            "line": "20",
+            "desc": "OTHER DEDUCTIONS",
+            "items": [
+              {
+                "d": "COMMISSIONS",
+                "v": 666686
+              },
+              {
+                "d": "COMMUNICATION AND TELEPHONE",
+                "v": 34203
+              },
+              {
+                "d": "COMPUTER SUPPLIES",
+                "v": 164207
+              },
+              {
+                "d": "CONSULTING FEES",
+                "v": 11783
+              },
+              {
+                "d": "CONTRACT SERVICES",
+                "v": 31945
+              },
+              {
+                "d": "CREDIT AND COLLECTION FEES",
+                "v": 20720
+              },
+              {
+                "d": "DUES AND SUBSCRIPTIONS",
+                "v": 16000
+              },
+              {
+                "d": "INSTALLATION AND SERVICE FEES",
+                "v": 730111
+              },
+              {
+                "d": "INSURANCE- GENERAL",
+                "v": 138853
+              },
+              {
+                "d": "LEGAL FEES",
+                "v": 42151
+              },
+              {
+                "d": "LESS: SECTION 263A COSTS",
+                "v": -248872
+              },
+              {
+                "d": "MEALS",
+                "v": 7243
+              },
+              {
+                "d": "MISCELLANEOUS",
+                "v": 10815
+              },
+              {
+                "d": "OFFICE SUPPLIES AND OTHER",
+                "v": 29774
+              },
+              {
+                "d": "RESEARCH & DEVELOPMENT",
+                "v": 17556
+              },
+              {
+                "d": "SELLING COSTS",
+                "v": 73358
+              },
+              {
+                "d": "SMALL TOOLS AND SUPPLIES",
+                "v": 21134
+              },
+              {
+                "d": "TRAVEL",
+                "v": 150612
+              },
+              {
+                "d": "UTILITIES",
+                "v": 12161
+              },
+              {
+                "d": "WARRANTY",
+                "v": 85887
+              }
+            ],
+            "total": 2016327
+          },
+          {
+            "ref": "3",
+            "form": "SCH K",
+            "line": "4",
+            "desc": "INTEREST INCOME",
+            "items": [
+              {
+                "d": "INTEREST INCOME",
+                "v": 2206
+              }
+            ],
+            "total": 2206
+          }
+        ],
+        "page_number": 1884
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 453
+      }
+    },
+    {
+      "success": true,
+      "page": 1899,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "TYLER M. TOWNSEND",
+        "ssn4": "2044",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4827,
+        "b4": 15,
+        "b15": [
+          {
+            "c": "A",
+            "v": 8
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 48
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 15
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1899
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 211
+      }
+    },
+    {
+      "success": true,
+      "page": 1854,
+      "data": {
+        "t": "instr",
+        "r": "SC1120S K-1 instructions",
+        "page_number": 1854
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 1900,
+    "pages_successful": 1900,
+    "cache_read_tokens": 25083996,
+    "cache_write_tokens": 320904,
+    "input_tokens": 2911701,
+    "output_tokens": 269521,
+    "errors": 0
+  },
+  "cost": 35.844178
+}

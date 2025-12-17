@@ -1,0 +1,20 @@
+{
+  "filename": "tax_returns_65.pdf",
+  "total_pages": 2271,
+  "pages_processed": 2271,
+  "batches_completed": 46,
+  "total_batches": 46,
+  "stats": {
+    "pages_processed": 2271,
+    "pages_successful": 2271,
+    "cache_read_tokens": 30044637,
+    "cache_write_tokens": 320904,
+    "input_tokens": 3480444,
+    "output_tokens": 321633,
+    "errors": 0
+  },
+  "cost": 42.4710135,
+  "elapsed_seconds": 2023.1664781570435,
+  "rate_per_min": 67.34987034983047,
+  "last_updated": "2025-12-12T00:17:05.515119"
+}

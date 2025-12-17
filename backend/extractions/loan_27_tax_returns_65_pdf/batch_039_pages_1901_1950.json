@@ -1,0 +1,2303 @@
+{
+  "batch": 39,
+  "pages_range": [
+    1901,
+    1950
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 1901,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 6,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Gross income or gain",
+            "v": 36113
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Deductions",
+            "v": 31286
+          }
+        ],
+        "page_number": 1901
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 84
+      }
+    },
+    {
+      "success": true,
+      "page": 1910,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 14,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 2405
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 2084
+          }
+        ],
+        "k3": "not prepared",
+        "page_number": 1910
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 100
+      }
+    },
+    {
+      "success": true,
+      "page": 1916,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 16,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 1206
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 1045
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1916
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1907,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 13,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 7222
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 6257
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1907
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1925,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 20,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 3611
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 3128
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1925
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1915,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 16,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 2
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 161
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 466
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 47
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 1463
+          }
+        ],
+        "page_number": 1915
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 135
+      }
+    },
+    {
+      "success": true,
+      "page": 1928,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 21,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 252793
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 218998
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1928
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1930,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 22,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 49
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4828
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13948
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1405
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1930
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1903,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 7,
+        "y": 2024,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 48
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4828
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13948
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1404
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1903
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 143
+      }
+    },
+    {
+      "success": true,
+      "page": 1918,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 17,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 2
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 161
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 464
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 47
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 1457
+          }
+        ],
+        "page_number": 1918
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 135
+      }
+    },
+    {
+      "success": true,
+      "page": 1921,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 19,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 5
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 483
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 1395
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 141
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 4378
+          }
+        ],
+        "page_number": 1921
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 136
+      }
+    },
+    {
+      "success": true,
+      "page": 1906,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 13,
+        "y": 2024,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 10
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 966
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 2790
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 281
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 8756
+          }
+        ],
+        "page_number": 1906
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 141
+      }
+    },
+    {
+      "success": true,
+      "page": 1904,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 7,
+        "items": [
+          {
+            "b": "17AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 36114
+          },
+          {
+            "b": "17AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 31285
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1904
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 97
+      }
+    },
+    {
+      "success": true,
+      "page": 1911,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "PETER L. TOWNSEND, JR",
+        "ssn4": "2267",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4828,
+        "b4": 14,
+        "b15": [
+          {
+            "c": "A",
+            "v": 9
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 48
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 14
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1911
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 214
+      }
+    },
+    {
+      "success": true,
+      "page": 1927,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 21,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 338
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 33795
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 97635
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 9829
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 306440
+          }
+        ],
+        "page_number": 1927
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1919,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 17,
+        "items": [
+          {
+            "b": "17AJ",
+            "d": "Aggregate business activity gross income or gain",
+            "v": 1202
+          },
+          {
+            "b": "17AJ",
+            "d": "Aggregate business activity deductions",
+            "v": 1042
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1919
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 94
+      }
+    },
+    {
+      "success": true,
+      "page": 1913,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 15,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 36114
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 31285
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1913
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1909,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 14,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 3
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 321
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 929
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 93
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 2915
+          }
+        ],
+        "page_number": 1909
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 135
+      }
+    },
+    {
+      "success": true,
+      "page": 1920,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "DEBRA MALOY-WALSH",
+        "ssn4": "9344",
+        "entity": "INDIVIDUAL",
+        "pct": 0.066667,
+        "sh_shares_beg": 1000,
+        "sh_shares_end": 1000,
+        "b1": 483,
+        "b4": 2,
+        "b16": [
+          {
+            "c": "C",
+            "v": 5
+          },
+          {
+            "c": "D",
+            "v": 360
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 2
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1920
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 195
+      }
+    },
+    {
+      "success": true,
+      "page": 1912,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 15,
+        "y": 2024,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 48
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4828
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13948
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1404
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1912
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 143
+      }
+    },
+    {
+      "success": true,
+      "page": 1922,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 19,
+        "y": 2024,
+        "k3": "not prepared",
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate business activity gross income or gain",
+            "v": 3612
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate business activity deductions",
+            "v": 3129
+          }
+        ],
+        "page_number": 1922
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 101
+      }
+    },
+    {
+      "success": true,
+      "page": 1924,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 20,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 4
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 483
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 1395
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 140
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 4378
+          }
+        ],
+        "page_number": 1924
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 136
+      }
+    },
+    {
+      "success": true,
+      "page": 1905,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "OSCAR L. MILES",
+        "ssn4": "9122",
+        "entity": "INDIVIDUAL",
+        "pct": 0.133333,
+        "sh_shares_beg": 2000,
+        "sh_shares_end": 2000,
+        "b1": 966,
+        "b4": 3,
+        "b15": [
+          {
+            "c": "A",
+            "v": 2
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 10
+          },
+          {
+            "c": "D",
+            "v": 720
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 3
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1905
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 207
+      }
+    },
+    {
+      "success": true,
+      "page": 1917,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "PATRICK RYAN",
+        "ssn4": "8526",
+        "entity": "INDIVIDUAL",
+        "pct": 0.0222,
+        "sh_shares_beg": 333,
+        "sh_shares_end": 333,
+        "b1": 161,
+        "b15": [
+          {
+            "c": "A",
+            "v": 1
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": "*"
+          },
+          {
+            "c": "D",
+            "v": 120
+          }
+        ],
+        "b17": [
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1917
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 189
+      }
+    },
+    {
+      "success": true,
+      "page": 1929,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "DAVID REDANZ",
+        "ssn4": "4953",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4828,
+        "b4": 15,
+        "b15": [
+          {
+            "c": "A",
+            "v": 8
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 49
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 15
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1929
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 208
+      }
+    },
+    {
+      "success": true,
+      "page": 1902,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "PAUL T. TOWNSEND",
+        "ssn4": "5516",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "loans_beg": 300000,
+        "b1": 4828,
+        "b4": 15,
+        "b15": [
+          {
+            "c": "A",
+            "v": 9
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 48
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 15
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1902
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 219
+      }
+    },
+    {
+      "success": true,
+      "page": 1923,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ssn": "105-46-9318",
+        "entity": "INDIVIDUAL",
+        "pct": 0.066667,
+        "sh_shares_beg": 1000,
+        "sh_shares_end": 1000,
+        "b1": 483,
+        "b4": 1,
+        "b15": [
+          {
+            "c": "A",
+            "v": 1
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 4
+          },
+          {
+            "c": "D",
+            "v": 360
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 1
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1923
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 214
+      }
+    },
+    {
+      "success": true,
+      "page": 1908,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "LYNN D. JULIAN",
+        "ssn4": "8274",
+        "entity": "INDIVIDUAL",
+        "pct": 0.0444,
+        "sh_shares_beg": 666,
+        "sh_shares_end": 666,
+        "b1": 321,
+        "b4": 1,
+        "b16": [
+          {
+            "c": "C",
+            "v": 3
+          },
+          {
+            "c": "D",
+            "v": 239
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 1
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1908
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 190
+      }
+    },
+    {
+      "success": true,
+      "page": 1914,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "MEGAN RYAN",
+        "sh_addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+        "ssn": "343-82-5170",
+        "entity": "INDIVIDUAL",
+        "pct": 0.022267,
+        "sh_shares_beg": 334,
+        "sh_shares_end": 334,
+        "b1": 161,
+        "b4": 1,
+        "b16": [
+          {
+            "c": "C",
+            "v": 2
+          },
+          {
+            "c": "D",
+            "v": 121
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 1
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1914
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 242
+      }
+    },
+    {
+      "success": true,
+      "page": 1926,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "JASON G. WOLK",
+        "sh_addr": "2573 JARDIN PL, WESTON, FL 33327",
+        "ssn4": "8469",
+        "entity": "INDIVIDUAL",
+        "pct": 4.666667,
+        "sh_shares_beg": 70000,
+        "sh_shares_end": 70000,
+        "b1": 33795,
+        "b4": 103,
+        "b15": [
+          {
+            "c": "A",
+            "v": 61
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 338
+          },
+          {
+            "c": "D",
+            "v": 25200
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 103
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1926
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 257
+      }
+    },
+    {
+      "success": true,
+      "page": 1937,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 24,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Gross income or gain",
+            "v": 36113
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Deductions",
+            "v": 31286
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1937
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 94
+      }
+    },
+    {
+      "success": true,
+      "page": 1934,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 23,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 36114
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 31285
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1934
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1931,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 22,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Gross income or gain",
+            "v": 36113
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Deductions",
+            "v": 31286
+          }
+        ],
+        "page_number": 1931
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 84
+      }
+    },
+    {
+      "success": true,
+      "page": 1943,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 26,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 54170
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 46928
+          }
+        ],
+        "k3": "not prepared",
+        "page_number": 1943
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 100
+      }
+    },
+    {
+      "success": true,
+      "page": 1946,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 27,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 36113
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 31285
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1946
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1940,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 25,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 54170
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 46928
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1940
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 1933,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 23,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 48
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4827
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13948
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1404
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1933
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1942,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 26,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 72
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 7242
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 20922
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 2107
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 65666
+          }
+        ],
+        "page_number": 1942
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1935,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "CHRISTOPHER CROSSAN",
+        "ssn4": "0931",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4828,
+        "b4": 14,
+        "b15": [
+          {
+            "c": "A",
+            "v": 9
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 48
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 14
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1935
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 208
+      }
+    },
+    {
+      "success": true,
+      "page": 1936,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 24,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 48
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4828
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13948
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1404
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1936
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1932,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "JACOB SWICK",
+        "ssn4": "5963",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4827,
+        "b4": 15,
+        "b15": [
+          {
+            "c": "A",
+            "v": 9
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 48
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 15
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1932
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 208
+      }
+    },
+    {
+      "success": true,
+      "page": 1948,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 28,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 49
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4828
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13948
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1404
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1948
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1949,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 28,
+        "y": 2024,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 36113
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 31286
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 1949
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 108
+      }
+    },
+    {
+      "success": true,
+      "page": 1945,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 27,
+        "y": 2024,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 48
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4828
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13948
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1404
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 43777
+          }
+        ],
+        "page_number": 1945
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 143
+      }
+    },
+    {
+      "success": true,
+      "page": 1950,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "PAUL T. PIVIROTTO",
+        "ssn4": "4916",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4827,
+        "b4": 15,
+        "b15": [
+          {
+            "c": "A",
+            "v": 9
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 48
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 15
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1950
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 211
+      }
+    },
+    {
+      "success": true,
+      "page": 1938,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "ANDREW T. BROPHY",
+        "ssn4": "2637",
+        "entity": "INDIVIDUAL",
+        "pct": 1.0,
+        "sh_shares_beg": 15000,
+        "sh_shares_end": 15000,
+        "b1": 7242,
+        "b4": 22,
+        "b15": [
+          {
+            "c": "A",
+            "v": 13
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 73
+          },
+          {
+            "c": "D",
+            "v": 5400
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 22
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1938
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 210
+      }
+    },
+    {
+      "success": true,
+      "page": 1941,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "BRENDA B. PIVIROTTO",
+        "ssn4": "5503",
+        "entity": "INDIVIDUAL",
+        "pct": 1.0,
+        "sh_shares_beg": 15000,
+        "sh_shares_end": 15000,
+        "b1": 7242,
+        "b4": 22,
+        "b15": [
+          {
+            "c": "A",
+            "v": 13
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 72
+          },
+          {
+            "c": "D",
+            "v": 5400
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 22
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1941
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 212
+      }
+    },
+    {
+      "success": true,
+      "page": 1947,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "THEODORA F. BROPHY",
+        "ssn4": "2988",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4828,
+        "b4": 15,
+        "b15": [
+          {
+            "c": "A",
+            "v": 9
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 49
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 15
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1947
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 211
+      }
+    },
+    {
+      "success": true,
+      "page": 1939,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 25,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 73
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 7242
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 20921
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 2106
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 65666
+          }
+        ],
+        "page_number": 1939
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 1944,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "OLIVIA B. PIVIROTTO",
+        "ssn4": "6434",
+        "entity": "INDIVIDUAL",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 4828,
+        "b4": 15,
+        "b15": [
+          {
+            "c": "A",
+            "v": 8
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 48
+          },
+          {
+            "c": "D",
+            "v": 3600
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 15
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 1944
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 212
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 1950,
+    "pages_successful": 1950,
+    "cache_read_tokens": 25752546,
+    "cache_write_tokens": 320904,
+    "input_tokens": 2988351,
+    "output_tokens": 277027,
+    "errors": 0
+  },
+  "cost": 36.749353
+}

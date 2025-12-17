@@ -1,0 +1,9 @@
+flask
+flask-cors
+psycopg2-binary
+python-dotenv
+bcrypt
+PyJWT
+PyPDF2
+pillow
+anthropic

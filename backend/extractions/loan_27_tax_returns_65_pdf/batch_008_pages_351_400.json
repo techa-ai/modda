@@ -1,0 +1,1679 @@
+{
+  "batch": 8,
+  "pages_range": [
+    351,
+    400
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 354,
+      "data": {
+        "t": "blank",
+        "r": "page 167 separator",
+        "page_number": 354
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 356,
+      "data": {
+        "t": "blank",
+        "page_number": 356
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 366,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "CHRISTOPHER B. BROPHY",
+        "ssn": "219-69-5908",
+        "b39": 0,
+        "page_number": 366
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 58
+      }
+    },
+    {
+      "success": true,
+      "page": 363,
+      "data": {
+        "t": "blank",
+        "page_number": 363
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 377,
+      "data": {
+        "t": "blank",
+        "page_number": 377
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 359,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2023,
+        "sh": "JULIETTE I. BROPHY",
+        "ssn": "218-59-5390",
+        "b39": 0,
+        "page_number": 359
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 65
+      }
+    },
+    {
+      "success": true,
+      "page": 368,
+      "data": {
+        "t": "blank",
+        "r": "page 181 separator",
+        "page_number": 368
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 375,
+      "data": {
+        "t": "blank",
+        "r": "page 188 separator",
+        "page_number": 375
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 379,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "PARKER TOWNSEND",
+        "ssn": "686-56-6726",
+        "page_number": 379
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 53
+      }
+    },
+    {
+      "success": true,
+      "page": 361,
+      "data": {
+        "t": "blank",
+        "r": "page 174 separator",
+        "page_number": 361
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 370,
+      "data": {
+        "t": "blank",
+        "page_number": 370
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 373,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "RAYMOND C. BROPHY",
+        "ssn": "037-20-4148",
+        "b39": 0,
+        "page_number": 373
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 58
+      }
+    },
+    {
+      "success": true,
+      "page": 352,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "PAUL T. PIVIROTTO",
+        "ssn4": "4916",
+        "b39": 0,
+        "page_number": 352
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 56
+      }
+    },
+    {
+      "success": true,
+      "page": 365,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2023,
+        "sh": "CHRISTOPHER B. BROPHY",
+        "ssn": "219-69-5908",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 365
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 265
+      }
+    },
+    {
+      "success": true,
+      "page": 358,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "JULIETTE I. BROPHY",
+        "ssn": "218-59-5390",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 358
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 267
+      }
+    },
+    {
+      "success": true,
+      "page": 371,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR 0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "RAYMOND C. BROPHY",
+        "ssn": "037-20-4148",
+        "sh_addr": "480 SABAL PALM LANE",
+        "sh_city": "VERO BEACH",
+        "sh_st": "FL",
+        "sh_zip": "32963",
+        "nonres": true,
+        "dr0108": true,
+        "l1a": 2659,
+        "l1b": 40,
+        "l13a": 33799,
+        "l13b": 513,
+        "page_number": 371
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 184
+      }
+    },
+    {
+      "success": true,
+      "page": 378,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PARKER TOWNSEND",
+        "ssn": "686-56-6726",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN C",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "nonres": true,
+        "dr0108": true,
+        "dr0107": true,
+        "items": [
+          {
+            "l": 1,
+            "a": 2597,
+            "co": 39
+          },
+          {
+            "l": 13,
+            "a": 33021,
+            "co": 501
+          }
+        ],
+        "page_number": 378
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 193
+      }
+    },
+    {
+      "success": true,
+      "page": 369,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity": "Individual",
+        "ssn": "219-69-5908",
+        "name": "CHRISTOPHER B BROPHY",
+        "addr": "3213 PICKWICK LANE",
+        "city": "CHEVY CHASE",
+        "state": "MD",
+        "zip": "20815",
+        "pte": "THOR GUARD, INC.",
+        "pte_ein": "65-0057716",
+        "co_acct": "65874513",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_state": "FL",
+        "pte_zip": "33323",
+        "l1": 40.0,
+        "l2": 2.0,
+        "page_number": 369
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 187
+      }
+    },
+    {
+      "success": true,
+      "page": 351,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "2 of 3",
+        "y": 2023,
+        "sh": "PAUL T. PIVIROTTO",
+        "ssn": "220-57-4916",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 351
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 270
+      }
+    },
+    {
+      "success": true,
+      "page": 376,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Tax Remittance",
+        "entity": "Individual",
+        "ssn": "037-20-4148",
+        "name": "RAYMOND C BROPHY",
+        "addr": "480 SABAL PALM LANE",
+        "city": "VERO BEACH",
+        "state": "FL",
+        "zip": "32963",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 40.0,
+        "l2": 2.0,
+        "page_number": 376
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 367,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "state": "CO",
+        "desc": "Nonresident Partner/Shareholder Agreement",
+        "partner": {
+          "name": "CHRISTOPHER B BROPHY",
+          "ssn4": "5908",
+          "addr": "3213 PICKWICK LANE",
+          "city": "CHEVY CHASE",
+          "st": "MD",
+          "zip": "20815"
+        },
+        "corp": {
+          "name": "THOR GUARD INC",
+          "ein": "65-0057716",
+          "co_acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 367
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 171
+      }
+    },
+    {
+      "success": true,
+      "page": 355,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Tax Remittance",
+        "entity": "Individual",
+        "ssn": "220-57-4916",
+        "name": "PAUL T PIVIROTTO",
+        "addr": "3711 BRADLEY LANE",
+        "city": "CHEVY CHASE",
+        "state": "MD",
+        "zip": "20815",
+        "pass_thru": "THOR GUARD, INC.",
+        "pass_ein": "65-0057716",
+        "co_acct": "65874513",
+        "pass_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 40.0,
+        "l2": 2.0,
+        "page_number": 355
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 168
+      }
+    },
+    {
+      "success": true,
+      "page": 384,
+      "data": {
+        "t": "blank",
+        "page_number": 384
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 357,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_id": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JULIETTE I. BROPHY",
+        "sh_ssn": "218-59-5390",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "nonres": true,
+        "dr0107": true,
+        "dr0108": true,
+        "b1_a": 2659,
+        "b1_co": 40,
+        "b13_a": 33800,
+        "b13_co": 513,
+        "page_number": 357
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 200
+      }
+    },
+    {
+      "success": true,
+      "page": 364,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_id": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "CHRISTOPHER B. BROPHY",
+        "sh_ssn": "219-69-5908",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "nonres": true,
+        "dr0107": true,
+        "dr0108": true,
+        "b1": 2659,
+        "b1_co": 40,
+        "b13": 33799,
+        "b13_co": 512,
+        "page_number": 364
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 194
+      }
+    },
+    {
+      "success": true,
+      "page": 374,
+      "data": {
+        "t": "form",
+        "form": "DR 0107",
+        "y": 2023,
+        "desc": "CO Nonresident Partner/Shareholder Agreement",
+        "sh": "RAYMOND C BROPHY",
+        "ssn4": "4148",
+        "sh_addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "period": "01/01/2023-12/31/2023",
+        "page_number": 374
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 149
+      }
+    },
+    {
+      "success": true,
+      "page": 372,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "RAYMOND C. BROPHY",
+        "ssn": "037-20-4148",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 372
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 265
+      }
+    },
+    {
+      "success": true,
+      "page": 389,
+      "data": {
+        "t": "blank",
+        "r": "page 202 separator",
+        "page_number": 389
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 362,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity": "Individual",
+        "ssn": "218-59-5390",
+        "name": "JULIETTE I BROPHY",
+        "addr": "3213 PICKWICK LANE",
+        "city": "CHEVY CHASE",
+        "state": "MD",
+        "zip": "20815",
+        "pass_thru": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "fein": "65-0057716",
+        "pass_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pass_city": "SUNRISE",
+        "pass_st": "FL",
+        "pass_zip": "33323",
+        "l1": 40.0,
+        "l2": 2.0,
+        "page_number": 362
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 185
+      }
+    },
+    {
+      "success": true,
+      "page": 360,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "JULIETTE I BROPHY",
+          "ssn": "218-59-5390",
+          "addr": "3213 PICKWICK LANE",
+          "city": "CHEVY CHASE",
+          "st": "MD",
+          "zip": "20815"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 360
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 176
+      }
+    },
+    {
+      "success": true,
+      "page": 381,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "title": "Colorado Nonresident Partner or Shareholder Agreement",
+        "sh": {
+          "name": "PARKER TOWNSEND",
+          "ssn4": "6726",
+          "addr": "319 VIA DE LINDA",
+          "city": "SAN JUAN CAPISTRANO",
+          "st": "CA",
+          "zip": "92675"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 381
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 391,
+      "data": {
+        "t": "blank",
+        "page_number": 391
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 386,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "FINLEY TOWNSEND",
+        "ssn": "756-93-2105",
+        "page_number": 386
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 54
+      }
+    },
+    {
+      "success": true,
+      "page": 387,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "FINLEY TOWNSEND",
+        "ssn": "756-93-2105",
+        "b39": 0,
+        "page_number": 387
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 58
+      }
+    },
+    {
+      "success": true,
+      "page": 382,
+      "data": {
+        "t": "blank",
+        "r": "page 195 separator",
+        "page_number": 382
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 398,
+      "data": {
+        "t": "blank",
+        "page_number": 398
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 394,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "MARY ANN FURUTA",
+        "ssn4": "3920",
+        "b39": 0,
+        "page_number": 394
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 55
+      }
+    },
+    {
+      "success": true,
+      "page": 388,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "partner": {
+          "name": "FINLEY TOWNSEND",
+          "ssn4": "2105",
+          "addr": "319 VIA DE LINDA",
+          "city": "SAN JUAN CAPISTRANO",
+          "st": "CA",
+          "zip": "92675"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "co_acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 388
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 176
+      }
+    },
+    {
+      "success": true,
+      "page": 396,
+      "data": {
+        "t": "blank",
+        "r": "separator page 209",
+        "page_number": 396
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 15
+      }
+    },
+    {
+      "success": true,
+      "page": 393,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "y": 2023,
+        "st": "CO",
+        "pg": 2,
+        "sh": "MARY ANN FURUTA",
+        "ssn": "324-34-3920",
+        "desc": "Partner's or Shareholder's Share of Credits",
+        "lines": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "all_zero": true,
+        "page_number": 393
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 123
+      }
+    },
+    {
+      "success": true,
+      "page": 383,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Tax Remittance",
+        "sh": {
+          "name": "PARKER TOWNSEND",
+          "ssn4": "6726",
+          "addr": "319 VIA DE LINDA",
+          "city": "SAN JUAN CAPISTRANO",
+          "st": "CA",
+          "zip": "92675",
+          "type": "Individual"
+        },
+        "entity": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "l1": 39.0,
+        "l2": 2.0,
+        "page_number": 383
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 392,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "MARY ANN FURUTA",
+        "ssn": "324-34-3920",
+        "sh_addr": "27101 WEST COVENTRY COURT",
+        "sh_city": "BARRINGTON",
+        "sh_st": "IL",
+        "sh_zip": "62305",
+        "resident": false,
+        "dr0108": true,
+        "dr0107": true,
+        "colA": {
+          "b1": 3190,
+          "b13": 40559
+        },
+        "colB": {
+          "b1": 48,
+          "b13": 615
+        },
+        "page_number": 392
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 196
+      }
+    },
+    {
+      "success": true,
+      "page": 385,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR 0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "FINLEY TOWNSEND",
+        "ssn": "756-93-2105",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN C",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "nonres": true,
+        "dr0108": true,
+        "dr0107": true,
+        "colA": {
+          "b1": 2598,
+          "b13": 33022
+        },
+        "colB": {
+          "b1": 39,
+          "b13": 501
+        },
+        "page_number": 385
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 193
+      }
+    },
+    {
+      "success": true,
+      "page": 400,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2023,
+        "sh": "PETER L TOWNSEND REVOCABLE TRU",
+        "tin4": "0025",
+        "page_number": 400
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 390,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner Tax Remittance",
+        "sh": "FINLEY TOWNSEND",
+        "ssn4": "2105",
+        "addr": "319 VIA DE LINDA",
+        "city": "SAN JUAN CAPISTRANO",
+        "st_addr": "CA",
+        "zip": "92675",
+        "entity": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "entity_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 39,
+        "l2": 2,
+        "page_number": 390
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 153
+      }
+    },
+    {
+      "success": true,
+      "page": 395,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "state": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "MARY ANN FURUTA",
+          "ssn4": "3920",
+          "addr": "27101 WEST COVENTRY COURT",
+          "city": "BARRINGTON",
+          "st": "IL",
+          "zip": "62305"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 395
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 399,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_id": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PETER L TOWNSEND REVOCABLE TRU",
+        "sh_ssn": "578-54-0025",
+        "sh_addr": "PO BOX 1954",
+        "sh_city": "HOBE SOUND",
+        "sh_st": "FL",
+        "sh_zip": "33475",
+        "nonres": true,
+        "dr0108": true,
+        "colA": {
+          "b1": 186114,
+          "b13": 2365937
+        },
+        "colB": {
+          "b1": 2823,
+          "b13": 35889
+        },
+        "page_number": 399
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 197
+      }
+    },
+    {
+      "success": true,
+      "page": 353,
+      "data": {
+        "t": "form",
+        "form": "DR 0107",
+        "y": 2023,
+        "desc": "CO Nonresident Partner/Shareholder Agreement",
+        "sh": "PAUL T PIVIROTTO",
+        "ssn4": "4916",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 353
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 155
+      }
+    },
+    {
+      "success": true,
+      "page": 380,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "PARKER TOWNSEND",
+        "ssn": "686-56-6726",
+        "b39": 0,
+        "page_number": 380
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 397,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "state": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity_type": "Individual",
+        "ssn": "324-34-3920",
+        "name": "MARY ANN FURUTA",
+        "addr": "27101 WEST COVENTRY COURT",
+        "city": "BARRINGTON",
+        "st": "IL",
+        "zip": "62305",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_st": "FL",
+        "pte_zip": "33323",
+        "l1": 48.0,
+        "l2": 2.0,
+        "page_number": 397
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 191
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 400,
+    "pages_successful": 400,
+    "cache_read_tokens": 5027496,
+    "cache_write_tokens": 320904,
+    "input_tokens": 612800,
+    "output_tokens": 47582,
+    "errors": 0
+  },
+  "cost": 8.772948000000001
+}

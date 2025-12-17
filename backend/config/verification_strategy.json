@@ -1,0 +1,142 @@
+{
+  "verification_strategy": {
+    "description": "Systematic document selection strategy for 1008 attribute verification. Defines preferred document types for each category of attributes.",
+    "version": "1.1",
+    "last_updated": "2025-12-08",
+    "learnings": {
+      "income_verification": "For self-employed borrowers, use TAX RETURNS over pay stubs. Apply Fannie Mae Form 1084 methodology with trending adjustments for declining income.",
+      "housing_expense_verification": "Housing expense is CALCULATED from components (P+I + Taxes + Insurance + HOA + MI). Verify each component separately from source documents.",
+      "calculated_fields": "Some 1008 fields are calculated (e.g., Total Housing Expense, Total Monthly Payments). Store these as 'verified' with calculation methodology, then verify components.",
+      "urla_vs_1008": "URLA 1003 is the loan APPLICATION (12 pages). Form 1008 is the UNDERWRITING SUMMARY (1 page). URLA contains detailed borrower info; 1008 contains underwriter's key findings.",
+      "document_hierarchy": "Final versions > Preliminary versions > Estimates. Exclude: aus_findings, submission documents, transmittal letters.",
+      "ocr_strategy": "Use VLM analysis for structured data extraction. Use OCR text for value search and verification. Send relevant excerpts to Claude for validation."
+    },
+    
+    "general_principles": {
+      "preference_order": "Primary source documents > Calculated worksheets > Supporting documents",
+      "minimize_documents": "Use single document when possible; multiple only if calculation requires",
+      "source_hierarchy": "Official final documents > Preliminary documents > Estimates",
+      "exclusions": [
+        "aus_findings*",
+        "1008*",
+        "*submission*",
+        "*transmittal*",
+        "*worksheet*",
+        "*estimate*"
+      ]
+    },
+    
+    "attribute_categories": {
+      "income": {
+        "description": "All income-related attributes",
+        "preferred_documents": [
+          "tax_returns (for self-employed, averaged income)",
+          "w_2s (for W-2 employees, most recent year)",
+          "pay_stubs (for current income verification, last 2 months)",
+          "k_1s (for partnership/S-corp income)"
+        ],
+        "strategy": "Tax returns OVER pay stubs for self-employed (more comprehensive, shows sustainability). Pay stubs for W-2 employees (shows current income).",
+        "calculation_method": "Per Fannie Mae Form 1084 for self-employment",
+        "examples": [
+          "Borrower Total Income Amount",
+          "Combined Base Income Amount",
+          "Borrower Other Income Amount"
+        ]
+      },
+      
+      "housing_expenses": {
+        "description": "Monthly housing payment components (PITI + HOA + Other)",
+        "preferred_documents": [
+          "mortgage_statement (for current P&I payment)",
+          "closing_disclosure (for new loan P&I, taxes, insurance)",
+          "hazard_insurance (for insurance amount)",
+          "tax_bill (for property taxes)",
+          "hoa_statement (for HOA fees)"
+        ],
+        "strategy": "Use closing disclosure for NEW loan. Use mortgage statement for EXISTING loans. Calculate if components available separately.",
+        "calculation_method": "PITI = Principal + Interest + Taxes + Insurance + HOA",
+        "examples": [
+          "Proposed Monthly Total Primary Housing Expense Amount",
+          "Present Housing Payment Amount",
+          "Proposed Monthly Hazard Insurance Amount",
+          "Proposed Monthly Real Estate Tax Amount",
+          "Proposed Monthly Hoa Fees Amount"
+        ]
+      },
+      
+      "other_monthly_payments": {
+        "description": "Other debt obligations (credit cards, auto loans, etc.)",
+        "preferred_documents": [
+          "credit_report (shows all monthly obligations)",
+          "debt_report (consolidated debt list)"
+        ],
+        "strategy": "Credit report is PRIMARY source for all monthly debt obligations. Shows payment amounts and balances.",
+        "calculation_method": "Sum of all monthly payments from credit report liabilities",
+        "examples": [
+          "Proposed Monthly All Other Monthly Payments Amount",
+          "Proposed Monthly Total Monthly Payments Amount"
+        ]
+      },
+      
+      "total_monthly_payments": {
+        "description": "Total DTI calculation (Housing + Other Debts)",
+        "preferred_documents": [
+          "Calculated from verified housing expense + other payments"
+        ],
+        "strategy": "This is CALCULATED. Verify by adding: Total Primary Housing Expense + All Other Monthly Payments",
+        "calculation_method": "Housing Payment + Other Debts = Total Monthly Payments",
+        "requires_calculation": true,
+        "examples": [
+          "Proposed Monthly Total Monthly Payments Amount"
+        ]
+      },
+      
+      "funds_to_close": {
+        "description": "Cash needed to close, verified assets",
+        "preferred_documents": [
+          "bank_statements (for liquid assets, most recent 2 months)",
+          "asset_verification (for stocks, retirement accounts)",
+          "closing_disclosure (for exact cash to close)",
+          "additional_asset_verification (for other assets)"
+        ],
+        "strategy": "Use bank statements for VERIFICATION of liquid assets. Closing disclosure shows REQUIRED amount. Must match or exceed required.",
+        "calculation_method": "Sum of verified liquid assets from bank statements, investment accounts, etc.",
+        "examples": [
+          "Borrower Funds To Close Verified Assets Amount",
+          "Total Assets Amount"
+        ]
+      },
+      
+      "property_values": {
+        "description": "Property value, sales price, appraisal",
+        "preferred_documents": [
+          "appraisal (for appraised value - OFFICIAL)",
+          "purchase_agreement (for sales price)",
+          "title_commitment (for legal description, verification)"
+        ],
+        "strategy": "Appraisal is PRIMARY for value. Purchase agreement for sales price. Use FINAL versions only.",
+        "examples": [
+          "Appraised Value",
+          "Sales Price",
+          "Property Address"
+        ]
+      },
+      
+      "loan_terms": {
+        "description": "Loan amount, rate, terms, payment",
+        "preferred_documents": [
+          "note (promissory note - OFFICIAL loan terms)",
+          "closing_disclosure (final loan details)",
+          "mortgage_deed (for lien details)"
+        ],
+        "strategy": "Promissory note is PRIMARY source for loan terms. Closing disclosure for verification.",
+        "examples": [
+          "Mort Original Loan Amount",
+          "Qualifying Note Rate",
+          "Mort Initial P and I Payment Amount"
+        ]
+      }
+    }
+  }
+}
+

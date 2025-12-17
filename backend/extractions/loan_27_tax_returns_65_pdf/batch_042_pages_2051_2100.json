@@ -1,0 +1,1535 @@
+{
+  "batch": 42,
+  "pages_range": [
+    2051,
+    2100
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 2060,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "sch": "5K-1",
+        "part": "IV",
+        "sh": "BRENDA B. PIVIROTTO",
+        "id": "577 76 5503",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 2060
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 73
+      }
+    },
+    {
+      "success": true,
+      "page": 2064,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "y": 2024,
+        "sh": "OLIVIA B. PIVIROTTO",
+        "ein": "215-49-6434",
+        "pg": 4,
+        "part": "IV",
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "note": "all lines blank",
+        "page_number": 2064
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 78
+      }
+    },
+    {
+      "success": true,
+      "page": 2066,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "form": "5K-1",
+        "sh": "THEODORA F. BROPHY",
+        "ein": "212-57-2988",
+        "pg": 2,
+        "b1": 4828,
+        "b1_wi": 4828,
+        "b1_wi_src": 54,
+        "b4": 15,
+        "b4_wi": 15,
+        "b4_wi_src": 0,
+        "page_number": 2066
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 94
+      }
+    },
+    {
+      "success": true,
+      "page": 2070,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sch": "5K-1",
+        "sh": "PAUL T. PIVIROTTO",
+        "ein": "220574916",
+        "pg": 2,
+        "b1": {
+          "fed": 4827,
+          "wi": 4827,
+          "src": 54
+        },
+        "b4": {
+          "fed": 15,
+          "wi": 15,
+          "src": 0
+        },
+        "page_number": 2070
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 83
+      }
+    },
+    {
+      "success": true,
+      "page": 2052,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "form": "5K-1",
+        "sh": "CHRISTOPHER CROSSAN",
+        "ein": "264-69-0931",
+        "pg": "4 of 4",
+        "part": "IV",
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "items": [],
+        "page_number": 2052
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 2067,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sh": "THEODORA F. BROPHY",
+        "ein": "21-2572988",
+        "pg": 3,
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 9
+        },
+        "b16c": 49,
+        "b16d": 3600,
+        "b17a": {
+          "fed": 15,
+          "wis": 0
+        },
+        "b19": {
+          "fed": 4843,
+          "wis": 54
+        },
+        "b20": {
+          "fed": 43777,
+          "wis": 486
+        },
+        "page_number": 2067
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 120
+      }
+    },
+    {
+      "success": true,
+      "page": 2056,
+      "data": {
+        "t": "K1sup",
+        "sch": "5K-1",
+        "part": "IV",
+        "y": 2024,
+        "sh": "ANDREW T. BROPHY",
+        "ein": "57-7682637",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "note": "all lines blank",
+        "page_number": 2056
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 2061,
+      "data": {
+        "t": "5K1",
+        "y": 2024,
+        "state": "WI",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "OLIVIA B PIVIROTTO",
+        "ssn": "215-49-6434",
+        "sh_addr": "3711 BRADLEY LANE",
+        "sh_city": "CHEVY CHASE",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "apport_pct": 1.11,
+        "page_number": 2061
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 158
+      }
+    },
+    {
+      "success": true,
+      "page": 2075,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "sh": "JULIETTE I. BROPHY",
+        "ein": "218595390",
+        "pg": 3,
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 8
+        },
+        "b16c": 48,
+        "b16c_wis": 48,
+        "b16d": 3600,
+        "b16d_wis": 3600,
+        "b17a": 14,
+        "b17a_wis": 14,
+        "b17a_wis_src": 0,
+        "b19": 4842,
+        "b19_wis": 54,
+        "b20": 43777,
+        "b20_wis": 486,
+        "page_number": 2075
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 149
+      }
+    },
+    {
+      "success": true,
+      "page": 2055,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "sh": "ANDREW T. BROPHY",
+        "id": "577 68 2637",
+        "pg": "3 of 4",
+        "items": [
+          {
+            "b": "15a",
+            "d": "POST-1986 DEPN",
+            "v": 13
+          },
+          {
+            "b": "16c",
+            "v": 73
+          },
+          {
+            "b": "16d",
+            "v": 5400
+          },
+          {
+            "b": "17a",
+            "v": 22,
+            "d": 0
+          },
+          {
+            "b": "19",
+            "v": 7264,
+            "d": 80
+          },
+          {
+            "b": "20",
+            "v": 65666,
+            "d": 729
+          }
+        ],
+        "page_number": 2055
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 135
+      }
+    },
+    {
+      "success": true,
+      "page": 2079,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sh": "CHRISTOPHER B. BROPHY",
+        "ein": "219695908",
+        "pg": 3,
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 9
+        },
+        "b16c": 49,
+        "b16d": 3600,
+        "b17a": 15,
+        "b17a_wis": 0,
+        "b19": 4843,
+        "b19_wis": 54,
+        "b20": 43777,
+        "b20_wis": 486,
+        "page_number": 2079
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 116
+      }
+    },
+    {
+      "success": true,
+      "page": 2080,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "y": 2024,
+        "sh": "CHRISTOPHER B. BROPHY",
+        "id": "219 69 5908",
+        "part": "IV",
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "pg": 4,
+        "page_number": 2080
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 70
+      }
+    },
+    {
+      "success": true,
+      "page": 2062,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "form": "5K-1",
+        "sh": "OLIVIA B. PIVIROTTO",
+        "ein": "215496434",
+        "pg": 2,
+        "b1": {
+          "fed": 4828,
+          "wis": 4828,
+          "src": 54
+        },
+        "b4": {
+          "fed": 15,
+          "wis": 15,
+          "src": 0
+        },
+        "page_number": 2062
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 85
+      }
+    },
+    {
+      "success": true,
+      "page": 2074,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "form": "5K-1",
+        "state": "WI",
+        "sh": "JULIETTE I. BROPHY",
+        "ein": "218-59-5390",
+        "pg": 2,
+        "b1": {
+          "fed": 4828,
+          "st": 4828,
+          "src": 54
+        },
+        "b4": {
+          "fed": 14,
+          "st": 14,
+          "src": 0
+        },
+        "page_number": 2074
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 91
+      }
+    },
+    {
+      "success": true,
+      "page": 2068,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2024,
+        "sh": "THEODORA F. BROPHY",
+        "ein": "212-57-2988",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 2068
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 70
+      }
+    },
+    {
+      "success": true,
+      "page": 2072,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "y": 2024,
+        "sch": "Part IV",
+        "sh": "PAUL T. PIVIROTTO",
+        "ein": "220 57 4916",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "note": "All lines blank",
+        "page_number": 2072
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 77
+      }
+    },
+    {
+      "success": true,
+      "page": 2054,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "y": 2024,
+        "sh": "ANDREW T. BROPHY",
+        "id": "577 68 2637",
+        "pg": "2 of 4",
+        "items": [
+          {
+            "b": "1",
+            "d": "Ordinary business income",
+            "fed": 7242,
+            "wis": 7242,
+            "src": 80
+          },
+          {
+            "b": "4",
+            "d": "Interest income",
+            "fed": 22,
+            "wis": 22,
+            "src": 0
+          }
+        ],
+        "page_number": 2054
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 108
+      }
+    },
+    {
+      "success": true,
+      "page": 2076,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "sch": "5K-1",
+        "part": "IV",
+        "sh": "JULIETTE I. BROPHY",
+        "ein": "218595390",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "sections": [
+          "Additions",
+          "Subtractions"
+        ],
+        "all_blank": true,
+        "page_number": 2076
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 88
+      }
+    },
+    {
+      "success": true,
+      "page": 2058,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "y": 2024,
+        "sh": "BRENDA B. PIVIROTTO",
+        "ein": "577 76 5503",
+        "pg": 2,
+        "items": [
+          {
+            "b": "1",
+            "d": "Ordinary business income",
+            "fed": 7242,
+            "wis": 7242,
+            "src": 80
+          },
+          {
+            "b": "4",
+            "d": "Interest income",
+            "fed": 22,
+            "wis": 22,
+            "src": 0
+          }
+        ],
+        "page_number": 2058
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 106
+      }
+    },
+    {
+      "success": true,
+      "page": 2051,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "CHRISTOPHER CROSSAN",
+        "ein": "264690931",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 9
+        },
+        "b16c": 48,
+        "b16d": 3600,
+        "b17a": 14,
+        "d": {
+          "b16c": 48,
+          "b16d": 3600,
+          "b17a": {
+            "fed": 14,
+            "wis": 0
+          }
+        },
+        "b19": {
+          "fed": 4842,
+          "wis": 54
+        },
+        "b20": {
+          "fed": 43777,
+          "wis": 486
+        },
+        "page_number": 2051
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 145
+      }
+    },
+    {
+      "success": true,
+      "page": 2071,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sh": "PAUL T. PIVIROTTO",
+        "ein": "220574916",
+        "pg": 3,
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 9
+        },
+        "b16c": 48,
+        "b16d": 3600,
+        "b17a": {
+          "fed": 15,
+          "wis": 0
+        },
+        "b19": {
+          "fed": 4842,
+          "wis": 54
+        },
+        "b20": {
+          "fed": 43777,
+          "wis": 486
+        },
+        "page_number": 2071
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 2069,
+      "data": {
+        "t": "form",
+        "form": "WI-5K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PAUL T PIVIROTTO",
+        "ssn": "220-57-4916",
+        "sh_addr": "3711 BRADLEY LANE",
+        "sh_city": "CHEVY CHASE",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "apport_pct": 1.11,
+        "page_number": 2069
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 159
+      }
+    },
+    {
+      "success": true,
+      "page": 2073,
+      "data": {
+        "t": "5K1",
+        "y": 2024,
+        "st": "WI",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JULIETTE I BROPHY",
+        "ssn": "218-59-5390",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHASE",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "apport_pct": 1.11,
+        "page_number": 2073
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 159
+      }
+    },
+    {
+      "success": true,
+      "page": 2078,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "form": "5K-1",
+        "sh": "CHRISTOPHER B. BROPHY",
+        "ein": "219 69 5908",
+        "pg": "2 of 4",
+        "b1": 4828,
+        "b1_wis": 4828,
+        "b1_wis_src": 54,
+        "b4": 15,
+        "b4_wis": 15,
+        "b4_wis_src": 0,
+        "page_number": 2078
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 101
+      }
+    },
+    {
+      "success": true,
+      "page": 2063,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "OLIVIA B. PIVIROTTO",
+        "ein": "215496434",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 8
+        },
+        "b16c": 48,
+        "b16d": 3600,
+        "b17a": 15,
+        "b17a_wis": 0,
+        "b19": 4843,
+        "b19_wis": 54,
+        "b20": 43777,
+        "b20_wis": 486,
+        "page_number": 2063
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 126
+      }
+    },
+    {
+      "success": true,
+      "page": 2059,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "BRENDA B. PIVIROTTO",
+        "ein": "57-7765503",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 13
+        },
+        "b16c": 72,
+        "b16d": 5400,
+        "b17a": {
+          "fed": 22,
+          "wis": 22,
+          "src": 0
+        },
+        "b19": {
+          "wis": 7264,
+          "src": 80
+        },
+        "b20": {
+          "wis": 65666,
+          "src": 729
+        },
+        "page_number": 2059
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 133
+      }
+    },
+    {
+      "success": true,
+      "page": 2065,
+      "data": {
+        "t": "form",
+        "form": "WI-5K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "THEODORA F BROPHY",
+        "ssn4": "2988",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHASE",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "apportion_pct": 1.11,
+        "page_number": 2065
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 157
+      }
+    },
+    {
+      "success": true,
+      "page": 2057,
+      "data": {
+        "t": "form",
+        "form": "WI-5K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh_last": "PIVIROTTO",
+        "sh_first": "BRENDA",
+        "sh_mi": "B",
+        "ssn4": "5503",
+        "sh_addr": "3711 BRADLEY LANE",
+        "sh_city": "CHEVY CHASE",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "entity": "Individual",
+        "pct_own": 1.0,
+        "apport_pct": 1.11,
+        "apport_checked": true,
+        "page_number": 2057
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 179
+      }
+    },
+    {
+      "success": true,
+      "page": 2053,
+      "data": {
+        "t": "form",
+        "form": "WI-5K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "ANDREW T BROPHY",
+        "ssn": "577-68-2637",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHASE",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "entity": "Individual",
+        "pct": 1.0,
+        "apport_pct": 1.11,
+        "apport_checked": true,
+        "page_number": 2053
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 168
+      }
+    },
+    {
+      "success": true,
+      "page": 2077,
+      "data": {
+        "t": "K1_WI",
+        "y": 2024,
+        "form": "5K-1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "CHRISTOPHER B BROPHY",
+        "ssn": "219-69-5908",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHASE",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "apport_pct": 1.11,
+        "apport": true,
+        "page_number": 2077
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 166
+      }
+    },
+    {
+      "success": true,
+      "page": 2086,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sh": "PARKER TOWNSEND",
+        "ein": "68-6566726",
+        "b1": 4717,
+        "b4": 14,
+        "d": {
+          "b1": 4717,
+          "b4": 14
+        },
+        "e": {
+          "b1": 52,
+          "b4": 0
+        },
+        "page_number": 2086
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 75
+      }
+    },
+    {
+      "success": true,
+      "page": 2083,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "sh": "RAYMOND C. BROPHY",
+        "ssn4": "4148",
+        "pg": "3of4",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 9
+        },
+        "b16c": 48,
+        "b16d": 3600,
+        "b17a": 15,
+        "b17a_wis": 0,
+        "b19": 4843,
+        "b19_wis": 54,
+        "b20": 43777,
+        "b20_wis": 486,
+        "wis_16c": 48,
+        "wis_16d": 3600,
+        "page_number": 2083
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 137
+      }
+    },
+    {
+      "success": true,
+      "page": 2090,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sh": "FINLEY TOWNSEND",
+        "ssn4": "2105",
+        "b1": 4717,
+        "b4": 14,
+        "d": {
+          "b1": 4717,
+          "b4": 14
+        },
+        "e": {
+          "b1": 52,
+          "b4": 0
+        },
+        "page_number": 2090
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 75
+      }
+    },
+    {
+      "success": true,
+      "page": 2092,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2024,
+        "sh": "FINLEY TOWNSEND",
+        "id": "756 93 2105",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 2092
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 71
+      }
+    },
+    {
+      "success": true,
+      "page": 2084,
+      "data": {
+        "t": "K1sup",
+        "y": 2024,
+        "sch": "5K-1",
+        "part": "IV",
+        "sh": "RAYMOND C. BROPHY",
+        "id": "037 20 4148",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 2084
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 71
+      }
+    },
+    {
+      "success": true,
+      "page": 2085,
+      "data": {
+        "t": "K1",
+        "form": "5K-1",
+        "state": "WI",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PARKER TOWNSEND",
+        "ssn4": "6726",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN CAPISTRANO",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "entity": "Individual",
+        "pct": 0.6513,
+        "apport_pct": 1.11,
+        "page_number": 2085
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 162
+      }
+    },
+    {
+      "success": true,
+      "page": 2082,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "form": "5K-1",
+        "sh": "RAYMOND C. BROPHY",
+        "ssn4": "4148",
+        "ein": "037 20",
+        "pg": 2,
+        "b1": 4828,
+        "b1_wi": 4828,
+        "b1_wi_src": 54,
+        "b4": 15,
+        "b4_wi": 15,
+        "b4_wi_src": 0,
+        "page_number": 2082
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 97
+      }
+    },
+    {
+      "success": true,
+      "page": 2100,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2024,
+        "sh": "PETER L TOWNSEND REVOCA",
+        "ein": "57-8540025",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 2100
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 71
+      }
+    },
+    {
+      "success": true,
+      "page": 2091,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "FINLEY TOWNSEND",
+        "ein": "75-6932105",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 8
+        },
+        "b16c": {
+          "fed": 47,
+          "wis": 47
+        },
+        "b16d": {
+          "fed": 3517,
+          "wis": 3517
+        },
+        "b17a": {
+          "fed": 14,
+          "wis": 14,
+          "src": 0
+        },
+        "b19": {
+          "wis": 4731,
+          "src": 52
+        },
+        "b20": {
+          "wis": 42770,
+          "src": 475
+        },
+        "page_number": 2091
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 150
+      }
+    },
+    {
+      "success": true,
+      "page": 2088,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2024,
+        "sh": "PARKER TOWNSEND",
+        "ein": "686566726",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 2088
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 67
+      }
+    },
+    {
+      "success": true,
+      "page": 2081,
+      "data": {
+        "t": "K1_state",
+        "st": "WI",
+        "form": "5K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "RAYMOND C BROPHY",
+        "ssn": "037-20-4148",
+        "sh_addr": "480 SABAL PALM LANE",
+        "sh_city": "VERO BEACH",
+        "sh_st": "FL",
+        "sh_zip": "32963",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "sh_res": "FL",
+        "apport_pct": 1.11,
+        "page_number": 2081
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 2094,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "form": "5K-1",
+        "sh": "MARY ANN FURUTA",
+        "ein": "324-34-3920",
+        "pg": 2,
+        "b1": 5793,
+        "b4": 18,
+        "wis": {
+          "b1": 5793,
+          "b1_src": 64,
+          "b4": 18,
+          "b4_src": 0
+        },
+        "page_number": 2094
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 89
+      }
+    },
+    {
+      "success": true,
+      "page": 2087,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "y": 2024,
+        "sh": "PARKER TOWNSEND",
+        "id": "686 56 6726",
+        "pg": 3,
+        "items": [
+          {
+            "b": "15a",
+            "d": "POST-1986 DEPN",
+            "v": 8
+          },
+          {
+            "b": "16c",
+            "d": "Nondeductible expenses",
+            "v": 47,
+            "wis": 47
+          },
+          {
+            "b": "16d",
+            "d": "Property distributions",
+            "v": 3517,
+            "wis": 3517
+          },
+          {
+            "b": "17a",
+            "d": "Investment income",
+            "v": 14,
+            "wis": 14,
+            "wis_src": 0
+          },
+          {
+            "b": "19",
+            "d": "Income (loss)",
+            "wis": 4731,
+            "wis_src": 52
+          },
+          {
+            "b": "20",
+            "d": "Gross income",
+            "wis": 42771,
+            "wis_src": 475
+          }
+        ],
+        "page_number": 2087
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 196
+      }
+    },
+    {
+      "success": true,
+      "page": 2096,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "y": 2024,
+        "sh": "MARY ANN FURUTA",
+        "id": "324 34 3920",
+        "pg": 4,
+        "part": "IV",
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 2096
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 70
+      }
+    },
+    {
+      "success": true,
+      "page": 2089,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "st": "WI",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "FINLEY TOWNSEND",
+        "ssn4": "2105",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN CAPISTRANO",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "entity": "Individual",
+        "pct": 0.6513,
+        "apport_pct": 1.11,
+        "apport": true,
+        "page_number": 2089
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 168
+      }
+    },
+    {
+      "success": true,
+      "page": 2098,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "form": "5K-1",
+        "sh": "PETER L TOWNSEND REVOCA",
+        "ein": "578-54-0025",
+        "pg": 2,
+        "b1": 337949,
+        "b1_wi": 337949,
+        "b1_wi_src": 3751,
+        "b4": 1030,
+        "b4_wi": 1030,
+        "b4_wi_src": 11,
+        "page_number": 2098
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 99
+      }
+    },
+    {
+      "success": true,
+      "page": 2093,
+      "data": {
+        "t": "K1_state",
+        "st": "WI",
+        "form": "5K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "MARY ANN FURUTA",
+        "ssn": "324-34-3920",
+        "sh_addr": "96 WATERVIEW COURT",
+        "sh_city": "LAKE BARRINGTON",
+        "sh_st": "IL",
+        "sh_zip": "60010",
+        "entity": "Individual",
+        "pct_own": 0.8,
+        "apport_pct": 1.11,
+        "page_number": 2093
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 166
+      }
+    },
+    {
+      "success": true,
+      "page": 2099,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "PETER L TOWNSEND REVOCA",
+        "ein": "578-54-0025",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": 605
+        },
+        "b16c": 3380,
+        "b16d": 252000,
+        "b17a": 1030,
+        "d": {
+          "b16c": 3380,
+          "b16d": 252000,
+          "b17a": 1030,
+          "b17a_col": 11
+        },
+        "b19": {
+          "fed": 338979,
+          "wis": 3762
+        },
+        "b20": {
+          "fed": 3064399,
+          "wis": 34015
+        },
+        "page_number": 2099
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 160
+      }
+    },
+    {
+      "success": true,
+      "page": 2095,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "MARY ANN FURUTA",
+        "ssn4": "3920",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "fed": 11
+        },
+        "b16c": {
+          "fed": 58,
+          "wis": 58
+        },
+        "b16d": {
+          "fed": 4320,
+          "wis": 4320
+        },
+        "b17a": {
+          "fed": 18,
+          "wis": 0
+        },
+        "b19": {
+          "fed": 5811,
+          "wis": 64
+        },
+        "b20": {
+          "fed": 52533,
+          "wis": 583
+        },
+        "page_number": 2095
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 145
+      }
+    },
+    {
+      "success": true,
+      "page": 2097,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "st": "WI",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+        "sh_ein": "57-8540025",
+        "sh_addr": "PO BOX 1954",
+        "sh_city": "HOBE SOUND",
+        "sh_st": "FL",
+        "sh_zip": "33475",
+        "entity": "Trust",
+        "pct": 46.6667,
+        "apport_pct": 1.11,
+        "page_number": 2097
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 2100,
+    "pages_successful": 2100,
+    "cache_read_tokens": 27758196,
+    "cache_write_tokens": 320904,
+    "input_tokens": 3218301,
+    "output_tokens": 296077,
+    "errors": 0
+  },
+  "cost": 39.378178000000005
+}

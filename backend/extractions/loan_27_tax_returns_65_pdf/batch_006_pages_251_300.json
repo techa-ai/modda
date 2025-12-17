@@ -1,0 +1,1708 @@
+{
+  "batch": 6,
+  "pages_range": [
+    251,
+    300
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 265,
+      "data": {
+        "t": "blank",
+        "page_number": 265
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 272,
+      "data": {
+        "t": "blank",
+        "page_number": 272
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 263,
+      "data": {
+        "t": "blank",
+        "r": "page 76 separator",
+        "page_number": 263
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 256,
+      "data": {
+        "t": "blank",
+        "r": "page 69 separator",
+        "page_number": 256
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 274,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "PATRICK RYAN",
+        "ssn": "357-88-8526",
+        "credits": [],
+        "page_number": 274
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 55
+      }
+    },
+    {
+      "success": true,
+      "page": 270,
+      "data": {
+        "t": "blank",
+        "r": "page 83 separator",
+        "page_number": 270
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 277,
+      "data": {
+        "t": "blank",
+        "r": "page 90 separator",
+        "page_number": 277
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 253,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "LYNN D. JULIAN",
+        "ssn": "076-46-8274",
+        "credits": [],
+        "page_number": 253
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 279,
+      "data": {
+        "t": "blank",
+        "page_number": 279
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 275,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": "3 of 3",
+        "sh": "PATRICK RYAN",
+        "ssn": "357-88-8526",
+        "b39": 0,
+        "page_number": 275
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 60
+      }
+    },
+    {
+      "success": true,
+      "page": 261,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "PETER L. TOWNSEND, JR",
+        "ssn": "557-92-2267",
+        "b39": 0,
+        "page_number": 261
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 62
+      }
+    },
+    {
+      "success": true,
+      "page": 268,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": "3 of 3",
+        "sh": "MEGAN RYAN",
+        "ssn": "343-82-5170",
+        "b39": 0,
+        "page_number": 268
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 258,
+      "data": {
+        "t": "blank",
+        "page_number": 258
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 254,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "LYNN D. JULIAN",
+        "ssn": "076-46-8274",
+        "b39": 0,
+        "page_number": 254
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 251,
+      "data": {
+        "t": "blank",
+        "page_number": 251
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 260,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "PETER L. TOWNSEND, JR",
+        "ssn": "557-92-2267",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 260
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 269
+      }
+    },
+    {
+      "success": true,
+      "page": 262,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "desc": "CO Nonresident Partner/Shareholder Agreement",
+        "sh": "PETER L TOWNSEND",
+        "ssn4": "2267",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "co_acct": "65874513",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 262
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 157
+      }
+    },
+    {
+      "success": true,
+      "page": 269,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "desc": "CO Nonresident Partner/Shareholder Agreement",
+        "partner": {
+          "name": "MEGAN RYAN",
+          "ssn4": "5170",
+          "addr": "120 HILLCREST AVE",
+          "city": "FOX RIVER GROVE",
+          "st": "IL",
+          "zip": "60021"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 269
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 168
+      }
+    },
+    {
+      "success": true,
+      "page": 266,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "MEGAN RYAN",
+        "sh_ssn": "343-82-5170",
+        "sh_addr": "120 HILLCREST AVE",
+        "sh_city": "FOX RIVER",
+        "sh_st": "IL",
+        "sh_zip": "60021",
+        "nonres": true,
+        "dr0107": true,
+        "dr0108": true,
+        "items": {
+          "a1": 89,
+          "b1": 1,
+          "a13": 1129,
+          "b13": 17
+        },
+        "page_number": 266
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 186
+      }
+    },
+    {
+      "success": true,
+      "page": 267,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "MEGAN RYAN",
+        "ssn": "343-82-5170",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 267
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 263
+      }
+    },
+    {
+      "success": true,
+      "page": 273,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "y": 2023,
+        "st": "CO",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PATRICK RYAN",
+        "ssn": "357-88-8526",
+        "sh_addr": "120 HILLCREST AVE",
+        "sh_city": "FOX RIVER",
+        "sh_st": "IL",
+        "sh_zip": "60021",
+        "nonres": true,
+        "dr0107": true,
+        "dr0108": true,
+        "items": [
+          {
+            "l": 1,
+            "a": 88,
+            "b": 1
+          },
+          {
+            "l": 13,
+            "a": 1125,
+            "b": 17
+          }
+        ],
+        "page_number": 273
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 190
+      }
+    },
+    {
+      "success": true,
+      "page": 280,
+      "data": {
+        "t": "state_K1",
+        "st": "CO",
+        "form": "DR 0106K",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_id": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "DEBRA MALOY-WALSH",
+        "sh_id": "105-46-9344",
+        "sh_addr": "14 MACAFFER DRIVE",
+        "sh_city": "MENANDA",
+        "sh_st": "NY",
+        "sh_zip": "12204",
+        "resident": false,
+        "dr0108": true,
+        "dr0107": true,
+        "colA": {
+          "b1": 266,
+          "b13": 3380
+        },
+        "colB": {
+          "b1": 4,
+          "b13": 52
+        },
+        "page_number": 280
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 196
+      }
+    },
+    {
+      "success": true,
+      "page": 255,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": "LYNN D JULIAN",
+        "ssn4": "8274",
+        "sh_addr": "3724 S. LORETTA DRIVE, SALT LAKE CITY, UT 84106",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "period": "01/01/2023-12/31/2023",
+        "page_number": 255
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 153
+      }
+    },
+    {
+      "success": true,
+      "page": 286,
+      "data": {
+        "t": "blank",
+        "page_number": 286
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 293,
+      "data": {
+        "t": "blank",
+        "page_number": 293
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 252,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "LYNN D. JULIAN",
+        "sh_ssn": "076-46-8274",
+        "sh_addr": "3724 S. LORETTA DRIVE",
+        "sh_city": "SALT LAKE",
+        "sh_st": "UT",
+        "sh_zip": "84106",
+        "nonres": true,
+        "dr0108": true,
+        "dr0107": true,
+        "l1a": 177,
+        "l1b": 3,
+        "l13a": 2252,
+        "l13b": 35,
+        "page_number": 252
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 194
+      }
+    },
+    {
+      "success": true,
+      "page": 284,
+      "data": {
+        "t": "blank",
+        "r": "page 97 separator",
+        "page_number": 284
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 259,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR 0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PETER L. TOWNSEND, JR",
+        "ssn": "557-92-2267",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN C",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "nonres": true,
+        "dr0108": true,
+        "b1a": 2659,
+        "b1b": 40,
+        "b13a": 33799,
+        "b13b": 512,
+        "page_number": 259
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 186
+      }
+    },
+    {
+      "success": true,
+      "page": 276,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "desc": "CO Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "PATRICK RYAN",
+          "ssn4": "8526",
+          "addr": "120 HILLCREST AVE",
+          "city": "FOX RIVER GROVE",
+          "st": "IL",
+          "zip": "60021"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 276
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 173
+      }
+    },
+    {
+      "success": true,
+      "page": 271,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity": "Individual",
+        "ssn4": "5170",
+        "name": "MEGAN RYAN",
+        "addr": "120 HILLCREST AVE",
+        "city": "FOX RIVER GROVE",
+        "state": "IL",
+        "zip": "60021",
+        "pass_thru": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "ein": "65-0057716",
+        "pass_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pass_city": "SUNRISE",
+        "pass_state": "FL",
+        "pass_zip": "33323",
+        "l1": 1,
+        "l2": 0,
+        "page_number": 271
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 175
+      }
+    },
+    {
+      "success": true,
+      "page": 264,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Tax Remittance",
+        "sh": "PETER L TOWNSEND JR",
+        "ssn4": "2267",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "entity": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "entity_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 40,
+        "l2": 2,
+        "page_number": 264
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 151
+      }
+    },
+    {
+      "success": true,
+      "page": 291,
+      "data": {
+        "t": "blank",
+        "r": "page 104 separator",
+        "page_number": 291
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 257,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Tax Remittance",
+        "entity": "Individual",
+        "ssn4": "8274",
+        "name": "JULIAN LYNN D",
+        "addr": "3724 S. LORETTA DRIVE",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "zip": "84106",
+        "passthru": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "ein": "65-0057716",
+        "passthru_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 3.0,
+        "l2": 0.0,
+        "page_number": 257
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 278,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner Tax Remittance",
+        "sh": {
+          "name": "PATRICK RYAN",
+          "ssn4": "8526",
+          "addr": "120 HILLCREST AVE",
+          "city": "FOX RIVER GROVE",
+          "st": "IL",
+          "zip": "60021",
+          "type": "Individual"
+        },
+        "entity": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "l1": 1,
+        "l2": 0,
+        "page_number": 278
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 161
+      }
+    },
+    {
+      "success": true,
+      "page": 296,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "JASON G. WOLK",
+        "ssn": "267-69-8469",
+        "b39": 0,
+        "page_number": 296
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 58
+      }
+    },
+    {
+      "success": true,
+      "page": 289,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ssn": "105-46-9318",
+        "b39": 0,
+        "page_number": 289
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 298,
+      "data": {
+        "t": "blank",
+        "r": "page 111 separator",
+        "page_number": 298
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 300,
+      "data": {
+        "t": "blank",
+        "page_number": 300
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 281,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "y": 2023,
+        "st": "CO",
+        "pg": 2,
+        "name": "DEBRA MALOY-WALSH",
+        "ssn": "105-46-9344",
+        "desc": "Partner's Share of Credits",
+        "lines": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 281
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 275
+      }
+    },
+    {
+      "success": true,
+      "page": 290,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "state": "CO",
+        "desc": "Nonresident Partner/Shareholder Agreement",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ssn4": "9318",
+        "sh_addr": "54 COLLYER PLACE, WHITE PLAINS, NY 10605",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "co_acct": "65874513",
+        "period_beg": "01/01/2023",
+        "period_end": "12/31/2023",
+        "page_number": 290
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 158
+      }
+    },
+    {
+      "success": true,
+      "page": 287,
+      "data": {
+        "t": "state_K1",
+        "st": "CO",
+        "form": "DR 0106K",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_id": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "sh_ssn": "105-46-9318",
+        "sh_addr": "54 COLLYER PLACE",
+        "sh_city": "WHITE PLAI",
+        "sh_st": "NY",
+        "sh_zip": "10605",
+        "nonres": true,
+        "dr0108": true,
+        "dr0107": true,
+        "b1_a": 266,
+        "b1_b": 4,
+        "b13_a": 3380,
+        "b13_b": 51,
+        "page_number": 287
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 198
+      }
+    },
+    {
+      "success": true,
+      "page": 288,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ssn": "105-46-9318",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 288
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 268
+      }
+    },
+    {
+      "success": true,
+      "page": 283,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "DEBRA MALOY-WALSH",
+          "ssn4": "9344",
+          "addr": "14 MACAFFER DRIVE",
+          "city": "MENANDA",
+          "st": "NY",
+          "zip": "12204"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 283
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 178
+      }
+    },
+    {
+      "success": true,
+      "page": 295,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "y": 2023,
+        "pg": 2,
+        "st": "CO",
+        "sh": "JASON G. WOLK",
+        "ssn": "267-69-8469",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 295
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 265
+      }
+    },
+    {
+      "success": true,
+      "page": 294,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR 0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JASON G. WOLK",
+        "sh_ssn": "267-69-8469",
+        "sh_addr": "2573 JARDIN PL",
+        "sh_city": "WESTON",
+        "sh_st": "FL",
+        "sh_zip": "33327",
+        "nonres": true,
+        "dr0108": true,
+        "dr0107": true,
+        "l1a": 18612,
+        "l1b": 282,
+        "l13a": 236594,
+        "l13b": 3589,
+        "page_number": 294
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 190
+      }
+    },
+    {
+      "success": true,
+      "page": 297,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": "JASON G WOLK",
+        "ssn4": "8469",
+        "sh_addr": "2573 JARDIN PL, WESTON, FL 33327",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 297
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 155
+      }
+    },
+    {
+      "success": true,
+      "page": 285,
+      "data": {
+        "t": "form",
+        "form": "DR 0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity_type": "Individual",
+        "ssn": "105-46-9344",
+        "name": "DEBRA MALOY-WALSH",
+        "addr": "14 MACAFFER DRIVE",
+        "city": "MENANDA",
+        "state": "NY",
+        "zip": "12204",
+        "pass_through": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "fein": "65-0057716",
+        "pass_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pass_city": "SUNRISE",
+        "pass_state": "FL",
+        "pass_zip": "33323",
+        "l1": 4.0,
+        "l2": 0.0,
+        "page_number": 285
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 186
+      }
+    },
+    {
+      "success": true,
+      "page": 292,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity_type": "Individual",
+        "ssn": "105-46-9318",
+        "name": "JENNIFER MALOY-KEOGH",
+        "addr": "54 COLLYER PLACE",
+        "city": "WHITE PLAINS",
+        "state": "NY",
+        "zip": "10605",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_state": "FL",
+        "pte_zip": "33323",
+        "l1": 4.0,
+        "l2": 0.0,
+        "page_number": 292
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 191
+      }
+    },
+    {
+      "success": true,
+      "page": 299,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner Tax Remittance",
+        "sh": "JASON G WOLK",
+        "ssn": "267-69-8469",
+        "sh_addr": "2573 JARDIN PL, WESTON, FL 33327",
+        "entity": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "entity_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 282.0,
+        "l2": 12.0,
+        "page_number": 299
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 149
+      }
+    },
+    {
+      "success": true,
+      "page": 282,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "y": 2023,
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "DEBRA MALOY-WALSH",
+        "ssn": "105-46-9344",
+        "b39": 0,
+        "page_number": 282
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 65
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 300,
+    "pages_successful": 300,
+    "cache_read_tokens": 3690396,
+    "cache_write_tokens": 320904,
+    "input_tokens": 459600,
+    "output_tokens": 36200,
+    "errors": 0
+  },
+  "cost": 7.053848
+}

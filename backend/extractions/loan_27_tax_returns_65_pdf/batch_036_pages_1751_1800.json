@@ -1,0 +1,2761 @@
+{
+  "batch": 36,
+  "pages_range": [
+    1751,
+    1800
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 1751,
+      "data": {
+        "t": "form",
+        "form": "500S",
+        "y": 2024,
+        "st": "NJ",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "desc": "Computation of Available Converted Net Operating Losses",
+        "p1_l1": null,
+        "p1_l2": null,
+        "p1_l3": null,
+        "p2_l1": null,
+        "p2_l2": null,
+        "p2_l3": null,
+        "page_number": 1751
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 110
+      }
+    },
+    {
+      "success": true,
+      "page": 1756,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT(S) 4",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "items": [
+          {
+            "name": "MARY ANN FURUTA",
+            "ssn4": "3920",
+            "v1": 176,
+            "v2": 5577,
+            "v3": 4320
+          },
+          {
+            "name": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+            "ein4": "0025",
+            "v1": 10291,
+            "v2": 325307,
+            "v3": 252000
+          },
+          {
+            "name": "JUDY JAN",
+            "ssn4": "0530",
+            "v1": 15,
+            "v2": 465,
+            "v3": 360
+          }
+        ],
+        "totals": {
+          "v1": 22052,
+          "v2": 697088,
+          "v3": 540000
+        },
+        "page_number": 1756
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 179
+      }
+    },
+    {
+      "success": true,
+      "page": 1757,
+      "data": {
+        "t": "4562",
+        "y": 2024,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "bus": "OTHER DEPRECIATION",
+        "st": "NJ",
+        "b21": 4437,
+        "b22": 4437,
+        "page_number": 1757
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 60
+      }
+    },
+    {
+      "success": true,
+      "page": 1754,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 3",
+        "sch": "F",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "desc": "Corporate Officers - Information and Compensation",
+        "officers": [
+          {
+            "name": "ROBERT M. DUGAN",
+            "title": "OWNER",
+            "ssn4": "0380",
+            "from": "01/01/22",
+            "to": "PRESENT",
+            "pct": 26.84,
+            "comp": 162000
+          },
+          {
+            "name": "JASON G. WOLK",
+            "title": "OWNER",
+            "ssn4": "8469",
+            "from": "01/01/22",
+            "to": "PRESENT",
+            "pct": 4.67,
+            "comp": 157846
+          },
+          {
+            "name": "JACOB A. SWICK",
+            "title": "OWNER",
+            "ssn4": "5963",
+            "from": "01/01/24",
+            "to": "PRESENT",
+            "pct": 0.67,
+            "comp": 139498
+          }
+        ],
+        "total": 459344,
+        "page_number": 1754
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 206
+      }
+    },
+    {
+      "success": true,
+      "page": 1765,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "OSCAR L. MILES",
+        "sh_id": "326-32-9122",
+        "pct": 0.133333,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 29,
+          "l2": 929,
+          "l3": 958,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 720
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 29,
+            "total": 29,
+            "dist": 22,
+            "end": 7
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 929,
+            "total": 929,
+            "dist": 698,
+            "end": 231
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1765
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 214
+      }
+    },
+    {
+      "success": true,
+      "page": 1774,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "st": "NJ",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "JACOB SWICK",
+        "sh_id": "219-13-5963",
+        "p1": {
+          "pct": 0.666667,
+          "nonres": true,
+          "consenting": true
+        },
+        "p2": {
+          "l1": 147,
+          "l2": 4648,
+          "l3": 4795,
+          "l9": 3599
+        },
+        "p3": {
+          "nj_aaa": {
+            "l2": 147,
+            "l5": 147,
+            "l6": 110,
+            "l7": 37
+          },
+          "non_nj_aaa": {
+            "l2": 4648,
+            "l5": 4648,
+            "l6": 3489,
+            "l7": 1159
+          }
+        },
+        "page_number": 1774
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 189
+      }
+    },
+    {
+      "success": true,
+      "page": 1764,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "PAUL T. TOWNSEND",
+        "sh_id": "573-77-5516",
+        "pct": 0.666667,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4648,
+          "l3": 4795,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3600
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 111,
+            "end": 36
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4648,
+            "total": 4648,
+            "dist": 3489,
+            "end": 1159
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1764
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 223
+      }
+    },
+    {
+      "success": true,
+      "page": 1758,
+      "data": {
+        "t": "4562",
+        "y": 2024,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "part5": {
+          "l24a": true,
+          "l24b": true,
+          "l26": {
+            "ref": "SEE STATEMENT 5",
+            "depr": 4437
+          }
+        },
+        "l28": 4437,
+        "page_number": 1758
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 84
+      }
+    },
+    {
+      "success": true,
+      "page": 1775,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "CHRISTOPHER CROSSAN",
+        "sh_id": "264-69-0931",
+        "pct": 0.666667,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3601
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 111,
+            "end": 36
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3490,
+            "end": 1157
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1775
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 219
+      }
+    },
+    {
+      "success": true,
+      "page": 1771,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "sh_id": "105-46-9318",
+        "pct": 0.066667,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 14,
+          "l2": 464,
+          "l3": 478,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 360
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 14,
+            "total": 14,
+            "dist": 11,
+            "end": 3
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 464,
+            "total": 464,
+            "dist": 349,
+            "end": 115
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_1099": 0
+        },
+        "page_number": 1771
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 227
+      }
+    },
+    {
+      "success": true,
+      "page": 1760,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "JEANNETTE BROPHY",
+        "sh_id": "578-54-9478",
+        "pct": 4.666667,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 1029,
+          "l2": 32531,
+          "l3": 33560,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 25200
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 1029,
+            "total": 1029,
+            "dist": 773,
+            "end": 256
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 32531,
+            "total": 32531,
+            "dist": 24427,
+            "end": 8104
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1760
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 226
+      }
+    },
+    {
+      "success": true,
+      "page": 1773,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "sh": "DAVID REDANZ",
+        "sh_id": "108-54-4953",
+        "pct": 0.666667,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "nj_inc": 147,
+          "non_nj_inc": 4647,
+          "pro_rata": 4794,
+          "gain_nj": 0,
+          "gain_non_nj": 0,
+          "total_gain": 0,
+          "payments": 0,
+          "pte": 0,
+          "distrib": 3600
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "distrib": 110,
+            "end": 37
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "distrib": 3490,
+            "end": 1157
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "interest": 0
+        },
+        "page_number": 1773
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 238
+      }
+    },
+    {
+      "success": true,
+      "page": 1768,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "MEGAN RYAN",
+        "sh_id": "343-82-5170",
+        "pct": 0.022267,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 5,
+          "l2": 155,
+          "l3": 160,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 121
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 5,
+            "total": 5,
+            "dist": 5,
+            "end": 0
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 155,
+            "total": 155,
+            "dist": 117,
+            "end": 38
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1768
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 212
+      }
+    },
+    {
+      "success": true,
+      "page": 1777,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "BRENDA B. PIVIROTTO",
+        "sh_id": "577-76-5503",
+        "pct": 1.0,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 221,
+          "l2": 6971,
+          "l3": 7192,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 5401
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 221,
+            "total": 221,
+            "dist": 166,
+            "end": 55
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 6971,
+            "total": 6971,
+            "dist": 5235,
+            "end": 1736
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1777
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 224
+      }
+    },
+    {
+      "success": true,
+      "page": 1761,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "WILLIAM P. WEIL",
+        "sh_id": "121-36-5311",
+        "pct": 4.502667,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "nj_inc": 993,
+          "non_nj_inc": 31387,
+          "pro_rata": 32380,
+          "distrib": 24314
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 993,
+            "total": 993,
+            "distrib": 745,
+            "end": 248
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 31387,
+            "total": 31387,
+            "distrib": 23569,
+            "end": 7818
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_1099": 0
+        },
+        "page_number": 1761
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 211
+      }
+    },
+    {
+      "success": true,
+      "page": 1766,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "LYNN D. JULIAN",
+        "sh_id": "076-46-8274",
+        "pct": 0.0444,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 10,
+          "l2": 310,
+          "l3": 320,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 240
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 10,
+            "total": 10,
+            "dist": 7,
+            "end": 3
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 310,
+            "total": 310,
+            "dist": 233,
+            "end": 77
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1766
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 214
+      }
+    },
+    {
+      "success": true,
+      "page": 1759,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 5",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "desc": "4562 Part V Listed Property >50%",
+        "vehicles": [
+          {
+            "desc": "LEXUS RC350",
+            "date": "08/10/15",
+            "bus_pct": 70,
+            "cost": 66612,
+            "basis": 41028,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #2",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 29111,
+            "basis": 21111,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1085
+          },
+          {
+            "desc": "2016 AUDI",
+            "date": "05/01/16",
+            "bus_pct": 70,
+            "cost": 52879,
+            "basis": 31415,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #1",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 28730,
+            "basis": 20730,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 726
+          },
+          {
+            "desc": "2022 CHEVROLET",
+            "date": "01/14/22",
+            "bus_pct": 70,
+            "cost": 63695,
+            "basis": 38987,
+            "life": 5,
+            "method": "200DB-HY"
+          }
+        ],
+        "total": 4437,
+        "page_number": 1759
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 326
+      }
+    },
+    {
+      "success": true,
+      "page": 1780,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "state": "NJ",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "PAUL T. PIVIROTTO",
+        "sh_id": "220-57-4916",
+        "p1": {
+          "pct": 0.666667,
+          "nonres": true,
+          "consenting": true
+        },
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3600
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 110,
+            "end": 37
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3490,
+            "end": 1157
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_1099": 0
+        },
+        "page_number": 1780
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 244
+      }
+    },
+    {
+      "success": true,
+      "page": 1763,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "TYLER M. TOWNSEND",
+        "sh_id": "569-23-2044",
+        "pct": 0.666667,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3600
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 110,
+            "end": 37
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3490,
+            "end": 1157
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_1099": 0
+        },
+        "page_number": 1763
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 227
+      }
+    },
+    {
+      "success": true,
+      "page": 1770,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "DEBRA MALOY-WALSH",
+        "sh_id": "105-46-9344",
+        "p1": {
+          "pct": 0.066667,
+          "nonres": true,
+          "consenting": true
+        },
+        "p2": {
+          "l1": 15,
+          "l2": 465,
+          "l3": 480,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 360
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 15,
+            "total": 15,
+            "dist": 11,
+            "end": 4
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 465,
+            "total": 465,
+            "dist": 349,
+            "end": 116
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1770
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 228
+      }
+    },
+    {
+      "success": true,
+      "page": 1772,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "JASON G. WOLK",
+        "sh_id": "267-69-8469",
+        "pct": 4.666667,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 1030,
+          "l2": 32531,
+          "l3": 33561,
+          "l9": 25200
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 1030,
+            "total": 1030,
+            "dist": 773,
+            "end": 257
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 32531,
+            "total": 32531,
+            "dist": 24427,
+            "end": 8104
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1772
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 206
+      }
+    },
+    {
+      "success": true,
+      "page": 1776,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "ANDREW T. BROPHY",
+        "sh_id": "577-68-2637",
+        "pct": 1.0,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 220,
+          "l2": 6971,
+          "l3": 7191,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 5399
+        },
+        "p3": {
+          "nj_aaa": {
+            "l2": 220,
+            "l5": 220,
+            "l6": 165,
+            "l7": 55
+          },
+          "non_nj_aaa": {
+            "l1": 0,
+            "l2": 6971,
+            "l5": 6971,
+            "l6": 5234,
+            "l7": 1737
+          }
+        },
+        "p4": {
+          "l1": 0,
+          "l4": 0
+        },
+        "p5": {
+          "l1": 0
+        },
+        "page_number": 1776
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 232
+      }
+    },
+    {
+      "success": true,
+      "page": 1779,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "THEODORA F. BROPHY",
+        "sh_id": "212-57-2988",
+        "pct": 0.666667,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3601
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 111,
+            "end": 36
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3490,
+            "end": 1157
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1779
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 224
+      }
+    },
+    {
+      "success": true,
+      "page": 1762,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "sh": "ROBERT DUGAN",
+        "sh_id": "018-44-0380",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "pct": 26.972467,
+        "resident": false,
+        "consenting": true,
+        "p2": {
+          "l1": 5948,
+          "l2": 188022,
+          "l3": 193970,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 145652
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 5948,
+            "total": 5948,
+            "dist": 4467,
+            "end": 1481
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 188022,
+            "total": 188022,
+            "dist": 141185,
+            "end": 46837
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_1099": 0
+        },
+        "page_number": 1762
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 229
+      }
+    },
+    {
+      "success": true,
+      "page": 1767,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "PETER L. TOWNSEND, JR",
+        "sh_id": "557-92-2267",
+        "pct": 0.666667,
+        "resident": false,
+        "consenting": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3599
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 110,
+            "end": 37
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3489,
+            "end": 1158
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_paid": 0
+        },
+        "page_number": 1767
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 233
+      }
+    },
+    {
+      "success": true,
+      "page": 1753,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "stmts": [
+          {
+            "ref": "STATEMENT 1",
+            "desc": "SCHEDULE A - OTHER DEDUCTIONS",
+            "items": [
+              {
+                "d": "COMMISSIONS",
+                "v": 666686
+              },
+              {
+                "d": "COMMUNICATION AND TELEPHONE",
+                "v": 34203
+              },
+              {
+                "d": "COMPUTER SUPPLIES",
+                "v": 164207
+              },
+              {
+                "d": "CONSULTING FEES",
+                "v": 11783
+              },
+              {
+                "d": "CONTRACT SERVICES",
+                "v": 31945
+              },
+              {
+                "d": "CREDIT AND COLLECTION FEES",
+                "v": 20720
+              },
+              {
+                "d": "DUES AND SUBSCRIPTIONS",
+                "v": 16000
+              },
+              {
+                "d": "INSTALLATION AND SERVICE FEES",
+                "v": 730111
+              },
+              {
+                "d": "INSURANCE- GENERAL",
+                "v": 138853
+              },
+              {
+                "d": "LEGAL FEES",
+                "v": 42151
+              },
+              {
+                "d": "LESS: SECTION 263A COSTS",
+                "v": -248872
+              },
+              {
+                "d": "MEALS",
+                "v": 7243
+              },
+              {
+                "d": "MISCELLANEOUS",
+                "v": 10815
+              },
+              {
+                "d": "OFFICE SUPPLIES AND OTHER",
+                "v": 29774
+              },
+              {
+                "d": "RESEARCH & DEVELOPMENT",
+                "v": 17556
+              },
+              {
+                "d": "SELLING COSTS",
+                "v": 73358
+              },
+              {
+                "d": "SMALL TOOLS AND SUPPLIES",
+                "v": 21134
+              },
+              {
+                "d": "TRAVEL",
+                "v": 150612
+              },
+              {
+                "d": "UTILITIES",
+                "v": 12161
+              },
+              {
+                "d": "WARRANTY",
+                "v": 85887
+              }
+            ],
+            "total": 2016327,
+            "line": "Schedule A, Line 19"
+          },
+          {
+            "ref": "STATEMENT 2",
+            "desc": "NJ CBT-100S - COST OF GOODS SOLD - OTHER COSTS",
+            "items": [
+              {
+                "d": "CGS - OTHER COSTS",
+                "v": 27618
+              }
+            ],
+            "total": 27618,
+            "line": "Schedule A-2, Line 5"
+          }
+        ],
+        "page_number": 1753
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 414
+      }
+    },
+    {
+      "success": true,
+      "page": 1769,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "PATRICK RYAN",
+        "sh_id": "357-88-8526",
+        "sh_addr": "120 HILLCREST AVE, FOX RIVER GROVE, IL 60021",
+        "p1": {
+          "pct": 0.0222,
+          "nonres": true,
+          "consenting": true
+        },
+        "p2": {
+          "nj_inc": 5,
+          "non_nj_inc": 155,
+          "pro_rata": 160,
+          "gain_nj": 0,
+          "gain_non_nj": 0,
+          "total_gain": 0,
+          "payments": 0,
+          "pte": 0,
+          "distrib": 120
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 5,
+            "total": 5,
+            "distrib": 5,
+            "end": 0
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 155,
+            "total": 155,
+            "distrib": 116,
+            "end": 39
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_1099": 0
+        },
+        "page_number": 1769
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 262
+      }
+    },
+    {
+      "success": true,
+      "page": 1781,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "JULIETTE I. BROPHY",
+        "ssn4": "5390",
+        "pct": 0.666667,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4648,
+          "l3": 4795,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3599
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 110,
+            "end": 37
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4648,
+            "total": 4648,
+            "dist": 3489,
+            "end": 1159
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1781
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 220
+      }
+    },
+    {
+      "success": true,
+      "page": 1778,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "OLIVIA B. PIVIROTTO",
+        "sh_id": "215-49-6434",
+        "p1": {
+          "pct": 0.666667,
+          "nonres": true,
+          "consenting": true
+        },
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3599
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 110,
+            "end": 37
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3489,
+            "end": 1158
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int_1099": 0
+        },
+        "page_number": 1778
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 238
+      }
+    },
+    {
+      "success": true,
+      "page": 1800,
+      "data": {
+        "t": "stmt",
+        "ref": "1.263(a)-1(f)",
+        "desc": "De Minimis Safe Harbor Election",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "y": 2024,
+        "page_number": 1800
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 58
+      }
+    },
+    {
+      "success": true,
+      "page": 1790,
+      "data": {
+        "t": "1120S",
+        "sch": "B",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "acct": "Accrual",
+        "bus": "MANUFACTURING",
+        "prod": "ELECTRONIC EQUIP",
+        "q3": "X",
+        "q4a": "X",
+        "q4b": "X",
+        "q5a": "X",
+        "q5b": "X",
+        "q6": "X",
+        "q9": "X",
+        "q10": "X",
+        "q11": "X",
+        "page_number": 1790
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 114
+      }
+    },
+    {
+      "success": true,
+      "page": 1796,
+      "data": {
+        "t": "1120S",
+        "sch": "B-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "shareholders": [
+          {
+            "name": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+            "tin": "578-54-0025",
+            "type": "TRUST",
+            "resp_name": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+            "resp_tin": "578-54-0025"
+          }
+        ],
+        "page_number": 1796
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 1798,
+      "data": {
+        "t": "4562",
+        "y": 2024,
+        "p": 2,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "l24a": true,
+        "l25": 25,
+        "l26": "SEE ATTACHED OVERFLOW",
+        "l26_depr": 4437,
+        "l28": 4437,
+        "page_number": 1798
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 78
+      }
+    },
+    {
+      "success": true,
+      "page": 1786,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "sh": "MARY ANN FURUTA",
+        "sh_id": "324-34-3920",
+        "pct": 0.8,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 176,
+          "l2": 5577,
+          "l3": 5753,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 4320
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 176,
+            "total": 176,
+            "dist": 132,
+            "end": 44
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 5577,
+            "total": 5577,
+            "dist": 4188,
+            "end": 1389
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1786
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 223
+      }
+    },
+    {
+      "success": true,
+      "page": 1784,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "sh": "PARKER TOWNSEND",
+        "sh_id": "686-56-6726",
+        "pct": 0.651333,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 143,
+          "l2": 4540,
+          "l3": 4683,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3518
+        },
+        "p3": {
+          "nj_aaa": {
+            "l1": 0,
+            "l2": 143,
+            "l5": 143,
+            "l6": 108,
+            "l7": 35
+          },
+          "non_nj_aaa": {
+            "l1": 0,
+            "l2": 4540,
+            "l5": 4540,
+            "l6": 3410,
+            "l7": 1130
+          }
+        },
+        "p4": {
+          "l1": 0,
+          "l4": 0
+        },
+        "p5": {
+          "l1": 0
+        },
+        "page_number": 1784
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 239
+      }
+    },
+    {
+      "success": true,
+      "page": 1791,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "K",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "b1": 724177,
+        "b4": 2206,
+        "b15a": 1297,
+        "b16c": 7243,
+        "b16d": 540000,
+        "page_number": 1791
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 77
+      }
+    },
+    {
+      "success": true,
+      "page": 1788,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "sh": "JUDY JAN",
+        "sh_id": "332-34-0530",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "pct": 0.066662,
+        "nonres": true,
+        "consenting": true,
+        "p2": {
+          "l1": 15,
+          "l2": 465,
+          "l3": 480,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 360
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 15,
+            "total": 15,
+            "dist": 11,
+            "end": 4
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 465,
+            "total": 465,
+            "dist": 349,
+            "end": 116
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1788
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 214
+      }
+    },
+    {
+      "success": true,
+      "page": 1795,
+      "data": {
+        "t": "form",
+        "form": "1125-E",
+        "y": 2024,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "officers": [
+          {
+            "name": "ROBERT M. DUGAN",
+            "ssn": "018-44-0380",
+            "pct_time": 100,
+            "pct_stock": 26.84,
+            "comp": 162000
+          },
+          {
+            "name": "JASON G. WOLK",
+            "ssn": "267-69-8469",
+            "pct_time": 100,
+            "pct_stock": 4.67,
+            "comp": 157846
+          },
+          {
+            "name": "JACOB A. SWICK",
+            "ssn": "219-13-5963",
+            "pct_time": 100,
+            "pct_stock": 0.67,
+            "comp": 139498
+          }
+        ],
+        "l2": 459344,
+        "l4": 459344,
+        "page_number": 1795
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 185
+      }
+    },
+    {
+      "success": true,
+      "page": 1783,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "RAYMOND C. BROPHY",
+        "ssn4": "4148",
+        "pct": 0.666667,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3599
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 110,
+            "end": 37
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3489,
+            "end": 1158
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1783
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 217
+      }
+    },
+    {
+      "success": true,
+      "page": 1785,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "FINLEY TOWNSEND",
+        "sh_id": "756-93-2105",
+        "p1": {
+          "pct": 0.651333,
+          "nonres": true,
+          "consenting": true
+        },
+        "p2": {
+          "nj_inc": 144,
+          "non_nj_inc": 4541,
+          "pro_rata": 4685,
+          "gain_nj": 0,
+          "gain_non_nj": 0,
+          "total_gain": 0,
+          "payments": 0,
+          "pte": 0,
+          "distrib": 3517
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 144,
+            "total": 144,
+            "distrib": 108,
+            "end": 36
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4541,
+            "total": 4541,
+            "distrib": 3409,
+            "end": 1132
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "interest": 0
+        },
+        "page_number": 1785
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 248
+      }
+    },
+    {
+      "success": true,
+      "page": 1782,
+      "data": {
+        "t": "NJK1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "sh": "CHRISTOPHER B. BROPHY",
+        "sh_id": "219-69-5908",
+        "pct": 0.666667,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 147,
+          "l2": 4647,
+          "l3": 4794,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 3601
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 147,
+            "total": 147,
+            "dist": 111,
+            "end": 36
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 4647,
+            "total": 4647,
+            "dist": 3490,
+            "end": 1157
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1782
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 221
+      }
+    },
+    {
+      "success": true,
+      "page": 1787,
+      "data": {
+        "t": "form",
+        "form": "NJ-K-1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716/000",
+        "sh": "PETER L TOWNSEND REVOCABLE TRUST U/A/D 6/8/22",
+        "sh_id": "578-54-0025",
+        "pct": 46.666666,
+        "nonres": true,
+        "consent": true,
+        "p2": {
+          "l1": 10291,
+          "l2": 325307,
+          "l3": 335598,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0,
+          "l9": 252000
+        },
+        "p3": {
+          "nj_aaa": {
+            "beg": 0,
+            "inc": 10291,
+            "total": 10291,
+            "dist": 7728,
+            "end": 2563
+          },
+          "non_nj_aaa": {
+            "beg": 0,
+            "inc": 325307,
+            "total": 325307,
+            "dist": 244272,
+            "end": 81035
+          }
+        },
+        "p4": {
+          "beg": 0,
+          "end": 0
+        },
+        "p5": {
+          "int": 0
+        },
+        "page_number": 1787
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 251
+      }
+    },
+    {
+      "success": true,
+      "page": 1794,
+      "data": {
+        "t": "form",
+        "form": "1125-A",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "l1": 1907601,
+        "l2": 861621,
+        "l4": 248872,
+        "l5": 27618,
+        "l6": 3045712,
+        "l7": 1898338,
+        "l8": 1147374,
+        "inv_method": "cost",
+        "s263a": "no",
+        "inv_change": "no",
+        "page_number": 1794
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 108
+      }
+    },
+    {
+      "success": true,
+      "page": 1755,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 4",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "desc": "Schedule K Part VI - Nonresident S/H Pro-Rata Shares",
+        "shareholders": [
+          {
+            "name": "JEANNETTE BROPHY",
+            "ssn4": "9478",
+            "nj": 1029,
+            "not_nj": 32531,
+            "distrib": 25200
+          },
+          {
+            "name": "WILLIAM P. WEIL",
+            "ssn4": "5311",
+            "nj": 993,
+            "not_nj": 31387,
+            "distrib": 24314
+          },
+          {
+            "name": "ROBERT DUGAN",
+            "ssn4": "0380",
+            "nj": 5948,
+            "not_nj": 188022,
+            "distrib": 145652
+          },
+          {
+            "name": "TYLER M. TOWNSEND",
+            "ssn4": "2044",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3600
+          },
+          {
+            "name": "PAUL T. TOWNSEND",
+            "ssn4": "5516",
+            "nj": 147,
+            "not_nj": 4648,
+            "distrib": 3600
+          },
+          {
+            "name": "OSCAR L. MILES",
+            "ssn4": "9122",
+            "nj": 29,
+            "not_nj": 929,
+            "distrib": 720
+          },
+          {
+            "name": "LYNN D. JULIAN",
+            "ssn4": "8274",
+            "nj": 10,
+            "not_nj": 310,
+            "distrib": 240
+          },
+          {
+            "name": "PETER L. TOWNSEND JR",
+            "ssn4": "2267",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3599
+          },
+          {
+            "name": "MEGAN RYAN",
+            "ssn4": "5170",
+            "nj": 5,
+            "not_nj": 155,
+            "distrib": 121
+          },
+          {
+            "name": "PATRICK RYAN",
+            "ssn4": "8526",
+            "nj": 5,
+            "not_nj": 155,
+            "distrib": 120
+          },
+          {
+            "name": "DEBRA MALOY-WALSH",
+            "ssn4": "9344",
+            "nj": 15,
+            "not_nj": 465,
+            "distrib": 360
+          },
+          {
+            "name": "JENNIFER MALOY-KEOGH",
+            "ssn4": "9318",
+            "nj": 14,
+            "not_nj": 464,
+            "distrib": 360
+          },
+          {
+            "name": "JASON G. WOLK",
+            "ssn4": "8469",
+            "nj": 1030,
+            "not_nj": 32531,
+            "distrib": 25200
+          },
+          {
+            "name": "DAVID REDANZ",
+            "ssn4": "4953",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3600
+          },
+          {
+            "name": "JACOB SWICK",
+            "ssn4": "5963",
+            "nj": 147,
+            "not_nj": 4648,
+            "distrib": 3599
+          },
+          {
+            "name": "CHRISTOPHER CROSSAN",
+            "ssn4": "0931",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3601
+          },
+          {
+            "name": "ANDREW T. BROPHY",
+            "ssn4": "2637",
+            "nj": 220,
+            "not_nj": 6971,
+            "distrib": 5399
+          },
+          {
+            "name": "BRENDA B. PIVIROTTO",
+            "ssn4": "5503",
+            "nj": 221,
+            "not_nj": 6971,
+            "distrib": 5401
+          },
+          {
+            "name": "OLIVIA B. PIVIROTTO",
+            "ssn4": "6434",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3599
+          },
+          {
+            "name": "THEODORA F. BROPHY",
+            "ssn4": "2988",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3601
+          },
+          {
+            "name": "PAUL T. PIVIROTTO",
+            "ssn4": "4916",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3600
+          },
+          {
+            "name": "JULIETTE I. BROPHY",
+            "ssn4": "5390",
+            "nj": 147,
+            "not_nj": 4648,
+            "distrib": 3599
+          },
+          {
+            "name": "CHRISTOPHER B. BROPHY",
+            "ssn4": "5908",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3601
+          },
+          {
+            "name": "RAYMOND C. BROPHY",
+            "ssn4": "4148",
+            "nj": 147,
+            "not_nj": 4647,
+            "distrib": 3599
+          },
+          {
+            "name": "PARKER TOWNSEND",
+            "ssn4": "6726",
+            "nj": 143,
+            "not_nj": 4540,
+            "distrib": 3518
+          },
+          {
+            "name": "FINLEY TOWNSEND",
+            "ssn4": "2105",
+            "nj": 144,
+            "not_nj": 4541,
+            "distrib": 3517
+          }
+        ],
+        "page": 22,
+        "page_number": 1755
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 1022
+      }
+    },
+    {
+      "success": true,
+      "page": 1793,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "M1M2",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "m1": {
+          "l1": 710838,
+          "l3a": 8302,
+          "l3b": 7243,
+          "l3_total": 15545,
+          "l4": 726383,
+          "l8": 726383
+        },
+        "m2": {
+          "l1": 1429420,
+          "l2": 724177,
+          "l3": 2206,
+          "l5": 7243,
+          "l6": 2148560,
+          "l7": 540000,
+          "l8": 1608560,
+          "d1": 10000,
+          "d6": 10000,
+          "d8": 10000
+        },
+        "page_number": 1793
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 159
+      }
+    },
+    {
+      "success": true,
+      "page": 1799,
+      "data": {
+        "t": "4562",
+        "part": "V",
+        "line": 26,
+        "title": "Listed Property >50% Business Use",
+        "vehicles": [
+          {
+            "desc": "LEXUS RC350",
+            "date": "08/10/15",
+            "bus_pct": 70,
+            "cost": 66612,
+            "basis": 41028,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #2",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 29111,
+            "basis": 21111,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1085
+          },
+          {
+            "desc": "2016 AUDI",
+            "date": "05/01/16",
+            "bus_pct": 70,
+            "cost": 52879,
+            "basis": 31415,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #1",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 28730,
+            "basis": 20730,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 726
+          },
+          {
+            "desc": "2022 CHEVROLET",
+            "date": "01/14/22",
+            "bus_pct": 70,
+            "cost": 63695,
+            "basis": 31146,
+            "life": 5,
+            "method": "200DB-HY"
+          }
+        ],
+        "total": 4437,
+        "page_number": 1799
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 306
+      }
+    },
+    {
+      "success": true,
+      "page": 1797,
+      "data": {
+        "t": "4562",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "bus": "OTHER DEPRECIATION",
+        "macrs": [
+          {
+            "class": "25-year",
+            "rec": "25 yrs.",
+            "method": "S/L"
+          },
+          {
+            "class": "Residential rental",
+            "rec": "27.5 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "Residential rental",
+            "rec": "27.5 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "Nonresidential real",
+            "rec": "39 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "Nonresidential real",
+            "conv": "MM",
+            "method": "S/L"
+          }
+        ],
+        "secC": [
+          {
+            "class": "Class life",
+            "method": "S/L"
+          },
+          {
+            "class": "12-year",
+            "rec": "12 yrs.",
+            "method": "S/L"
+          },
+          {
+            "class": "30-year",
+            "rec": "30 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          },
+          {
+            "class": "40-year",
+            "rec": "40 yrs.",
+            "conv": "MM",
+            "method": "S/L"
+          }
+        ],
+        "b21": 4437,
+        "b22": 4437,
+        "page_number": 1797
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 275
+      }
+    },
+    {
+      "success": true,
+      "page": 1789,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "main",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "inc_date": "04/26/1988",
+        "s_date": "04/26/1988",
+        "assets": 3364640,
+        "shareholders": 29,
+        "gross": 6564365,
+        "cogs": 1147374,
+        "profit": 5416991,
+        "inc": 5416991,
+        "comp": 459344,
+        "wages": 1632839,
+        "repairs": 16732,
+        "rents": 155918,
+        "taxes": 158902,
+        "interest": 97855,
+        "depr": 4437,
+        "adv": 80968,
+        "benefits": 69492,
+        "other_ded": 2016327,
+        "ded": 4692814,
+        "ord": 724177,
+        "preparer": "MEREDITH TUCKER, CPA",
+        "prep_firm": "KAUFMAN, ROSSIN & CO., P.A.",
+        "prep_addr": "100 SE 3RD AVENUE, SUITE 2400, FT. LAUDERDALE, FL 33394",
+        "prep_phone": "954-566-4400",
+        "prep_ein": "59-1818353",
+        "ptin": "P00848596",
+        "prep_date": "03/21/25",
+        "page_number": 1789
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 298
+      }
+    },
+    {
+      "success": true,
+      "page": 1792,
+      "data": {
+        "t": "1120S",
+        "y": 2024,
+        "sch": "K_L",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "pg": 4,
+        "k17a": 2206,
+        "k18": 726383,
+        "L": {
+          "assets": {
+            "1": {
+              "b": 353352,
+              "d": 689532
+            },
+            "2a": {
+              "a": 997522,
+              "c": 679553
+            },
+            "2b": {
+              "b": 997522,
+              "d": 679553
+            },
+            "3": {
+              "b": 1907601,
+              "d": 1898338
+            },
+            "6": {
+              "a": "STMT6",
+              "b": 192315,
+              "d": 71741
+            },
+            "10a": {
+              "a": 822887,
+              "c": 822887
+            },
+            "10b": {
+              "a": 784672,
+              "b": 38215,
+              "c": 797411,
+              "d": 25476
+            },
+            "13a": {
+              "a": 1996618,
+              "c": 1996618
+            },
+            "13b": {
+              "a": 1996618,
+              "b": 0,
+              "c": 1996618,
+              "d": 0
+            },
+            "15": {
+              "b": 3489005,
+              "d": 3364640
+            }
+          },
+          "liab": {
+            "16": {
+              "b": 266034,
+              "d": 255638
+            },
+            "17": {
+              "b": 15820,
+              "d": 0
+            },
+            "18": {
+              "a": "STMT7",
+              "b": 178259,
+              "d": 9272
+            },
+            "19": {
+              "b": 400000,
+              "d": 300000
+            },
+            "20": {
+              "b": 967300,
+              "d": 967300
+            },
+            "22": {
+              "b": 150000,
+              "d": 150000
+            },
+            "23": {
+              "b": 691884,
+              "d": 691884
+            },
+            "24": {
+              "a": "STMT8",
+              "b": 819708,
+              "d": 990546
+            },
+            "27": {
+              "b": 3489005,
+              "d": 3364640
+            }
+          }
+        },
+        "page_number": 1792
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 388
+      }
+    },
+    {
+      "success": true,
+      "page": 1752,
+      "data": {
+        "t": "form",
+        "form": "CBT-160-A",
+        "y": 2024,
+        "state": "NJ",
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "unitary": "NU",
+        "l1": 562,
+        "l2": 0,
+        "l3": 562,
+        "l5_dates": [
+          "04/15/2024",
+          "06/17/2024",
+          "09/16/2024",
+          "12/16/2024"
+        ],
+        "page_number": 1752
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 110
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 1800,
+    "pages_successful": 1800,
+    "cache_read_tokens": 23746896,
+    "cache_write_tokens": 320904,
+    "input_tokens": 2758401,
+    "output_tokens": 255454,
+    "errors": 0
+  },
+  "cost": 34.057453
+}

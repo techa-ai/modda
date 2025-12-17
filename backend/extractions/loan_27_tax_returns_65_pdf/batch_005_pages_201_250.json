@@ -1,0 +1,1680 @@
+{
+  "batch": 5,
+  "pages_range": [
+    201,
+    250
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 209,
+      "data": {
+        "t": "blank",
+        "page_number": 209
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 207,
+      "data": {
+        "t": "blank",
+        "r": "page 20 separator",
+        "page_number": 207
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 202,
+      "data": {
+        "t": "blank",
+        "page_number": 202
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 223,
+      "data": {
+        "t": "blank",
+        "page_number": 223
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 228,
+      "data": {
+        "t": "blank",
+        "r": "page 41 separator",
+        "page_number": 228
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 214,
+      "data": {
+        "t": "blank",
+        "r": "page 27 separator",
+        "page_number": 214
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 205,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": "3 of 3",
+        "sh": "WILLIAM P. WEIL",
+        "ssn": "121-36-5311",
+        "b39": 0,
+        "page_number": 205
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 63
+      }
+    },
+    {
+      "success": true,
+      "page": 226,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "y": 2023,
+        "st": "CO",
+        "pg": 3,
+        "sh": "PAUL T. TOWNSEND",
+        "ssn4": "5516",
+        "b39": 0,
+        "page_number": 226
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 230,
+      "data": {
+        "t": "blank",
+        "page_number": 230
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 216,
+      "data": {
+        "t": "blank",
+        "page_number": 216
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 204,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "WILLIAM P. WEIL",
+        "ssn": "121-36-5311",
+        "credits": [],
+        "page_number": 204
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 58
+      }
+    },
+    {
+      "success": true,
+      "page": 221,
+      "data": {
+        "t": "blank",
+        "r": "page 34 separator",
+        "page_number": 221
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 212,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "ROBERT DUGAN",
+        "ssn4": "0380",
+        "b39": 0,
+        "page_number": 212
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 53
+      }
+    },
+    {
+      "success": true,
+      "page": 219,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "TYLER M. TOWNSEND",
+        "ssn4": "2044",
+        "b39": 0,
+        "page_number": 219
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 56
+      }
+    },
+    {
+      "success": true,
+      "page": 225,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2023,
+        "sh": "PAUL T. TOWNSEND",
+        "ssn": "573-77-5516",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 225
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 266
+      }
+    },
+    {
+      "success": true,
+      "page": 203,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "WILLIAM P. WEIL",
+        "sh_ssn": "121-36-5311",
+        "sh_addr": "1624 DUBLIN DRIVE",
+        "sh_city": "RICHMOND H",
+        "sh_st": "GA",
+        "sh_zip": "31324",
+        "nonres": true,
+        "dr0108": true,
+        "dr0107": true,
+        "b1a": 17958,
+        "b1b": 272,
+        "b13a": 228279,
+        "b13b": 3463,
+        "page_number": 203
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 188
+      }
+    },
+    {
+      "success": true,
+      "page": 210,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_ein": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "ROBERT DUGAN",
+        "sh_ssn": "018-44-0380",
+        "sh_addr": "1821 CANBY COURT",
+        "sh_city": "MARCO ISLA",
+        "sh_st": "FL",
+        "sh_zip": "34145",
+        "nonres": true,
+        "dr0108": true,
+        "composite": true,
+        "a": {
+          "l1": 107314,
+          "l13": 1364208
+        },
+        "b": {
+          "l1": 1628,
+          "l13": 20693
+        },
+        "page_number": 210
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 191
+      }
+    },
+    {
+      "success": true,
+      "page": 222,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Tax Remittance",
+        "sh": "TYLER M TOWNSEND",
+        "ssn": "569-23-2044",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "entity": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "entity_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 40.0,
+        "l2": 2.0,
+        "page_number": 222
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 158
+      }
+    },
+    {
+      "success": true,
+      "page": 208,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Tax Remittance",
+        "sh": "WILLIAM P WEIL",
+        "ssn4": "5311",
+        "type": "Individual",
+        "addr": "1624 DUBLIN DRIVE",
+        "city": "RICHMOND HILL",
+        "sh_st": "GA",
+        "zip": "31324",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "l1": 272.0,
+        "l2": 12.0,
+        "page_number": 208
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 213,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "state": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "ROBERT DUGAN",
+          "ssn4": "0380",
+          "addr": "1821 CANBY COURT",
+          "city": "MARCO ISLAND",
+          "st": "FL",
+          "zip": "34145"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 213
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 169
+      }
+    },
+    {
+      "success": true,
+      "page": 218,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "y": 2023,
+        "pg": 2,
+        "state": "CO",
+        "sh": "TYLER M. TOWNSEND",
+        "ssn": "569-23-2044",
+        "desc": "Partner's Share of Credits",
+        "lines": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 218
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 274
+      }
+    },
+    {
+      "success": true,
+      "page": 227,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Agreement",
+        "sh": "PAUL T TOWNSEND",
+        "ssn": "573-77-5516",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "period": "01/01/2023-12/31/2023",
+        "page_number": 227
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 156
+      }
+    },
+    {
+      "success": true,
+      "page": 235,
+      "data": {
+        "t": "blank",
+        "r": "page 48 separator",
+        "page_number": 235
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 206,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "state": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "partner": {
+          "name": "WILLIAM P WEIL",
+          "ssn4": "5311",
+          "addr": "1624 DUBLIN DRIVE",
+          "city": "RICHMOND HILL",
+          "st": "GA",
+          "zip": "31324"
+        },
+        "corp": {
+          "name": "THOR GUARD, INC.",
+          "ein": "65-0057716",
+          "acct": "65874513",
+          "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+          "city": "SUNRISE",
+          "st": "FL",
+          "zip": "33323"
+        },
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 206
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 169
+      }
+    },
+    {
+      "success": true,
+      "page": 217,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "TYLER M. TOWNSEND",
+        "ssn": "569-23-2044",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN C",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "nonres": true,
+        "dr0108": true,
+        "dr0107": true,
+        "colA": {
+          "b1": 2658,
+          "b13": 33799
+        },
+        "colB": {
+          "b1": 40,
+          "b13": 513
+        },
+        "page_number": 217
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 193
+      }
+    },
+    {
+      "success": true,
+      "page": 229,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "state": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "sh": "PAUL T TOWNSEND",
+        "ssn": "573-77-5516",
+        "addr": "319 VIA DE LINDA",
+        "city": "SAN JUAN CAPISTRANO",
+        "st": "CA",
+        "zip": "92675",
+        "entity": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "entity_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 40.0,
+        "l2": 2.0,
+        "page_number": 229
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 166
+      }
+    },
+    {
+      "success": true,
+      "page": 224,
+      "data": {
+        "t": "K1_CO",
+        "y": 2023,
+        "form": "DR 0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PAUL T. TOWNSEND",
+        "sh_ssn": "573-77-5516",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN C",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "nonres": true,
+        "dr0108": true,
+        "b1": 2659,
+        "b1_co": 40,
+        "b13": 33799,
+        "b13_co": 512,
+        "page_number": 224
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 185
+      }
+    },
+    {
+      "success": true,
+      "page": 242,
+      "data": {
+        "t": "blank",
+        "r": "page 55 separator",
+        "page_number": 242
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 201,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner Tax Remittance",
+        "entity": "Individual",
+        "ssn4": "9478",
+        "name": "JEANNETTE BROPHY",
+        "addr": "480 SABAL PALM LANE",
+        "city": "VERO BEACH",
+        "state": "FL",
+        "zip": "32963",
+        "pte": "THOR GUARD, INC.",
+        "pte_ein": "65-0057716",
+        "co_acct": "65874513",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 282.0,
+        "l2": 12.0,
+        "page_number": 201
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 163
+      }
+    },
+    {
+      "success": true,
+      "page": 220,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "TYLER M TOWNSEND",
+          "ssn4": "2044",
+          "addr": "319 VIA DE LINDA",
+          "city": "SAN JUAN CAPISTRANO",
+          "st": "CA",
+          "zip": "92675"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 220
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 143
+      }
+    },
+    {
+      "success": true,
+      "page": 237,
+      "data": {
+        "t": "blank",
+        "page_number": 237
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 215,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity": "Individual",
+        "ssn": "018-44-0380",
+        "name": "ROBERT DUGAN",
+        "addr": "1821 CANBY COURT",
+        "city": "MARCO ISLAND",
+        "state": "FL",
+        "zip": "34145",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_state": "FL",
+        "pte_zip": "33323",
+        "l1": 1628.0,
+        "l2": 72.0,
+        "page_number": 215
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 187
+      }
+    },
+    {
+      "success": true,
+      "page": 233,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": "3 of 3",
+        "sh": "DONALD JAN",
+        "ssn": "355-30-2864",
+        "b39": 0,
+        "page_number": 233
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 60
+      }
+    },
+    {
+      "success": true,
+      "page": 211,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2023,
+        "sh": "ROBERT DUGAN",
+        "ssn": "018-44-0380",
+        "credits": [
+          {
+            "l": 16,
+            "d": "Advanced Industry Investment",
+            "v": 0
+          },
+          {
+            "l": 17,
+            "d": "Business Personal Property",
+            "v": 0
+          },
+          {
+            "l": 18,
+            "d": "Child care center family care home investment",
+            "v": 0
+          },
+          {
+            "l": 19,
+            "d": "Child care contribution",
+            "v": 0
+          },
+          {
+            "l": 20,
+            "d": "Colorado job growth incentive",
+            "v": 0
+          },
+          {
+            "l": 21,
+            "d": "Preservation of Historic Structures",
+            "v": 0
+          },
+          {
+            "l": 22,
+            "d": "SALT Parity lower-tier partnership",
+            "v": 0
+          },
+          {
+            "l": 23,
+            "d": "Enterprise zone agricultural processing new employee",
+            "v": 0
+          },
+          {
+            "l": 24,
+            "d": "Enterprise zone commercial vehicle investment tax",
+            "v": 0
+          },
+          {
+            "l": 25,
+            "d": "Enterprise zone contribution",
+            "v": 0
+          },
+          {
+            "l": 26,
+            "d": "Enterprise zone employee health insurance",
+            "v": 0
+          },
+          {
+            "l": 27,
+            "d": "Enterprise zone enhanced rural agricultural processing new employee",
+            "v": 0
+          },
+          {
+            "l": 28,
+            "d": "Enterprise zone enhanced rural new employee",
+            "v": 0
+          },
+          {
+            "l": 29,
+            "d": "Enterprise zone investment tax",
+            "v": 0
+          },
+          {
+            "l": 30,
+            "d": "Enterprise zone job training investment tax",
+            "v": 0
+          },
+          {
+            "l": 31,
+            "d": "Enterprise zone research and experimental activities",
+            "v": 0
+          },
+          {
+            "l": 32,
+            "d": "Enterprise zone vacant commercial building rehabilitation",
+            "v": 0
+          },
+          {
+            "l": 33,
+            "d": "Refundable Heat Pump",
+            "v": 0
+          },
+          {
+            "l": 34,
+            "d": "Nonrefundable Heat Pump",
+            "v": 0
+          },
+          {
+            "l": 35,
+            "d": "Refundable Residential Energy Storage Systems",
+            "v": 0
+          },
+          {
+            "l": 36,
+            "d": "Nonrefundable Residential Energy Storage Systems",
+            "v": 0
+          },
+          {
+            "l": 37,
+            "d": "Homeless Contribution",
+            "v": 0
+          },
+          {
+            "l": 38,
+            "d": "Alternative Transportation Options",
+            "v": 0
+          }
+        ],
+        "page_number": 211
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 465
+      }
+    },
+    {
+      "success": true,
+      "page": 244,
+      "data": {
+        "t": "blank",
+        "page_number": 244
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 232,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2023,
+        "sh": "DONALD JAN",
+        "ssn": "355-30-2864",
+        "credits": [
+          {
+            "l": 16,
+            "v": 0
+          },
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          }
+        ],
+        "page_number": 232
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 262
+      }
+    },
+    {
+      "success": true,
+      "page": 239,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 2,
+        "sh": "SUSAN DUGAN",
+        "ssn": "353-36-8523",
+        "credits": [],
+        "page_number": 239
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 56
+      }
+    },
+    {
+      "success": true,
+      "page": 240,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "pg": "3of3",
+        "y": 2023,
+        "sh": "SUSAN DUGAN",
+        "ssn4": "8523",
+        "b39": 0,
+        "page_number": 240
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 55
+      }
+    },
+    {
+      "success": true,
+      "page": 231,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "y": 2023,
+        "st": "CO",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "DONALD JAN",
+        "ssn": "355-30-2864",
+        "sh_addr": "2247 SUTTON DRIVE",
+        "sh_city": "SOUTH ELGI",
+        "sh_st": "IL",
+        "sh_zip": "60177",
+        "nonres": true,
+        "dr0107": true,
+        "dr0108": true,
+        "page_number": 231
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 160
+      }
+    },
+    {
+      "success": true,
+      "page": 234,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "state": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "DONALD JAN",
+          "ssn4": "2864",
+          "addr": "2247 SUTTON DRIVE",
+          "city": "SOUTH ELGIN",
+          "st": "IL",
+          "zip": "60177"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 234
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 175
+      }
+    },
+    {
+      "success": true,
+      "page": 249,
+      "data": {
+        "t": "blank",
+        "r": "page 62 separator",
+        "page_number": 249
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 16
+      }
+    },
+    {
+      "success": true,
+      "page": 238,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "y": 2023,
+        "st": "CO",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "SUSAN DUGAN",
+        "sh_id": "353-36-8523",
+        "sh_addr": "1821 CANBY COURT",
+        "sh_city": "MARCO ISLA",
+        "sh_st": "FL",
+        "sh_zip": "34145",
+        "nonres": true,
+        "dr0107": true,
+        "dr0108": true,
+        "items": [
+          {
+            "l": 1,
+            "a": 256,
+            "co": 4
+          },
+          {
+            "l": 13,
+            "a": 3260,
+            "co": 50
+          }
+        ],
+        "page_number": 238
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 192
+      }
+    },
+    {
+      "success": true,
+      "page": 236,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity": "Individual",
+        "ssn": "355-30-2864",
+        "name": "JAN DONALD",
+        "addr": "2247 SUTTON DRIVE",
+        "city": "SOUTH ELGIN",
+        "state": "IL",
+        "zip": "60177",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_state": "FL",
+        "pte_zip": "33323",
+        "l1": 0,
+        "l2": 0,
+        "page_number": 236
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 182
+      }
+    },
+    {
+      "success": true,
+      "page": 247,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "OSCAR L. MILES",
+        "ssn": "326-32-9122",
+        "b39": 0,
+        "page_number": 247
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 245,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "y": 2023,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_id": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "OSCAR L. MILES",
+        "sh_id": "326-32-9122",
+        "sh_addr": "918 PAWN AVENUE",
+        "sh_city": "QUINCY",
+        "sh_st": "IL",
+        "sh_zip": "62305",
+        "nonres": true,
+        "dr0107": true,
+        "dr0108": true,
+        "items": {
+          "b1a": 532,
+          "b1b": 8,
+          "b13a": 6759,
+          "b13b": 102
+        },
+        "page_number": 245
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 187
+      }
+    },
+    {
+      "success": true,
+      "page": 246,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2023,
+        "sh": "OSCAR L. MILES",
+        "ssn": "326-32-9122",
+        "credits": [],
+        "page_number": 246
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 243,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Statement of Colorado Tax Remittance for Nonresident Partner or Shareholder",
+        "entity": "Individual",
+        "ssn": "353-36-8523",
+        "name": "SUSAN DUGAN",
+        "addr": "1821 CANBY COURT",
+        "city": "MARCO ISLAND",
+        "state": "FL",
+        "zip": "34145",
+        "pte": "THOR GUARD, INC.",
+        "pte_acct": "65874513",
+        "pte_ein": "65-0057716",
+        "pte_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "pte_city": "SUNRISE",
+        "pte_state": "FL",
+        "pte_zip": "33323",
+        "l1": 4.0,
+        "l2": 0.0,
+        "page_number": 243
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 186
+      }
+    },
+    {
+      "success": true,
+      "page": 250,
+      "data": {
+        "t": "form",
+        "form": "DR0108",
+        "y": 2023,
+        "st": "CO",
+        "desc": "Nonresident Partner Tax Remittance",
+        "sh": "OSCAR L MILES",
+        "ssn": "326-32-9122",
+        "addr": "918 PAWN AVENUE",
+        "city": "QUINCY",
+        "state": "IL",
+        "zip": "62305",
+        "entity": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "entity_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "l1": 8.0,
+        "l2": 0.0,
+        "page_number": 250
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 151
+      }
+    },
+    {
+      "success": true,
+      "page": 248,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "OSCAR L MILES",
+          "ssn4": "9122",
+          "addr": "918 PAWN AVENUE",
+          "city": "QUINCY",
+          "st": "IL",
+          "zip": "62305"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 248
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 173
+      }
+    },
+    {
+      "success": true,
+      "page": 241,
+      "data": {
+        "t": "form",
+        "form": "DR0107",
+        "y": 2023,
+        "st": "CO",
+        "title": "Nonresident Partner/Shareholder Agreement",
+        "sh": {
+          "name": "SUSAN DUGAN",
+          "ssn4": "8523",
+          "addr": "1821 CANBY COURT",
+          "city": "MARCO ISLAND",
+          "st": "FL",
+          "zip": "34145"
+        },
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "period": {
+          "beg": "01/01/2023",
+          "end": "12/31/2023"
+        },
+        "page_number": 241
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 175
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 250,
+    "pages_successful": 250,
+    "cache_read_tokens": 3021846,
+    "cache_write_tokens": 320904,
+    "input_tokens": 383000,
+    "output_tokens": 30486,
+    "errors": 0
+  },
+  "cost": 6.193723
+}

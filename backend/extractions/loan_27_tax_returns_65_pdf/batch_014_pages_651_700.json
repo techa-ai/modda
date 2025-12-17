@@ -1,0 +1,1598 @@
+{
+  "batch": 14,
+  "pages_range": [
+    651,
+    700
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 653,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "PAUL T PIVIROTTO",
+        "ssn": "220574916",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 653
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 73
+      }
+    },
+    {
+      "success": true,
+      "page": 654,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "form": "KS",
+        "pg": 3,
+        "y": 2023,
+        "sh": "PAUL T PIVIROTTO",
+        "ssn": "220574916",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "st_id": "9083842",
+        "l36": 116,
+        "l37": 10,
+        "l47": 0.00378,
+        "l48": 10,
+        "l49": 1,
+        "composite": true,
+        "page_number": 654
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 676,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "st": "MN",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "MARY ANN FURUTA",
+        "sh_id": "324343920",
+        "sh_addr": "27101 WEST COVENTRY COURT, BARRINGTON, IL 62305",
+        "entity": "Individual",
+        "pct": 0.8,
+        "cont": true,
+        "page_number": 676
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 112
+      }
+    },
+    {
+      "success": true,
+      "page": 665,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "RAYMOND C BROPHY",
+        "ssn": "037204148",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 665
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 72
+      }
+    },
+    {
+      "success": true,
+      "page": 658,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 3,
+        "sh": "JULIETTE I BROPHY",
+        "ssn": "218595390",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l36": 116,
+        "l37": 10,
+        "l47": 0.00378,
+        "l48": 10,
+        "l49": 1,
+        "l49_elect": true,
+        "page_number": 658
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 105
+      }
+    },
+    {
+      "success": true,
+      "page": 671,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 33,
+        "desc": "Nonresident Shareholder",
+        "steps": {
+          "s3_pct": 0.8,
+          "s6_pct": 0.00378,
+          "s8": 9,
+          "s9": 9,
+          "s13_pct": 0.00378,
+          "s17": 9
+        },
+        "page_number": 671
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 663,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 31,
+        "desc": "Nonresident Shareholder",
+        "steps": {
+          "s3_pct": 0.8,
+          "s6_pct": 0.00378,
+          "s8": 10,
+          "s9": 10,
+          "s13_pct": 0.00378,
+          "s17": 10
+        },
+        "page_number": 663
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 657,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "JULIETTE I BROPHY",
+        "ssn": "218595390",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 657
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 673,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "FINLEY TOWNSEND",
+        "ssn": "756932105",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 673
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 73
+      }
+    },
+    {
+      "success": true,
+      "page": 672,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2023,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "FINLEY TOWNSEND",
+        "sh_id": "756932105",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "entity": "Individual",
+        "pct": 0.6513,
+        "cont": true,
+        "page_number": 672
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 677,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "MARY ANN FURUTA",
+        "ssn4": "3920",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 677
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 73
+      }
+    },
+    {
+      "success": true,
+      "page": 660,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2023,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "CHRISTOPHER B BROPHY",
+        "sh_id": "219695908",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "cont": true,
+        "page_number": 660
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 140
+      }
+    },
+    {
+      "success": true,
+      "page": 668,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2023,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "PARKER TOWNSEND",
+        "sh_id": "686566726",
+        "sh_addr": "319 VIA DE LINDA, SAN JUAN CAPISTRANO, CA 92675",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 0.6513,
+        "cont": true,
+        "page_number": 668
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 142
+      }
+    },
+    {
+      "success": true,
+      "page": 651,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 28,
+        "desc": "Nonresident Shareholder",
+        "steps": {
+          "s3_pct": 0.8,
+          "s6_pct": 0.00378,
+          "s8": 10,
+          "s9": 10,
+          "s13_pct": 0.00378,
+          "s17": 10
+        },
+        "page_number": 651
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 678,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "pg": 3,
+        "y": 2023,
+        "sh": "MARY ANN FURUTA",
+        "ssn": "324343920",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l36": 139,
+        "l37": 12,
+        "l47": 0.00378,
+        "l48": 12,
+        "l49": 1,
+        "composite_elect": true,
+        "page_number": 678
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 664,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2023,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "RAYMOND C BROPHY",
+        "sh_id": "037204148",
+        "sh_addr": "480 SABAL PALM LANE, VERO BEACH, FL 32963",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "cont": true,
+        "page_number": 664
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 141
+      }
+    },
+    {
+      "success": true,
+      "page": 670,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "y": 2023,
+        "pg": 3,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "sh": "PARKER TOWNSEND",
+        "ssn": "686566726",
+        "b36": 113,
+        "b37": 9,
+        "b47": 0.00378,
+        "b48": 9,
+        "b49": 1,
+        "composite_elect": true,
+        "page_number": 670
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 105
+      }
+    },
+    {
+      "success": true,
+      "page": 661,
+      "data": {
+        "t": "K1_state",
+        "st": "MN",
+        "form": "KS",
+        "pg": 2,
+        "y": 2023,
+        "sh": "CHRISTOPHER B BROPHY",
+        "ssn": "219695908",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "page_number": 661
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 669,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "PARKER TOWNSEND",
+        "ssn": "686566726",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 669
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 72
+      }
+    },
+    {
+      "success": true,
+      "page": 680,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2023,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "PETER L TOWNSEND REVOCABLE",
+        "sh_id": "578540025",
+        "entity": "Trust",
+        "pct": 46.6667,
+        "cont": true,
+        "page_number": 680
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 96
+      }
+    },
+    {
+      "success": true,
+      "page": 679,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 35,
+        "desc": "Nonresident Shareholder",
+        "steps": {
+          "s3_pct": 0.8,
+          "s6_pct": 0.00378,
+          "s8": 12,
+          "s9": 12,
+          "s13_pct": 0.00378,
+          "s17": 12
+        },
+        "page_number": 679
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 662,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "pg": 3,
+        "y": 2023,
+        "sh": "CHRISTOPHER B BROPHY",
+        "sh_id": "219695908",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l36": 117,
+        "l37": 10,
+        "l47": 0.00378,
+        "l48": 10,
+        "l49": 1,
+        "composite_elect": true,
+        "page_number": 662
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 666,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "sch": "K1",
+        "pg": 3,
+        "y": 2023,
+        "sh": "RAYMOND C BROPHY",
+        "ssn": "037204148",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l36": 116,
+        "l37": 11,
+        "l47": 0.00378,
+        "l48": 11,
+        "l49": 1,
+        "l49_elect": true,
+        "page_number": 666
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 675,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 34,
+        "desc": "Nonresident Shareholder",
+        "steps": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 37-45",
+            "v": 10
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 10
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 48",
+            "v": 10
+          }
+        ],
+        "page_number": 675
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 185
+      }
+    },
+    {
+      "success": true,
+      "page": 655,
+      "data": {
+        "t": "stmt",
+        "form": "MN_Source_Income",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 29,
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "items": [
+          {
+            "step": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "step": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "step": 8,
+            "d": "Add Schedule KS lines 37-45",
+            "v": 10
+          },
+          {
+            "step": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 10
+          },
+          {
+            "step": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "step": 17,
+            "d": "Total to Schedule KS line 48",
+            "v": 10
+          }
+        ],
+        "page_number": 655
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 184
+      }
+    },
+    {
+      "success": true,
+      "page": 659,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2023,
+        "corp": "THOR GUARD INC",
+        "ein": "650057716",
+        "sh": 30,
+        "desc": "Nonresident Shareholder",
+        "steps": {
+          "s3_pct": 0.8,
+          "s6_pct": 0.00378,
+          "s8": 10,
+          "s9": 10,
+          "s13_pct": 0.00378,
+          "s17": 10
+        },
+        "page_number": 659
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 107
+      }
+    },
+    {
+      "success": true,
+      "page": 652,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2023,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "PAUL T PIVIROTTO",
+        "sh_id": "220574916",
+        "sh_addr": "3711 BRADLEY LANE, CHEVY CHASE, MD 20815",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "cont": true,
+        "page_number": 652
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 115
+      }
+    },
+    {
+      "success": true,
+      "page": 656,
+      "data": {
+        "t": "form",
+        "form": "MN-KS",
+        "y": 2023,
+        "state": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "JULIETTE I BROPHY",
+        "sh_id": "218595390",
+        "sh_addr": "3213 PICKWICK LANE, CHEVY CHASE, MD 20815",
+        "entity": "Individual",
+        "pct": 0.6667,
+        "cont": true,
+        "page_number": 656
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 117
+      }
+    },
+    {
+      "success": true,
+      "page": 667,
+      "data": {
+        "t": "stmt",
+        "form": "MN Source Income",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 32,
+        "desc": "Nonresident Shareholder",
+        "items": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 37-45",
+            "v": 11
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 11
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 48",
+            "v": 11
+          }
+        ],
+        "page_number": 667
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 178
+      }
+    },
+    {
+      "success": true,
+      "page": 681,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "PETER L TOWNSEND REVOCABLE",
+        "sh_id": "578540025",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 681
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 78
+      }
+    },
+    {
+      "success": true,
+      "page": 685,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "y": 2023,
+        "pg": 2,
+        "sh": "JUDY JAN",
+        "ssn": "332340530",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "cont": true,
+        "page_number": 685
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 70
+      }
+    },
+    {
+      "success": true,
+      "page": 686,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "st": "MN",
+        "y": 2023,
+        "pg": 3,
+        "sh": "JUDY JAN",
+        "ssn": "332340530",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "l36": 12,
+        "l37": 1,
+        "l47": 0.00378,
+        "l48": 1,
+        "l49": "X",
+        "page_number": 686
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 99
+      }
+    },
+    {
+      "success": true,
+      "page": 682,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "pg": 3,
+        "y": 2023,
+        "sh": "PETER L TOWNSEND REVOCABLE",
+        "sh_id": "578540025",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "b36": 8133,
+        "b37": 704,
+        "b47": 0.00378,
+        "b48": 704,
+        "b49": 69,
+        "composite": true,
+        "page_number": 682
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 107
+      }
+    },
+    {
+      "success": true,
+      "page": 688,
+      "data": {
+        "t": "form",
+        "form": "CBT-200-TS",
+        "st": "NJ",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "period": {
+          "beg": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "l1": 562,
+        "l2": 281,
+        "l6": 843,
+        "l8": 843,
+        "page_number": 688
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 95
+      }
+    },
+    {
+      "success": true,
+      "page": 684,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "st": "MN",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_tax_id": "9083842",
+        "sh": "JUDY JAN",
+        "sh_id": "332340530",
+        "sh_addr": "121 WILLOW BRANCH LANE, CHELSEA, AL 35043",
+        "entity": "Individual",
+        "pct": 0.0667,
+        "cont": true,
+        "page_number": 684
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 108
+      }
+    },
+    {
+      "success": true,
+      "page": 687,
+      "data": {
+        "t": "form",
+        "form": "MN_Source_Income",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 37,
+        "desc": "Nonresident Shareholder",
+        "steps": {
+          "s3_pct": 0.8,
+          "s6_pct": 0.00378,
+          "s8": 1,
+          "s9": 1,
+          "s13_pct": 0.00378,
+          "s17": 1
+        },
+        "page_number": 687
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 698,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "sch": "K Liquidated",
+        "y": 2023,
+        "pg": 10,
+        "corp": "THOR GUARD, INC.",
+        "desc": "S Corporation Shareholders' Shares of Income, Deductions - NJ S Corporation Income (Loss) Worksheet Upon Complete Liquidation",
+        "empty": true,
+        "page_number": 698
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 85
+      }
+    },
+    {
+      "success": true,
+      "page": 695,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "sch": "F,H,J",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "schF": {
+          "a_total_comp": 305846,
+          "c_balance": 305846,
+          "ref": "STATEMENT 4"
+        },
+        "schH": {},
+        "schJ": {
+          "l5": 188193,
+          "l6": 188193,
+          "l7": 5644406,
+          "l8": 0.033342
+        },
+        "page_number": 695
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 120
+      }
+    },
+    {
+      "success": true,
+      "page": 683,
+      "data": {
+        "t": "stmt",
+        "form": "MN_Source",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "sh": 36,
+        "desc": "Minnesota Source Income for Nonresident Shareholder",
+        "items": [
+          {
+            "s": 3,
+            "d": "Addback percentage",
+            "v": 0.8
+          },
+          {
+            "s": 6,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "s": 8,
+            "d": "Add Schedule KS lines 37-45",
+            "v": 704
+          },
+          {
+            "s": 9,
+            "d": "Combine Steps 7 and 8",
+            "v": 704
+          },
+          {
+            "s": 13,
+            "d": "Apportionment percentage",
+            "v": 0.00378
+          },
+          {
+            "s": 17,
+            "d": "Total to Schedule KS line 48",
+            "v": 704
+          }
+        ],
+        "page_number": 683
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 182
+      }
+    },
+    {
+      "success": true,
+      "page": 699,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "sch": "K",
+        "pg": 11,
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "desc": "Schedule K Liquidated - S Corporation Shareholders Shares of Income, Deductions",
+        "parts": [
+          "Part IV-A: Analysis of NJ Accumulated Adjustments Account",
+          "Part IV-B: NJ Earnings and Profits"
+        ],
+        "note": "All fields blank",
+        "page_number": 699
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 117
+      }
+    },
+    {
+      "success": true,
+      "page": 690,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "y": 2023,
+        "pg": 2,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "q1_type": "MANUFACTURING",
+        "q1_prod": "ELECTRONIC EQUIPMENT",
+        "q2_loc": "SUNRISE, FLORIDA",
+        "q3": "No",
+        "q4a": "No",
+        "q5": "No",
+        "q6": "No",
+        "q7": "No",
+        "q8": "NA",
+        "q9": "No",
+        "q10": "No",
+        "q11": "No",
+        "q12": "No",
+        "q13": "No",
+        "page_number": 690
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 137
+      }
+    },
+    {
+      "success": true,
+      "page": 691,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "sch": "A",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "pg": 3,
+        "l1a": 5644406,
+        "l1c": 5644406,
+        "l2": 1033769,
+        "l3": 4610637,
+        "l6": 4610637,
+        "l7": 305846,
+        "l8": 1467123,
+        "l9": 19599,
+        "l11": 155350,
+        "l12": 183439,
+        "l13": 102031,
+        "l14a": 6543,
+        "l14c": 6543,
+        "l16": 65202,
+        "l18": 84768,
+        "l19": 1821921,
+        "l20": 4211822,
+        "l21": 398815,
+        "l29": 398815,
+        "l31": 398815,
+        "page_number": 691
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 188
+      }
+    },
+    {
+      "success": true,
+      "page": 696,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "sch": "K",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "pg": 8,
+        "p1": {
+          "l1": 29,
+          "l2": 29
+        },
+        "p2": {
+          "l1": 398815,
+          "l3": 398815,
+          "l5": 398815,
+          "l6d": 6602,
+          "l6": 6602,
+          "l8": 392213
+        },
+        "p3": {
+          "l1": 392213,
+          "l1a": 0,
+          "l1b": 0,
+          "l2": 392213,
+          "l3": 0.033342,
+          "l4": 13077,
+          "l5": 0,
+          "l6": 13077,
+          "l8": 13077,
+          "l9": 379136
+        },
+        "page_number": 696
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 178
+      }
+    },
+    {
+      "success": true,
+      "page": 689,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "y": 2023,
+        "st": "NJ",
+        "corp": "THOR GUARD INC",
+        "fein": "650-057-716/000",
+        "nj_corp": "6500-5771-6",
+        "s_elect": "04261988",
+        "inc_st": "FL",
+        "inc_date": "04261988",
+        "bus_code": "334500",
+        "books_care": "JASON WOLK",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "state": "FL",
+        "zip": "33323",
+        "phone": "9548350900",
+        "l1": 0,
+        "l2a": 0,
+        "l2b": 562,
+        "l4": 562,
+        "l5": 281,
+        "l7": 843,
+        "l8a": 843,
+        "l8d": 843,
+        "l9": 0,
+        "l12": 40,
+        "l13": 40,
+        "preparer": "KAUFMAN ROSSIN CO., P.A.",
+        "prep_addr": "FT. LAUDERDALE, FL 33394",
+        "prep_ein": "59-1818353",
+        "prep_ptin": "P00848596",
+        "page_number": 689
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 251
+      }
+    },
+    {
+      "success": true,
+      "page": 697,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "y": 2023,
+        "pg": 9,
+        "corp": "THOR GUARD, INC.",
+        "ein": "650-057-716/000",
+        "partIVA": {
+          "l2": {
+            "a": 13077,
+            "b": 379136,
+            "c": 392213
+          },
+          "l5": {
+            "a": 13077,
+            "b": 379136,
+            "c": 392213
+          },
+          "l6": {
+            "a": 1995,
+            "b": 58005,
+            "c": 60000
+          },
+          "l7": {
+            "a": 11082,
+            "b": 321131,
+            "c": 332213
+          }
+        },
+        "partVI": {
+          "l1": "SEE STATEMENT 5",
+          "total": {
+            "c": 13077,
+            "d": 379136,
+            "e": 60000
+          }
+        },
+        "page_number": 697
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 693,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "y": 2023,
+        "pg": 5,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "sch": "A-3/A-4",
+        "A3": {
+          "part1": {},
+          "part2": {}
+        },
+        "A4": {
+          "l1": 188193,
+          "l2": 5644406,
+          "l3": 0.033342,
+          "l4": 0,
+          "l5": 0,
+          "l6": 0,
+          "l7": 0,
+          "l8": 0
+        },
+        "page_number": 693
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 128
+      }
+    },
+    {
+      "success": true,
+      "page": 700,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "sch": "K Liquidated",
+        "y": 2023,
+        "pg": 12,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "desc": "S Corps Shareholders Shares of Income, Deductions, Etc.",
+        "parts": [
+          "V-Resident Shareholders",
+          "VI-Consenting Nonresident",
+          "VII-Nonconsenting Nonresident"
+        ],
+        "data": "blank",
+        "page_number": 700
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 116
+      }
+    },
+    {
+      "success": true,
+      "page": 692,
+      "data": {
+        "t": "form",
+        "form": "CBT-100S",
+        "sch": "A",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "fein": "650-057-716/000",
+        "pg": 4,
+        "l32": 398815,
+        "l39": 398815,
+        "l40": 0.033342,
+        "l41": 13297,
+        "l43": 13297,
+        "pt2_l1": 0,
+        "pt2_l2": 0.033342,
+        "pt2_l3": 0,
+        "schA2": {
+          "l1": 1840419,
+          "l2": 818091,
+          "l5": 282860,
+          "l6": 2941370,
+          "l7": 1907601,
+          "l8": 1033769
+        },
+        "page_number": 692
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 161
+      }
+    },
+    {
+      "success": true,
+      "page": 694,
+      "data": {
+        "t": "1120S",
+        "sch": "L",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "state": "NJ",
+        "form": "CBT-100S",
+        "assets": {
+          "l1": {
+            "beg": 206177,
+            "end": 353352
+          },
+          "l2": {
+            "beg": 880987,
+            "end": 997522
+          },
+          "l12": {
+            "beg": 132872,
+            "end": 192315
+          },
+          "l13": {
+            "beg": 1220036,
+            "end": 1543189
+          },
+          "l15": {
+            "beg": 822887,
+            "end": 822887
+          },
+          "l15a": {
+            "beg": 751168,
+            "end": 784672
+          },
+          "l17": {
+            "beg": 1840419,
+            "end": 1907601
+          },
+          "l19": {
+            "beg": 1912138,
+            "end": 1945816
+          },
+          "l20": {
+            "beg": 3132174,
+            "end": 3489005
+          }
+        },
+        "liab": {
+          "l21": {
+            "beg": 249764,
+            "end": 266034
+          },
+          "l22": {
+            "end": 15820
+          },
+          "l23": {
+            "beg": 80563,
+            "end": 178259
+          },
+          "l24": {
+            "beg": 400000,
+            "end": 400000
+          },
+          "l25": {
+            "beg": 1045507,
+            "end": 967300
+          },
+          "l27b": {
+            "beg": 150000,
+            "end": 150000
+          },
+          "l28": {
+            "beg": 691884,
+            "end": 691884
+          },
+          "l30": {
+            "beg": 514456,
+            "end": 819708
+          },
+          "l33": {
+            "beg": 3132174,
+            "end": 3489005
+          }
+        },
+        "page_number": 694
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 359
+      }
+    },
+    {
+      "success": true,
+      "page": 674,
+      "data": {
+        "t": "form",
+        "form": "KS",
+        "pg": 3,
+        "y": 2023,
+        "st": "MN",
+        "corp": "THOR GUARD, INC.",
+        "ein": "650057716",
+        "mn_id": "9083842",
+        "sh": "FINLEY TOWNSEND",
+        "sh_id": "756932105",
+        "l36": 114,
+        "l37": 10,
+        "l47": 0.00378,
+        "l48": 10,
+        "l49": 1,
+        "composite_elect": true,
+        "page_number": 674
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 700,
+    "pages_successful": 700,
+    "cache_read_tokens": 9038796,
+    "cache_write_tokens": 320904,
+    "input_tokens": 1072400,
+    "output_tokens": 84239,
+    "errors": 0
+  },
+  "cost": 13.993023
+}

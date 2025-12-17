@@ -1,0 +1,261 @@
+{
+  "attribute_evidence_rules": {
+    "property_value_attributes": {
+      "attributes": [
+        "Appraised Value",
+        "Property",
+        "property_value",
+        "property_appraised_value"
+      ],
+      "preferred_documents": [
+        "Appraisal Report",
+        "1004",
+        "1005",
+        "Appraisal"
+      ],
+      "validation_rule": "exact_match",
+      "tolerance": 0,
+      "description": "Property appraised value must match official appraisal report"
+    },
+    
+    "loan_terms_attributes": {
+      "attributes": [
+        "Mort Original Loan Amount",
+        "Loan Amount",
+        "loan_amount",
+        "Mort Interest Rate",
+        "mort_interest_rate",
+        "Mort Loan Term Months",
+        "mort_loan_term_months"
+      ],
+      "preferred_documents": [
+        "Promissory Note",
+        "Note",
+        "Allonge",
+        "Loan Agreement",
+        "Commitment Letter"
+      ],
+      "validation_rule": "exact_match",
+      "tolerance": 0.01,
+      "description": "Loan terms must match promissory note and any allonges"
+    },
+    
+    "monthly_payment_attributes": {
+      "attributes": [
+        "Monthly Principal and Interest Payment",
+        "Mort Initial Pand I Payment Amount",
+        "mort_initial_p_and_i_payment_amount",
+        "Present Housing Payment Amount"
+      ],
+      "preferred_documents": [
+        "Promissory Note",
+        "Loan Estimate",
+        "Closing Disclosure",
+        "Payment Schedule"
+      ],
+      "validation_rule": "calculated_match",
+      "tolerance": 1.0,
+      "description": "Monthly P&I must be calculated from loan amount, rate, and term, or match loan estimate"
+    },
+    
+    "sales_price_attributes": {
+      "attributes": [
+        "Sales Price",
+        "sales_price",
+        "property_sales_price"
+      ],
+      "preferred_documents": [
+        "Purchase Agreement",
+        "Sales Contract",
+        "Executed Contract",
+        "Closing Disclosure"
+      ],
+      "validation_rule": "exact_match",
+      "tolerance": 0,
+      "description": "Sales price must match purchase agreement or closing disclosure"
+    },
+    
+    "hazard_insurance_attributes": {
+      "attributes": [
+        "Proposed Monthly Hazard Insurance Amount",
+        "hazard_insurance_amount"
+      ],
+      "preferred_documents": [
+        "Hazard Insurance",
+        "Insurance Policy",
+        "Insurance Binder",
+        "Insurance Declaration"
+      ],
+      "validation_rule": "monthly_conversion",
+      "tolerance": 1.0,
+      "description": "Hazard insurance amount must match insurance policy (annual premium divided by 12)"
+    },
+    
+    "property_taxes_attributes": {
+      "attributes": [
+        "Proposed Monthly Taxes Amount",
+        "property_taxes_amount"
+      ],
+      "preferred_documents": [
+        "Tax Bill",
+        "Tax Assessment",
+        "Property Tax Statement",
+        "Closing Disclosure"
+      ],
+      "validation_rule": "monthly_conversion",
+      "tolerance": 5.0,
+      "description": "Monthly property taxes must match tax bill or assessment (annual divided by 12)"
+    },
+    
+    "borrower_income_attributes": {
+      "attributes": [
+        "Borrower Total Income Amount",
+        "borrower_total_income_amount",
+        "Combined Total Income Amount",
+        "combined_total_income_amount",
+        "Borrower Other Income Amount",
+        "Combined Base Income Amount"
+      ],
+      "preferred_documents": [
+        "W-2",
+        "Pay Stub",
+        "1099",
+        "K-1",
+        "Form 1102",
+        "Tax Return",
+        "VOE",
+        "Verification of Employment"
+      ],
+      "validation_rule": "sum_calculation",
+      "tolerance": 10.0,
+      "description": "Total income must sum exactly from all income documents (W-2, pay stubs, K-1, 1099, etc.)"
+    },
+    
+    "assets_reserves_attributes": {
+      "attributes": [
+        "Borrower Funds To Close Verified Assets Amount",
+        "borrower_verified_assets_amount",
+        "Borrower Funds To Close Number Of Months Reserves",
+        "reserves_months"
+      ],
+      "preferred_documents": [
+        "Bank Statement",
+        "Asset Statement",
+        "VOD",
+        "Verification of Deposit",
+        "Investment Statement",
+        "Retirement Account Statement"
+      ],
+      "validation_rule": "sum_calculation",
+      "tolerance": 100.0,
+      "description": "Total assets must sum from all bank statements and asset documents"
+    },
+    
+    "debt_obligations_attributes": {
+      "attributes": [
+        "Proposed Monthly All Other Monthly Payments Amount",
+        "monthly_debt_payments",
+        "Present Housing Payment Amount"
+      ],
+      "preferred_documents": [
+        "Credit Report",
+        "Liabilities Report",
+        "VOE",
+        "Debt Statement",
+        "Mortgage Statement"
+      ],
+      "validation_rule": "sum_calculation",
+      "tolerance": 5.0,
+      "description": "Monthly debt obligations must match credit report or sum from individual debt statements"
+    },
+    
+    "credit_score_attributes": {
+      "attributes": [
+        "Representative Credit Indicator Score",
+        "credit_score"
+      ],
+      "preferred_documents": [
+        "Credit Report",
+        "Tri-Merge Credit Report",
+        "FICO Score"
+      ],
+      "validation_rule": "exact_match",
+      "tolerance": 0,
+      "description": "Credit score must match official credit report"
+    },
+    
+    "ltv_ratio_attributes": {
+      "attributes": [
+        "Ltv Ratios Ltv",
+        "LTV Ratios CLT Vto TLTV",
+        "LTV Ratios HCLT Vto HTLTV",
+        "ltv_ratio"
+      ],
+      "preferred_documents": [
+        "Appraisal Report",
+        "Purchase Agreement",
+        "Loan Estimate"
+      ],
+      "validation_rule": "calculated_match",
+      "tolerance": 0.5,
+      "description": "LTV ratios must be calculated correctly: (Loan Amount / Appraised Value) * 100"
+    },
+    
+    "borrower_identity_attributes": {
+      "attributes": [
+        "Borrower Name",
+        "borrower_name",
+        "Co-Borrower Name",
+        "coborrower_name",
+        "Borrower SSN",
+        "borrower_ssn",
+        "Co-Borrower SSN",
+        "coborrower_ssn"
+      ],
+      "preferred_documents": [
+        "Driver License",
+        "Passport",
+        "W-9",
+        "Social Security Card",
+        "ID"
+      ],
+      "validation_rule": "exact_match",
+      "tolerance": 0,
+      "description": "Borrower identity information must match government-issued ID and W-9"
+    },
+    
+    "property_details_attributes": {
+      "attributes": [
+        "Property Address",
+        "property_address",
+        "Property Type",
+        "property_type",
+        "Number of Units",
+        "property_number_of_units",
+        "Occupancy Status",
+        "occupancy_status"
+      ],
+      "preferred_documents": [
+        "Appraisal Report",
+        "Purchase Agreement",
+        "Title Report",
+        "Property Deed"
+      ],
+      "validation_rule": "exact_match",
+      "tolerance": 0,
+      "description": "Property details must match appraisal report and purchase agreement"
+    }
+  },
+  
+  "validation_rules_description": {
+    "exact_match": "Value must match exactly (within tolerance)",
+    "calculated_match": "Value must match calculation from other fields",
+    "sum_calculation": "Value must equal sum of multiple source documents",
+    "monthly_conversion": "Annual amount divided by 12 must equal monthly amount"
+  }
+}
+
+
+
+
+

@@ -1,0 +1,450 @@
+<thinking>
+I need to carefully extract all the data from this Fannie Mae Form 1008 / Freddie Mac Form 1077. Let me go through each section systematically.
+
+**Section I. Borrower and Property Information:**
+- Borrower Name: Carla V Correa
+- Property Address: 4147 Rosa Dr, Pompano Beach, FL 33064
+- SSN: 771-32-7911
+- Property Type: PUD Co-op is checked (X)
+- Project Classification: Freddie Mac
+- Project Name: Veleiros at Crystal Lake POA, Inc.
+- Occupancy Status: Primary (X checked)
+- Number of Units: 1
+- Property Rights: Fee Simple (X checked)
+
+**Section II. Mortgage Information:**
+- Loan Type: Conventional (X checked)
+- Amortization Type: Fixed-Rate—Monthly Payments (X checked)
+- Loan Purpose: Cash-Out Refinance (X checked)
+- Lien Position: Second Mortgage (X checked)
+- Note Information:
+  - Original Loan Amount: $71,000.00
+  - Initial Note Rate: 8.75%
+  - Loan Term: 360
+- Mortgage Originator: Broker (X checked)
+- Buydown: No (X checked)
+
+**Section III. Underwriting Information:**
+- Underwriter's Name: Felicia Hinzman
+- Present Housing Payment: $3,475.86
+
+**Stable Monthly Income:**
+- Borrower / Co-Borrower / Total columns
+- Base Income: $7,482.00 / $0.00 / $7,482.00
+- Other Income: $587.35 / $0.00 / $587.35
+- Positive Cash Flow: $0.00 / - / $0.00
+- (subject property) Total Income: $8,069.35 / $0.00 / $8,069.35
+
+**Qualifying Ratios:**
+- Primary Housing Expense/Income: 49.997%
+- Total Obligations/Income: 49.997%
+- Debt-to-Housing Gap Ratio (Freddie): 0.000%
+
+**Loan-to-Value Ratios:**
+- LTV: 10.659%
+- CLTV/TLTV: 65.529%
+- HCLTV/HTLTV: 65.529%
+
+**Qualifying Rate:**
+- Note Rate: 8.750% (X checked)
+
+**Level of Property Review:**
+- Exterior/Interior (X checked)
+
+**Risk Assessment:**
+- Manual Underwriting (X checked)
+- Yes X No (for some checkbox)
+
+**Proposed Monthly Payments:**
+Looking at the right side of the form:
+- Borrower's Primary Residence
+- First Mortgage P&I: $1,792.29
+- Second Mortgage P&I: $558.56
+- Hazard Insurance: $317.85
+- Taxes: $958.58
+- Mortgage Insurance: $0.00
+- HOA Fees: $407.14
+- Lease/Ground Rent: $0.00
+- Other: $0.00
+- Total Primary Housing Expense: $4,034.42
+
+Other Obligations section:
+- Other Obligations: $0.00
+- Negative Cash Flow (subject property): $0.00
+- All Other Monthly Payments: $4,034.42
+- Total All Monthly Payments: $4,034.42
+
+Wait, let me re-read this more carefully. The math check says:
+Total All Monthly Payments = Total Primary Housing Expense + All Other Monthly Payments + Negative Cash Flow
+
+If Total Primary Housing Expense = $4,034.42
+And I see values like $0.00 and $4,034.42 in the Other Obligations section...
+
+Looking at the form again:
+- Total Primary Housing Expense: $4,034.42
+- Other Obligations (header, no value)
+- Negative Cash Flow: $0.00
+- (subject property): $0.00
+- All Other Monthly Payments: $4,034.42
+- Total All Monthly Payments: $4,034.42
+
+Wait, that doesn't make sense mathematically. Let me re-read the critical rule:
+"If Total Primary = $4,034.42 and you see $4,034.42 aligned with 'All Other Monthly Payments', that is WRONG. The $4,034.42 is actually 'Total All Monthly Payments', and 'All Other Monthly Payments' is likely $0.00"
+
+So the correct interpretation should be:
+- Total Primary Housing Expense: $4,034.42
+- Other Obligations (header)
+- Negative Cash Flow: $0.00
+- (subject property): $0.00
+- All Other Monthly Payments: $0.00
+- Total All Monthly Payments: $4,034.42
+
+Math check: $4,034.42 + $0.00 + $0.00 = $4,034.42 ✓
+
+**Borrower Funds to Close:**
+- Required: $0.00
+- Verified Assets: (blank)
+
+**Source of Funds:** (blank)
+**No. of Months Reserves:** (blank)
+**Interested Party Contributions:** (blank)
+
+**Representative Credit/Indicator Score:** 714
+
+**Community Lending/Affordable Housing Initiative:** Yes X No
+**Home Buyers/Homeownership Education Certificate in file:** Yes X No
+
+**Underwriter Comments:**
+ULI 549300XY701IELCE5Q08204600799957
+
+**Section IV. Seller, Contract, and Contact Information:**
+- Seller No.: 2046007999
+- Investor Loan No.: 407863
+
+Let me now format this as JSON with bboxes. I need to estimate the bounding boxes based on the image dimensions (2550x3300 pixels).
+</thinking>
+
+```json
+{
+  "I. Borrower and Property Information": {
+    "Borrower Name": {
+      "value": "Carla V Correa",
+      "_bbox": [263, 49, 650, 65]
+    },
+    "Property Address": {
+      "value": "4147 Rosa Dr, Pompano Beach, FL 33064",
+      "_bbox": [263, 65, 650, 81]
+    },
+    "SSN": {
+      "value": "771-32-7911",
+      "_bbox": [2350, 49, 2500, 65]
+    },
+    "Property Type": {
+      "PUD Co-op": {
+        "value": "True",
+        "_bbox": [47, 130, 130, 145]
+      }
+    },
+    "Project Classification": {
+      "Freddie Mac": {
+        "value": "True",
+        "_bbox": [263, 88, 350, 103]
+      }
+    },
+    "Project Name": {
+      "value": "Veleiros at Crystal Lake POA, Inc.",
+      "_bbox": [263, 195, 650, 210]
+    },
+    "Occupancy Status": {
+      "Primary Residence": {
+        "value": "True",
+        "_bbox": [1750, 88, 1850, 103]
+      }
+    },
+    "Additional Property Information": {
+      "Number of Units": {
+        "value": "1",
+        "_bbox": [2100, 88, 2150, 103]
+      }
+    },
+    "Property Rights": {
+      "Fee Simple": {
+        "value": "True",
+        "_bbox": [2000, 130, 2100, 145]
+      }
+    }
+  },
+  "II. Mortgage Information": {
+    "Loan Type": {
+      "Conventional": {
+        "value": "True",
+        "_bbox": [47, 260, 150, 275]
+      }
+    },
+    "Amortization Type": {
+      "Fixed-Rate—Monthly Payments": {
+        "value": "True",
+        "_bbox": [263, 260, 480, 275]
+      }
+    },
+    "Loan Purpose": {
+      "Cash-Out Refinance": {
+        "value": "True",
+        "_bbox": [900, 260, 1050, 275]
+      }
+    },
+    "Lien Position": {
+      "Second Mortgage": {
+        "value": "True",
+        "_bbox": [1400, 295, 1550, 310]
+      }
+    },
+    "Note Information": {
+      "Original Loan Amount": {
+        "value": "$71,000.00",
+        "_bbox": [150, 380, 280, 395]
+      },
+      "Initial Note Rate": {
+        "value": "8.75%",
+        "_bbox": [200, 395, 280, 410]
+      },
+      "Loan Term": {
+        "value": "360",
+        "_bbox": [150, 410, 200, 425]
+      }
+    },
+    "Mortgage Originator": {
+      "Broker": {
+        "value": "True",
+        "_bbox": [650, 395, 720, 410]
+      }
+    },
+    "Buydown": {
+      "No": {
+        "value": "True",
+        "_bbox": [850, 395, 900, 410]
+      }
+    }
+  },
+  "III. Underwriting Information": {
+    "Underwriter's Name": {
+      "value": "Felicia Hinzman",
+      "_bbox": [47, 505, 250, 520]
+    },
+    "Present Housing Payment": {
+      "value": "$3,475.86",
+      "_bbox": [2350, 520, 2500, 535]
+    },
+    "Stable Monthly Income": {
+      "Base Income": {
+        "Borrower": {
+          "value": "$7,482.00",
+          "_bbox": [550, 570, 650, 585]
+        },
+        "Co-Borrower": {
+          "value": "$0.00",
+          "_bbox": [720, 570, 800, 585]
+        },
+        "Total": {
+          "value": "$7,482.00",
+          "_bbox": [880, 570, 980, 585]
+        }
+      },
+      "Other Income": {
+        "Borrower": {
+          "value": "$587.35",
+          "_bbox": [550, 585, 650, 600]
+        },
+        "Co-Borrower": {
+          "value": "$0.00",
+          "_bbox": [720, 585, 800, 600]
+        },
+        "Total": {
+          "value": "$587.35",
+          "_bbox": [880, 585, 980, 600]
+        }
+      },
+      "Positive Cash Flow": {
+        "Borrower": {
+          "value": "$0.00",
+          "_bbox": [550, 600, 650, 615]
+        },
+        "Total": {
+          "value": "$0.00",
+          "_bbox": [880, 600, 980, 615]
+        }
+      },
+      "Total Income": {
+        "Borrower": {
+          "value": "$8,069.35",
+          "_bbox": [550, 630, 650, 645]
+        },
+        "Co-Borrower": {
+          "value": "$0.00",
+          "_bbox": [720, 630, 800, 645]
+        },
+        "Total": {
+          "value": "$8,069.35",
+          "_bbox": [880, 630, 980, 645]
+        }
+      }
+    },
+    "Qualifying Ratios": {
+      "Primary Housing Expense/Income": {
+        "value": "49.997 %",
+        "_bbox": [350, 665, 430, 680]
+      },
+      "Total Obligations/Income": {
+        "value": "49.997 %",
+        "_bbox": [350, 680, 430, 695]
+      },
+      "Debt-to-Housing Gap Ratio (Freddie)": {
+        "value": "0.000 %",
+        "_bbox": [350, 695, 430, 710]
+      }
+    },
+    "Loan-to-Value Ratios": {
+      "LTV": {
+        "value": "10.659 %",
+        "_bbox": [720, 665, 800, 680]
+      },
+      "CLTV/TLTV": {
+        "value": "65.529 %",
+        "_bbox": [720, 680, 800, 695]
+      },
+      "HCLTV/HTLTV": {
+        "value": "65.529 %",
+        "_bbox": [720, 695, 800, 710]
+      }
+    },
+    "Qualifying Rate": {
+      "Note Rate": {
+        "value": "True",
+        "_bbox": [47, 725, 130, 740]
+      },
+      "Rate": {
+        "value": "8.750 %",
+        "_bbox": [200, 725, 280, 740]
+      }
+    },
+    "Level of Property Review": {
+      "Exterior/Interior": {
+        "value": "True",
+        "_bbox": [650, 725, 780, 740]
+      }
+    },
+    "Risk Assessment": {
+      "Manual Underwriting": {
+        "value": "True",
+        "_bbox": [47, 810, 200, 825]
+      }
+    },
+    "Escrow (T&I)": {
+      "Yes": {
+        "value": "True",
+        "_bbox": [650, 810, 720, 825]
+      }
+    },
+    "Proposed Monthly Payments": {
+      "Borrower's Primary Residence": {
+        "First Mortgage P&I": {
+          "value": "$1,792.29",
+          "_bbox": [2350, 570, 2500, 585]
+        },
+        "Second Mortgage P&I": {
+          "value": "$558.56",
+          "_bbox": [2350, 585, 2500, 600]
+        },
+        "Hazard Insurance": {
+          "value": "$317.85",
+          "_bbox": [2350, 600, 2500, 615]
+        },
+        "Taxes": {
+          "value": "$958.58",
+          "_bbox": [2350, 615, 2500, 630]
+        },
+        "Mortgage Insurance": {
+          "value": "$0.00",
+          "_bbox": [2350, 630, 2500, 645]
+        },
+        "HOA Fees": {
+          "value": "$407.14",
+          "_bbox": [2350, 645, 2500, 660]
+        },
+        "Lease/Ground Rent": {
+          "value": "$0.00",
+          "_bbox": [2350, 660, 2500, 675]
+        },
+        "Other": {
+          "value": "$0.00",
+          "_bbox": [2350, 675, 2500, 690]
+        }
+      },
+      "Total Primary Housing Expense": {
+        "value": "$4,034.42",
+        "_bbox": [2350, 705, 2500, 720]
+      },
+      "Other Obligations": {
+        "value": "$0.00",
+        "_bbox": [2350, 735, 2500, 750]
+      },
+      "Negative Cash Flow (subject property)": {
+        "value": "$0.00",
+        "_bbox": [2350, 750, 2500, 765]
+      },
+      "All Other Monthly Payments": {
+        "value": "$0.00",
+        "_bbox": [2350, 765, 2500, 780]
+      },
+      "Total All Monthly Payments": {
+        "value": "$4,034.42",
+        "_bbox": [2350, 780, 2500, 795]
+      }
+    },
+    "Borrower Funds to Close": {
+      "Required": {
+        "value": "$0.00",
+        "_bbox": [2350, 825, 2500, 840]
+      }
+    },
+    "Representative Credit/Indicator Score": {
+      "value": "714",
+      "_bbox": [350, 905, 400, 920]
+    },
+    "Community Lending/Affordable Housing Initiative": {
+      "No": {
+        "value": "True",
+        "_bbox": [900, 905, 950, 920]
+      }
+    },
+    "Home Buyers/Homeownership Education Certificate in file": {
+      "No": {
+        "value": "True",
+        "_bbox": [900, 925, 950, 940]
+      }
+    },
+    "Underwriter Comments": {
+      "value": "ULI 549300XY701IELCE5Q08204600799957",
+      "_bbox": [200, 955, 600, 970]
+    }
+  },
+  "IV. Seller, Contract, and Contact Information": {
+    "Seller No.": {
+      "value": "2046007999",
+      "_bbox": [150, 1065, 280, 1080]
+    },
+    "Investor Loan No.": {
+      "value": "407863",
+      "_bbox": [400, 1065, 500, 1080]
+    }
+  },
+  "_meta": {
+    "form_type": "Fannie Mae Form 1008 06/09",
+    "form_date": "8/29/2025 4:19 AM EDT",
+    "image_dimensions": {
+      "width": 2550,
+      "height": 3300
+    }
+  }
+}
+```

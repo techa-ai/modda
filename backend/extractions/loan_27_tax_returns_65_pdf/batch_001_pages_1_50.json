@@ -1,0 +1,2702 @@
+{
+  "batch": 1,
+  "pages_range": [
+    1,
+    50
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 7,
+      "data": {
+        "t": "ref",
+        "r": "K-1 box codes 15-17",
+        "page_number": 7
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 1,
+      "data": {
+        "t": "W2",
+        "y": 2023,
+        "emp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "ee": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "b1": 158000,
+        "b2": 20400,
+        "b3": 158000,
+        "b4": 9796,
+        "b5": 158000,
+        "b6": 2291,
+        "st": "FL",
+        "copies": 4,
+        "page_number": 1
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 96
+      }
+    },
+    {
+      "success": true,
+      "page": 8,
+      "data": {
+        "t": "SSA",
+        "name": "ROBERT MICHAEL DUGAN",
+        "date": "2025-08-04",
+        "bnc": "25A3935K21644",
+        "gross": 4807.5,
+        "ded": 368.5,
+        "net": 4439,
+        "eff": "2025-01",
+        "type": "Retirement",
+        "past": {
+          "period": "2024-12",
+          "gross": 4750,
+          "ded": 368.5,
+          "net": 4381
+        },
+        "medicare": "A",
+        "medicare_start": "2018-01",
+        "page_number": 8
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 18,
+      "data": {
+        "t": "4562",
+        "y": 2023,
+        "bus": "OTHER",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "b17": 167,
+        "b21": 6376,
+        "b22": 6543,
+        "page_number": 18
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 59
+      }
+    },
+    {
+      "success": true,
+      "page": 19,
+      "data": {
+        "t": "4562",
+        "y": 2023,
+        "pg": 2,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "l24a": true,
+        "l26": "SEE ATTACHED OVERFLOW",
+        "l28": 6376,
+        "page_number": 19
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 62
+      }
+    },
+    {
+      "success": true,
+      "page": 4,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 5,
+        "y": 2024,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Nondeductible expenses",
+            "v": 1954
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income",
+            "v": 195329
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 564314
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 56812
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts",
+            "v": 1771166
+          }
+        ],
+        "page_number": 4
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 141
+      }
+    },
+    {
+      "success": true,
+      "page": 25,
+      "data": {
+        "t": "form",
+        "form": "199A",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "qbi": 398815,
+        "w2_wages": 1772969,
+        "ubia": 253924,
+        "page_number": 25
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 63
+      }
+    },
+    {
+      "success": true,
+      "page": 6,
+      "data": {
+        "t": "ref",
+        "r": "K-1 box 10,12,13 codes",
+        "page_number": 6
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 29
+      }
+    },
+    {
+      "success": true,
+      "page": 5,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 5,
+        "y": 2024,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 1461096
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 1265767
+          }
+        ],
+        "k3": "not prepared",
+        "page_number": 5
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 107
+      }
+    },
+    {
+      "success": true,
+      "page": 12,
+      "data": {
+        "t": "1120S",
+        "sch": "K",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "b1": 398815,
+        "b15a": -63,
+        "b16c": 6602,
+        "b16d": 60000,
+        "page_number": 12
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 71
+      }
+    },
+    {
+      "success": true,
+      "page": 15,
+      "data": {
+        "t": "form",
+        "form": "1125-A",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "inv_beg": 1840419,
+        "purch": 818091,
+        "other": 282860,
+        "total": 2941370,
+        "inv_end": 1907601,
+        "cogs": 1033769,
+        "method": "cost",
+        "9e": false,
+        "9f": false,
+        "page_number": 15
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 99
+      }
+    },
+    {
+      "success": true,
+      "page": 17,
+      "data": {
+        "t": "1120S",
+        "sch": "B-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "shareholders": [
+          {
+            "name": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+            "ssn": "578-54-0025",
+            "type": "TRUST",
+            "responsible": "PETER L TOWNSEND REVOCABLE TRUST U/A/",
+            "resp_ssn": "578-54-0025"
+          }
+        ],
+        "page_number": 17
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 11,
+      "data": {
+        "t": "1120S",
+        "sch": "B",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "pg": 2,
+        "acct": "Accrual",
+        "bus": "MANUFACTURING",
+        "prod": "ELECTRONIC EQUIP",
+        "q3": "X",
+        "q4a": "X",
+        "q4b": "X",
+        "q5a": "X",
+        "q5b": "X",
+        "q6": "X",
+        "q10": "X",
+        "q11": "X",
+        "page_number": 11
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 113
+      }
+    },
+    {
+      "success": true,
+      "page": 24,
+      "data": {
+        "t": "depr_rpt",
+        "y": 2023,
+        "section": "OTHER",
+        "items": [
+          {
+            "no": 135,
+            "desc": "INTANGIBLES",
+            "acq": "06/15/00",
+            "method": "150DB",
+            "life": 15,
+            "line": 17,
+            "cost": 1996618,
+            "basis_depr": 1996618,
+            "accum_beg": 1996618,
+            "curr_depr": 0,
+            "accum_end": 1996618
+          }
+        ],
+        "totals": {
+          "intangibles": {
+            "cost": 1996618,
+            "basis_depr": 1996618,
+            "accum_beg": 1996618,
+            "curr_depr": 0,
+            "accum_end": 1996618
+          },
+          "grand": {
+            "cost": 2764548,
+            "s179": 78694,
+            "reduction": 3040,
+            "basis_depr": 2682813,
+            "accum_beg": 2613167,
+            "curr_depr": 6543,
+            "accum_end": 2619710
+          }
+        },
+        "page_number": 24
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 214
+      }
+    },
+    {
+      "success": true,
+      "page": 20,
+      "data": {
+        "t": "4562",
+        "sch": "V",
+        "y": 2023,
+        "desc": "Listed Property >50% Business Use",
+        "vehicles": [
+          {
+            "desc": "LEXUS RC350",
+            "date": "08/10/15",
+            "bus_pct": 70,
+            "cost": 66612,
+            "basis_depr": 41028,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #2",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 29111,
+            "basis_depr": 21111,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1875
+          },
+          {
+            "desc": "2016 AUDI",
+            "date": "05/01/16",
+            "bus_pct": 70,
+            "cost": 52879,
+            "basis_depr": 31415,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1313
+          },
+          {
+            "desc": "2016 FORD TRANSIT #1",
+            "date": "07/15/16",
+            "bus_pct": 100,
+            "cost": 28730,
+            "basis_depr": 20730,
+            "life": 5,
+            "method": "200DB-HY",
+            "depr": 1875
+          },
+          {
+            "desc": "2022 CHEVROLET",
+            "date": "01/14/22",
+            "bus_pct": 70,
+            "cost": 63695,
+            "basis_depr": 31146,
+            "life": 5,
+            "method": "200DB-HY"
+          }
+        ],
+        "total_depr": 6376,
+        "page_number": 20
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 327
+      }
+    },
+    {
+      "success": true,
+      "page": 9,
+      "data": {
+        "t": "SSA",
+        "pg": 2,
+        "bnc": "25A3935K21644",
+        "medicare": "B",
+        "medicare_start": "2018-01",
+        "medicare_num": "7TF8T89FV48",
+        "dob": "1953-02-01",
+        "page_number": 9
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 67
+      }
+    },
+    {
+      "success": true,
+      "page": 16,
+      "data": {
+        "t": "form",
+        "form": "1125-E",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "officers": [
+          {
+            "name": "ROBERT M. DUGAN",
+            "ssn": "018-44-0380",
+            "pct_time": 100,
+            "pct_stock": 26.84,
+            "comp": 158000
+          },
+          {
+            "name": "JASON G. WOLK",
+            "ssn": "267-69-8469",
+            "pct_time": 100,
+            "pct_stock": 4.67,
+            "comp": 147846
+          }
+        ],
+        "total": 305846,
+        "l4": 305846,
+        "page_number": 16
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 144
+      }
+    },
+    {
+      "success": true,
+      "page": 2,
+      "data": {
+        "t": "W2",
+        "y": 2024,
+        "emp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "ee": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "b1": 162000,
+        "b2": 28400,
+        "b3": 162000,
+        "b4": 10044,
+        "b5": 162000,
+        "b6": 2349,
+        "st": "FL",
+        "copies": 4,
+        "page_number": 2
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 96
+      }
+    },
+    {
+      "success": true,
+      "page": 14,
+      "data": {
+        "t": "1120S",
+        "sch": "M1M2",
+        "y": 2023,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "m1": {
+          "book_inc": 365252,
+          "depr": 26961,
+          "travel": 6602,
+          "add_total": 33563,
+          "inc_total": 398815,
+          "tax_inc": 398815
+        },
+        "m2": {
+          "aaa_beg": 1097207,
+          "ord_inc": 398815,
+          "other_red": 6602,
+          "combine": 1489420,
+          "distrib": 60000,
+          "aaa_end": 1429420,
+          "other_adj_beg": 10000,
+          "other_adj_end": 10000,
+          "other_adj_end2": 10000
+        },
+        "page_number": 14
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 28,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "y": 2023,
+        "stmts": [
+          {
+            "ref": "6",
+            "sch": "L",
+            "desc": "Other Current Assets",
+            "items": [
+              {
+                "d": "Prepaid Expenses",
+                "beg": 132072,
+                "end": 192315
+              },
+              {
+                "d": "Employee Advance",
+                "beg": 800,
+                "end": 0
+              }
+            ],
+            "total_beg": 132872,
+            "total_end": 192315
+          },
+          {
+            "ref": "7",
+            "sch": "L",
+            "desc": "Other Current Liabilities",
+            "items": [
+              {
+                "d": "Accrued Liabilities",
+                "beg": 73685,
+                "end": 131776
+              },
+              {
+                "d": "Sales Tax Payable",
+                "beg": 6878,
+                "end": 8168
+              },
+              {
+                "d": "Other Current Liabilities",
+                "beg": 0,
+                "end": 38315
+              }
+            ],
+            "total_beg": 80563,
+            "total_end": 178259
+          },
+          {
+            "ref": "8",
+            "sch": "L",
+            "desc": "Retained Earnings Analysis",
+            "items": [
+              {
+                "d": "Balance Beginning",
+                "v": 514456
+              },
+              {
+                "d": "Net Income Per Books",
+                "v": 365252
+              },
+              {
+                "d": "Distributions",
+                "v": -60000
+              }
+            ],
+            "total": 819708
+          },
+          {
+            "ref": "9",
+            "sch": "M2",
+            "desc": "AAA Other Reductions",
+            "items": [
+              {
+                "d": "Nondeductible Expenses",
+                "v": 6602
+              }
+            ],
+            "total": 6602
+          }
+        ],
+        "page_number": 28
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 322
+      }
+    },
+    {
+      "success": true,
+      "page": 27,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "y": 2023,
+        "stmts": [
+          {
+            "ref": "STATEMENT 4",
+            "form": "1120S",
+            "line": "16D",
+            "desc": "DISTRIBUTIONS",
+            "items": [
+              {
+                "date": "04/01/23",
+                "v": 2800
+              },
+              {
+                "date": "04/01/23",
+                "v": 2702
+              },
+              {
+                "date": "04/01/23",
+                "v": 16103
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 80
+              },
+              {
+                "date": "04/01/23",
+                "v": 80
+              },
+              {
+                "date": "04/01/23",
+                "v": 27
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 13
+              },
+              {
+                "date": "04/01/23",
+                "v": 13
+              },
+              {
+                "date": "04/01/23",
+                "v": 40
+              },
+              {
+                "date": "04/01/23",
+                "v": 40
+              },
+              {
+                "date": "04/01/23",
+                "v": 2800
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 600
+              },
+              {
+                "date": "04/01/23",
+                "v": 600
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 400
+              },
+              {
+                "date": "04/01/23",
+                "v": 391
+              },
+              {
+                "date": "04/01/23",
+                "v": 391
+              },
+              {
+                "date": "04/01/23",
+                "v": 480
+              },
+              {
+                "date": "04/01/23",
+                "v": 28000
+              },
+              {
+                "date": "04/01/23",
+                "v": 40
+              }
+            ],
+            "total": 60000
+          },
+          {
+            "ref": "STATEMENT 5",
+            "sch": "K",
+            "line": "17D",
+            "desc": "OTHER ITEMS",
+            "items": [
+              {
+                "d": "AGGREGATE BUSINESS ACTIVITY GROSS INCOME OR GAIN",
+                "v": 4610637
+              },
+              {
+                "d": "AGGREGATE BUSINESS ACTIVITY DEDUCTIONS",
+                "v": 4211822
+              },
+              {
+                "d": "SECTION 199A - ORDINARY INCOME (LOSS)",
+                "v": 398815
+              },
+              {
+                "d": "SECTION 199A - W-2 WAGES",
+                "v": 1772969
+              },
+              {
+                "d": "SECTION 199A - UNADJUSTED BASIS OF ASSETS",
+                "v": 253924
+              }
+            ]
+          }
+        ],
+        "page_number": 27
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 610
+      }
+    },
+    {
+      "success": true,
+      "page": 30,
+      "data": {
+        "t": "stmt",
+        "ref": "AMT Depreciation Report",
+        "items": [
+          {
+            "id": 109,
+            "desc": "OSCILLOSCOPE",
+            "date": "100616",
+            "method": "150DB",
+            "life": 7,
+            "cost": 2765,
+            "accum": 1297,
+            "reg_depr": 62,
+            "amt_depr": 85,
+            "adj": -23
+          },
+          {
+            "id": 115,
+            "desc": "NAVIOC RADAR EQUIP-IL",
+            "date": "083116",
+            "method": "150DB",
+            "life": 7,
+            "cost": 4726,
+            "accum": 2218,
+            "reg_depr": 105,
+            "amt_depr": 145,
+            "adj": -40
+          },
+          {
+            "id": 58,
+            "desc": "LEXUS RC350",
+            "date": "081015",
+            "method": "150DB",
+            "life": 5,
+            "cost": 66612,
+            "accum": 12685,
+            "reg_depr": 1313,
+            "amt_depr": 1313,
+            "adj": 0
+          },
+          {
+            "id": 75,
+            "desc": "2016 FORD TRANSIT #2",
+            "date": "071516",
+            "method": "150DB",
+            "life": 5,
+            "cost": 29111,
+            "accum": 18817,
+            "reg_depr": 1875,
+            "amt_depr": 1875,
+            "adj": 0
+          },
+          {
+            "id": 111,
+            "desc": "2016 AUDI",
+            "date": "050116",
+            "method": "150DB",
+            "life": 5,
+            "cost": 52879,
+            "accum": 22382,
+            "reg_depr": 1313,
+            "amt_depr": 1313,
+            "adj": 0
+          },
+          {
+            "id": 112,
+            "desc": "2016 FORD TRANSIT #1",
+            "date": "071516",
+            "method": "150DB",
+            "life": 5,
+            "cost": 28730,
+            "accum": 18760,
+            "reg_depr": 1875,
+            "amt_depr": 1875,
+            "adj": 0
+          }
+        ],
+        "totals": {
+          "cost": 184823,
+          "accum": 76159,
+          "reg_depr": 6543,
+          "amt_depr": 6606,
+          "adj": -63
+        },
+        "macrs_amt_adj": -63,
+        "page_number": 30
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 434
+      }
+    },
+    {
+      "success": true,
+      "page": 26,
+      "data": {
+        "t": "stmt",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "y": 2023,
+        "stmts": [
+          {
+            "ref": "1",
+            "form": "1120S",
+            "line": "12",
+            "desc": "Taxes and Licenses",
+            "items": [
+              {
+                "d": "Licenses and Permits",
+                "v": 49691
+              },
+              {
+                "d": "Payroll Taxes",
+                "v": 133748
+              }
+            ],
+            "total": 183439
+          },
+          {
+            "ref": "2",
+            "form": "1120S",
+            "line": "20",
+            "desc": "Other Deductions",
+            "items": [
+              {
+                "d": "Commissions",
+                "v": 663856
+              },
+              {
+                "d": "Communication and Telephone",
+                "v": 34940
+              },
+              {
+                "d": "Computer Supplies",
+                "v": 154089
+              },
+              {
+                "d": "Consulting Fees",
+                "v": 29532
+              },
+              {
+                "d": "Contract Services",
+                "v": 5415
+              },
+              {
+                "d": "Credit and Collection Fees",
+                "v": 25003
+              },
+              {
+                "d": "Dues and Subscriptions",
+                "v": 13808
+              },
+              {
+                "d": "Installation and Service Fees",
+                "v": 621216
+              },
+              {
+                "d": "Insurance - General",
+                "v": 154273
+              },
+              {
+                "d": "Legal Fees",
+                "v": 10180
+              },
+              {
+                "d": "Less: Section 263A Costs",
+                "v": -249338
+              },
+              {
+                "d": "Meals",
+                "v": 6602
+              },
+              {
+                "d": "Miscellaneous",
+                "v": 1935
+              },
+              {
+                "d": "Office Supplies and Other",
+                "v": 25546
+              },
+              {
+                "d": "Research & Development",
+                "v": 15293
+              },
+              {
+                "d": "Selling Costs",
+                "v": 57000
+              },
+              {
+                "d": "Small Tools and Supplies",
+                "v": 17005
+              },
+              {
+                "d": "Travel",
+                "v": 146762
+              },
+              {
+                "d": "Utilities",
+                "v": 14429
+              },
+              {
+                "d": "Warranty",
+                "v": 74375
+              }
+            ],
+            "total": 1821921
+          },
+          {
+            "ref": "3",
+            "form": "SchK",
+            "line": "16C",
+            "desc": "Nondeductible Expenses",
+            "items": [
+              {
+                "d": "Excluded Meals Expenses",
+                "v": 6602
+              }
+            ],
+            "total": 6602
+          }
+        ],
+        "page_number": 26
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 440
+      }
+    },
+    {
+      "success": true,
+      "page": 29,
+      "data": {
+        "raw_text": "{\"t\":\"stmt\",\"ref\":\"STATEMENT 10\",\"corp\":\"THOR GUARD, INC.\",\"ein\":\"65-0057716\",\"desc\":\"Schedules M-2/L Reconciliation\",\"items\":[{\"d\":\"SCH. M-2 BALANCES\",\"aaa\":1429420,\"oaa\":10000},{\"d\":\"PRIOR YEAR DIFFERENCES\",\"aaa\":-592751},{\"d\":\"BOOK TO TAX DEPRECIATION\",\"aaa\":-26961}],\"subtotals\":{\"aaa\":809708,\"oaa\":10000},\"total_m2\":819708,\"re_end\":819708},{\"t\":\"stmt\",\"ref\":\"STATEMENT 11\",\"form\":\"1125-A\",\"desc\":\"Other Costs\",\"items\":[{\"d\":\"CGS - OTHER COSTS\",\"v\":33522},{\"d\":\"CGS - ADDITIONAL SEC. 263A COSTS\",\"v\":249338}],\"total\":282860}",
+        "page_number": 29
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 225
+      }
+    },
+    {
+      "success": true,
+      "page": 10,
+      "data": {
+        "t": "1120S",
+        "y": 2023,
+        "sch": "main",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "inc_date": "04/26/1988",
+        "s_date": "04/26/1988",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "assets": 3489005,
+        "shareholders": 31,
+        "gross": 5644406,
+        "cogs": 1033769,
+        "profit": 4610637,
+        "inc": 4610637,
+        "comp": 305846,
+        "wages": 1467123,
+        "repairs": 19599,
+        "rents": 155350,
+        "taxes": 183439,
+        "interest": 102031,
+        "depr": 6543,
+        "adv": 65202,
+        "benefits": 84768,
+        "other_ded": 1821921,
+        "ded": 4211822,
+        "ord": 398815,
+        "preparer": "MEREDITH TUCKER, CPA",
+        "prep_firm": "KAUFMAN, ROSSIN & CO., P.A.",
+        "prep_addr": "100 SE 3RD AVENUE, SUITE 2400, FT. LAUDERDALE, FL 33394",
+        "prep_phone": "954-566-4400",
+        "prep_ein": "59-1818353",
+        "prep_ptin": "P00848596",
+        "prep_date": "03/28/24",
+        "page_number": 10
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 300
+      }
+    },
+    {
+      "success": true,
+      "page": 39,
+      "data": {
+        "t": "ref",
+        "r": "K-1 codes Box 10-13",
+        "page_number": 39
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 26
+      }
+    },
+    {
+      "success": true,
+      "page": 13,
+      "data": {
+        "t": "1120S",
+        "sch": "L",
+        "y": 2023,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "l1": {
+          "b": 206177,
+          "d": 353352
+        },
+        "l2a": {
+          "a": 880987,
+          "b": 880987,
+          "c": 997522,
+          "d": 997522
+        },
+        "l2b": {
+          "b": 880987,
+          "d": 997522
+        },
+        "l3": {
+          "b": 1840419,
+          "d": 1907601
+        },
+        "l6": {
+          "a": "STATEMENT 6",
+          "b": 132872,
+          "d": 192315
+        },
+        "l10a": {
+          "a": 822887,
+          "c": 822887
+        },
+        "l10b": {
+          "a": 751168,
+          "b": 71719,
+          "c": 784672,
+          "d": 38215
+        },
+        "l13a": {
+          "a": 1996618,
+          "c": 1996618
+        },
+        "l13b": {
+          "a": 1996618,
+          "b": 0,
+          "c": 1996618,
+          "d": 0
+        },
+        "l15": {
+          "b": 3132174,
+          "d": 3489005
+        },
+        "l16": {
+          "b": 249764,
+          "d": 266034
+        },
+        "l17": {
+          "b": 15820
+        },
+        "l18": {
+          "a": "STATEMENT 7",
+          "b": 80563,
+          "d": 178259
+        },
+        "l19": {
+          "b": 400000,
+          "d": 400000
+        },
+        "l20": {
+          "b": 1045507,
+          "d": 967300
+        },
+        "l22": {
+          "b": 150000,
+          "d": 150000
+        },
+        "l23": {
+          "b": 691884,
+          "d": 691884
+        },
+        "l24": {
+          "a": "STATEMENT 8",
+          "b": 514456,
+          "d": 819708
+        },
+        "l27": {
+          "b": 3132174,
+          "d": 3489005
+        },
+        "l18_reconcile": 398815,
+        "page_number": 13
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 397
+      }
+    },
+    {
+      "success": true,
+      "page": 35,
+      "data": {
+        "t": "ref",
+        "r": "K-1 box 13-17 codes",
+        "page_number": 35
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 27
+      }
+    },
+    {
+      "success": true,
+      "page": 3,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY, SUNRISE, FL 33323",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "ROBERT DUGAN",
+        "sh_addr": "1821 CANBY COURT, MARCO ISLAND, FL 34145",
+        "ssn4": "0380",
+        "entity": "INDIVIDUAL",
+        "pct": 26.972467,
+        "sh_shares_beg": 404587,
+        "sh_shares_end": 404587,
+        "loans_beg": 100000,
+        "b1": 195329,
+        "b4": 595,
+        "b15": [
+          {
+            "c": "A",
+            "v": 350
+          }
+        ],
+        "b16": [
+          {
+            "c": "C*",
+            "v": 1954
+          },
+          {
+            "c": "D",
+            "v": 145652
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 595
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 3
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 266
+      }
+    },
+    {
+      "success": true,
+      "page": 45,
+      "data": {
+        "t": "ref",
+        "r": "K-1 box codes p5",
+        "page_number": 45
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 24
+      }
+    },
+    {
+      "success": true,
+      "page": 49,
+      "data": {
+        "t": "ref",
+        "r": "K-1 codes list",
+        "page_number": 49
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 22
+      }
+    },
+    {
+      "success": true,
+      "page": 38,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 4,
+        "y": 2023,
+        "items": [
+          {
+            "b": "17V",
+            "d": "Ordinary Income",
+            "v": 17958
+          },
+          {
+            "b": "17W",
+            "d": "W-2 Wages",
+            "v": 79830
+          },
+          {
+            "b": "17X",
+            "d": "Unadjusted Basis",
+            "v": 11433
+          },
+          {
+            "b": "17AC",
+            "d": "Gross Receipts",
+            "v": 254148
+          },
+          {
+            "b": "17AJ",
+            "d": "Gross Income/Gain",
+            "v": 207602
+          },
+          {
+            "b": "17AJ",
+            "d": "Deductions",
+            "v": 189644
+          }
+        ],
+        "page_number": 38
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 162
+      }
+    },
+    {
+      "success": true,
+      "page": 34,
+      "data": {
+        "t": "ref",
+        "r": "K-1 codes list",
+        "page_number": 34
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 22
+      }
+    },
+    {
+      "success": true,
+      "page": 42,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 5,
+        "y": 2023,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 1777
+          },
+          {
+            "b": "16D",
+            "d": "Distributions",
+            "date": "04/01/23",
+            "v": 16103
+          }
+        ],
+        "page_number": 42
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 87
+      }
+    },
+    {
+      "success": true,
+      "page": 40,
+      "data": {
+        "t": "ref",
+        "r": "K-1 box codes p4",
+        "page_number": 40
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 24
+      }
+    },
+    {
+      "success": true,
+      "page": 32,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 3,
+        "y": 2023,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 308
+          },
+          {
+            "b": "16D",
+            "d": "Distributions",
+            "date": "04/01/23",
+            "v": 2800
+          }
+        ],
+        "page_number": 32
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 86
+      }
+    },
+    {
+      "success": true,
+      "page": 44,
+      "data": {
+        "t": "ref",
+        "r": "K-1 codes Box 10,12,13",
+        "page_number": 44
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 28
+      }
+    },
+    {
+      "success": true,
+      "page": 37,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 4,
+        "y": 2023,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 297
+          },
+          {
+            "b": "16D",
+            "d": "Distributions",
+            "date": "04/01/23",
+            "v": 2702
+          }
+        ],
+        "page_number": 37
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 86
+      }
+    },
+    {
+      "success": true,
+      "page": 31,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "JEANNETTE BROPHY",
+        "ssn4": "9478",
+        "pct": 4.666667,
+        "sh_shares_beg": 70000,
+        "sh_shares_end": 70000,
+        "b1": 18611,
+        "b15": [
+          {
+            "c": "A",
+            "v": -3
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 308
+          },
+          {
+            "c": "D",
+            "v": 2800
+          }
+        ],
+        "b17": [
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 31
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 192
+      }
+    },
+    {
+      "success": true,
+      "page": 33,
+      "data": {
+        "t": "K1sup",
+        "y": 2023,
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 3,
+        "items": [
+          {
+            "b": "17V",
+            "d": "Ordinary Income",
+            "v": 18611
+          },
+          {
+            "b": "17W",
+            "d": "W-2 Wages",
+            "v": 82739
+          },
+          {
+            "b": "17X",
+            "d": "Unadjusted Basis",
+            "v": 11850
+          },
+          {
+            "b": "17AC",
+            "d": "Gross Receipts",
+            "v": 263406
+          },
+          {
+            "b": "17AJ",
+            "d": "Gross Income/Gain",
+            "v": 215163
+          },
+          {
+            "b": "17AJ",
+            "d": "Deductions",
+            "v": 196552
+          }
+        ],
+        "page_number": 33
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 162
+      }
+    },
+    {
+      "success": true,
+      "page": 50,
+      "data": {
+        "t": "ref",
+        "r": "K-1 box codes pg6",
+        "page_number": 50
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 24
+      }
+    },
+    {
+      "success": true,
+      "page": 48,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 6,
+        "y": 2023,
+        "items": [
+          {
+            "b": "17V",
+            "d": "Ordinary Income",
+            "v": 2658
+          },
+          {
+            "b": "17V",
+            "d": "W-2 Wages",
+            "v": 11820
+          },
+          {
+            "b": "17V",
+            "d": "UBIA",
+            "v": 1693
+          },
+          {
+            "b": "17AC",
+            "d": "Gross Receipts",
+            "v": 37629
+          },
+          {
+            "b": "17AJ",
+            "d": "Gross Income/Gain",
+            "v": 30738
+          },
+          {
+            "b": "17AJ",
+            "d": "Deductions",
+            "v": 28079
+          }
+        ],
+        "page_number": 48
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 157
+      }
+    },
+    {
+      "success": true,
+      "page": 43,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 5,
+        "y": 2023,
+        "items": [
+          {
+            "b": "17V",
+            "d": "QBI",
+            "v": 107314
+          },
+          {
+            "b": "17W",
+            "d": "W-2 wages",
+            "v": 477074
+          },
+          {
+            "b": "17X",
+            "d": "UBIA",
+            "v": 68326
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts",
+            "v": 1518807
+          },
+          {
+            "b": "17AJ",
+            "d": "Agg gross inc/gain",
+            "v": 1240638
+          },
+          {
+            "b": "17AJ",
+            "d": "Agg deductions",
+            "v": 1133324
+          }
+        ],
+        "page_number": 43
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 160
+      }
+    },
+    {
+      "success": true,
+      "page": 47,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 6,
+        "y": 2023,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 44
+          },
+          {
+            "b": "16D",
+            "d": "Distributions",
+            "date": "04/01/23",
+            "v": 400
+          }
+        ],
+        "page_number": 47
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 85
+      }
+    },
+    {
+      "success": true,
+      "page": 36,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "WILLIAM P. WEIL",
+        "ssn4": "5311",
+        "pct": 4.502667,
+        "sh_shares_beg": 67540,
+        "sh_shares_end": 67540,
+        "b1": 17958,
+        "b15": [
+          {
+            "c": "A",
+            "v": -3
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 297
+          },
+          {
+            "c": "D",
+            "v": 2702
+          }
+        ],
+        "b17": [
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 36
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 192
+      }
+    },
+    {
+      "success": true,
+      "page": 46,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "TYLER M. TOWNSEND",
+        "ssn4": "2044",
+        "pct": 0.666667,
+        "sh_shares_beg": 10000,
+        "sh_shares_end": 10000,
+        "b1": 2658,
+        "b16": [
+          {
+            "c": "C",
+            "v": 44
+          },
+          {
+            "c": "D",
+            "v": 400
+          }
+        ],
+        "b17": [
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 46
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 176
+      }
+    },
+    {
+      "success": true,
+      "page": 22,
+      "data": {
+        "t": "depr_rpt",
+        "y": 2023,
+        "cat": "OTHER",
+        "items": [
+          {
+            "id": 96,
+            "desc": "MOLD SENSOR",
+            "date": "08/31/14",
+            "method": "200DB",
+            "life": 7,
+            "cost": 38401,
+            "s179": 19201,
+            "basis": 19200,
+            "accum": 19200,
+            "ded": 0,
+            "end": 19200
+          },
+          {
+            "id": 99,
+            "desc": "ENG COMPUTER-FL",
+            "date": "11/28/14",
+            "method": "200DB",
+            "life": 5,
+            "cost": 693,
+            "s179": 347,
+            "basis": 346,
+            "accum": 346,
+            "ded": 0,
+            "end": 346
+          },
+          {
+            "id": 100,
+            "desc": "COMPUTER-SALES",
+            "date": "03/15/15",
+            "method": "200DB",
+            "life": 5,
+            "cost": 956,
+            "s179": 478,
+            "basis": 478,
+            "accum": 478,
+            "ded": 0,
+            "end": 478
+          },
+          {
+            "id": 101,
+            "desc": "COMPUTER-RECEPTION",
+            "date": "05/15/15",
+            "method": "200DB",
+            "life": 5,
+            "cost": 909,
+            "s179": 455,
+            "basis": 454,
+            "accum": 453,
+            "ded": 0,
+            "end": 453
+          },
+          {
+            "id": 102,
+            "desc": "COMPUTER-ENG",
+            "date": "05/15/15",
+            "method": "200DB",
+            "life": 5,
+            "cost": 1004,
+            "s179": 502,
+            "basis": 502,
+            "accum": 502,
+            "ded": 0,
+            "end": 502
+          },
+          {
+            "id": 103,
+            "desc": "COMPUTER-C SUPPORT",
+            "date": "08/15/15",
+            "method": "200DB",
+            "life": 5,
+            "cost": 971,
+            "s179": 486,
+            "basis": 485,
+            "accum": 485,
+            "ded": 0,
+            "end": 485
+          },
+          {
+            "id": 104,
+            "desc": "COMPUTER-SERVICE",
+            "date": "08/15/15",
+            "method": "200DB",
+            "life": 5,
+            "cost": 956,
+            "s179": 478,
+            "basis": 478,
+            "accum": 478,
+            "ded": 0,
+            "end": 478
+          },
+          {
+            "id": 105,
+            "desc": "COMPUTER-ENG",
+            "date": "11/15/15",
+            "method": "200DB",
+            "life": 5,
+            "cost": 668,
+            "s179": 334,
+            "basis": 334,
+            "accum": 333,
+            "ded": 0,
+            "end": 333
+          },
+          {
+            "id": 106,
+            "desc": "COMPUTER-LENOVO ACCT",
+            "date": "11/15/15",
+            "method": "200DB",
+            "life": 5,
+            "cost": 869,
+            "s179": 435,
+            "basis": 434,
+            "accum": 434,
+            "ded": 0,
+            "end": 434
+          },
+          {
+            "id": 109,
+            "desc": "OSCILLOSCOPE",
+            "date": "10/06/16",
+            "method": "200DB",
+            "life": 7,
+            "cost": 2765,
+            "s179": 1383,
+            "basis": 1382,
+            "accum": 1320,
+            "ded": 62,
+            "end": 1382
+          },
+          {
+            "id": 113,
+            "desc": "COMPUTER-ENG",
+            "date": "10/17/16",
+            "method": "200DB",
+            "life": 5,
+            "cost": 504,
+            "s179": 252,
+            "basis": 252,
+            "accum": 252,
+            "ded": 0,
+            "end": 252
+          },
+          {
+            "id": 130,
+            "desc": "FFE - FL",
+            "date": "06/15/00",
+            "method": "200DB",
+            "life": 5,
+            "cost": 156596,
+            "basis": 156596,
+            "accum": 156596,
+            "ded": 0,
+            "end": 156596
+          },
+          {
+            "id": 141,
+            "desc": "SHARP COPIER MXM 356N",
+            "date": "02/14/17",
+            "method": "200DB",
+            "life": 5,
+            "cost": 4028,
+            "s179": 4028,
+            "ded": 0
+          }
+        ],
+        "subtotal": {
+          "loc": "FL",
+          "cost": 263960,
+          "s179": 34495,
+          "basis": 229465,
+          "accum": 229283,
+          "ded": 62,
+          "end": 229345
+        },
+        "il_items": [
+          {
+            "id": 88,
+            "desc": "HP PAILLION COMPUTER IL",
+            "date": "05/08/13",
+            "method": "200DB",
+            "life": 5,
+            "cost": 764,
+            "s179": 382,
+            "basis": 382,
+            "accum": 381,
+            "ded": 0,
+            "end": 381
+          },
+          {
+            "id": 97,
+            "desc": "COMPUTER-IL",
+            "date": "04/01/14",
+            "method": "200DB",
+            "life": 5,
+            "cost": 731,
+            "s179": 366,
+            "basis": 365,
+            "accum": 365,
+            "ded": 0,
+            "end": 365
+          },
+          {
+            "id": 98,
+            "desc": "COMPUTER-IL",
+            "date": "08/01/14",
+            "method": "200DB",
+            "life": 5,
+            "cost": 771,
+            "s179": 386,
+            "basis": 385,
+            "accum": 384,
+            "ded": 0,
+            "end": 384
+          }
+        ],
+        "page_number": 22
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 998
+      }
+    },
+    {
+      "success": true,
+      "page": 21,
+      "data": {
+        "t": "depr_rpt",
+        "y": 2023,
+        "cat": "OTHER",
+        "items": [
+          {
+            "n": 128,
+            "desc": "LEASE EQUIPMENT",
+            "acq": "06/15/00",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 282410,
+            "s179": 0,
+            "basis": 282410,
+            "accum": 282410,
+            "curr": 0,
+            "end": 282410
+          },
+          {
+            "n": 55,
+            "desc": "L/H IMPROVEMENTS",
+            "acq": "03/01/07",
+            "meth": "150DB",
+            "life": 15,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 6000,
+            "basis": 6000,
+            "accum": 5883,
+            "curr": 0,
+            "end": 5883
+          },
+          {
+            "n": 82,
+            "desc": "SHOW DISPLAY EQUIP",
+            "acq": "02/24/12",
+            "meth": "200DB",
+            "life": 7,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 2769,
+            "s179": 1385,
+            "basis": 1384,
+            "accum": 1384,
+            "curr": 0,
+            "end": 1384
+          },
+          {
+            "n": 83,
+            "desc": "WEATHER STATION-PROD",
+            "acq": "04/27/12",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 376,
+            "s179": 188,
+            "basis": 188,
+            "accum": 188,
+            "curr": 0,
+            "end": 188
+          },
+          {
+            "n": 84,
+            "desc": "VAIO NOTEBOOK",
+            "acq": "05/05/12",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 794,
+            "s179": 397,
+            "basis": 397,
+            "accum": 397,
+            "curr": 0,
+            "end": 397
+          },
+          {
+            "n": 85,
+            "desc": "SAMSUNG NOTEBOOK",
+            "acq": "05/12/12",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 1055,
+            "s179": 528,
+            "basis": 527,
+            "accum": 527,
+            "curr": 0,
+            "end": 527
+          },
+          {
+            "n": 86,
+            "desc": "HP3014N PRINTER",
+            "acq": "10/01/12",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 729,
+            "s179": 365,
+            "basis": 364,
+            "accum": 364,
+            "curr": 0,
+            "end": 364
+          },
+          {
+            "n": 87,
+            "desc": "DELL COMPUTER-ENG",
+            "acq": "10/04/12",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 741,
+            "s179": 371,
+            "basis": 370,
+            "accum": 370,
+            "curr": 0,
+            "end": 370
+          },
+          {
+            "n": 89,
+            "desc": "WATCHGUARD/ROUTER FL",
+            "acq": "07/11/13",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 1239,
+            "s179": 620,
+            "basis": 619,
+            "accum": 619,
+            "curr": 0,
+            "end": 619
+          },
+          {
+            "n": 90,
+            "desc": "DELL DESKTOP - BS/FL",
+            "acq": "08/05/13",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 790,
+            "s179": 395,
+            "basis": 395,
+            "accum": 395,
+            "curr": 0,
+            "end": 395
+          },
+          {
+            "n": 91,
+            "desc": "INJECTION MOLD-HORN",
+            "acq": "10/03/13",
+            "meth": "SL",
+            "life": 7,
+            "ln": 16,
+            "cost": 36415,
+            "basis": 36415,
+            "accum": 36415,
+            "curr": 0,
+            "end": 36415
+          },
+          {
+            "n": 92,
+            "desc": "DELL DESKTOP - RA/FL",
+            "acq": "12/26/13",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 1034,
+            "s179": 517,
+            "basis": 517,
+            "accum": 517,
+            "curr": 0,
+            "end": 517
+          },
+          {
+            "n": 93,
+            "desc": "COMPUTER-FL",
+            "acq": "02/01/14",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 916,
+            "s179": 458,
+            "basis": 458,
+            "accum": 458,
+            "curr": 0,
+            "end": 458
+          },
+          {
+            "n": 94,
+            "desc": "COMPUTER-FL",
+            "acq": "06/12/14",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 1013,
+            "s179": 507,
+            "basis": 506,
+            "accum": 505,
+            "curr": 0,
+            "end": 505
+          },
+          {
+            "n": 95,
+            "desc": "WATCHGUARD ROUTER",
+            "acq": "06/12/14",
+            "meth": "200DB",
+            "life": 5,
+            "conv": "HY",
+            "ln": 17,
+            "cost": 769,
+            "s179": 385,
+            "basis": 384,
+            "accum": 384,
+            "curr": 0,
+            "end": 384
+          }
+        ],
+        "subtotals": {
+          "lease_equip": {
+            "cost": 282410,
+            "accum": 282410,
+            "end": 282410
+          },
+          "ffe_fl": {
+            "cost": 54871,
+            "accum": 54006
+          }
+        },
+        "page_number": 21
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1105
+      }
+    },
+    {
+      "success": true,
+      "page": 41,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "ROBERT DUGAN",
+        "ssn4": "0380",
+        "pct": 26.908174,
+        "shares_sh_beg": 402587,
+        "shares_sh_end": 404587,
+        "loans_end": 100000,
+        "b1": 107314,
+        "b15": [
+          {
+            "c": "A",
+            "v": -17
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 1777
+          },
+          {
+            "c": "D",
+            "v": 16103
+          }
+        ],
+        "b17": [
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 41
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 198
+      }
+    },
+    {
+      "success": true,
+      "page": 23,
+      "data": {
+        "t": "depr_rpt",
+        "y": 2023,
+        "title": "OTHER DEPRECIATION",
+        "cat": "OTHER",
+        "assets": [
+          {
+            "id": 107,
+            "desc": "COMPUTER-IL",
+            "acq": "04/15/15",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY17",
+            "cost": 1434,
+            "s179_exp": 717,
+            "basis": 717,
+            "accum": 717,
+            "ded": 0,
+            "end": 717
+          },
+          {
+            "id": 108,
+            "desc": "COMPUTER-IL",
+            "acq": "11/15/15",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY17",
+            "cost": 876,
+            "s179_exp": 438,
+            "basis": 438,
+            "accum": 437,
+            "ded": 0,
+            "end": 437
+          },
+          {
+            "id": 110,
+            "desc": "IPAD-IL",
+            "acq": "10/25/16",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY17",
+            "cost": 829,
+            "s179_exp": 415,
+            "basis": 414,
+            "accum": 414,
+            "ded": 0,
+            "end": 414
+          },
+          {
+            "id": 114,
+            "desc": "LAPTOPS-IL",
+            "acq": "05/06/16",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY17",
+            "cost": 1832,
+            "s179_exp": 916,
+            "basis": 916,
+            "accum": 916,
+            "ded": 0,
+            "end": 916
+          },
+          {
+            "id": 115,
+            "desc": "NAVIOC RADAR EQUIP-IL",
+            "acq": "08/31/16",
+            "method": "200DB",
+            "life": 7,
+            "conv": "HY17",
+            "cost": 4726,
+            "s179_exp": 2363,
+            "basis": 2363,
+            "accum": 2258,
+            "ded": 105,
+            "end": 2363
+          },
+          {
+            "id": 116,
+            "desc": "PC/PRINTER-IL",
+            "acq": "09/23/16",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY17",
+            "cost": 1232,
+            "s179_exp": 616,
+            "basis": 616,
+            "accum": 615,
+            "ded": 0,
+            "end": 615
+          },
+          {
+            "id": 132,
+            "desc": "FFE - IL",
+            "acq": "06/15/00",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY17",
+            "cost": 22294,
+            "basis": 22294,
+            "accum": 22294,
+            "ded": 0,
+            "end": 22294
+          }
+        ],
+        "other_total": {
+          "cost": 35489,
+          "s179_exp": 6599,
+          "basis": 28890,
+          "accum": 28781,
+          "ded": 105,
+          "end": 28886
+        },
+        "transport": [
+          {
+            "id": 58,
+            "desc": "LEXUS RC350",
+            "acq": "08/10/15",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY21",
+            "cost": 66612,
+            "bus_pct": 0.3,
+            "s179_exp": 8000,
+            "basis": 58612,
+            "accum": 20985,
+            "ded": 1875,
+            "end": 22860
+          },
+          {
+            "desc": "LESS EXCLUSION",
+            "cost": -19984,
+            "red": -2400,
+            "basis": -17584,
+            "ded": -562,
+            "end": -562
+          },
+          {
+            "id": 75,
+            "desc": "2016 FORD TRANSIT #2",
+            "acq": "07/15/16",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY21",
+            "cost": 29111,
+            "s179_exp": 8000,
+            "basis": 21111,
+            "accum": 18151,
+            "ded": 1875,
+            "end": 20026
+          },
+          {
+            "id": 111,
+            "desc": "2016 AUDI",
+            "acq": "05/01/16",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY21",
+            "cost": 52879,
+            "bus_pct": 0.3,
+            "s179_exp": 8000,
+            "basis": 44879,
+            "accum": 18810,
+            "ded": 1875,
+            "end": 20685
+          },
+          {
+            "desc": "LESS EXCLUSION",
+            "cost": -15864,
+            "red": -2400,
+            "basis": -13464,
+            "ded": -562,
+            "end": -562
+          },
+          {
+            "id": 112,
+            "desc": "2016 FORD TRANSIT #1",
+            "acq": "07/15/16",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY21",
+            "cost": 28730,
+            "s179_exp": 8000,
+            "basis": 20730,
+            "accum": 18129,
+            "ded": 1875,
+            "end": 20004
+          },
+          {
+            "id": 142,
+            "desc": "2022 CHEVROLET",
+            "acq": "01/14/22",
+            "method": "200DB",
+            "life": 5,
+            "conv": "HY21",
+            "cost": 63695,
+            "bus_pct": 0.3,
+            "s179_exp": 8000,
+            "red": 11200,
+            "basis": 44495,
+            "ded": 0
+          },
+          {
+            "desc": "LESS EXCLUSION",
+            "cost": -19108,
+            "s179_exp": -2400,
+            "red": -3360,
+            "basis": -13349,
+            "ded": 0
+          }
+        ],
+        "transport_total": {
+          "cost": 186071,
+          "s179_exp": 37600,
+          "red": 3040,
+          "basis": 145430,
+          "accum": 76075,
+          "ded": 6376,
+          "end": 82451
+        },
+        "page_number": 23
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 13371,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1107
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 50,
+    "pages_successful": 50,
+    "cache_read_tokens": 347646,
+    "cache_write_tokens": 320904,
+    "input_tokens": 76600,
+    "output_tokens": 10261,
+    "errors": 0
+  },
+  "cost": 2.818998
+}

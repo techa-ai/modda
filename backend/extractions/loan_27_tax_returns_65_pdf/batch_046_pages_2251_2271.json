@@ -1,0 +1,833 @@
+{
+  "batch": 46,
+  "pages_range": [
+    2251,
+    2271
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 2266,
+      "data": {
+        "t": "form",
+        "form": "GA-500",
+        "y": 2024,
+        "pg": 2,
+        "ssn4": "0380",
+        "l8": 391382,
+        "page_number": 2266
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 41
+      }
+    },
+    {
+      "success": true,
+      "page": 2270,
+      "data": {
+        "t": "form",
+        "form": "GA-500-Sch1",
+        "y": 2024,
+        "ssn4": "0380",
+        "desc": "Adjustments to Income",
+        "dob": "1953-01-02",
+        "l7a": 65000,
+        "l8": 47216,
+        "l13": 112216,
+        "l14": -112216,
+        "page_number": 2270
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 80
+      }
+    },
+    {
+      "success": true,
+      "page": 2255,
+      "data": {
+        "t": "form",
+        "form": "7203",
+        "y": 2022,
+        "pg": 2,
+        "name": "DUGAN, ROBERT M",
+        "sections": [
+          "Part II Shareholder Debt Basis (continued)",
+          "Section B - Adjustments to Debt Basis",
+          "Section C - Gain on Loan Repayment",
+          "Part III Shareholder Allowable Loss and Deduction Items"
+        ],
+        "note": "blank worksheet",
+        "page_number": 2255
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 99
+      }
+    },
+    {
+      "success": true,
+      "page": 2269,
+      "data": {
+        "t": "form",
+        "form": "GA-500",
+        "y": 2024,
+        "pg": 5,
+        "ssn4": "0380",
+        "l46": 0,
+        "preparer": "BRYAN SPARGO",
+        "prep_firm": "CLIFTONLARSONALLEN LLP",
+        "prep_phone": "239-262-8686",
+        "prep_fein": "41-0746749",
+        "prep_ptin": "P01314853",
+        "page_number": 2269
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 94
+      }
+    },
+    {
+      "success": true,
+      "page": 2267,
+      "data": {
+        "t": "form",
+        "form": "GA-500",
+        "y": 2024,
+        "pg": 3,
+        "ssn4": "0380",
+        "l15a": 3041,
+        "l15c": 3041,
+        "l16": 164,
+        "l23": 164,
+        "page_number": 2267
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 59
+      }
+    },
+    {
+      "success": true,
+      "page": 2256,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 1",
+        "form": "1040",
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "desc": "WAGES RECEIVED AND TAXES WITHHELD",
+        "items": [
+          {
+            "emp": "THOR GUARD INC",
+            "wages": 162000,
+            "fed": 28400,
+            "fica": 10044,
+            "medicare": 2349
+          }
+        ],
+        "totals": {
+          "wages": 162000,
+          "fed": 28400,
+          "fica": 10044,
+          "medicare": 2349
+        },
+        "page_number": 2256
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 117
+      }
+    },
+    {
+      "success": true,
+      "page": 2268,
+      "data": {
+        "t": "form",
+        "form": "GA-500",
+        "y": 2024,
+        "pg": 4,
+        "ssn4": "0380",
+        "l26": 175,
+        "l28": 175,
+        "l30": 11,
+        "l31": 11,
+        "page_number": 2268
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 55
+      }
+    },
+    {
+      "success": true,
+      "page": 2253,
+      "data": {
+        "t": "form",
+        "form": "7203",
+        "y": 2024,
+        "pg": 2,
+        "sh": "DUGAN, ROBERT M",
+        "parts": [
+          "II_cont",
+          "III"
+        ],
+        "desc": "Shareholder Debt Basis & Allowable Loss",
+        "page_number": 2253
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 62
+      }
+    },
+    {
+      "success": true,
+      "page": 2264,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 14",
+        "donor": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "donee": "ST MATTHEWS HOUSE",
+        "donee_addr": "2601 AIRPORT, NAPLES, FL 34112",
+        "desc": "CLOTHING",
+        "date": "2024-03-08",
+        "acq": "PURCHASE",
+        "basis": 3000,
+        "fmv": 515,
+        "method": "THRIFT SHOP VALUE",
+        "page_number": 2264
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 106
+      }
+    },
+    {
+      "success": true,
+      "page": 2262,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENTS 11-13",
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "items": [
+          {
+            "form": "6251",
+            "desc": "Depreciation on assets placed in service after 1986",
+            "src": "K-1 THOR GUARD INC",
+            "v": 350
+          },
+          {
+            "form": "8995-A",
+            "sch": "C",
+            "desc": "Qualified business net loss carryover from prior years",
+            "v": 19912
+          },
+          {
+            "form": "8960",
+            "desc": "Trade or business income",
+            "items": [
+              {
+                "src": "THOR GUARD INC",
+                "v": -195329
+              },
+              {
+                "src": "ROBERT M DUGAN",
+                "v": 12000
+              }
+            ],
+            "total": -183329
+          }
+        ],
+        "page_number": 2262
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 167
+      }
+    },
+    {
+      "success": true,
+      "page": 2259,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 7",
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "sch": "A",
+        "line": "5A",
+        "desc": "State and Local General Sales Taxes",
+        "items": [
+          {
+            "d": "State Sales Tax - Florida",
+            "v": 1558
+          },
+          {
+            "d": "Local Sales Tax",
+            "v": 260
+          },
+          {
+            "d": "Sales Tax Paid on Specified Items",
+            "v": 7380
+          }
+        ],
+        "total": 9198,
+        "page_number": 2259
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 109
+      }
+    },
+    {
+      "success": true,
+      "page": 2271,
+      "data": {
+        "t": "form",
+        "form": "GA-500-Sch1",
+        "y": 2024,
+        "ssn4": "0380",
+        "desc": "Retirement Income Exclusion",
+        "tp": {
+          "l1": 162000,
+          "l2": -8472,
+          "l3": 153528,
+          "l4": 5000,
+          "l5": 5000,
+          "l6": 1837,
+          "l9": -3000,
+          "l13": 191801,
+          "l14": 190638,
+          "l15": 195638,
+          "l16": 65000,
+          "l17": 65000
+        },
+        "sp": {
+          "l4": 5000
+        },
+        "page_number": 2271
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 132
+      }
+    },
+    {
+      "success": true,
+      "page": 2257,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 2",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "desc": "Social Security Benefits Worksheet",
+        "filing": "A",
+        "l1": 55548,
+        "l2": 27774,
+        "l3": 344166,
+        "l5": 371940,
+        "l6": 0,
+        "l7": 371940,
+        "l8": 25000,
+        "l9": 346940,
+        "l10": 9000,
+        "l11": 337940,
+        "l12": 9000,
+        "l13": 4500,
+        "l14": 4500,
+        "l15": 287249,
+        "l16": 291749,
+        "l17": 47216,
+        "l18": 47216,
+        "page_number": 2257
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 154
+      }
+    },
+    {
+      "success": true,
+      "page": 2265,
+      "data": {
+        "t": "form",
+        "form": "GA-500",
+        "y": 2024,
+        "pg": 1,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "addr": "1821 CANBY COURT",
+        "city": "MARCO ISLAND",
+        "st": "FL",
+        "zip": "34145",
+        "dl": "D250-773-53-041-0",
+        "dob": "02/01/1953",
+        "res_status": 3,
+        "filing_status": "A",
+        "page_number": 2265
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 106
+      }
+    },
+    {
+      "success": true,
+      "page": 2254,
+      "data": {
+        "t": "form",
+        "form": "7203",
+        "y": 2024,
+        "sh": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "p1": {
+          "l1": 82118,
+          "l3a": 195679,
+          "l3d": 595,
+          "l4": 196274,
+          "l5": 278392,
+          "l6": 145652,
+          "l7": 132740,
+          "l8a": 1954,
+          "l9": 1954,
+          "l10": 130786,
+          "l15": 130786
+        },
+        "page_number": 2254
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 131
+      }
+    },
+    {
+      "success": true,
+      "page": 2252,
+      "data": {
+        "t": "form",
+        "form": "7203",
+        "y": 2024,
+        "sh": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "seq": 203,
+        "p1": {
+          "l1": 170523,
+          "l3a": 195329,
+          "l3d": 595,
+          "l4": 195924,
+          "l5": 366447,
+          "l6": 145652,
+          "l7": 220795,
+          "l8a": 1954,
+          "l9": 1954,
+          "l10": 218841,
+          "l15": 218841
+        },
+        "page_number": 2252
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 134
+      }
+    },
+    {
+      "success": true,
+      "page": 2258,
+      "data": {
+        "t": "stmt",
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "y": 2024,
+        "stmts": [
+          {
+            "ref": "3",
+            "form": "1040",
+            "desc": "Federal Income Tax Withheld - W-2",
+            "items": [
+              {
+                "d": "THOR GUARD INC",
+                "v": 28400
+              }
+            ],
+            "total": 28400,
+            "line": "25A"
+          },
+          {
+            "ref": "4",
+            "form": "1040",
+            "desc": "Current Year Estimates and Amount Applied from Previous Year",
+            "items": [
+              {
+                "d": "Prior Year Overpayment Applied",
+                "v": 593
+              }
+            ],
+            "total": 593,
+            "line": "26"
+          },
+          {
+            "ref": "5",
+            "form": "SchA",
+            "desc": "Mortgage Interest and Points Reported on Form 1098",
+            "items": [
+              {
+                "d": "LOANDEPOT",
+                "v": 7045
+              }
+            ],
+            "total": 7045,
+            "line": "8A"
+          },
+          {
+            "ref": "6",
+            "form": "SchA",
+            "desc": "Medical and Dental Expenses",
+            "items": [
+              {
+                "d": "Doctors, Dentists, etc.",
+                "v": 500
+              },
+              {
+                "d": "Medicare Premiums Withheld",
+                "v": 2096
+              }
+            ],
+            "total": 2596,
+            "line": "1"
+          }
+        ],
+        "page_number": 2258
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 267
+      }
+    },
+    {
+      "success": true,
+      "page": 2261,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 9, 10",
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "y": 2024,
+        "sections": [
+          {
+            "title": "Capital Loss Carryover",
+            "stmt": 9,
+            "items": [
+              {
+                "l": 1,
+                "d": "Amount from Form 1040 line 15",
+                "v": 325768
+              },
+              {
+                "l": 2,
+                "d": "Loss from Sch D line 21",
+                "v": 3000
+              },
+              {
+                "l": 3,
+                "d": "Combined lines 1 and 2",
+                "v": 328768
+              },
+              {
+                "l": 4,
+                "d": "Smaller of line 2 or 3",
+                "v": 3000
+              },
+              {
+                "l": 9,
+                "d": "Loss from Sch D line 15",
+                "v": 7585
+              },
+              {
+                "l": 11,
+                "d": "Subtract line 5 from line 4",
+                "v": 3000
+              },
+              {
+                "l": 12,
+                "d": "Add lines 10 and 11",
+                "v": 3000
+              },
+              {
+                "l": 13,
+                "d": "LT capital loss carryover",
+                "v": 4585
+              }
+            ]
+          },
+          {
+            "title": "AMT Capital Loss Carryover",
+            "stmt": 10,
+            "items": [
+              {
+                "l": 1,
+                "d": "Amount from Form 6251 line 4",
+                "v": 336118
+              },
+              {
+                "l": 2,
+                "d": "Loss from Sch D line 21",
+                "v": 3000
+              },
+              {
+                "l": 3,
+                "d": "Combined lines 1 and 2",
+                "v": 339118
+              },
+              {
+                "l": 4,
+                "d": "Smaller of line 2 or 3",
+                "v": 3000
+              },
+              {
+                "l": 9,
+                "d": "Loss from Sch D line 15",
+                "v": 7014
+              },
+              {
+                "l": 11,
+                "d": "Subtract line 5 from line 4",
+                "v": 3000
+              },
+              {
+                "l": 12,
+                "d": "Add lines 10 and 11",
+                "v": 3000
+              },
+              {
+                "l": 13,
+                "d": "LT capital loss carryover",
+                "v": 4014
+              }
+            ]
+          }
+        ],
+        "page_number": 2261
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 438
+      }
+    },
+    {
+      "success": true,
+      "page": 2263,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 14",
+        "form": "8283",
+        "desc": "Noncash Charitable Contributions $5000 or less",
+        "taxpayer": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "donations": [
+          {
+            "donee": "ST MATTHEWS HOUSE",
+            "addr": "2601 AIRPORT, NAPLES, FL 34112",
+            "prop": "CLOTHING",
+            "date": "01/09/24",
+            "acq": "PURCHASE",
+            "basis": 5000,
+            "fmv": 1236,
+            "method": "THRIFT SHOP VALUE"
+          },
+          {
+            "donee": "ST MATTHEWS HOUSE",
+            "addr": "2601 AIRPORT, NAPLES, FL 34112",
+            "prop": "CLOTHING",
+            "date": "02/24/24",
+            "acq": "PURCHASE",
+            "basis": 4000,
+            "fmv": 870,
+            "method": "THRIFT SHOP VALUE"
+          },
+          {
+            "donee": "ST MATTHEWS HOUSE",
+            "addr": "2601 AIRPORT, NAPLES, FL 34112",
+            "prop": "CLOTHING",
+            "date": "03/02/24",
+            "acq": "PURCHASE",
+            "basis": 6000,
+            "fmv": 1435,
+            "method": "THRIFT SHOP VALUE"
+          },
+          {
+            "donee": "ST MATTHEWS HOUSE",
+            "addr": "2601 AIRPORT, NAPLES, FL 34112",
+            "prop": "CLOTHING",
+            "date": "03/16/24",
+            "acq": "PURCHASE",
+            "basis": 4000,
+            "fmv": 830,
+            "method": "THRIFT SHOP VALUE"
+          }
+        ],
+        "page_number": 2263
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 329
+      }
+    },
+    {
+      "success": true,
+      "page": 2260,
+      "data": {
+        "t": "stmt",
+        "ref": "STATEMENT 8",
+        "form": "SchA",
+        "desc": "General Sales Tax Deduction Worksheet",
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "y": 2024,
+        "items": [
+          {
+            "l": 1,
+            "d": "State general sales taxes",
+            "v": 1558
+          },
+          {
+            "l": 2,
+            "d": "Local general sales taxes",
+            "v": 0
+          },
+          {
+            "l": 3,
+            "d": "Local sales tax rate - Marco Island",
+            "v": 1.0
+          },
+          {
+            "l": 4,
+            "d": "State general sales tax rate",
+            "v": 6.0
+          },
+          {
+            "l": 5,
+            "d": "Line 3 / Line 4",
+            "v": 0.167
+          },
+          {
+            "l": 6,
+            "d": "Line 1 x Line 5",
+            "v": 260
+          },
+          {
+            "l": "6A",
+            "d": "Line 1 + Line 6",
+            "v": 1818
+          },
+          {
+            "l": "6B",
+            "d": "Part-year days rate",
+            "v": 1.0
+          },
+          {
+            "l": "6C",
+            "d": "Line 6A x Line 6B",
+            "v": 1818
+          },
+          {
+            "l": 7,
+            "d": "Sales taxes on specified items",
+            "v": 7380
+          },
+          {
+            "l": 8,
+            "d": "Total deduction (Line 6C + Line 7)",
+            "v": 9198
+          }
+        ],
+        "page_number": 2260
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 289
+      }
+    },
+    {
+      "success": true,
+      "page": 2251,
+      "data": {
+        "t": "form",
+        "form": "8283",
+        "y": 2023,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "seq": 155,
+        "secA": [
+          {
+            "row": "A",
+            "desc": "SEE STATEMENT 14"
+          }
+        ],
+        "page_number": 2251
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 63
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 2271,
+    "pages_successful": 2271,
+    "cache_read_tokens": 30044637,
+    "cache_write_tokens": 320904,
+    "input_tokens": 3480444,
+    "output_tokens": 321633,
+    "errors": 0
+  },
+  "cost": 42.4710135
+}

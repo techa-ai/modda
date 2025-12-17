@@ -1,0 +1,34 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build/Dependencies
+node_modules/
+venv/
+**/__pycache__/
+*.pyc
+
+# Data & Large Files (User requested to ignore backups)
+backup/
+**/backup/
+documents/
+outputs/
+uploads/
+*.log
+backend.log
+frontend.log
+
+# IDEs & System
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+frontend/dist/
+frontend/node_modules/
+backend/venv/
+backend/backup/
+backend/__pycache__/

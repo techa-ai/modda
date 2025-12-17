@@ -1,0 +1,1888 @@
+{
+  "batch": 45,
+  "pages_range": [
+    2201,
+    2250
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 2208,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 36,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Gross Income or Gain",
+            "v": 2527929
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Aggregate Business Activity Deductions",
+            "v": 2189979
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 2208
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 105
+      }
+    },
+    {
+      "success": true,
+      "page": 2230,
+      "data": {
+        "t": "SchD",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "part": "III",
+        "p": 2,
+        "b16": -7585,
+        "b21": 3000,
+        "stmt": 9,
+        "page_number": 2230
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 2221,
+      "data": {
+        "t": "form",
+        "form": "Sch2",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "l2": 0,
+        "l3": 0,
+        "page_number": 2221
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 51
+      }
+    },
+    {
+      "success": true,
+      "page": 2210,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 37,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 5
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 483
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 1395
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 140
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 4378
+          }
+        ],
+        "page_number": 2210
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 136
+      }
+    },
+    {
+      "success": true,
+      "page": 2211,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 37,
+        "items": [
+          {
+            "b": "17AJ",
+            "d": "Gross income or gain",
+            "v": 3611
+          },
+          {
+            "b": "17AJ",
+            "d": "Deductions",
+            "v": 3129
+          }
+        ],
+        "page_number": 2211
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 78
+      }
+    },
+    {
+      "success": true,
+      "page": 2222,
+      "data": {
+        "t": "form",
+        "form": "Sch2",
+        "y": 2024,
+        "part": "II",
+        "name": "DUGAN, ROBERT M",
+        "l21": 0,
+        "page_number": 2222
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 44
+      }
+    },
+    {
+      "success": true,
+      "page": 2205,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 35,
+        "items": [
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Gross income or gain",
+            "v": 43336
+          },
+          {
+            "b": "17",
+            "c": "AJ",
+            "d": "Deductions",
+            "v": 37543
+          }
+        ],
+        "page_number": 2205
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 84
+      }
+    },
+    {
+      "success": true,
+      "page": 2202,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 34,
+        "items": [
+          {
+            "b": "17AJ",
+            "d": "Aggregate business activity gross income or gain",
+            "v": 35283
+          },
+          {
+            "b": "17AJ",
+            "d": "Aggregate business activity deductions",
+            "v": 30566
+          }
+        ],
+        "note": "K-3 not prepared",
+        "page_number": 2202
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 94
+      }
+    },
+    {
+      "success": true,
+      "page": 2226,
+      "data": {
+        "t": "stmt",
+        "ref": "Interest and Dividend Summary",
+        "name": "ROBERT M. DUGAN",
+        "interest": [
+          {
+            "payer": "FIFTH THIRD BANK, N.A.",
+            "int_inc": 1242
+          }
+        ],
+        "int_total": 1242,
+        "dividends": [],
+        "page_number": 2226
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 71
+      }
+    },
+    {
+      "success": true,
+      "page": 2201,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 34,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 47
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 4717
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 13627
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1372
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 42770
+          }
+        ],
+        "page_number": 2201
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 2228,
+      "data": {
+        "t": "SchC",
+        "y": 2024,
+        "p": 2,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "part3": {
+          "inv_method": "Cost"
+        },
+        "part5": {
+          "other_exp": [
+            {
+              "d": "COSTS TO SELF-PUBLISH BOOK",
+              "v": 12000
+            }
+          ],
+          "l48": 12000
+        },
+        "page_number": 2228
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 86
+      }
+    },
+    {
+      "success": true,
+      "page": 2227,
+      "data": {
+        "t": "SchC",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "bus": "AUTHOR",
+        "code": 711510,
+        "method": "cash",
+        "g": "yes",
+        "h": "yes",
+        "l27a": 12000,
+        "l28": 12000,
+        "l29": -12000,
+        "l31": -12000,
+        "l32a": "X",
+        "page_number": 2227
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 90
+      }
+    },
+    {
+      "success": true,
+      "page": 2225,
+      "data": {
+        "t": "SchB",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "p1": [
+          {
+            "payer": "FIFTH THIRD BANK, N.A.",
+            "v": 1242
+          },
+          {
+            "payer": "FROM K-1 - THOR GUARD, INC.",
+            "v": 595
+          }
+        ],
+        "l2": 1837,
+        "l4": 1837,
+        "p3": {
+          "7a": "N",
+          "8": "N"
+        },
+        "page_number": 2225
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 111
+      }
+    },
+    {
+      "success": true,
+      "page": 2213,
+      "data": {
+        "t": "instr",
+        "r": "State return filing summary",
+        "states": [
+          {
+            "st": "GA",
+            "overpay": 11,
+            "due": "2025-10-15",
+            "form": "GA 8453"
+          },
+          {
+            "st": "IL",
+            "pmt": 0
+          },
+          {
+            "st": "NJ",
+            "overpay": 116
+          },
+          {
+            "st": "SC",
+            "refund": 269,
+            "due": "2025-10-15",
+            "form": "SC 8453"
+          },
+          {
+            "st": "WI",
+            "overpay": 23
+          }
+        ],
+        "preparer": "CliftonLarsonAllen LLP",
+        "page_number": 2213
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 127
+      }
+    },
+    {
+      "success": true,
+      "page": 2219,
+      "data": {
+        "t": "Sch1",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "l3": -12000,
+        "l5": 195329,
+        "l10": 183329,
+        "page_number": 2219
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 2224,
+      "data": {
+        "t": "SchA",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "l1": 2596,
+        "l2": 391382,
+        "l3": 29354,
+        "l4": 0,
+        "l5a": 9198,
+        "l5b": 7352,
+        "l5d": 16550,
+        "l5e": 10000,
+        "l7": 10000,
+        "l8a": 7045,
+        "l8e": 7045,
+        "l10": 7045,
+        "l11": 8600,
+        "l12": 4886,
+        "l14": 13486,
+        "l17": 30531,
+        "page_number": 2224
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 136
+      }
+    },
+    {
+      "success": true,
+      "page": 2220,
+      "data": {
+        "t": "Sch1",
+        "y": 2024,
+        "part": "II",
+        "name": "DUGAN, ROBERT M",
+        "pg": 2,
+        "l11": null,
+        "l12": null,
+        "l13": null,
+        "l14": null,
+        "l15": null,
+        "l16": null,
+        "l17": null,
+        "l18": null,
+        "l19a": null,
+        "l20": null,
+        "l21": null,
+        "l22": null,
+        "l23": null,
+        "l24a": null,
+        "l24b": null,
+        "l24c": null,
+        "l24d": null,
+        "l24e": null,
+        "l24f": null,
+        "l24g": null,
+        "l24h": null,
+        "l24i": null,
+        "l24j": null,
+        "l24k": null,
+        "l24z": null,
+        "l25": null,
+        "l26": null,
+        "page_number": 2220
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 187
+      }
+    },
+    {
+      "success": true,
+      "page": 2204,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 35,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 58
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 5793
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 16737
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 1685
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 52533
+          }
+        ],
+        "page_number": 2204
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 138
+      }
+    },
+    {
+      "success": true,
+      "page": 2216,
+      "data": {
+        "t": "stmt",
+        "title": "Tax Return Carryovers to 2025",
+        "name": "ROBERT M. DUGAN",
+        "items": [
+          {
+            "form": "SCH D",
+            "desc": "LONG-TERM CAPITAL LOSS",
+            "orig": "SCH D",
+            "amt": 4585
+          },
+          {
+            "form": "SCHD AMT",
+            "desc": "LONG-TERM CAPITAL LOSS",
+            "orig": "SCHD AMT",
+            "amt": 4014
+          },
+          {
+            "form": "NJ-BUS-2",
+            "desc": "NEW JERSEY NOL C/O FROM 2024",
+            "orig": "NJ-BUS-2",
+            "st": "NJ",
+            "amt": 12000
+          }
+        ],
+        "page_number": 2216
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 151
+      }
+    },
+    {
+      "success": true,
+      "page": 2207,
+      "data": {
+        "t": "K1sup",
+        "corp": "THOR GUARD INC",
+        "ein": "65-0057716",
+        "sh": 36,
+        "items": [
+          {
+            "b": "16C",
+            "d": "Excluded meals expenses",
+            "v": 3380
+          },
+          {
+            "b": "17V",
+            "d": "Ordinary income(loss)",
+            "v": 337949
+          },
+          {
+            "b": "17V",
+            "d": "W-2 wages",
+            "v": 976352
+          },
+          {
+            "b": "17V",
+            "d": "Unadjusted basis",
+            "v": 98294
+          },
+          {
+            "b": "17AC",
+            "d": "Gross receipts - current year",
+            "v": 3064399
+          }
+        ],
+        "page_number": 2207
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 140
+      }
+    },
+    {
+      "success": true,
+      "page": 2212,
+      "data": {
+        "t": "stmt",
+        "desc": "Tax Return Summary Letter",
+        "y": 2024,
+        "client": "Robert M. Dugan",
+        "preparer": "CliftonLarsonAllen LLP",
+        "returns": [
+          {
+            "jur": "Federal",
+            "efiled": true,
+            "refund": 0,
+            "overpay": 4345,
+            "due": 0,
+            "dd": false
+          },
+          {
+            "jur": "Georgia",
+            "efiled": true,
+            "refund": 0,
+            "overpay": 11,
+            "due": 0,
+            "dd": false
+          },
+          {
+            "jur": "New Jersey",
+            "efiled": true,
+            "refund": 0,
+            "overpay": 116,
+            "due": 0,
+            "dd": false
+          },
+          {
+            "jur": "South Carolina",
+            "efiled": true,
+            "refund": 269,
+            "overpay": 0,
+            "due": 0,
+            "dd": false
+          },
+          {
+            "jur": "Wisconsin",
+            "efiled": true,
+            "refund": 0,
+            "overpay": 23,
+            "due": 0,
+            "dd": false
+          }
+        ],
+        "note": "Federal overpayment of $4,345 applied to estimated tax",
+        "page_number": 2212
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 224
+      }
+    },
+    {
+      "success": true,
+      "page": 2223,
+      "data": {
+        "t": "Sch3",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "l8": 0,
+        "l10": 60000,
+        "l15": 60000,
+        "page_number": 2223
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 55
+      }
+    },
+    {
+      "success": true,
+      "page": 2229,
+      "data": {
+        "t": "SchD",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "qof": "no",
+        "p1": {
+          "l4": 4,
+          "l5": 5,
+          "l6": 6,
+          "l7": 7
+        },
+        "p2": {
+          "l8b": {
+            "d": 23,
+            "e": 20,
+            "h": 3
+          },
+          "l9": {
+            "d": 44,
+            "h": 44
+          },
+          "l14": 7632,
+          "l15": -7585
+        },
+        "page_number": 2229
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 114
+      }
+    },
+    {
+      "success": true,
+      "page": 2217,
+      "data": {
+        "t": "1040",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "addr": "1821 CANBY COURT",
+        "city": "MARCO ISLAND",
+        "st": "FL",
+        "zip": "34145",
+        "status": "single",
+        "digital_assets": "no",
+        "l1a": 162000,
+        "l1z": 162000,
+        "l2b": 1837,
+        "l6a": 55548,
+        "l6b": 47216,
+        "l7": -3000,
+        "l8": 183329,
+        "l9": 391382,
+        "l11": 391382,
+        "l12": 30531,
+        "l13": 35083,
+        "l14": 65614,
+        "l15": 325768,
+        "page_number": 2217
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 156
+      }
+    },
+    {
+      "success": true,
+      "page": 2206,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "PETER L TOWNSEND REVOCABLE TRUST U/A/D 6/8/22",
+        "ein_sh": "578-54-0025",
+        "entity": "TRUST",
+        "pct": 46.666666,
+        "sh_shares_beg": 700000,
+        "sh_shares_end": 700000,
+        "b1": 337949,
+        "b4": 1030,
+        "b15": [
+          {
+            "c": "A",
+            "v": 605
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 3380
+          },
+          {
+            "c": "D",
+            "v": 252000
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 1030
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 2206
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 234
+      }
+    },
+    {
+      "success": true,
+      "page": 2215,
+      "data": {
+        "t": "stmt",
+        "desc": "Two-Year Comparison Worksheet",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "filing_2023": "MARRIED FILING JOINT",
+        "filing_2024": "SINGLE",
+        "bracket_2023": 24.0,
+        "bracket_2024": 35.0,
+        "states": [
+          {
+            "st": "SC",
+            "y2023": {
+              "inc": 1892,
+              "tax": 0,
+              "pmt": 105,
+              "refund": 105
+            },
+            "y2024": {
+              "inc": 6892,
+              "tax": 102,
+              "pmt": 371,
+              "refund": 269
+            }
+          },
+          {
+            "st": "WI",
+            "y2023": {
+              "inc": 329,
+              "tax": 17,
+              "pmt": 30,
+              "est_applied": 13
+            },
+            "y2024": {
+              "inc": 2158,
+              "tax": 115,
+              "pmt": 138,
+              "est_applied": 23
+            }
+          },
+          {
+            "st": "GA",
+            "y2023": {
+              "inc": 0,
+              "tax": 0,
+              "pmt": 0,
+              "est_applied": 0
+            },
+            "y2024": {
+              "inc": 3041,
+              "tax": 164,
+              "pmt": 175,
+              "est_applied": 11
+            }
+          }
+        ],
+        "page_number": 2215
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 247
+      }
+    },
+    {
+      "success": true,
+      "page": 2209,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "JUDY JAN",
+        "ssn4": "0530",
+        "entity": "INDIVIDUAL",
+        "pct": 0.066662,
+        "sh_shares_beg": 1000,
+        "sh_shares_end": 1000,
+        "b1": 483,
+        "b4": 1,
+        "b15": [
+          {
+            "c": "A",
+            "v": 1
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 5
+          },
+          {
+            "c": "D",
+            "v": 360
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 1
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 2209
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 205
+      }
+    },
+    {
+      "success": true,
+      "page": 2218,
+      "data": {
+        "t": "1040",
+        "y": 2024,
+        "p": 2,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "l16": 84394,
+        "l18": 84394,
+        "l22": 84394,
+        "l24": 84394,
+        "l25a": 28400,
+        "l25d": 28400,
+        "l26": 593,
+        "l31": 60000,
+        "l32": 60000,
+        "l33": 88993,
+        "l34": 4599,
+        "l36": 4345,
+        "l38": 254,
+        "preparer": {
+          "name": "BRYAN SPARGO",
+          "firm": "CLIFTONLARSONALLEN LLP",
+          "addr": "4501 TAMIAMI TRAIL NORTH, SUITE 200, NAPLES, FL 34103-3548",
+          "phone": "239-262-8686",
+          "ptin": "P01314853",
+          "ein": "41-0746749",
+          "date": "06/02/25"
+        },
+        "3rd_party": true,
+        "page_number": 2218
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 213
+      }
+    },
+    {
+      "success": true,
+      "page": 2234,
+      "data": {
+        "t": "SchD",
+        "y": 2024,
+        "part": "III",
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "l16": -7014,
+        "l21": -3000,
+        "stmt": "SEE STATEMENT 10",
+        "qual_div": "No",
+        "page_number": 2234
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 68
+      }
+    },
+    {
+      "success": true,
+      "page": 2214,
+      "data": {
+        "t": "stmt",
+        "desc": "Two-Year Comparison Worksheet",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "filing_2023": "MFJ",
+        "filing_2024": "SINGLE",
+        "bracket_2023": 24.0,
+        "bracket_2024": 35.0,
+        "data": {
+          "2023": {
+            "wages": 158000,
+            "sch_b_int": 6034,
+            "ss_benefits": 46887,
+            "sch_d": -3000,
+            "sch_c": 0,
+            "sch_e": 106908,
+            "total_inc": 314829,
+            "agi": 314829,
+            "taxes": 0,
+            "int_ded": 0,
+            "contrib": 0,
+            "item_ded": 0,
+            "std_ded": 30700,
+            "qbi_ded": 0,
+            "total_ded": 30700,
+            "taxable": 284129,
+            "tax": 54991,
+            "credits": 54991,
+            "f5695": 524,
+            "after_credits": 54467,
+            "f8960": 100,
+            "total_tax": 54567,
+            "w2_wh": 20400,
+            "est_pmts": 41,
+            "f4868": 35000,
+            "total_pmts": 55441,
+            "overpaid": 874,
+            "applied": 593,
+            "penalty": 281,
+            "il_taxable": 3544,
+            "il_tax": 175,
+            "il_pmts": 207,
+            "il_refund": 32,
+            "nj_taxable": 3434,
+            "nj_tax": 166,
+            "nj_pmts": 200,
+            "nj_applied": 34
+          },
+          "2024": {
+            "wages": 162000,
+            "sch_b_int": 1837,
+            "ss_benefits": 47216,
+            "sch_d": -3000,
+            "sch_c": -12000,
+            "sch_e": 195329,
+            "total_inc": 391382,
+            "agi": 391382,
+            "taxes": 10000,
+            "int_ded": 7045,
+            "contrib": 13486,
+            "item_ded": 30531,
+            "std_ded": 0,
+            "qbi_ded": 35083,
+            "total_ded": 65614,
+            "taxable": 325768,
+            "tax": 84394,
+            "credits": 84394,
+            "f5695": 0,
+            "after_credits": 84394,
+            "f8960": 0,
+            "total_tax": 84394,
+            "w2_wh": 28400,
+            "est_pmts": 593,
+            "f4868": 60000,
+            "total_pmts": 88993,
+            "overpaid": 4599,
+            "applied": 4345,
+            "penalty": 254,
+            "il_taxable": 7345,
+            "il_tax": 364,
+            "il_pmts": 364,
+            "il_refund": 0,
+            "nj_taxable": 4305,
+            "nj_tax": 238,
+            "nj_pmts": 354,
+            "nj_applied": 116
+          }
+        },
+        "page_number": 2214
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 596
+      }
+    },
+    {
+      "success": true,
+      "page": 2235,
+      "data": {
+        "t": "form",
+        "form": "8949",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "part": "II",
+        "box": "D",
+        "txns": [
+          {
+            "a": "GE VERNOVA",
+            "b": "VARIOUS",
+            "c": "04/02/24",
+            "d": 23,
+            "e": 20,
+            "h": 3
+          }
+        ],
+        "totals": {
+          "d": 23,
+          "e": 20,
+          "h": 3
+        },
+        "page_number": 2235
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 104
+      }
+    },
+    {
+      "success": true,
+      "page": 2231,
+      "data": {
+        "t": "form",
+        "form": "8949",
+        "y": 2024,
+        "pg": 2,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "part": "II",
+        "box": "D",
+        "items": [
+          {
+            "a": "GE VERNOVA",
+            "b": "VARIOUS",
+            "c": "04/02/24",
+            "d": 23,
+            "e": 20,
+            "h": 3
+          }
+        ],
+        "totals": {
+          "d": 23,
+          "e": 20,
+          "h": 3
+        },
+        "page_number": 2231
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 106
+      }
+    },
+    {
+      "success": true,
+      "page": 2232,
+      "data": {
+        "t": "form",
+        "form": "8949",
+        "y": 2024,
+        "p": 2,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "box": "E",
+        "txns": [
+          {
+            "a": "GE VERNOVA",
+            "b": "VARIOUS",
+            "c": "04/02/24",
+            "d": 44,
+            "h": 44
+          }
+        ],
+        "tot_d": 44,
+        "tot_h": 44,
+        "page_number": 2232
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 95
+      }
+    },
+    {
+      "success": true,
+      "page": 2238,
+      "data": {
+        "t": "stmt",
+        "form": "SchE_passthrough",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "entity": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "type": "S CORPORATION",
+        "items": [
+          {
+            "desc": "Ordinary business income (loss)",
+            "k1": 195329,
+            "tax": 195329
+          },
+          {
+            "desc": "Net income (loss)",
+            "k1": 195329,
+            "tax": 195329
+          },
+          {
+            "desc": "Total Schedule E (page 2)",
+            "k1": 195329,
+            "tax": 195329
+          },
+          {
+            "desc": "Other (Itemized Deductions)",
+            "k1": 735,
+            "tax": 735
+          }
+        ],
+        "page_number": 2238
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 159
+      }
+    },
+    {
+      "success": true,
+      "page": 2248,
+      "data": {
+        "t": "form",
+        "form": "8995-A",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "pg": 2,
+        "part": "III-IV",
+        "l27": 35083,
+        "l32": 35083,
+        "l33": 360851,
+        "l35": 360851,
+        "l36": 72170,
+        "l37": 35083,
+        "l39": 35083,
+        "page_number": 2248
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 94
+      }
+    },
+    {
+      "success": true,
+      "page": 2233,
+      "data": {
+        "t": "SchD",
+        "y": 2024,
+        "form": "AMT",
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "qual_opp_fund": false,
+        "pt1": {
+          "l8b": {
+            "d": 23,
+            "e": 20,
+            "h": 3
+          },
+          "l9": {
+            "d": 44,
+            "h": 44
+          }
+        },
+        "pt2": {
+          "l14": 7061,
+          "l15": "<7,014"
+        },
+        "page_number": 2233
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 2244,
+      "data": {
+        "t": "form",
+        "form": "6251",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "status": "DOES NOT APPLY",
+        "l1": 325768,
+        "l2a": 10000,
+        "l2l": 350,
+        "l4": 336118,
+        "l5": 85700,
+        "l6": 250418,
+        "l7": 65465,
+        "l9": 65465,
+        "l10": 84394,
+        "l11": 0,
+        "page_number": 2244
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 108
+      }
+    },
+    {
+      "success": true,
+      "page": 2250,
+      "data": {
+        "t": "form",
+        "form": "8960",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "l1": 1837,
+        "l4a": 183329,
+        "l4b": -183329,
+        "l4c": 0,
+        "l5a": -3000,
+        "l5d": -3000,
+        "l8": -1163,
+        "l13": 391382,
+        "l14": 200000,
+        "l15": 191382,
+        "page_number": 2250
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 107
+      }
+    },
+    {
+      "success": true,
+      "page": 2243,
+      "data": {
+        "t": "stmt",
+        "ref": "Schedule E",
+        "desc": "Passthrough Recap - Additional Information and Prior Year At-Risk Carryovers",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "k1_ref": "1065/1120S/1041",
+        "entities": [
+          {
+            "ent": 1,
+            "act": 1,
+            "fed_wh": 735
+          }
+        ],
+        "totals": {
+          "fed_wh": 735
+        },
+        "page_number": 2243
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 110
+      }
+    },
+    {
+      "success": true,
+      "page": 2242,
+      "data": {
+        "t": "SchE",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "desc": "PASSTHROUGH RECAP - QUALIFIED BUSINESS INCOME DEDUCTION",
+        "k1_items": [
+          {
+            "entity": 1,
+            "ord_inc": 195329,
+            "w2_wages": 564314,
+            "ubia": 56812
+          }
+        ],
+        "totals": {
+          "ord_inc": 195329,
+          "w2_wages": 564314,
+          "ubia": 56812
+        },
+        "ref": "Form 8995/8995-A",
+        "page_number": 2242
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 126
+      }
+    },
+    {
+      "success": true,
+      "page": 2237,
+      "data": {
+        "t": "SchE",
+        "y": 2024,
+        "p": 2,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "part2": [
+          {
+            "ln": 28,
+            "row": "A",
+            "name": "THOR GUARD, INC.",
+            "type": "S",
+            "ein": "65-0057716",
+            "basis_req": "X",
+            "k_nonpass": 195329
+          }
+        ],
+        "ln29a_k": 195329,
+        "ln30": 195329,
+        "ln32": 195329,
+        "ln41": 195329,
+        "page_number": 2237
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 118
+      }
+    },
+    {
+      "success": true,
+      "page": 2245,
+      "data": {
+        "t": "form",
+        "form": "6251",
+        "y": 2024,
+        "page": 2,
+        "part": "III",
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "desc": "Tax Computation Using Maximum Capital Gains Rates",
+        "page_number": 2245
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 2241,
+      "data": {
+        "t": "stmt",
+        "ref": "Schedule E",
+        "desc": "Passthrough Recap - Additional Income, Deductions, and Prior Year Carryovers",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "sections": [
+          {
+            "ref": "K-1 1065/1120S/1041",
+            "entity": 1,
+            "act": 1,
+            "other_exp": 1954,
+            "totals": {
+              "other_exp": 1954
+            }
+          },
+          {
+            "ref": "K-1 1065/1120S/1041",
+            "note": "No specific Schedule K-1 line reference for these amounts"
+          }
+        ],
+        "pg": 25,
+        "page_number": 2241
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 149
+      }
+    },
+    {
+      "success": true,
+      "page": 2236,
+      "data": {
+        "t": "form",
+        "form": "8949",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "part": "II",
+        "box": "E",
+        "txns": [
+          {
+            "a": "GE VERNOVA",
+            "b": "VARIOUS",
+            "c": "04/02/24",
+            "d": 44,
+            "h": 44
+          }
+        ],
+        "tot_d": 44,
+        "tot_h": 44,
+        "page_number": 2236
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 95
+      }
+    },
+    {
+      "success": true,
+      "page": 2240,
+      "data": {
+        "t": "SchE",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "title": "PASSTHROUGH RECAP - BASIC INFORMATION",
+        "k1_ref": "1065/1120S/1041",
+        "entities": [
+          {
+            "ent": 1,
+            "act": 1,
+            "name": "THOR GUARD, INC.",
+            "b1": 195329,
+            "b5": 595
+          }
+        ],
+        "totals": {
+          "b1": 195329,
+          "b5": 595
+        },
+        "detail": [
+          {
+            "ent": 1,
+            "act": 1,
+            "inv_inc": 595,
+            "se_health": 162000,
+            "amt_adj": 350
+          }
+        ],
+        "detail_totals": {
+          "inv_inc": 595,
+          "se_health": 162000,
+          "amt_adj": 350
+        },
+        "page_number": 2240
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 176
+      }
+    },
+    {
+      "success": true,
+      "page": 2239,
+      "data": {
+        "t": "stmt",
+        "form": "SchE",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "passthrough": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "desc": "Income from Passthrough Statement Page 2",
+        "items": [
+          {
+            "d": "Interest income",
+            "k1": 595,
+            "tax": 595
+          },
+          {
+            "d": "Depreciation adjustment after 12/31/86",
+            "k1": 350,
+            "tax": 350
+          },
+          {
+            "d": "Self-employment earnings (loss)/Wages",
+            "k1": 162000,
+            "tax": 162000
+          },
+          {
+            "d": "Section 199A W-2 wages",
+            "k1": 564314,
+            "tax": 564314
+          },
+          {
+            "d": "Section 199A unadjusted basis",
+            "k1": 56812,
+            "tax": 56812
+          }
+        ],
+        "page_number": 2239
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 188
+      }
+    },
+    {
+      "success": true,
+      "page": 2246,
+      "data": {
+        "t": "stmt",
+        "ref": "AMT Reconciliation",
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "items": [
+          {
+            "src": "K1-THOR GUARD INC",
+            "desc": "REGULAR INCOME",
+            "inc": 195329
+          },
+          {
+            "src": "K1-THOR GUARD INC",
+            "desc": "DEPR ADJ",
+            "inc": 350,
+            "adj_2l": 350
+          },
+          {
+            "src": "K1-THOR GUARD INC",
+            "desc": "AMT NET INCOME",
+            "inc": 195679,
+            "adj_2l": 350
+          }
+        ],
+        "total_adj": 350,
+        "page_number": 2246
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 139
+      }
+    },
+    {
+      "success": true,
+      "page": 2249,
+      "data": {
+        "t": "form",
+        "form": "8995-A_SchC",
+        "y": 2024,
+        "name": "ROBERT M DUGAN",
+        "ssn4": "0380",
+        "trades": [
+          {
+            "name": "THOR GUARD, INC.",
+            "a": 195329,
+            "b": 19912,
+            "c": 175417
+          }
+        ],
+        "l2": 19912,
+        "l3": 19912,
+        "l4": 195329,
+        "l5": 19912,
+        "page_number": 2249
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 100
+      }
+    },
+    {
+      "success": true,
+      "page": 2247,
+      "data": {
+        "t": "form",
+        "form": "8995-A",
+        "y": 2024,
+        "name": "ROBERT M. DUGAN",
+        "ssn4": "0380",
+        "seq": "55A",
+        "p1": [
+          {
+            "row": "A",
+            "name": "THOR GUARD, INC.",
+            "tin": "**-*******"
+          }
+        ],
+        "p2": {
+          "l2a": 175417,
+          "l3a": 35083,
+          "l4a": 564314,
+          "l5a": 282157,
+          "l6a": 141079,
+          "l7a": 56812,
+          "l8a": 1420,
+          "l9a": 142499,
+          "l10a": 282157,
+          "l11a": 35083,
+          "l13a": 35083,
+          "l15a": 35083,
+          "l16a": 35083
+        },
+        "page_number": 2247
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 171
+      }
+    },
+    {
+      "success": true,
+      "page": 2203,
+      "data": {
+        "t": "K1",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "irs_ctr": "E-FILE",
+        "shares_beg": 1500000,
+        "shares_end": 1500000,
+        "sh": "MARY ANN FURUTA",
+        "ssn4": "3920",
+        "entity": "INDIVIDUAL",
+        "pct": 0.8,
+        "sh_shares_beg": 12000,
+        "sh_shares_end": 12000,
+        "b1": 5793,
+        "b4": 18,
+        "b15": [
+          {
+            "c": "A",
+            "v": 11
+          }
+        ],
+        "b16": [
+          {
+            "c": "C",
+            "v": 58
+          },
+          {
+            "c": "D",
+            "v": 4320
+          }
+        ],
+        "b17": [
+          {
+            "c": "A",
+            "v": 18
+          },
+          {
+            "c": "V",
+            "v": "STMT"
+          },
+          {
+            "c": "AC",
+            "v": "STMT"
+          },
+          {
+            "c": "AJ",
+            "v": "STMT"
+          }
+        ],
+        "page_number": 2203
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 209
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 2250,
+    "pages_successful": 2250,
+    "cache_read_tokens": 29763846,
+    "cache_write_tokens": 320904,
+    "input_tokens": 3448251,
+    "output_tokens": 318601,
+    "errors": 0
+  },
+  "cost": 42.093852999999996
+}

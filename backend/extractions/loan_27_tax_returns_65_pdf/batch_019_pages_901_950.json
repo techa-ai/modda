@@ -1,0 +1,1397 @@
+{
+  "batch": 19,
+  "pages_range": [
+    901,
+    950
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 916,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "sh": "OSCAR L. MILES",
+        "ssn4": "9122",
+        "ein": "326 32",
+        "pg": 2,
+        "b1": 532,
+        "b1_wi": 532,
+        "wi_src": 2,
+        "page_number": 916
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 63
+      }
+    },
+    {
+      "success": true,
+      "page": 914,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "SUSAN DUGAN",
+        "id": "353 36 8523",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 914
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 67
+      }
+    },
+    {
+      "success": true,
+      "page": 928,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "MEGAN RYAN",
+        "ein": "343825170",
+        "pg": 2,
+        "b1": 89,
+        "d1": 89,
+        "e1": 0,
+        "page_number": 928
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 59
+      }
+    },
+    {
+      "success": true,
+      "page": 912,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "SUSAN DUGAN",
+        "id": "353 36 8523",
+        "pg": 2,
+        "b1": {
+          "fed": 256,
+          "wi": 256,
+          "src": 1
+        },
+        "page_number": 912
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 63
+      }
+    },
+    {
+      "success": true,
+      "page": 924,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "sch": "5K-1",
+        "sh": "PETER L. TOWNSEND, JR",
+        "ssn4": "2267",
+        "pg": 2,
+        "b1": 2659,
+        "b1_wi": 2659,
+        "wi_src": 8,
+        "page_number": 924
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 72
+      }
+    },
+    {
+      "success": true,
+      "page": 909,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "st": "WI",
+        "sh": "DONALD JAN",
+        "id": "355-30-2864",
+        "pg": 3,
+        "note": "blank continuation page - no values",
+        "page_number": 909
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 60
+      }
+    },
+    {
+      "success": true,
+      "page": 920,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "LYNN D. JULIAN",
+        "ein": "076 46 8274",
+        "pg": 2,
+        "b1": 177,
+        "d": {
+          "b1": 177
+        },
+        "e": {
+          "b1": 1
+        },
+        "page_number": 920
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 70
+      }
+    },
+    {
+      "success": true,
+      "page": 910,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "DONALD JAN",
+        "id": "355 30 2864",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 910
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 66
+      }
+    },
+    {
+      "success": true,
+      "page": 902,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "y": 2023,
+        "sch": "Part IV",
+        "sh": "TYLER M. TOWNSEND",
+        "ssn4": "2044",
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "pg": 4,
+        "page_number": 902
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 69
+      }
+    },
+    {
+      "success": true,
+      "page": 904,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "st": "WI",
+        "sh": "PAUL T. TOWNSEND",
+        "ssn4": "5516",
+        "pg": 2,
+        "b1": 2659,
+        "b1_st": 2659,
+        "b1_src": 8,
+        "page_number": 904
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 901,
+      "data": {
+        "t": "K1_state",
+        "y": 2023,
+        "st": "WI",
+        "form": "5K-1",
+        "pg": 3,
+        "sh": "TYLER M. TOWNSEND",
+        "id": "569 23 2044",
+        "b16c": {
+          "fed": 44,
+          "wis": 44
+        },
+        "b16d": {
+          "fed": 400,
+          "wis": 400
+        },
+        "b19": {
+          "fed": 2658,
+          "wis": 8
+        },
+        "b20": {
+          "fed": 37629,
+          "wis": 117
+        },
+        "page_number": 901
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 116
+      }
+    },
+    {
+      "success": true,
+      "page": 925,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "PETER L. TOWNSEND, JR",
+        "id": "557 92 2267",
+        "pg": 3,
+        "b16c": 44,
+        "b16d": 400,
+        "b16c_wis": 44,
+        "b16d_wis": 400,
+        "b19": 2659,
+        "b19_wis": 8,
+        "b20": 37629,
+        "b20_wis": 117,
+        "page_number": 925
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 111
+      }
+    },
+    {
+      "success": true,
+      "page": 906,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "PAUL T. TOWNSEND",
+        "ein": "573-77-5516",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "note": "all_fields_blank",
+        "page_number": 906
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 78
+      }
+    },
+    {
+      "success": true,
+      "page": 913,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "SUSAN DUGAN",
+        "ssn4": "8523",
+        "pg": 3,
+        "b16c": 4,
+        "b16c_wis": 4,
+        "b16d": 80,
+        "b16d_wis": 80,
+        "b19": 256,
+        "b19_wis": 1,
+        "b20": 3629,
+        "b20_wis": 11,
+        "page_number": 913
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 102
+      }
+    },
+    {
+      "success": true,
+      "page": 917,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "OSCAR L. MILES",
+        "id": "326 32 9122",
+        "b16c": {
+          "fed": 9,
+          "wis": 9
+        },
+        "b16d": {
+          "fed": 80,
+          "wis": 80
+        },
+        "b19": {
+          "wis": 532,
+          "wis_src": 2
+        },
+        "b20": {
+          "wis": 7526,
+          "wis_src": 23
+        },
+        "page_number": 917
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 113
+      }
+    },
+    {
+      "success": true,
+      "page": 921,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "LYNN D. JULIAN",
+        "ssn4": "8274",
+        "pg": 3,
+        "b16c": 3,
+        "b16d": 27,
+        "b19": 177,
+        "b20": 2506,
+        "wis": {
+          "b16c": 3,
+          "b16d": 27,
+          "b19": 1,
+          "b20": 8
+        },
+        "page_number": 921
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 95
+      }
+    },
+    {
+      "success": true,
+      "page": 903,
+      "data": {
+        "t": "form",
+        "form": "WI-5K1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PAUL T TOWNSEND",
+        "ssn": "573-77-5516",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN CAPISTRANO",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "entity": "Individual",
+        "C_pct": 0.6667,
+        "D_st": "CA",
+        "E_checked": true,
+        "E_pct": 0.3103,
+        "page_number": 903
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 176
+      }
+    },
+    {
+      "success": true,
+      "page": 918,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "OSCAR L. MILES",
+        "ein": "326-32-9122",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 918
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 68
+      }
+    },
+    {
+      "success": true,
+      "page": 908,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "DONALD JAN",
+        "ssn4": "2864",
+        "id": "355 30 2864",
+        "pg": 2,
+        "state": "WI",
+        "note": "Part III - all boxes blank",
+        "page_number": 908
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 67
+      }
+    },
+    {
+      "success": true,
+      "page": 922,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "LYNN D. JULIAN",
+        "ein": "076-46-8274",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "note": "all_fields_blank",
+        "page_number": 922
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 76
+      }
+    },
+    {
+      "success": true,
+      "page": 929,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "MEGAN RYAN",
+        "ssn4": "5170",
+        "pg": 3,
+        "b16c": 1,
+        "b16c_wi": 1,
+        "b16d": 13,
+        "b16d_wi": 13,
+        "b19": 89,
+        "b19_wi": 0,
+        "b20": 1257,
+        "b20_wi": 4,
+        "page_number": 929
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 98
+      }
+    },
+    {
+      "success": true,
+      "page": 919,
+      "data": {
+        "t": "K1_WI",
+        "form": "5K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh_last": "JULIAN",
+        "sh_first": "LYNN",
+        "sh_mi": "D",
+        "ssn": "076-46-8274",
+        "sh_addr": "3724 S. LORETTA DRIVE",
+        "sh_city": "SALT LAKE CITY",
+        "sh_st": "UT",
+        "sh_zip": "84106",
+        "type": "Individual",
+        "C_pct": 0.0444,
+        "D_st": "UT",
+        "E_checked": true,
+        "E_pct": 0.3103,
+        "page_number": 919
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 191
+      }
+    },
+    {
+      "success": true,
+      "page": 926,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "y": 2023,
+        "sch": "Part IV",
+        "sh": "PETER L. TOWNSEND, JR",
+        "id": "557 92 2267",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 926
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 930,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "MEGAN RYAN",
+        "id": "343 82 5170",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 930
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 67
+      }
+    },
+    {
+      "success": true,
+      "page": 927,
+      "data": {
+        "t": "5K1",
+        "y": 2023,
+        "st": "WI",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh_last": "RYAN",
+        "sh_first": "MEGAN",
+        "ssn4": "5170",
+        "sh_addr": "120 HILLCREST AVE",
+        "sh_city": "FOX RIVER GROVE",
+        "sh_st": "IL",
+        "sh_zip": "60021",
+        "entity": "Individual",
+        "pct": 0.0223,
+        "sh_res_st": "IL",
+        "apport_pct": 0.3103,
+        "page_number": 927
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 170
+      }
+    },
+    {
+      "success": true,
+      "page": 905,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "sch": "5K-1",
+        "pg": 3,
+        "sh": "PAUL T. TOWNSEND",
+        "ssn4": "5516",
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": -1
+        },
+        "b16c": 44,
+        "b16d": 400,
+        "b19": {
+          "fed": 2659,
+          "wis": 8
+        },
+        "b20": {
+          "fed": 37630,
+          "wis": 117
+        },
+        "page_number": 905
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 112
+      }
+    },
+    {
+      "success": true,
+      "page": 907,
+      "data": {
+        "t": "5K1",
+        "y": 2023,
+        "state": "WI",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "DONALD JAN",
+        "ssn4": "2864",
+        "sh_addr": "2247 SUTTON DRIVE",
+        "sh_city": "SOUTH ELGIN",
+        "sh_st": "IL",
+        "sh_zip": "60177",
+        "entity": "Individual",
+        "final": true,
+        "pct": 0.0,
+        "res_st": "IL",
+        "apport": true,
+        "apport_pct": 0.3103,
+        "page_number": 907
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 168
+      }
+    },
+    {
+      "success": true,
+      "page": 915,
+      "data": {
+        "t": "K1_WI",
+        "y": 2023,
+        "form": "5K-1",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "OSCAR L MILES",
+        "ssn": "326-32-9122",
+        "sh_addr": "918 PAWN AVENUE",
+        "sh_city": "QUINCY",
+        "sh_st": "IL",
+        "sh_zip": "62305",
+        "entity": "Individual",
+        "pct_own": 0.1333,
+        "sh_res_st": "IL",
+        "apport_pct": 0.3103,
+        "apport_chk": true,
+        "page_number": 915
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 176
+      }
+    },
+    {
+      "success": true,
+      "page": 911,
+      "data": {
+        "t": "form",
+        "form": "WI-5K1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "SUSAN DUGAN",
+        "ssn": "353-36-8523",
+        "sh_addr": "1821 CANBY COURT",
+        "sh_city": "MARCO ISLAND",
+        "sh_st": "FL",
+        "sh_zip": "34145",
+        "entity": "Individual",
+        "final": true,
+        "pct_own": 0.0643,
+        "sh_st_res": "FL",
+        "apport_pct": 0.3103,
+        "apport": true,
+        "page_number": 911
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 177
+      }
+    },
+    {
+      "success": true,
+      "page": 923,
+      "data": {
+        "t": "K1_WI",
+        "form": "5K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PETER L TOWNSEND",
+        "ssn4": "2267",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN CAPISTRANO",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "entity": "Individual",
+        "C_pct": 0.6667,
+        "D_st": "CA",
+        "E_checked": true,
+        "E_pct": 0.3103,
+        "page_number": 923
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 175
+      }
+    },
+    {
+      "success": true,
+      "page": 933,
+      "data": {
+        "t": "K1sup",
+        "y": 2023,
+        "sh": "PATRICK RYAN",
+        "id": "357 88 8526",
+        "pg": "3 of 4",
+        "items": [
+          {
+            "b": "16c",
+            "v": 2,
+            "d": "Nondeductible expenses"
+          },
+          {
+            "b": "16d",
+            "v": 13,
+            "d": "Property distributions"
+          },
+          {
+            "b": "19",
+            "v": 88,
+            "d": "Income (loss)"
+          },
+          {
+            "b": "20",
+            "v": 1253,
+            "d": "Gross income"
+          }
+        ],
+        "wis": [
+          {
+            "b": "16c",
+            "v": 2
+          },
+          {
+            "b": "16d",
+            "v": 13
+          },
+          {
+            "b": "19",
+            "v": 0
+          },
+          {
+            "b": "20",
+            "v": 4
+          }
+        ],
+        "page_number": 933
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 158
+      }
+    },
+    {
+      "success": true,
+      "page": 934,
+      "data": {
+        "t": "K1sup",
+        "form": "5K-1",
+        "y": 2023,
+        "sh": "PATRICK RYAN",
+        "ssn4": "8526",
+        "sch": "Part IV - Additions and Subtractions",
+        "pg": 4,
+        "page_number": 934
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 59
+      }
+    },
+    {
+      "success": true,
+      "page": 938,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "DEBRA MALOY-WALSH",
+        "id": "105 46 9344",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "note": "all_lines_blank",
+        "page_number": 938
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 79
+      }
+    },
+    {
+      "success": true,
+      "page": 936,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "DEBRA MALOY-WALSH",
+        "ein": "105469344",
+        "pg": 2,
+        "b1": 266,
+        "d1": 266,
+        "e1": 1,
+        "page_number": 936
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 63
+      }
+    },
+    {
+      "success": true,
+      "page": 931,
+      "data": {
+        "t": "form",
+        "form": "WI-5K1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PATRICK RYAN",
+        "ssn": "357-88-8526",
+        "sh_addr": "120 HILLCREST AVE",
+        "sh_city": "FOX RIVER GROVE",
+        "sh_st": "IL",
+        "sh_zip": "60021",
+        "entity": "Individual",
+        "C_pct": 0.0222,
+        "D_st": "IL",
+        "E_checked": true,
+        "E_pct": 0.3103,
+        "page_number": 931
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 942,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "IV",
+        "y": 2023,
+        "sh": "JENNIFER MALOY-KEOGH",
+        "id": "105 46 9318",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 942
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 72
+      }
+    },
+    {
+      "success": true,
+      "page": 941,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ssn4": "9318",
+        "pg": 3,
+        "b16c": 5,
+        "b16c_wi": 5,
+        "b16d": 40,
+        "b16d_wi": 40,
+        "b19": 266,
+        "b19_wi": 1,
+        "b20": 3763,
+        "b20_wi": 12,
+        "page_number": 941
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 103
+      }
+    },
+    {
+      "success": true,
+      "page": 946,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "sch": "Part IV",
+        "y": 2023,
+        "sh": "JASON G. WOLK",
+        "ein": "267 69 8469",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "page_number": 946
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 70
+      }
+    },
+    {
+      "success": true,
+      "page": 940,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ein": "105-46-9318",
+        "pg": 2,
+        "b1": 266,
+        "d": {
+          "b1": 266
+        },
+        "e": {
+          "b1": 1
+        },
+        "page_number": 940
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 67
+      }
+    },
+    {
+      "success": true,
+      "page": 932,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "PATRICK RYAN",
+        "ssn4": "8526",
+        "b1": 88,
+        "d": {
+          "b1": 88
+        },
+        "e": {
+          "b1": 0
+        },
+        "page_number": 932
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 62
+      }
+    },
+    {
+      "success": true,
+      "page": 935,
+      "data": {
+        "t": "K1_WI",
+        "form": "5K-1",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "DEBRA MALOY-WALSH",
+        "ssn": "105-46-9344",
+        "sh_addr": "14 MACAFFER DRIVE",
+        "sh_city": "MENANDA",
+        "sh_st": "NY",
+        "sh_zip": "12204",
+        "entity": "Individual",
+        "pct_own": 0.0667,
+        "sh_st_res": "NY",
+        "apport_pct": 0.3103,
+        "apport": true,
+        "page_number": 935
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 178
+      }
+    },
+    {
+      "success": true,
+      "page": 937,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "DEBRA MALOY-WALSH",
+        "ein": "105-46-9344",
+        "pg": 3,
+        "b16c": 4,
+        "b16d": 40,
+        "b19": 266,
+        "b20": 3763,
+        "wis": {
+          "b16c": 4,
+          "b16d": 40,
+          "b19": 1,
+          "b20": 12
+        },
+        "page_number": 937
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 100
+      }
+    },
+    {
+      "success": true,
+      "page": 948,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "sh": "DAVID REDANZ",
+        "id": "108 54 4953",
+        "pg": 2,
+        "b1": 2658,
+        "d1": 2658,
+        "e1": 8,
+        "page_number": 948
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 57
+      }
+    },
+    {
+      "success": true,
+      "page": 945,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "JASON G. WOLK",
+        "ein": "267-69-8469",
+        "pg": 3,
+        "b15a": {
+          "d": "POST-1986 DEPN",
+          "v": -3
+        },
+        "b16c": 308,
+        "b16c_wis": 308,
+        "b16d": 2800,
+        "b16d_wis": 2800,
+        "b19": 18612,
+        "b19_wis": 58,
+        "b20": 263405,
+        "b20_wis": 817,
+        "page_number": 945
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 131
+      }
+    },
+    {
+      "success": true,
+      "page": 944,
+      "data": {
+        "t": "K1",
+        "y": 2023,
+        "sh": "JASON G. WOLK",
+        "ein": "267-69-8469",
+        "pg": 2,
+        "b1": 18612,
+        "b1_wis": 18612,
+        "b1_wis_src": 58,
+        "page_number": 944
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 67
+      }
+    },
+    {
+      "success": true,
+      "page": 947,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "st": "WI",
+        "y": 2023,
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "DAVID REDANZ",
+        "ssn": "108-54-4953",
+        "sh_addr": "9428 LAKE SERENA DR",
+        "sh_city": "BOCA RATON",
+        "sh_st": "FL",
+        "sh_zip": "33496",
+        "type": "Individual",
+        "pct_own": 0.6667,
+        "res_st": "FL",
+        "apport_pct": 0.3103,
+        "page_number": 947
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 172
+      }
+    },
+    {
+      "success": true,
+      "page": 943,
+      "data": {
+        "t": "5K1",
+        "y": 2023,
+        "st": "WI",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JASON G WOLK",
+        "ssn4": "8469",
+        "sh_addr": "2573 JARDIN PL",
+        "sh_city": "WESTON",
+        "sh_st": "FL",
+        "sh_zip": "33327",
+        "entity": "Individual",
+        "pct": 4.6667,
+        "apport_pct": 0.3103,
+        "page_number": 943
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 153
+      }
+    },
+    {
+      "success": true,
+      "page": 950,
+      "data": {
+        "t": "form",
+        "form": "5K-1",
+        "y": 2023,
+        "sch": "Part IV",
+        "sh": "DAVID REDANZ",
+        "ein": "108 54 4953",
+        "pg": 4,
+        "desc": "Shareholder's Share of Additions and Subtractions",
+        "note": "all lines blank",
+        "page_number": 950
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 74
+      }
+    },
+    {
+      "success": true,
+      "page": 949,
+      "data": {
+        "t": "K1sup",
+        "y": 2023,
+        "form": "5K-1",
+        "sh": "DAVID REDANZ",
+        "ein": "108 54 4953",
+        "pg": "3 of 4",
+        "items": [
+          {
+            "b": "15a",
+            "d": "POST-1986 DEPN",
+            "v": -1
+          },
+          {
+            "b": "16c",
+            "d": "Nondeductible expenses",
+            "v": 44,
+            "wis": 44
+          },
+          {
+            "b": "16d",
+            "d": "Property distributions",
+            "v": 400,
+            "wis": 400
+          },
+          {
+            "b": "19",
+            "d": "Income (loss)",
+            "wis": 2658,
+            "wis_src": 8
+          },
+          {
+            "b": "20",
+            "d": "Gross income",
+            "wis": 37630,
+            "wis_src": 117
+          }
+        ],
+        "page_number": 949
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 171
+      }
+    },
+    {
+      "success": true,
+      "page": 939,
+      "data": {
+        "t": "5K1",
+        "y": 2023,
+        "state": "WI",
+        "corp": "THOR GUARD, INC.",
+        "ein": "65-0057716",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARK",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JENNIFER MALOY-KEOGH",
+        "ssn4": "9318",
+        "sh_addr": "54 COLLYER PLACE",
+        "sh_city": "WHITE PLAINS",
+        "sh_st": "NY",
+        "sh_zip": "10605",
+        "entity": "Individual",
+        "pct_own": 0.0667,
+        "pct_apport": 0.3103,
+        "apport_checked": true,
+        "page_number": 939
+      },
+      "usage": {
+        "input_tokens": 1532,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 165
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 950,
+    "pages_successful": 950,
+    "cache_read_tokens": 12381546,
+    "cache_write_tokens": 320904,
+    "input_tokens": 1455400,
+    "output_tokens": 125039,
+    "errors": 0
+  },
+  "cost": 18.599398
+}

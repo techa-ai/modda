@@ -1,0 +1,2222 @@
+{
+  "batch": 26,
+  "pages_range": [
+    1251,
+    1300
+  ],
+  "results": [
+    {
+      "success": true,
+      "page": 1277,
+      "data": {
+        "t": "blank",
+        "page_number": 1277
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1261,
+      "data": {
+        "t": "blank",
+        "page_number": 1261
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1253,
+      "data": {
+        "t": "blank",
+        "page_number": 1253
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1269,
+      "data": {
+        "t": "blank",
+        "page_number": 1269
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1265,
+      "data": {
+        "t": "blank",
+        "page_number": 1265
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1279,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "RAYMOND C. BROPHY",
+        "ssn": "037-20-4148",
+        "page_number": 1279
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 54
+      }
+    },
+    {
+      "success": true,
+      "page": 1257,
+      "data": {
+        "t": "blank",
+        "page_number": 1257
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1273,
+      "data": {
+        "t": "blank",
+        "page_number": 1273
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1272,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "sh": "JULIETTE I. BROPHY",
+        "ssn": "218-59-5390",
+        "b41": 0,
+        "b42": 0,
+        "b43": 0,
+        "b44": 0,
+        "b45": 0,
+        "b46": 0,
+        "page_number": 1272
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 90
+      }
+    },
+    {
+      "success": true,
+      "page": 1281,
+      "data": {
+        "t": "blank",
+        "page_number": 1281
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1260,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "sh": "OLIVIA B. PIVIROTTO",
+        "ssn": "215-49-6434",
+        "l41": 0,
+        "l42": 0,
+        "l43": 0,
+        "l44": 0,
+        "l45": 0,
+        "l46": 0,
+        "page_number": 1260
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 90
+      }
+    },
+    {
+      "success": true,
+      "page": 1276,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "sh": "CHRISTOPHER B. BROPHY",
+        "ssn": "219-69-5908",
+        "b41": 0,
+        "b42": 0,
+        "b43": 0,
+        "b44": 0,
+        "b45": 0,
+        "b46": 0,
+        "page_number": 1276
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 88
+      }
+    },
+    {
+      "success": true,
+      "page": 1252,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "ANDREW T. BROPHY",
+        "ssn4": "2637",
+        "l41": 0,
+        "l42": 0,
+        "l43": 0,
+        "l44": 0,
+        "l45": 0,
+        "l46": 0,
+        "page_number": 1252
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 80
+      }
+    },
+    {
+      "success": true,
+      "page": 1256,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "sh": "BRENDA B. PIVIROTTO",
+        "ssn4": "5503",
+        "l41": 0,
+        "l42": 0,
+        "l43": 0,
+        "l44": 0,
+        "l45": 0,
+        "l46": 0,
+        "page_number": 1256
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 87
+      }
+    },
+    {
+      "success": true,
+      "page": 1280,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "RAYMOND C. BROPHY",
+        "ssn": "037-20-4148",
+        "l41": 0,
+        "l42": 0,
+        "l43": 0,
+        "l44": 0,
+        "l45": 0,
+        "l46": 0,
+        "page_number": 1280
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 83
+      }
+    },
+    {
+      "success": true,
+      "page": 1268,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "name": "PAUL T. PIVIROTTO",
+        "ssn": "220-57-4916",
+        "b41": 0,
+        "b42": 0,
+        "b43": 0,
+        "b44": 0,
+        "b45": 0,
+        "b46": 0,
+        "page_number": 1268
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 89
+      }
+    },
+    {
+      "success": true,
+      "page": 1264,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "sh": "THEODORA F. BROPHY",
+        "ssn": "212-57-2988",
+        "l41": 0,
+        "l42": 0,
+        "l43": 0,
+        "l44": 0,
+        "l45": 0,
+        "l46": 0,
+        "page_number": 1264
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 84
+      }
+    },
+    {
+      "success": true,
+      "page": 1271,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "JULIETTE I. BROPHY",
+        "ssn": "218-59-5390",
+        "credits": [
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          },
+          {
+            "l": 39,
+            "v": 0
+          },
+          {
+            "l": 40,
+            "v": 0
+          }
+        ],
+        "page_number": 1271
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 275
+      }
+    },
+    {
+      "success": true,
+      "page": 1254,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_ein": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "BRENDA B. PIVIROTTO",
+        "sh_ssn": "577-76-5503",
+        "sh_addr": "3711 BRADLEY LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "nonres": true,
+        "composite": true,
+        "a1": 7242,
+        "a5": 22,
+        "a10": 72,
+        "a14": 65644,
+        "b1": 24,
+        "b14": 221,
+        "b16": 1,
+        "page_number": 1254
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 198
+      }
+    },
+    {
+      "success": true,
+      "page": 1278,
+      "data": {
+        "t": "K1_CO",
+        "y": 2024,
+        "form": "DR0106K",
+        "pg": 1,
+        "sh": "RAYMOND C. BROPHY",
+        "ssn": "037-20-4148",
+        "sh_addr": "480 SABAL PALM LANE",
+        "sh_city": "VERO BEACH",
+        "sh_st": "FL",
+        "sh_zip": "32963",
+        "nonres": true,
+        "composite": true,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "a1": 4828,
+        "a5": 15,
+        "a10": 48,
+        "a14": 43763,
+        "a16": 1,
+        "b1": 16,
+        "b14": 147,
+        "page_number": 1278
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 192
+      }
+    },
+    {
+      "success": true,
+      "page": 1267,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "PAUL T. PIVIROTTO",
+        "ssn": "220-57-4916",
+        "credits": [
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          },
+          {
+            "l": 39,
+            "v": 0
+          },
+          {
+            "l": 40,
+            "v": 0
+          }
+        ],
+        "page_number": 1267
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 275
+      }
+    },
+    {
+      "success": true,
+      "page": 1285,
+      "data": {
+        "t": "blank",
+        "page_number": 1285
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1255,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "BRENDA B. PIVIROTTO",
+        "ssn": "577-76-5503",
+        "credits": [
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          },
+          {
+            "l": 39,
+            "v": 0
+          },
+          {
+            "l": 40,
+            "v": 0
+          }
+        ],
+        "page_number": 1255
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 276
+      }
+    },
+    {
+      "success": true,
+      "page": 1289,
+      "data": {
+        "t": "blank",
+        "page_number": 1289
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1274,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_ein": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "CHRISTOPHER B. BROPHY",
+        "ssn": "219-69-5908",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "nonres": true,
+        "composite": true,
+        "colA": {
+          "b1": 4828,
+          "b5": 15,
+          "b10": 49,
+          "b14": 43762
+        },
+        "colB": {
+          "b1": 16,
+          "b14": 147,
+          "b16": 1
+        },
+        "page_number": 1274
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 204
+      }
+    },
+    {
+      "success": true,
+      "page": 1262,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "corp_st": "FL",
+        "zip": "33323",
+        "sh": "THEODORA F. BROPHY",
+        "sh_ssn": "212-57-2988",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "nonres": true,
+        "composite": true,
+        "a1": 4828,
+        "a5": 15,
+        "a10": 49,
+        "a14": 43762,
+        "b1": 16,
+        "b14": 147,
+        "b16": 1,
+        "page_number": 1262
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 193
+      }
+    },
+    {
+      "success": true,
+      "page": 1258,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "OLIVIA B. PIVIROTTO",
+        "sh_ssn": "215-49-6434",
+        "sh_addr": "3711 BRADLEY LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "nonres": true,
+        "composite": true,
+        "a1": 4828,
+        "a5": 15,
+        "a10": 48,
+        "a14": 43763,
+        "b1": 16,
+        "b14": 147,
+        "b16": 1,
+        "page_number": 1258
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 195
+      }
+    },
+    {
+      "success": true,
+      "page": 1266,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_fein": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PAUL T. PIVIROTTO",
+        "ssn4": "4916",
+        "sh_addr": "3711 BRADLEY LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "nonres": true,
+        "composite": true,
+        "b1a": 4827,
+        "b1b": 16,
+        "b5a": 15,
+        "b10a": 48,
+        "b14a": 43762,
+        "b14b": 148,
+        "b16": 1,
+        "page_number": 1266
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 199
+      }
+    },
+    {
+      "success": true,
+      "page": 1284,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "sh": "PARKER TOWNSEND",
+        "ssn4": "6726",
+        "b41": 0,
+        "b42": 0,
+        "b43": 0,
+        "b44": 0,
+        "b45": 0,
+        "b46": 0,
+        "page_number": 1284
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 84
+      }
+    },
+    {
+      "success": true,
+      "page": 1270,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "JULIETTE I. BROPHY",
+        "ssn": "218-59-5390",
+        "sh_addr": "3213 PICKWICK LANE",
+        "sh_city": "CHEVY CHAS",
+        "sh_st": "MD",
+        "sh_zip": "20815",
+        "resident": false,
+        "composite": true,
+        "items": {
+          "b1a": 4828,
+          "b1b": 16,
+          "b5a": 14,
+          "b10a": 48,
+          "b14a": 43763,
+          "b14b": 147,
+          "b16b": 1
+        },
+        "page_number": 1270
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 207
+      }
+    },
+    {
+      "success": true,
+      "page": 1283,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2024,
+        "pg": 2,
+        "sh": "PARKER TOWNSEND",
+        "ssn4": "6726",
+        "credits": {
+          "l17": 0,
+          "l18": 0,
+          "l19": 0,
+          "l20": 0,
+          "l21": 0,
+          "l22": 0,
+          "l23": 0,
+          "l24": 0,
+          "l25": 0,
+          "l26": 0,
+          "l27": 0,
+          "l28": 0,
+          "l29": 0,
+          "l30": 0,
+          "l31": 0,
+          "l32": 0,
+          "l33": 0,
+          "l34": 0,
+          "l35": 0,
+          "l36": 0,
+          "l37": 0,
+          "l38": 0,
+          "l39": 0,
+          "l40": 0
+        },
+        "page_number": 1283
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 173
+      }
+    },
+    {
+      "success": true,
+      "page": 1297,
+      "data": {
+        "t": "blank",
+        "page_number": 1297
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1288,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "name": "FINLEY TOWNSEND",
+        "ssn": "756-93-2105",
+        "b41": 0,
+        "b42": 0,
+        "b43": 0,
+        "b44": 0,
+        "b45": 0,
+        "b46": 0,
+        "page_number": 1288
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 83
+      }
+    },
+    {
+      "success": true,
+      "page": 1293,
+      "data": {
+        "t": "blank",
+        "page_number": 1293
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 8
+      }
+    },
+    {
+      "success": true,
+      "page": 1263,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "THEODORA F. BROPHY",
+        "ssn4": "2988",
+        "credits": [
+          {
+            "l": 17,
+            "d": "Recapture of prior year credits",
+            "v": 0
+          },
+          {
+            "l": 18,
+            "d": "Advanced Industry Investment credit",
+            "v": 0
+          },
+          {
+            "l": 19,
+            "d": "Business Personal Property credit",
+            "v": 0
+          },
+          {
+            "l": 20,
+            "d": "Child care center family care home investment credit",
+            "v": 0
+          },
+          {
+            "l": 21,
+            "d": "Child care contribution credit",
+            "v": 0
+          },
+          {
+            "l": 22,
+            "d": "Colorado job growth incentive credit",
+            "v": 0
+          },
+          {
+            "l": 23,
+            "d": "Enterprise zone business facility new employee credit",
+            "v": 0
+          },
+          {
+            "l": 24,
+            "d": "Preservation of Historic Structures credit",
+            "v": 0
+          },
+          {
+            "l": 25,
+            "d": "SALT Parity credit from lower-tier partnership",
+            "v": 0
+          },
+          {
+            "l": 26,
+            "d": "Enterprise zone agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 27,
+            "d": "Enterprise zone commercial vehicle investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 28,
+            "d": "Enterprise zone contribution credit",
+            "v": 0
+          },
+          {
+            "l": 29,
+            "d": "Enterprise zone employee health insurance credit",
+            "v": 0
+          },
+          {
+            "l": 30,
+            "d": "Enterprise zone enhanced rural agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 31,
+            "d": "Enterprise zone enhanced rural new employee credit",
+            "v": 0
+          },
+          {
+            "l": 32,
+            "d": "Enterprise zone investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 33,
+            "d": "Enterprise zone job training investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 34,
+            "d": "Enterprise zone research and experimental activities credit",
+            "v": 0
+          },
+          {
+            "l": 35,
+            "d": "Enterprise zone vacant commercial building rehabilitation credit",
+            "v": 0
+          },
+          {
+            "l": 36,
+            "d": "Heat Pump Credit for Registered Contractors",
+            "v": 0
+          },
+          {
+            "l": 37,
+            "d": "Refundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 38,
+            "d": "Nonrefundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 39,
+            "d": "Homeless Contribution Credit",
+            "v": 0
+          },
+          {
+            "l": 40,
+            "d": "Alternative Transportation Options Credit",
+            "v": 0
+          }
+        ],
+        "page_number": 1263
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 508
+      }
+    },
+    {
+      "success": true,
+      "page": 1287,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "FINLEY TOWNSEND",
+        "ssn4": "2105",
+        "credits": {
+          "l17": 0,
+          "l18": 0,
+          "l19": 0,
+          "l20": 0,
+          "l21": 0,
+          "l22": 0,
+          "l23": 0,
+          "l24": 0,
+          "l25": 0,
+          "l26": 0,
+          "l27": 0,
+          "l28": 0,
+          "l29": 0,
+          "l30": 0,
+          "l31": 0,
+          "l32": 0,
+          "l33": 0,
+          "l34": 0,
+          "l35": 0,
+          "l36": 0,
+          "l37": 0,
+          "l38": 0,
+          "l39": 0,
+          "l40": 0
+        },
+        "page_number": 1287
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 174
+      }
+    },
+    {
+      "success": true,
+      "page": 1282,
+      "data": {
+        "t": "K1_CO",
+        "y": 2024,
+        "form": "DR0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PARKER TOWNSEND",
+        "sh_ssn": "686-56-6726",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN C",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "nonres": true,
+        "composite": true,
+        "b1a": 4717,
+        "b1b": 16,
+        "b5a": 14,
+        "b10a": 47,
+        "b14a": 42756,
+        "b14b": 144,
+        "b16b": 1,
+        "page_number": 1282
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 198
+      }
+    },
+    {
+      "success": true,
+      "page": 1251,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "ANDREW T. BROPHY",
+        "ssn": "577-68-2637",
+        "credits": [
+          {
+            "l": 17,
+            "d": "Recapture of prior year credits",
+            "v": 0
+          },
+          {
+            "l": 18,
+            "d": "Advanced Industry Investment credit",
+            "v": 0
+          },
+          {
+            "l": 19,
+            "d": "Business Personal Property credit",
+            "v": 0
+          },
+          {
+            "l": 20,
+            "d": "Child care center family care home investment credit",
+            "v": 0
+          },
+          {
+            "l": 21,
+            "d": "Child care contribution credit",
+            "v": 0
+          },
+          {
+            "l": 22,
+            "d": "Colorado job growth incentive credit",
+            "v": 0
+          },
+          {
+            "l": 23,
+            "d": "Enterprise zone business facility new employee credit",
+            "v": 0
+          },
+          {
+            "l": 24,
+            "d": "Preservation of Historic Structures credit",
+            "v": 0
+          },
+          {
+            "l": 25,
+            "d": "SALT Parity credit from lower-tier partnership",
+            "v": 0
+          },
+          {
+            "l": 26,
+            "d": "Enterprise zone agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 27,
+            "d": "Enterprise zone commercial vehicle investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 28,
+            "d": "Enterprise zone contribution credit",
+            "v": 0
+          },
+          {
+            "l": 29,
+            "d": "Enterprise zone employee health insurance credit",
+            "v": 0
+          },
+          {
+            "l": 30,
+            "d": "Enterprise zone enhanced rural agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 31,
+            "d": "Enterprise zone enhanced rural new employee credit",
+            "v": 0
+          },
+          {
+            "l": 32,
+            "d": "Enterprise zone investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 33,
+            "d": "Enterprise zone job training investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 34,
+            "d": "Enterprise zone research and experimental activities credit",
+            "v": 0
+          },
+          {
+            "l": 35,
+            "d": "Enterprise zone vacant commercial building rehabilitation credit",
+            "v": 0
+          },
+          {
+            "l": 36,
+            "d": "Heat Pump Credit for Registered Contractors",
+            "v": 0
+          },
+          {
+            "l": 37,
+            "d": "Refundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 38,
+            "d": "Nonrefundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 39,
+            "d": "Homeless Contribution Credit",
+            "v": 0
+          },
+          {
+            "l": 40,
+            "d": "Alternative Transportation Options Credit",
+            "v": 0
+          }
+        ],
+        "page_number": 1251
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 510
+      }
+    },
+    {
+      "success": true,
+      "page": 1292,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "name": "MARY ANN FURUTA",
+        "ssn": "324-34-3920",
+        "l41": 0,
+        "l42": 0,
+        "l43": 0,
+        "l44": 0,
+        "l45": 0,
+        "l46": 0,
+        "page_number": 1292
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 88
+      }
+    },
+    {
+      "success": true,
+      "page": 1275,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "CHRISTOPHER B. BROPHY",
+        "ssn": "219-69-5908",
+        "credits": [
+          {
+            "l": 17,
+            "d": "Recapture of prior year credits",
+            "v": 0
+          },
+          {
+            "l": 18,
+            "d": "Advanced Industry Investment credit",
+            "v": 0
+          },
+          {
+            "l": 19,
+            "d": "Business Personal Property credit",
+            "v": 0
+          },
+          {
+            "l": 20,
+            "d": "Child care center family care home investment credit",
+            "v": 0
+          },
+          {
+            "l": 21,
+            "d": "Child care contribution credit",
+            "v": 0
+          },
+          {
+            "l": 22,
+            "d": "Colorado job growth incentive credit",
+            "v": 0
+          },
+          {
+            "l": 23,
+            "d": "Enterprise zone business facility new employee credit",
+            "v": 0
+          },
+          {
+            "l": 24,
+            "d": "Preservation of Historic Structures credit",
+            "v": 0
+          },
+          {
+            "l": 25,
+            "d": "SALT Parity credit from lower-tier partnership",
+            "v": 0
+          },
+          {
+            "l": 26,
+            "d": "Enterprise zone agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 27,
+            "d": "Enterprise zone commercial vehicle investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 28,
+            "d": "Enterprise zone contribution credit",
+            "v": 0
+          },
+          {
+            "l": 29,
+            "d": "Enterprise zone employee health insurance credit",
+            "v": 0
+          },
+          {
+            "l": 30,
+            "d": "Enterprise zone enhanced rural agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 31,
+            "d": "Enterprise zone enhanced rural new employee credit",
+            "v": 0
+          },
+          {
+            "l": 32,
+            "d": "Enterprise zone investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 33,
+            "d": "Enterprise zone job training investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 34,
+            "d": "Enterprise zone research and experimental activities credit",
+            "v": 0
+          },
+          {
+            "l": 35,
+            "d": "Enterprise zone vacant commercial building rehabilitation credit",
+            "v": 0
+          },
+          {
+            "l": 36,
+            "d": "Heat Pump Credit for Registered Contractors",
+            "v": 0
+          },
+          {
+            "l": 37,
+            "d": "Refundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 38,
+            "d": "Nonrefundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 39,
+            "d": "Homeless Contribution Credit",
+            "v": 0
+          },
+          {
+            "l": 40,
+            "d": "Alternative Transportation Options Credit",
+            "v": 0
+          }
+        ],
+        "page_number": 1275
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 510
+      }
+    },
+    {
+      "success": true,
+      "page": 1286,
+      "data": {
+        "t": "K1_CO",
+        "y": 2024,
+        "form": "DR0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "FINLEY TOWNSEND",
+        "sh_id": "756-93-2105",
+        "sh_addr": "319 VIA DE LINDA",
+        "sh_city": "SAN JUAN C",
+        "sh_st": "CA",
+        "sh_zip": "92675",
+        "nonres": true,
+        "composite": true,
+        "colA": {
+          "b1": 4717,
+          "b5": 14,
+          "b10": 47,
+          "b14": 42756
+        },
+        "colB": {
+          "b1": 16,
+          "b14": 143,
+          "b16": 1
+        },
+        "page_number": 1286
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 200
+      }
+    },
+    {
+      "success": true,
+      "page": 1259,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "OLIVIA B. PIVIROTTO",
+        "ssn": "215-49-6434",
+        "credits": [
+          {
+            "l": 17,
+            "d": "Recapture of prior year credits",
+            "v": 0
+          },
+          {
+            "l": 18,
+            "d": "Advanced Industry Investment credit",
+            "v": 0
+          },
+          {
+            "l": 19,
+            "d": "Business Personal Property credit",
+            "v": 0
+          },
+          {
+            "l": 20,
+            "d": "Child care center family care home investment credit",
+            "v": 0
+          },
+          {
+            "l": 21,
+            "d": "Child care contribution credit",
+            "v": 0
+          },
+          {
+            "l": 22,
+            "d": "Colorado job growth incentive credit",
+            "v": 0
+          },
+          {
+            "l": 23,
+            "d": "Enterprise zone business facility new employee credit",
+            "v": 0
+          },
+          {
+            "l": 24,
+            "d": "Preservation of Historic Structures credit",
+            "v": 0
+          },
+          {
+            "l": 25,
+            "d": "SALT Parity credit from lower-tier partnership",
+            "v": 0
+          },
+          {
+            "l": 26,
+            "d": "Enterprise zone agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 27,
+            "d": "Enterprise zone commercial vehicle investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 28,
+            "d": "Enterprise zone contribution credit",
+            "v": 0
+          },
+          {
+            "l": 29,
+            "d": "Enterprise zone employee health insurance credit",
+            "v": 0
+          },
+          {
+            "l": 30,
+            "d": "Enterprise zone enhanced rural agricultural processing new employee credit",
+            "v": 0
+          },
+          {
+            "l": 31,
+            "d": "Enterprise zone enhanced rural new employee credit",
+            "v": 0
+          },
+          {
+            "l": 32,
+            "d": "Enterprise zone investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 33,
+            "d": "Enterprise zone job training investment tax credit",
+            "v": 0
+          },
+          {
+            "l": 34,
+            "d": "Enterprise zone research and experimental activities credit",
+            "v": 0
+          },
+          {
+            "l": 35,
+            "d": "Enterprise zone vacant commercial building rehabilitation credit",
+            "v": 0
+          },
+          {
+            "l": 36,
+            "d": "Heat Pump Credit for Registered Contractors",
+            "v": 0
+          },
+          {
+            "l": 37,
+            "d": "Refundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 38,
+            "d": "Nonrefundable Residential Energy Storage Systems Credit",
+            "v": 0
+          },
+          {
+            "l": 39,
+            "d": "Homeless Contribution Credit",
+            "v": 0
+          },
+          {
+            "l": 40,
+            "d": "Alternative Transportation Options Credit",
+            "v": 0
+          }
+        ],
+        "page_number": 1259
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 512
+      }
+    },
+    {
+      "success": true,
+      "page": 1296,
+      "data": {
+        "t": "form",
+        "form": "DR0106K",
+        "st": "CO",
+        "pg": "3of3",
+        "y": 2024,
+        "sh": "PETER L TOWNSEND REVOCABLE TRU",
+        "tin": "578-54-0025",
+        "page_number": 1296
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 61
+      }
+    },
+    {
+      "success": true,
+      "page": 1300,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": "3 of 3",
+        "y": 2024,
+        "sh": "JUDY JAN",
+        "ssn4": "0530",
+        "l41": 0,
+        "l42": 0,
+        "l43": 0,
+        "l44": 0,
+        "l45": 0,
+        "l46": 0,
+        "page_number": 1300
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 82
+      }
+    },
+    {
+      "success": true,
+      "page": 1299,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "JUDY JAN",
+        "ssn4": "0530",
+        "credits": [
+          {
+            "l": 17,
+            "v": 0
+          },
+          {
+            "l": 18,
+            "v": 0
+          },
+          {
+            "l": 19,
+            "v": 0
+          },
+          {
+            "l": 20,
+            "v": 0
+          },
+          {
+            "l": 21,
+            "v": 0
+          },
+          {
+            "l": 22,
+            "v": 0
+          },
+          {
+            "l": 23,
+            "v": 0
+          },
+          {
+            "l": 24,
+            "v": 0
+          },
+          {
+            "l": 25,
+            "v": 0
+          },
+          {
+            "l": 26,
+            "v": 0
+          },
+          {
+            "l": 27,
+            "v": 0
+          },
+          {
+            "l": 28,
+            "v": 0
+          },
+          {
+            "l": 29,
+            "v": 0
+          },
+          {
+            "l": 30,
+            "v": 0
+          },
+          {
+            "l": 31,
+            "v": 0
+          },
+          {
+            "l": 32,
+            "v": 0
+          },
+          {
+            "l": 33,
+            "v": 0
+          },
+          {
+            "l": 34,
+            "v": 0
+          },
+          {
+            "l": 35,
+            "v": 0
+          },
+          {
+            "l": 36,
+            "v": 0
+          },
+          {
+            "l": 37,
+            "v": 0
+          },
+          {
+            "l": 38,
+            "v": 0
+          },
+          {
+            "l": 39,
+            "v": 0
+          },
+          {
+            "l": 40,
+            "v": 0
+          }
+        ],
+        "page_number": 1299
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 268
+      }
+    },
+    {
+      "success": true,
+      "page": 1291,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "pg": 2,
+        "y": 2024,
+        "sh": "MARY ANN FURUTA",
+        "ssn": "324-34-3920",
+        "desc": "Partner Share of Credits",
+        "lines": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "all_zero": true,
+        "page_number": 1291
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 119
+      }
+    },
+    {
+      "success": true,
+      "page": 1295,
+      "data": {
+        "t": "form",
+        "form": "DR 0106K",
+        "st": "CO",
+        "y": 2024,
+        "pg": 2,
+        "name": "PETER L TOWNSEND REVOCABLE TRU",
+        "ssn": "578-54-0025",
+        "credits": [],
+        "page_number": 1295
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 65
+      }
+    },
+    {
+      "success": true,
+      "page": 1290,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "MARY ANN FURUTA",
+        "sh_ssn": "324-34-3920",
+        "sh_addr": "96 WATERVIEW COURT",
+        "sh_city": "LAKE BARRI",
+        "sh_st": "IL",
+        "sh_zip": "60010",
+        "nonres": true,
+        "composite": true,
+        "a": {
+          "b1": 5793,
+          "b5": 18,
+          "b10": 58,
+          "b14": 52514
+        },
+        "b": {
+          "b1": 19,
+          "b14": 177,
+          "b16": 1
+        },
+        "page_number": 1290
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 203
+      }
+    },
+    {
+      "success": true,
+      "page": 1298,
+      "data": {
+        "t": "K1_CO",
+        "y": 2024,
+        "form": "DR 0106K",
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "co_acct": "65874513",
+        "addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "city": "SUNRISE",
+        "st": "FL",
+        "zip": "33323",
+        "sh": "JUDY JAN",
+        "ssn": "332-34-0530",
+        "sh_addr": "121 WILLOW BRANCH LANE",
+        "sh_city": "CHELSEA",
+        "sh_st": "AL",
+        "sh_zip": "35043",
+        "resident": false,
+        "composite": true,
+        "colA": {
+          "b1": 483,
+          "b5": 1,
+          "b10": 5,
+          "b14": 4376
+        },
+        "colB": {
+          "b1": 2,
+          "b14": 15
+        },
+        "page_number": 1298
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 181
+      }
+    },
+    {
+      "success": true,
+      "page": 1294,
+      "data": {
+        "t": "K1_state",
+        "st": "CO",
+        "form": "DR0106K",
+        "y": 2024,
+        "pg": 1,
+        "corp": "THOR GUARD, INC.",
+        "corp_acct": "65874513",
+        "corp_addr": "1193 SAWGRASS CORPORATE PARKWAY",
+        "corp_city": "SUNRISE",
+        "corp_st": "FL",
+        "corp_zip": "33323",
+        "sh": "PETER L TOWNSEND REVOCABLE TRU",
+        "sh_id4": "0025",
+        "sh_addr": "PO BOX 1954",
+        "sh_city": "HOBE SOUND",
+        "sh_st": "FL",
+        "sh_zip": "33475",
+        "nonres": true,
+        "composite": true,
+        "colA": {
+          "b1": 337949,
+          "b5": 1030,
+          "b10": 3380,
+          "b14": 3063371
+        },
+        "colB": {
+          "b1": 1136,
+          "b5": 3,
+          "b10": 11,
+          "b14": 10298,
+          "b16": 49
+        },
+        "page_number": 1294
+      },
+      "usage": {
+        "input_tokens": 1533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 13371,
+        "output_tokens": 223
+      }
+    }
+  ],
+  "stats": {
+    "pages_processed": 1300,
+    "pages_successful": 1300,
+    "cache_read_tokens": 17061396,
+    "cache_write_tokens": 320904,
+    "input_tokens": 1991901,
+    "output_tokens": 175631,
+    "errors": 0
+  },
+  "cost": 24.886628000000005
+}
