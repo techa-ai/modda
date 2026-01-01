@@ -159,3 +159,6 @@ aws bedrock list-foundation-models \
 Or use the AWS Bedrock Console:
 https://console.aws.amazon.com/bedrock/home?region=us-east-1#/models
 
+
+
+

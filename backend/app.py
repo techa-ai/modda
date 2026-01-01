@@ -10,6 +10,9 @@ from functools import wraps
 from db import execute_query, execute_one, get_db_connection, RealDictCursor
 from processing import start_loan_processing
 import pandas as pd
+from mt360_validator import validate_mt360_with_opus
+from smart_validator_v2 import smart_validate_urla_v2
+from validate_1004_batched import validate_1004_batched, extract_1004_deep_json
 
 load_dotenv()
 
@@ -58,6 +61,30 @@ def admin_required(f):
     
     return decorated
 
+# ============= SCHEMA CONFIGURATION =============
+# Available schemas for A/B testing
+AVAILABLE_SCHEMAS = {
+    'public': 'Original deduplication results',
+    'modda_v2': 'AI-powered deduplication (Claude Opus)'
+}
+
+# Default schema (can be overridden per-request via header)
+DEFAULT_SCHEMA = 'public'
+
+def get_active_schema():
+    """Get the active schema from request header or default"""
+    schema = request.headers.get('X-Schema', DEFAULT_SCHEMA)
+    if schema not in AVAILABLE_SCHEMAS:
+        schema = DEFAULT_SCHEMA
+    return schema
+
+def get_schema_table(table_name):
+    """Get fully qualified table name with schema"""
+    schema = get_active_schema()
+    if schema == 'public':
+        return table_name
+    return f"{schema}.{table_name}"
+
 # ============= AUTH ROUTES =============
 
 @app.route('/api/auth/login', methods=['POST'])
@@ -91,6 +118,17 @@ def login():
             'email': user['email'],
             'role': user['role']
         }
+    })
+
+@app.route('/api/schemas', methods=['GET'])
+def get_schemas():
+    """Get available database schemas for A/B testing"""
+    return jsonify({
+        'schemas': [
+            {'id': k, 'name': k, 'description': v} 
+            for k, v in AVAILABLE_SCHEMAS.items()
+        ],
+        'default': DEFAULT_SCHEMA
     })
 
 @app.route('/api/auth/register', methods=['POST'])
@@ -1112,27 +1150,30 @@ def get_loan_stats(current_user, loan_id):
             'important_documents': 0
         }
     else:
+        # Get active schema for A/B testing
+        doc_table = get_schema_table('document_analysis')
+        
         # Get actual counts from document_analysis table
-        total_documents_result = execute_query('''
+        total_documents_result = execute_query(f'''
             SELECT COUNT(*) as count
-            FROM document_analysis
+            FROM {doc_table}
             WHERE loan_id = %s
         ''', (loan_id,))
         total_documents = total_documents_result[0]['count'] if total_documents_result else 0
         
         # Count unique document groups (matches the tab logic)
         # This counts version groups + singles with status='unique' or 'master'
-        version_groups_count = execute_query('''
+        version_groups_count = execute_query(f'''
             SELECT COUNT(DISTINCT version_group_id) as count
-            FROM document_analysis
+            FROM {doc_table}
             WHERE loan_id = %s
             AND status IN ('unique', 'master')
             AND version_group_id IS NOT NULL
         ''', (loan_id,))
         
-        singles_count = execute_query('''
+        singles_count = execute_query(f'''
             SELECT COUNT(*) as count
-            FROM document_analysis
+            FROM {doc_table}
             WHERE loan_id = %s
             AND status IN ('unique', 'master')
             AND version_group_id IS NULL
@@ -1143,9 +1184,9 @@ def get_loan_stats(current_user, loan_id):
         unique_documents = version_groups + singles
         
         # Count versions identified (documents with status='unique' in version groups but not the representative)
-        total_in_groups = execute_query('''
+        total_in_groups = execute_query(f'''
             SELECT COUNT(*) as count
-            FROM document_analysis
+            FROM {doc_table}
             WHERE loan_id = %s
             AND status IN ('unique', 'master')
             AND version_group_id IS NOT NULL
@@ -1153,9 +1194,9 @@ def get_loan_stats(current_user, loan_id):
         versions_identified = total_in_groups[0]['count'] - version_groups if total_in_groups else 0
         
         # Count duplicates (documents with status='duplicate')
-        duplicates_result = execute_query('''
+        duplicates_result = execute_query(f'''
             SELECT COUNT(*) as count
-            FROM document_analysis
+            FROM {doc_table}
             WHERE loan_id = %s
             AND status = 'duplicate'
         ''', (loan_id,))
@@ -1201,6 +1242,10 @@ def get_loan_documents(current_user, loan_id):
     """Get categorized documents for a specific loan"""
     from datetime import datetime as dt
     
+    # Get active schema for A/B testing
+    schema = get_active_schema()
+    doc_table = get_schema_table('document_analysis')
+    
     # Get loan to find document location
     loan = execute_one('SELECT * FROM loans WHERE id = %s', (loan_id,))
     
@@ -1209,9 +1254,10 @@ def get_loan_documents(current_user, loan_id):
     
     # Check if deduplication analysis has been run
     analysis_results = execute_query(
-        "SELECT * FROM document_analysis WHERE loan_id = %s ORDER BY upload_date DESC",
+        f"SELECT * FROM {doc_table} WHERE loan_id = %s ORDER BY upload_date DESC",
         (loan_id,)
     )
+
     
     if analysis_results:
         # Use stored analysis results (fast!)
@@ -1242,26 +1288,28 @@ def get_loan_documents(current_user, loan_id):
             # If this is a master document, fetch the duplicate filenames
             if doc['status'] == 'master' and doc['duplicate_count'] > 0:
                 duplicates = execute_query(
-                    "SELECT filename FROM document_analysis WHERE loan_id = %s AND master_document_id = %s",
+                    f"SELECT filename FROM {doc_table} WHERE loan_id = %s AND master_document_id = %s",
                     (loan_id, doc['id'])
                 )
                 doc_info['duplicates'] = [d['filename'] for d in duplicates]
             
             raw_docs.append(doc_info)
             
-            # Grouping logic for unique/master list
-            if doc['status'] in ['unique', 'master']:
-                vg_id = doc.get('version_group_id')
-                if vg_id:
-                    if vg_id not in version_groups:
-                        version_groups[vg_id] = []
-                    version_groups[vg_id].append(doc_info)
-                else:
-                    unique_docs_singles.append(doc_info)
+            # Grouping logic - include ALL documents with a version_group_id
+            # This ensures version modal shows all related documents
+            vg_id = doc.get('version_group_id')
+            if vg_id:
+                if vg_id not in version_groups:
+                    version_groups[vg_id] = []
+                version_groups[vg_id].append(doc_info)
+            elif doc['status'] in ['unique', 'master']:
+                # Only add to singles if no version group
+                unique_docs_singles.append(doc_info)
         
         # Process version groups
         final_unique = []
         for vid, group in version_groups.items():
+
             # Find representative (latest version)
             representative = next((d for d in group if d.get('is_latest_version')), None)
             if not representative:
@@ -1521,7 +1569,7 @@ def add_evidence_type(current_user, attr_id):
 @app.route('/api/config/schemas', methods=['GET'])
 @token_required
 @admin_required
-def get_schemas(current_user):
+def get_config_schemas(current_user):
     """List available document schemas"""
     # Go up one level from backend/ to modda/ then to config/document_schemas
     schema_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config', 'document_schemas')
@@ -2219,6 +2267,243 @@ def get_verification_summary(current_user, loan_id, verification_type):
         import traceback
         traceback.print_exc()
         return jsonify({'error': str(e), 'message': 'Error generating verification summary'}), 500
+
+@app.route('/api/admin/loans/<loan_id>/mt360-ocr', methods=['GET'])
+@token_required
+@admin_required
+def get_mt360_ocr_data(current_user, loan_id):
+    """Get MT360 OCR extracted data for a loan"""
+    try:
+        # Get the loan's loan_number to match with MT360 data
+        loan = execute_one(
+            'SELECT loan_number FROM loans WHERE id = %s',
+            (loan_id,)
+        )
+        
+        if not loan:
+            return jsonify({'error': 'Loan not found'}), 404
+        
+        # Use loan_number as the file_id for MT360 data
+        file_id = loan['loan_number']
+        mt360_data_dir = os.path.join(os.path.dirname(__file__), '..', 'outputs', 'mt360_complete_extraction', 'data')
+        
+        # Document types to check
+        doc_types = ['1008', 'URLA', 'Note', 'LoanEstimate', 'ClosingDisclosure', 'CreditReport', '1004']
+        
+        result = {}
+        for doc_type in doc_types:
+            file_path = os.path.join(mt360_data_dir, f'loan_{file_id}_{doc_type}.json')
+            
+            if os.path.exists(file_path):
+                try:
+                    with open(file_path, 'r') as f:
+                        data = json.load(f)
+                        result[doc_type] = data
+                except Exception as e:
+                    print(f"Error loading {file_path}: {e}")
+                    result[doc_type] = {'has_data': False, 'error': str(e)}
+            else:
+                result[doc_type] = {'has_data': False}
+        
+        return jsonify(result)
+    
+    except Exception as e:
+        print(f"Error fetching MT360 OCR data: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/admin/loans/<loan_id>/validation-cache/<doc_type>', methods=['GET'])
+@token_required
+@admin_required
+def get_cached_validation(current_user, loan_id, doc_type):
+    """Get cached validation results if they exist"""
+    try:
+        cache_dir = os.path.join(os.path.dirname(__file__), '..', 'outputs', 'mt360_validation_cache')
+        
+        # Try with database loan_id first
+        cache_file = os.path.join(cache_dir, f'loan_{loan_id}_{doc_type}.json')
+        
+        if not os.path.exists(cache_file):
+            # Get loan_file_id from database
+            try:
+                conn = get_db_connection()
+                cur = conn.cursor()
+                cur.execute('SELECT loan_number FROM loans WHERE id = %s', (loan_id,))
+                loan = cur.fetchone()
+                cur.close()
+                conn.close()
+                if loan:
+                    # loan is a RealDictCursor row, access by key
+                    loan_file_id = loan['loan_number'] if isinstance(loan, dict) else loan[0]
+                    cache_file = os.path.join(cache_dir, f'loan_{loan_file_id}_{doc_type}.json')
+                    print(f"Cache lookup: loan_id={loan_id} -> loan_file_id={loan_file_id} -> {cache_file}")
+            except Exception as db_err:
+                print(f"DB lookup failed for loan {loan_id}: {db_err}")
+        
+        if os.path.exists(cache_file):
+            with open(cache_file, 'r') as f:
+                return jsonify(json.load(f))
+        else:
+            return jsonify({'success': False, 'error': 'No cached results'}), 404
+    except Exception as e:
+        print(f"Cache endpoint error: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/admin/loans/<loan_id>/validate-mt360/<doc_type>', methods=['POST'])
+@token_required
+@admin_required
+def validate_mt360_ocr(current_user, loan_id, doc_type):
+    """Validate MT360 OCR data against actual PDF and deep JSON using Claude Opus"""
+    try:
+        # Check for cached results first
+        cache_dir = os.path.join(os.path.dirname(__file__), '..', 'outputs', 'mt360_validation_cache')
+        os.makedirs(cache_dir, exist_ok=True)
+        cache_file = os.path.join(cache_dir, f'loan_{loan_id}_{doc_type}.json')
+        
+        # Return cached results if they exist
+        if os.path.exists(cache_file):
+            print(f"Returning cached validation results from {cache_file}")
+            with open(cache_file, 'r') as f:
+                return jsonify(json.load(f))
+        
+        # Get loan info
+        loan = execute_one(
+            'SELECT loan_number, document_location FROM loans WHERE id = %s',
+            (loan_id,)
+        )
+        
+        if not loan:
+            return jsonify({'error': 'Loan not found'}), 404
+        
+        file_id = loan['loan_number']
+        doc_location = loan['document_location']
+        
+        # Get MT360 data
+        mt360_data_dir = os.path.join(os.path.dirname(__file__), '..', 'outputs', 'mt360_complete_extraction', 'data')
+        mt360_file = os.path.join(mt360_data_dir, f'loan_{file_id}_{doc_type}.json')
+        
+        if not os.path.exists(mt360_file):
+            return jsonify({'error': f'MT360 data not found for {doc_type}'}), 404
+        
+        with open(mt360_file, 'r') as f:
+            mt360_raw = json.load(f)
+        
+        # Extract actual fields from MT360 data (they're nested under 'fields' key)
+        mt360_data = mt360_raw.get('fields', mt360_raw)
+        print(f"MT360 data for {doc_type}: {len(mt360_data)} fields")
+        
+        # Get deep JSON from database based on document type
+        if doc_type == '1008':
+            deep_json_query = '''
+                SELECT 
+                    fa.attribute_name,
+                    fa.attribute_label,
+                    ed.extracted_value
+                FROM extracted_1008_data ed
+                JOIN form_1008_attributes fa ON ed.attribute_id = fa.id
+                WHERE ed.loan_id = %s
+            '''
+            deep_json_rows = execute_query(deep_json_query, (loan_id,))
+            deep_json_data = {row['attribute_label']: row['extracted_value'] for row in deep_json_rows}
+        else:
+            # For other document types, try to get from extracted data table
+            deep_json_data = {}
+        
+        # Find PDF file
+        pdf_path = None
+        if doc_location:
+            # doc_location may be absolute or relative
+            if os.path.isabs(doc_location):
+                doc_dir = doc_location
+            else:
+                doc_dir = os.path.join(os.path.dirname(__file__), '..', doc_location)
+            
+            # Map MT360 doc types to PDF file naming patterns
+            pdf_search_patterns = {
+                '1008': ['1008'],
+                'URLA': ['urla'],
+                'Note': ['note'],
+                'LoanEstimate': ['loan_estimate', 'loanestimate'],
+                'ClosingDisclosure': ['closing_disclosure', 'closingdisclosure'],
+                'CreditReport': ['credit_report', 'creditreport'],
+                '1004': ['appraisal', '1004']
+            }
+            search_terms = pdf_search_patterns.get(doc_type, [doc_type.lower()])
+            
+            print(f"Looking for {doc_type} PDF in: {doc_dir} with patterns: {search_terms}")
+            if os.path.exists(doc_dir):
+                all_files = sorted(os.listdir(doc_dir))
+                for file in all_files:
+                    file_lower = file.lower()
+                    if file_lower.endswith('.pdf'):
+                        # Skip preliminary, allonge, initial, acknowledgement, and disclosure versions
+                        if 'preliminary' in file_lower or 'allonge' in file_lower or 'initial' in file_lower:
+                            continue
+                        # For appraisals, also skip acknowledgement and disclosure files
+                        if doc_type == '1004' and ('acknowledgement' in file_lower or 'disclosure' in file_lower):
+                            continue
+                        for term in search_terms:
+                            if term in file_lower:
+                                # Prefer 'final' versions
+                                if 'final' in file_lower or pdf_path is None:
+                                    pdf_path = os.path.join(doc_dir, file)
+                                    print(f"Found PDF: {pdf_path}")
+                                    if 'final' in file_lower:
+                                        break
+                        if pdf_path and 'final' in pdf_path.lower():
+                            break
+        
+        if not pdf_path or not os.path.exists(pdf_path):
+            return jsonify({'error': f'PDF not found for {doc_type}. Searched in: {doc_dir}'}), 404
+        
+        # Use smart validation V2 for URLA (Claude selects documents)
+        if doc_type == 'URLA':
+            print(f"Using smart validation V2 for URLA - Claude will select documents")
+            validation_result = smart_validate_urla_v2(
+                loan_id=loan_id,
+                mt360_data=mt360_data,
+                doc_dir=doc_dir
+            )
+        elif doc_type == '1004':
+            # Use batched validation for large appraisal PDFs
+            print(f"Using batched validation for 1004 Appraisal")
+            # Also extract deep JSON for future comparisons
+            deep_json_dir = os.path.join(os.path.dirname(__file__), '..', 'outputs', '1004_deep_json')
+            deep_json_file = os.path.join(deep_json_dir, f'loan_{file_id}_1004_deep.json')
+            if not os.path.exists(deep_json_file):
+                print(f"  Extracting deep JSON from appraisal PDF...")
+                extract_1004_deep_json(pdf_path, file_id, deep_json_dir)
+            
+            validation_result = validate_1004_batched(
+                loan_id=file_id,
+                mt360_data=mt360_data,
+                pdf_path=pdf_path,
+                batch_size=10
+            )
+        else:
+            # Standard single-document validation
+            validation_result = validate_mt360_with_opus(
+                loan_id=loan_id,
+                document_type=doc_type,
+                mt360_data=mt360_data,
+                deep_json_data=deep_json_data,
+                pdf_path=pdf_path
+            )
+        
+        # Cache the results
+        if validation_result.get('success'):
+            with open(cache_file, 'w') as f:
+                json.dump(validation_result, f, indent=2)
+            print(f"Cached validation results to {cache_file}")
+        
+        return jsonify(validation_result)
+        
+    except Exception as e:
+        print(f"Error validating MT360 OCR: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e), 'success': False}), 500
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 8006))

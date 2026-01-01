@@ -434,3 +434,6 @@ COMMENT ON COLUMN compliance_extracted_data.data_json IS 'JSON object containing
 
 
 
+
+
+

@@ -14,6 +14,7 @@ import {
     File,
     BarChart3,
     CheckCircle2,
+    CheckCircle,
     XCircle,
     AlertTriangle,
     Download,
@@ -22,8 +23,9 @@ import {
     ChevronUp,
     Shield,
     RefreshCw,
-    Sparkles
-, AlertCircle } from 'lucide-react';
+    Sparkles,
+    AlertCircle
+} from 'lucide-react';
 import { clsx } from 'clsx';
 import { JSONTree } from 'react-json-tree';
 import VerificationModal from '../components/VerificationModal';
@@ -31,6 +33,8 @@ import EvidenceDocumentModal from '../components/EvidenceDocumentModal';
 import EvidenceDocumentsView from '../components/EvidenceDocumentsView';
 import ComplianceView from '../components/ComplianceView';
 import KnowledgeGraphView from '../components/KnowledgeGraphView';
+import MT360OCRValidation from '../components/MT360OCRValidation';
+import RAGStatusModal from '../components/RAGStatusModal';
 
 const LoanDetailPage = () => {
     const { loanId } = useParams();
@@ -49,6 +53,13 @@ const LoanDetailPage = () => {
     const [loading, setLoading] = useState(true);
     const [selectedDocFromUrl, setSelectedDocFromUrl] = useState(null);
 
+    // Schema switcher for A/B testing
+    const [activeSchema, setActiveSchema] = useState(localStorage.getItem('activeSchema') || 'public');
+    const [availableSchemas, setAvailableSchemas] = useState([
+        { id: 'public', name: 'public', description: 'Original deduplication results' },
+        { id: 'modda_v2', name: 'modda_v2', description: 'AI-powered deduplication (Claude Opus)' }
+    ]);
+
     // Handle doc query parameter - open specific document
     useEffect(() => {
         const docParam = searchParams.get('doc');
@@ -61,28 +72,34 @@ const LoanDetailPage = () => {
 
     useEffect(() => {
         fetchLoanData();
-    }, [loanId]);
+    }, [loanId, activeSchema]);
 
     const fetchLoanData = async () => {
         try {
             setLoading(true);
             const token = localStorage.getItem('token');
 
+            // Common headers with schema selection
+            const headers = {
+                Authorization: `Bearer ${token}`,
+                'X-Schema': activeSchema
+            };
+
             // Fetch loan details
             const loanResponse = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}`, {
-                headers: { Authorization: `Bearer ${token}` }
+                headers
             });
             setLoan(loanResponse.data);
 
-            // Fetch loan statistics
+            // Fetch loan statistics (uses schema)
             const statsResponse = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}/stats`, {
-                headers: { Authorization: `Bearer ${token}` }
+                headers
             });
             setStats(statsResponse.data);
 
-            // Fetch documents
+            // Fetch documents (uses schema)
             const docsResponse = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}/documents`, {
-                headers: { Authorization: `Bearer ${token}` }
+                headers
             });
             setDocuments(docsResponse.data);
 
@@ -92,13 +109,13 @@ const LoanDetailPage = () => {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setExtractedData(extResponse.data || []);
-                
+
                 // Fetch calculation steps for all attributes
                 try {
                     const stepsResponse = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}/calculation-steps`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
-                    
+
                     // Group steps by attribute_id
                     const stepsMap = {};
                     (stepsResponse.data.steps || []).forEach(step => {
@@ -163,13 +180,19 @@ const LoanDetailPage = () => {
         }
     };
 
+    // Handle schema switch for A/B testing
+    const handleSchemaChange = (newSchema) => {
+        setActiveSchema(newSchema);
+        localStorage.setItem('activeSchema', newSchema);
+    };
+
     // Calculate verified count for 1008 Evidencing
-    const verified1008Count = extractedData.filter(item => 
-        item.evidence && item.evidence.length > 0 && 
+    const verified1008Count = extractedData.filter(item =>
+        item.evidence && item.evidence.length > 0 &&
         item.evidence.some(e => e.verification_status === 'verified')
     ).length;
-    
-    const total1008WithValues = extractedData.filter(item => 
+
+    const total1008WithValues = extractedData.filter(item =>
         item.extracted_value && item.extracted_value !== '0.00' && item.extracted_value !== ''
     ).length;
 
@@ -182,10 +205,12 @@ const LoanDetailPage = () => {
         { id: 'stats', name: 'Overview', icon: BarChart3 },
         { id: 'raw', name: 'Raw Documents', icon: FileText, count: rawTotal, displayCount: `${rawTotal}` },
         { id: 'unique', name: 'Unique Documents', icon: Copy, count: uniqueCount, displayCount: `${uniqueCount} (${uniquePercentage}%)` },
-        { id: 'important', name: 'Data Tape Validation', icon: Star, count: verified1008Count, displayCount: `${verified1008Count} (${evidencing1008Percentage}%)` },
-        { id: 'evidence', name: 'Evidence Documents', icon: FileText },
-        { id: 'compliance', name: 'Compliance', icon: Shield },
-        { id: 'knowledge-graph', name: 'Knowledge Graph', icon: Sparkles }
+        // Hidden per user request:
+        // { id: 'important', name: 'Data Tape Validation', icon: Star, count: verified1008Count, displayCount: `${verified1008Count} (${evidencing1008Percentage}%)` },
+        // { id: 'evidence', name: 'Evidence Documents', icon: FileText },
+        // { id: 'compliance', name: 'Compliance', icon: Shield },
+        // { id: 'knowledge-graph', name: 'Knowledge Graph', icon: Sparkles }
+        { id: 'mt360-ocr', name: 'MT360 OCR Validation', icon: FileText }
     ];
 
     if (loading) {
@@ -213,9 +238,6 @@ const LoanDetailPage = () => {
                                 <h1 className="text-lg font-bold text-gray-900">
                                     Loan #{loan?.loan_number || loanId}
                                 </h1>
-                                <p className="text-xs text-gray-500 mt-0.5">
-                                    Borrower: {loan?.borrower_name || 'N/A'}
-                                </p>
                             </div>
                         </div>
                         <div className="flex items-center space-x-2">
@@ -239,6 +261,34 @@ const LoanDetailPage = () => {
                                     )}
                                 </div>
                             )}
+
+                            {/* Schema Switcher for A/B Testing */}
+                            <div className="flex items-center space-x-2 mr-4">
+                                <span className="text-xs text-gray-500">Data Source:</span>
+                                <div className="flex bg-gray-100 rounded-lg p-0.5">
+                                    {availableSchemas.map((schema) => (
+                                        <button
+                                            key={schema.id}
+                                            onClick={() => handleSchemaChange(schema.id)}
+                                            className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all ${activeSchema === schema.id
+                                                ? schema.id === 'modda_v2'
+                                                    ? 'bg-purple-600 text-white shadow-sm'
+                                                    : 'bg-blue-600 text-white shadow-sm'
+                                                : 'text-gray-600 hover:text-gray-900'
+                                                }`}
+                                            title={schema.description}
+                                        >
+                                            {schema.id === 'public' ? 'Original' : 'AI v2'}
+                                        </button>
+                                    ))}
+                                </div>
+                                {activeSchema === 'modda_v2' && (
+                                    <span className="text-xs font-medium text-purple-600">
+                                        Claude Opus
+                                    </span>
+                                )}
+                            </div>
+
                             <button
                                 onClick={handleDeleteLoan}
                                 className="flex items-center space-x-1.5 px-3 py-1.5 bg-red-600 text-white text-xs rounded-lg hover:bg-red-700 transition-colors"
@@ -295,6 +345,7 @@ const LoanDetailPage = () => {
                 {activeTab === 'evidence' && <EvidenceDocumentsView loanId={loanId} />}
                 {activeTab === 'compliance' && <ComplianceView loanId={loanId} />}
                 {activeTab === 'knowledge-graph' && <KnowledgeGraphView />}
+                {activeTab === 'mt360-ocr' && <MT360OCRValidation loanId={loanId} />}
             </div>
         </div>
     );
@@ -302,8 +353,13 @@ const LoanDetailPage = () => {
 
 const StatsView = ({ stats, loan }) => {
     const [loanData, setLoanData] = useState({});
+    const [profile, setProfile] = useState(null);
     const [loanSummary, setLoanSummary] = useState(null);
     const [generatingSummary, setGeneratingSummary] = useState(false);
+    const [showRagModal, setShowRagModal] = useState(false);
+    const [verificationModal, setVerificationModal] = useState({ isOpen: false, type: null });
+    const [mt360Summary, setMt360Summary] = useState(null);
+    const [mt360Errors, setMt360Errors] = useState([]);
     const { loanId } = useParams();
 
     useEffect(() => {
@@ -313,7 +369,7 @@ const StatsView = ({ stats, loan }) => {
                 const response = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}/extracted_data`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
-                
+
                 // Extract key values
                 const data = {};
                 response.data.forEach(item => {
@@ -335,10 +391,90 @@ const StatsView = ({ stats, loan }) => {
             }
         };
 
+        const fetchProfile = async () => {
+            try {
+                const token = localStorage.getItem('token');
+                const response = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}/profile`, {
+                    headers: { Authorization: `Bearer ${token}` }
+                });
+                if (response.data?.profile) {
+                    setProfile(response.data.profile);
+                }
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+            }
+        };
+
+        const fetchMt360Summary = async () => {
+            try {
+                const token = localStorage.getItem('token');
+
+                // Fetch cached validations directly for each doc type
+                const docTypes = ['1008', 'URLA', 'Note', 'LoanEstimate', 'ClosingDisclosure', 'CreditReport'];
+                const summary = { documents: 0, totalAttributes: 0, matches: 0, mismatches: 0, docDetails: [] };
+                const errors = [];
+
+                const typeNames = {
+                    '1008': '1008',
+                    'URLA': 'URLA',
+                    'Note': 'Note',
+                    'LoanEstimate': 'Loan Estimate',
+                    'ClosingDisclosure': 'ClosingDisclosure',
+                    'CreditReport': 'Credit Report'
+                };
+
+                for (const docType of docTypes) {
+                    try {
+                        const valRes = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}/validation-cache/${docType}`, {
+                            headers: { Authorization: `Bearer ${token}` }
+                        });
+
+                        if (valRes.data && (valRes.data.success || valRes.data.matches !== undefined)) {
+                            const validation = valRes.data;
+                            summary.documents++;
+                            const attrs = (validation.matches || 0) + (validation.mismatches || 0);
+                            summary.totalAttributes += attrs;
+                            summary.matches += validation.matches || 0;
+                            summary.mismatches += validation.mismatches || 0;
+
+                            summary.docDetails.push({
+                                type: typeNames[docType] || docType,
+                                attributes: attrs,
+                                matches: validation.matches || 0,
+                                mismatches: validation.mismatches || 0,
+                                accuracy: validation.accuracy || 0
+                            });
+
+                            // Collect mismatch details
+                            if (validation.mismatch_details && validation.mismatch_details.length > 0) {
+                                errors.push({
+                                    docType: typeNames[docType] || docType,
+                                    mismatches: validation.mismatch_details
+                                });
+                            }
+                        }
+                    } catch (e) {
+                        // No cached validation for this doc type
+                    }
+                }
+
+                summary.accuracy = summary.matches + summary.mismatches > 0
+                    ? ((summary.matches / (summary.matches + summary.mismatches)) * 100).toFixed(1)
+                    : 'N/A';
+
+                setMt360Summary(summary);
+                setMt360Errors(errors);
+            } catch (error) {
+                console.error('Error fetching MT360 summary:', error);
+            }
+        };
+
         fetchLoanData();
+        fetchProfile();
+        fetchMt360Summary();
     }, [loanId]);
 
-    // Fetch loan summary
+    // Fetch loan summary - auto-generate if not exists
     useEffect(() => {
         const fetchLoanSummary = async () => {
             try {
@@ -346,8 +482,25 @@ const StatsView = ({ stats, loan }) => {
                 const response = await axios.get(`http://localhost:8006/api/admin/loans/${loanId}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
-                if (response.data.loan_summary) {
-                    setLoanSummary(response.data.loan_summary);
+                if (response.data.kg_summary) {
+                    setLoanSummary(response.data.kg_summary);
+                } else {
+                    // Auto-generate summary
+                    setGeneratingSummary(true);
+                    try {
+                        const genResponse = await axios.post(
+                            `http://localhost:8006/api/admin/loans/${loanId}/generate-summary`,
+                            {},
+                            { headers: { Authorization: `Bearer ${token}` } }
+                        );
+                        if (genResponse.data.summary) {
+                            setLoanSummary(genResponse.data.summary);
+                        }
+                    } catch (genErr) {
+                        console.error('Error generating summary:', genErr);
+                    } finally {
+                        setGeneratingSummary(false);
+                    }
                 }
             } catch (error) {
                 console.error('Error fetching loan summary:', error);
@@ -377,152 +530,474 @@ const StatsView = ({ stats, loan }) => {
         }
     };
 
+    // Handle I D C V badge clicks - fetch verification data and show modal
+    const handleVerifyClick = async (type) => {
+        const typeMap = {
+            'income': 'borrower_total_income_amount',  // Use the detailed Borrower Total Income Amount
+            'debt': 'total_all_monthly_payments',
+            'credit': 'borrower_representative_credit_indicator_score',
+            'property': 'property_appraised_value'
+        };
+
+        const attributeName = typeMap[type];
+        if (!attributeName) {
+            console.error('Unknown verification type:', type);
+            return;
+        }
+
+        try {
+            const token = localStorage.getItem('token');
+            const res = await axios.get(`http://localhost:8006/api/user/loans/${loanId}/essential-attributes`, {
+                headers: { Authorization: `Bearer ${token}` }
+            });
+            const data = res.data;
+
+            // Flatten the categories to find our attribute
+            let foundAttr = null;
+            const allAttributes = Object.values(data).flat();
+
+            // For income, prioritize 'Borrower Total Income Amount' which has detailed breakdown
+            const candidates = allAttributes.filter(a =>
+                a.attribute_name === attributeName ||
+                (type === 'income' && (
+                    a.attribute_label?.includes('Borrower Total Income Amount') ||
+                    a.attribute_name === 'borrower_total_income_amount'
+                )) ||
+                (type === 'debt' && (
+                    a.attribute_label === 'Total All Monthly Payments' ||
+                    a.attribute_name === 'total_all_monthly_payments'
+                ))
+            );
+
+            // Prioritize candidates with the most calculation steps or evidence (more detail = better)
+            foundAttr = candidates.sort((a, b) => {
+                const aScore = (a.calculation_steps?.length || 0) + (a.evidence?.length || 0);
+                const bScore = (b.calculation_steps?.length || 0) + (b.evidence?.length || 0);
+                return bScore - aScore; // Higher score first
+            })[0];
+
+            if (!foundAttr && candidates.length > 0) {
+                foundAttr = candidates[0];
+            }
+
+            if (foundAttr) {
+                setVerificationModal({
+                    isOpen: true,
+                    type: type,
+                    evidence: foundAttr.evidence || [],
+                    attributeLabel: foundAttr.attribute_label,
+                    attributeValue: foundAttr.extracted_value,
+                    calculationSteps: foundAttr.calculation_steps || []
+                });
+            } else {
+                alert(`No detailed verification data found for ${type}`);
+            }
+        } catch (error) {
+            console.error('Error fetching verification data:', error);
+            alert('Error fetching verification details');
+        }
+    };
     // Count verified attributes
     const verified1008Count = stats?.verified_1008_count || 0;
     const total1008WithValues = stats?.total_1008_with_values || 0;
-    const evidencingDisplay = total1008WithValues > 0 
+    const evidencingDisplay = total1008WithValues > 0
         ? `${verified1008Count} (${Math.round((verified1008Count / total1008WithValues) * 100)}%)`
         : verified1008Count;
 
     const uniqueDocs = stats?.unique_documents || 0;
     const totalDocs = stats?.total_documents || 0;
-    const versionsIdentified = stats?.versions_identified || 0;
-    const duplicatesIdentified = stats?.duplicates_identified || 0;
-    const uniquePercentage = totalDocs > 0 ? Math.round((uniqueDocs / totalDocs) * 100) : 0;
-    const versionsPercentage = totalDocs > 0 ? Math.round((versionsIdentified / totalDocs) * 100) : 0;
-    const duplicatesPercentage = totalDocs > 0 ? Math.round((duplicatesIdentified / totalDocs) * 100) : 0;
 
-    const statCards = [
-        { label: 'Total Documents', value: totalDocs, color: 'blue' },
-        { label: 'Unique Documents', value: `${uniqueDocs} (${uniquePercentage}%)`, color: 'green' },
-        { label: 'Versions Identified', value: `${versionsIdentified} (${versionsPercentage}%)`, color: 'orange' },
-        { label: 'Duplicates Identified', value: `${duplicatesIdentified} (${duplicatesPercentage}%)`, color: 'yellow' },
-        { label: 'Data Tape Validation', value: evidencingDisplay, color: 'purple' },
-        { label: 'Loan Amount', value: loanData.loanAmount ? `$${loanData.loanAmount}` : 'N/A', color: 'indigo' },
-        { label: 'Property Address', value: loanData.propertyAddress || 'N/A', color: 'gray', span: 2 }
-    ];
+    // Extract profile data
+    const loanInfo = profile?.loan_info || {};
+    const propertyInfo = profile?.property_info || {};
+    const ratios = profile?.ratios || {};
+    const incomeProfile = profile?.income_profile || {};
+    const creditProfile = profile?.credit_profile || {};
+    const verificationStatus = profile?.verification_status || {};
+
+    // Helper functions
+    const formatCurrency = (val) => {
+        if (!val) return 'N/A';
+        const num = parseFloat(String(val).replace(/[^0-9.-]/g, ''));
+        return isNaN(num) ? 'N/A' : `$${num.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+    };
+
+    const formatPercent = (val) => {
+        if (!val) return 'N/A';
+        const num = parseFloat(val);
+        return isNaN(num) ? 'N/A' : `${num.toFixed(3)}%`;
+    };
+
+    // Verification badge status
+    const getBadgeStatus = (verificationData, profileValue) => {
+        if (!verificationData) return 'missing';
+        if (verificationData.verified) return 'verified';
+        if (profileValue || verificationData.profile_value || verificationData.document_value) {
+            return 'mismatch';
+        }
+        return 'missing';
+    };
+
+    const incomeStatus = getBadgeStatus(verificationStatus.income, incomeProfile?.total_monthly_income);
+    const debtStatus = getBadgeStatus(verificationStatus.debt, creditProfile?.total_monthly_debts);
+    const creditStatus = getBadgeStatus(verificationStatus.credit_score, creditProfile?.credit_score);
+    const propertyStatus = getBadgeStatus(verificationStatus.property_value, propertyInfo?.appraised_value);
+
+    // RAG calculations
+    const dtiVal = parseFloat(ratios.dti_back_end_percent) || 0;
+    const ltvVal = parseFloat(ratios.ltv_percent) || 0;
+    const cltvVal = parseFloat(ratios.cltv_percent) || 0;
+    const hcltvVal = parseFloat(ratios.hcltv_percent) || 0;
+    const creditScore = creditProfile.credit_score ? parseInt(creditProfile.credit_score) : null;
+
+    const getDtiRag = () => {
+        if (dtiVal <= 0) return null;
+        if (dtiVal <= 36) return 'G';
+        if (dtiVal <= 49) return 'A';
+        return 'R';
+    };
+
+    const getCltvRag = () => {
+        if (cltvVal <= 0) return null;
+        if (cltvVal <= 80) return 'G';
+        if (cltvVal <= 90) return 'A';
+        return 'R';
+    };
+
+    const getCreditRag = () => {
+        if (!creditScore) return null;
+        if (creditScore >= 740) return 'G';
+        if (creditScore >= 670) return 'A';
+        return 'R';
+    };
+
+    const getVerificationRag = () => {
+        if (incomeStatus === 'verified' && debtStatus === 'verified' &&
+            creditStatus === 'verified' && propertyStatus === 'verified') {
+            return 'G';
+        }
+        return 'A';
+    };
+
+    const getOverallRag = () => {
+        const rags = [getDtiRag(), getCltvRag(), getCreditRag(), getVerificationRag()].filter(Boolean);
+        if (rags.includes('R')) return 'R';
+        if (rags.includes('A')) return 'A';
+        if (rags.length > 0) return 'G';
+        return null;
+    };
+
+    const overallRag = getOverallRag();
+
+    const ragColors = {
+        'R': 'bg-red-100 text-red-700 border-red-200 hover:bg-red-200',
+        'A': 'bg-amber-100 text-amber-700 border-amber-200 hover:bg-amber-200',
+        'G': 'bg-green-100 text-green-700 border-green-200 hover:bg-green-200'
+    };
 
     return (
         <div className="space-y-4">
-            <h2 className="text-lg font-semibold text-gray-900">Loan Overview</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                {statCards.map((stat, index) => (
-                    <div
-                        key={index}
-                        className={`bg-white rounded-lg shadow p-3 border-l-4 border-${stat.color}-500 ${stat.span === 2 ? 'md:col-span-2' : ''}`}
+            {/* Header with RAG Status */}
+            <div className="flex items-center justify-between">
+                <h2 className="text-lg font-semibold text-gray-900">Loan Overview</h2>
+                {overallRag && (
+                    <button
+                        onClick={() => setShowRagModal(true)}
+                        className={`inline-flex items-center gap-2 px-3 py-1.5 text-sm font-bold rounded-lg border cursor-pointer transition-all ${ragColors[overallRag]}`}
+                        title="Click to view RAG details"
                     >
-                        <p className="text-xs font-medium text-gray-600">{stat.label}</p>
-                        <p className="mt-1 text-xl font-bold text-gray-900">{stat.value}</p>
-                    </div>
-                ))}
+                        <span className={`w-3 h-3 rounded-full ${overallRag === 'R' ? 'bg-red-500' : overallRag === 'A' ? 'bg-amber-500' : 'bg-green-500'}`} />
+                        RAG Status: {overallRag === 'R' ? 'Red' : overallRag === 'A' ? 'Amber' : 'Green'}
+                    </button>
+                )}
             </div>
 
-            {/* Additional loan details */}
-            <div className="bg-white rounded-lg shadow p-3">
-                <h3 className="text-sm font-semibold text-gray-900 mb-3">Loan Details</h3>
-                <dl className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div>
-                        <dt className="text-xs font-medium text-gray-500">Loan Type</dt>
-                        <dd className="mt-0.5 text-xs text-gray-900">{loanData.loanType || 'N/A'}</dd>
+            {/* Two Column Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {/* LEFT COLUMN - Loan Summary (Full Height) */}
+                <div className="bg-white rounded-lg shadow p-4 lg:row-span-2 flex flex-col">
+                    <div className="flex items-center gap-2 mb-3">
+                        <FileText className="w-4 h-4 text-blue-600" />
+                        <h3 className="text-sm font-semibold text-gray-900">Loan Summary</h3>
+                        {generatingSummary && (
+                            <RefreshCw className="w-3 h-3 animate-spin text-blue-500" />
+                        )}
                     </div>
-                    <div>
-                        <dt className="text-xs font-medium text-gray-500">Interest Rate</dt>
-                        <dd className="mt-0.5 text-xs text-gray-900">{loanData.interestRate || 'N/A'}</dd>
+                    <div className="flex-1 overflow-hidden">
+                        {loanSummary ? (
+                            <div className="prose prose-sm max-w-none text-gray-700 text-xs leading-relaxed h-full overflow-y-auto pr-2">
+                                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                                    {loanSummary}
+                                </ReactMarkdown>
+                            </div>
+                        ) : generatingSummary ? (
+                            <div className="text-center py-4">
+                                <RefreshCw className="w-6 h-6 text-blue-400 mx-auto mb-2 animate-spin" />
+                                <p className="text-xs text-gray-500">Generating summary...</p>
+                            </div>
+                        ) : (
+                            <p className="text-xs text-gray-400 italic">Summary will be generated automatically</p>
+                        )}
                     </div>
-                    <div>
-                        <dt className="text-xs font-medium text-gray-500">Loan Term</dt>
-                        <dd className="mt-0.5 text-xs text-gray-900">{loanData.loanTerm ? `${Math.round(Number(loanData.loanTerm.replace(/,/g, '')) / 12)} years` : 'N/A'}</dd>
-                    </div>
-                    <div>
-                        <dt className="text-xs font-medium text-gray-500">Status</dt>
-                        <dd className="mt-0.5">
-                            <span className={`inline-flex px-1.5 py-0.5 text-xs font-semibold rounded-full ${loan?.status === 'approved' ? 'bg-green-100 text-green-800' :
-                                loan?.status === 'pending' ? 'bg-yellow-100 text-yellow-800' :
-                                    'bg-gray-100 text-gray-800'
-                                }`}>
-                                {loan?.status || 'completed'}
-                            </span>
-                        </dd>
-                    </div>
-                </dl>
-            </div>
+                </div>
 
-            {/* Loan Summary */}
-            <div className="bg-white rounded-lg shadow overflow-hidden">
-                <div className="p-4 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-indigo-50">
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
-                            <FileText className="w-5 h-5 text-blue-600" />
-                            <h3 className="text-sm font-semibold text-gray-900">Loan Summary</h3>
-                        </div>
-                        <button
-                            onClick={handleGenerateSummary}
-                            disabled={generatingSummary}
-                            className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
-                                generatingSummary
-                                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                                    : 'bg-blue-600 text-white hover:bg-blue-700'
-                            }`}
+                {/* RIGHT COLUMN - Financial Metrics and MT360 */}
+                <div className="space-y-4">
+
+                {/* Financial Metrics Grid */}
+                <div className="bg-white rounded-lg shadow p-4">
+                    <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-sm font-semibold text-gray-900">Key Financial Metrics</h3>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        {/* Row 1: Debt, Income, Purchase Price, Appraisal Value, Credit Score */}
+
+                        {/* Debt - with D badge */}
+                        <div
+                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                            onClick={() => handleVerifyClick('debt')}
                         >
-                            {generatingSummary ? (
-                                <>
-                                    <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                                    Generating...
-                                </>
-                            ) : (
-                                <>
-                                    <RefreshCw className="w-3.5 h-3.5" />
-                                    {loanSummary ? 'Regenerate' : 'Generate Summary'}
-                                </>
-                            )}
-                        </button>
+                            <div className="flex items-center justify-between mb-1">
+                                <p className="text-xs text-gray-500">Monthly Debt</p>
+                                {debtStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                            </div>
+                            <p className="text-sm font-semibold text-gray-900">
+                                {formatCurrency(creditProfile.total_monthly_debts)}
+                            </p>
+                        </div>
+
+                        {/* Income - with I badge */}
+                        <div
+                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                            onClick={() => handleVerifyClick('income')}
+                        >
+                            <div className="flex items-center justify-between mb-1">
+                                <p className="text-xs text-gray-500">Monthly Income</p>
+                                {incomeStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                            </div>
+                            <p className="text-sm font-semibold text-gray-900">
+                                {formatCurrency(incomeProfile.total_monthly_income)}
+                            </p>
+                        </div>
+
+                        {/* Purchase Price */}
+                        <div className="bg-slate-50 rounded-lg p-3">
+                            <p className="text-xs text-gray-500 mb-1">Purchase Price</p>
+                            <p className="text-sm font-semibold text-gray-900">
+                                {formatCurrency(propertyInfo.purchase_price)}
+                            </p>
+                        </div>
+
+                        {/* Appraisal Value - with V badge */}
+                        <div
+                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                            onClick={() => handleVerifyClick('property')}
+                        >
+                            <div className="flex items-center justify-between mb-1">
+                                <p className="text-xs text-gray-500">Appraisal Value</p>
+                                {propertyStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                            </div>
+                            <p className="text-sm font-semibold text-gray-900">
+                                {formatCurrency(propertyInfo.appraised_value)}
+                            </p>
+                        </div>
+
+                        {/* Credit Score - with C badge */}
+                        <div
+                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                            onClick={() => handleVerifyClick('credit')}
+                        >
+                            <div className="flex items-center justify-between mb-1">
+                                <p className="text-xs text-gray-500">Credit Score</p>
+                                {creditStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                            </div>
+                            <p className={`text-sm font-semibold ${creditScore >= 740 ? 'text-green-600' : creditScore >= 670 ? 'text-amber-600' : creditScore ? 'text-red-600' : 'text-gray-900'}`}>
+                                {creditScore || 'N/A'}
+                            </p>
+                        </div>
+
+                        {/* Row 2: Loan Amount, DTI, LTV, CLTV, HCLTV */}
+
+                        {/* Loan Amount */}
+                        <div className="bg-slate-50 rounded-lg p-3">
+                            <p className="text-xs text-gray-500 mb-1">Loan Amount</p>
+                            <p className="text-sm font-semibold text-gray-900">
+                                {formatCurrency(loanInfo.loan_amount)}
+                            </p>
+                        </div>
+
+                        {/* DTI */}
+                        <div className="bg-slate-50 rounded-lg p-3">
+                            <p className="text-xs text-gray-500 mb-1">DTI</p>
+                            <p className={`text-sm font-semibold ${dtiVal > 49 ? 'text-red-600' : dtiVal > 36 ? 'text-amber-600' : dtiVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                }`}>
+                                {formatPercent(ratios.dti_back_end_percent)}
+                            </p>
+                        </div>
+
+                        {/* LTV */}
+                        <div className="bg-slate-50 rounded-lg p-3">
+                            <p className="text-xs text-gray-500 mb-1">LTV</p>
+                            <p className={`text-sm font-semibold ${ltvVal > 90 ? 'text-red-600' : ltvVal > 80 ? 'text-amber-600' : ltvVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                }`}>
+                                {formatPercent(ratios.ltv_percent)}
+                            </p>
+                        </div>
+
+                        {/* CLTV */}
+                        <div className="bg-slate-50 rounded-lg p-3">
+                            <p className="text-xs text-gray-500 mb-1">CLTV</p>
+                            <p className={`text-sm font-semibold ${cltvVal > 90 ? 'text-red-600' : cltvVal > 80 ? 'text-amber-600' : cltvVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                }`}>
+                                {formatPercent(ratios.cltv_percent)}
+                            </p>
+                        </div>
+
+                        {/* HCLTV */}
+                        <div className="bg-slate-50 rounded-lg p-3">
+                            <p className="text-xs text-gray-500 mb-1">HCLTV</p>
+                            <p className={`text-sm font-semibold ${hcltvVal > 90 ? 'text-red-600' : hcltvVal > 80 ? 'text-amber-600' : hcltvVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                }`}>
+                                {formatPercent(ratios.hcltv_percent)}
+                            </p>
+                        </div>
                     </div>
                 </div>
-                
-                <div className="p-4">
-                    {loanSummary ? (
-                        <div className="prose prose-sm max-w-none">
-                            <ReactMarkdown
-                                remarkPlugins={[remarkGfm]}
-                                components={{
-                                    h1: ({node, ...props}) => <h1 className="text-lg font-bold text-gray-900 border-b pb-2 mb-4" {...props} />,
-                                    h2: ({node, ...props}) => <h2 className="text-base font-semibold text-gray-900 mt-6 mb-3" {...props} />,
-                                    h3: ({node, ...props}) => <h3 className="text-sm font-medium text-gray-800 mt-4 mb-2" {...props} />,
-                                    p: ({node, ...props}) => <p className="text-xs text-gray-700 mb-2 leading-relaxed" {...props} />,
-                                    ul: ({node, ...props}) => <ul className="list-disc pl-4 mb-3 space-y-1" {...props} />,
-                                    ol: ({node, ...props}) => <ol className="list-decimal pl-4 mb-3 space-y-1" {...props} />,
-                                    li: ({node, ...props}) => <li className="text-xs text-gray-700" {...props} />,
-                                    table: ({node, ...props}) => (
-                                        <div className="overflow-x-auto my-4 border border-gray-200 rounded-lg">
-                                            <table className="min-w-full divide-y divide-gray-200" {...props} />
+
+                {/* MT360 OCR Validation Summary */}
+                {mt360Summary && mt360Summary.documents > 0 && (
+                    <div className="bg-white rounded-lg shadow p-4">
+                        <h3 className="text-sm font-semibold text-gray-900 mb-3">MT360 OCR Validation Summary</h3>
+
+                        {/* Summary Cards */}
+                        <div className="grid grid-cols-5 gap-2 mb-4">
+                            <div className="bg-blue-50 border border-blue-200 rounded-lg p-2">
+                                <p className="text-[10px] text-blue-700">Documents</p>
+                                <p className="text-lg font-bold text-blue-900">{mt360Summary.documents}</p>
+                            </div>
+                            <div className="bg-gray-50 border border-gray-200 rounded-lg p-2">
+                                <p className="text-[10px] text-gray-600">Total Attributes</p>
+                                <p className="text-lg font-bold text-gray-900">{mt360Summary.totalAttributes}</p>
+                            </div>
+                            <div className="bg-green-50 border border-green-200 rounded-lg p-2">
+                                <p className="text-[10px] text-green-700">Matches</p>
+                                <p className="text-lg font-bold text-green-700">{mt360Summary.matches}</p>
+                            </div>
+                            <div className="bg-red-50 border border-red-200 rounded-lg p-2">
+                                <p className="text-[10px] text-red-700">Mismatches</p>
+                                <p className="text-lg font-bold text-red-700">{mt360Summary.mismatches}</p>
+                            </div>
+                            <div className="bg-purple-50 border border-purple-200 rounded-lg p-2">
+                                <p className="text-[10px] text-purple-700">Accuracy</p>
+                                <p className="text-lg font-bold text-purple-700">{mt360Summary.accuracy}%</p>
+                            </div>
+                        </div>
+
+                        {/* Document Type Table */}
+                        {mt360Summary.docDetails.length > 0 && (
+                            <div className="border border-gray-200 rounded-lg overflow-hidden">
+                                <table className="min-w-full divide-y divide-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500 uppercase">Document Type</th>
+                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500 uppercase">Attributes</th>
+                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-green-600 uppercase">Matches</th>
+                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-red-600 uppercase">Mismatches</th>
+                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-purple-600 uppercase">Accuracy</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="bg-white divide-y divide-gray-200">
+                                        {mt360Summary.docDetails.map((doc, idx) => (
+                                            <tr key={idx} className="hover:bg-gray-50">
+                                                <td className="px-2 py-1 text-[11px] font-medium text-gray-900">{doc.type}</td>
+                                                <td className="px-2 py-1 text-[11px] text-gray-500">{doc.attributes}</td>
+                                                <td className="px-2 py-1 text-[11px] text-green-700 font-medium">{doc.matches}</td>
+                                                <td className="px-2 py-1 text-[11px] text-red-700 font-medium">{doc.mismatches}</td>
+                                                <td className="px-2 py-1 text-[11px] text-purple-700 font-medium">{Number(doc.accuracy).toFixed(1)}%</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+
+                        {/* MT360 OCR Errors by Document Type */}
+                        {mt360Errors.length > 0 && (
+                            <div className="mt-4">
+                                <h4 className="text-xs font-semibold text-red-600 mb-2 flex items-center gap-1">
+                                    <AlertTriangle className="w-3.5 h-3.5" />
+                                    MT360 OCR Errors by Document Type
+                                </h4>
+                                <div className="space-y-3">
+                                    {mt360Errors.map((docErrors, idx) => (
+                                        <div key={idx} className="border border-red-100 rounded-lg overflow-hidden">
+                                            <div className="bg-red-50 px-3 py-1.5">
+                                                <span className="text-xs font-semibold text-red-700">{docErrors.docType}</span>
+                                                <span className="text-[10px] text-red-500 ml-2">({docErrors.mismatches.length} mismatches)</span>
+                                            </div>
+                                            <table className="min-w-full">
+                                                <thead className="bg-gray-50">
+                                                    <tr>
+                                                        <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500">FIELD</th>
+                                                        <th className="px-2 py-1 text-left text-[10px] font-medium text-amber-600">MT360 VALUE</th>
+                                                        <th className="px-2 py-1 text-left text-[10px] font-medium text-red-600">PDF VALUE (TRUTH)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody className="bg-white divide-y divide-gray-100">
+                                                    {docErrors.mismatches.slice(0, 5).map((m, midx) => (
+                                                        <tr key={midx}>
+                                                            <td className="px-2 py-1 text-[10px] text-gray-700">{m.field || m.attribute}</td>
+                                                            <td className="px-2 py-1 text-[10px] text-amber-700">{String(m.mt360_value ?? m.expected ?? 'N/A')}</td>
+                                                            <td className="px-2 py-1 text-[10px] text-red-700">{String(m.pdf_value ?? m.actual ?? 'N/A')}</td>
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                            </table>
+                                            {docErrors.mismatches.length > 5 && (
+                                                <div className="text-[10px] text-gray-500 px-3 py-1 bg-gray-50">
+                                                    ...and {docErrors.mismatches.length - 5} more
+                                                </div>
+                                            )}
                                         </div>
-                                    ),
-                                    thead: ({node, ...props}) => <thead className="bg-gray-50" {...props} />,
-                                    tbody: ({node, ...props}) => <tbody className="bg-white divide-y divide-gray-100" {...props} />,
-                                    tr: ({node, ...props}) => <tr className="hover:bg-gray-50" {...props} />,
-                                    th: ({node, ...props}) => <th className="px-4 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider border-b border-gray-200" {...props} />,
-                                    td: ({node, ...props}) => <td className="px-4 py-2 text-xs text-gray-600 whitespace-nowrap" {...props} />,
-                                    strong: ({node, ...props}) => <strong className="font-semibold text-gray-900" {...props} />,
-                                    em: ({node, ...props}) => <em className="text-gray-600" {...props} />,
-                                    hr: ({node, ...props}) => <hr className="my-4 border-gray-200" {...props} />,
-                                    blockquote: ({node, ...props}) => (
-                                        <blockquote className="border-l-4 border-blue-300 pl-3 py-1 my-2 text-xs text-gray-600 bg-blue-50 rounded-r" {...props} />
-                                    ),
-                                }}
-                            >
-                                {loanSummary}
-                            </ReactMarkdown>
-                        </div>
-                    ) : (
-                        <div className="text-center py-12">
-                            <FileText className="w-12 h-12 text-gray-300 mx-auto mb-3" />
-                            <p className="text-sm text-gray-500 mb-1">No summary generated yet</p>
-                            <p className="text-xs text-gray-400 mb-4">Click "Generate Summary" to analyze all loan documents</p>
-                        </div>
-                    )}
-                </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                )}
+
+                {/* End Right Column */}
             </div>
+            {/* End Two Column Grid */}
+            </div>
+
+            {/* RAG Status Modal */}
+            {showRagModal && (
+                <RAGStatusModal
+                    isOpen={showRagModal}
+                    onClose={() => setShowRagModal(false)}
+                    loanData={{
+                        id: loanId,
+                        loan_number: loan?.loan_number,
+                        profile: profile
+                    }}
+                />
+            )}
+
+            {/* Verification Modal for I D C V */}
+            {verificationModal.isOpen && (
+                <VerificationModal
+                    isOpen={verificationModal.isOpen}
+                    onClose={() => setVerificationModal({ ...verificationModal, isOpen: false })}
+                    evidence={verificationModal.evidence || []}
+                    attributeLabel={verificationModal.attributeLabel}
+                    attributeValue={verificationModal.attributeValue}
+                    loanId={loanId}
+                    initialTab="summary"
+                    calculationSteps={verificationModal.calculationSteps || []}
+                />
+            )}
         </div>
     );
 };
@@ -536,10 +1011,10 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
     const [selectedVersionDoc, setSelectedVersionDoc] = useState(null);
     const [sortField, setSortField] = useState('name');
     const [sortDirection, setSortDirection] = useState('asc');
-    const [groupBy, setGroupBy] = useState(false);
+    const [groupBy, setGroupBy] = useState('none'); // 'none', 'functionality', 'process_stage', 'document_purpose'
     const [collapsedGroups, setCollapsedGroups] = useState({});
     const [viewMode, setViewMode] = useState('full'); // 'full' or 'gallery'
-    const [defaultTab, setDefaultTab] = useState('summary'); // 'summary', 'pdf', 'json'
+    const [defaultTab, setDefaultTab] = useState('pdf'); // 'summary', 'pdf', 'json'
     const highlightedDocRef = useRef(null);
 
     // Handle highlightDoc - scroll to and open the document in PDF view
@@ -568,7 +1043,8 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
 
     const getCategory = (doc) => {
         const meta = typeof doc.version_metadata === 'string' ? JSON.parse(doc.version_metadata) : doc.version_metadata || {};
-        return meta.financial_category;
+        // Use new document_purpose (EVIDENTIARY/COMPLIANCE/ADMINISTRATIVE) or fall back to old financial_category
+        return meta.document_purpose || meta.financial_category;
     };
 
     const getSecondaryName = (doc) => {
@@ -662,15 +1138,16 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                 <h2 className="text-xl font-semibold text-gray-900">{title}</h2>
                 <div className="flex items-center space-x-2">
                     <span className="text-sm text-gray-700">Group by:</span>
-                    <button
-                        onClick={() => setGroupBy(!groupBy)}
-                        className={`px-3 py-1 text-xs font-medium rounded-full border transition-colors ${groupBy
-                            ? 'bg-blue-100 text-blue-800 border-blue-200'
-                            : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'
-                            }`}
+                    <select
+                        value={groupBy}
+                        onChange={(e) => setGroupBy(e.target.value)}
+                        className="px-3 py-1 text-xs font-medium rounded-lg border border-gray-300 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
-                        Functionality
-                    </button>
+                        <option value="none">None</option>
+                        <option value="functionality">Functionality</option>
+                        <option value="process_stage">Process Stage</option>
+                        <option value="document_purpose">Document Purpose</option>
+                    </select>
                 </div>
             </div>
 
@@ -685,23 +1162,8 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                                 >
                                     Document Name <SortIcon field="name" />
                                 </th>
-                                <th
-                                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
-                                    onClick={() => handleSort('type')}
-                                >
-                                    Type <SortIcon field="type" />
-                                </th>
-                                <th
-                                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
-                                    onClick={() => handleSort('date')}
-                                >
-                                    Upload Date <SortIcon field="date" />
-                                </th>
-                                <th
-                                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
-                                    onClick={() => handleSort('size')}
-                                >
-                                    Size <SortIcon field="size" />
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Document Type
                                 </th>
                                 <th
                                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
@@ -715,20 +1177,43 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                                 >
                                     # Versions <SortIcon field="versions" />
                                 </th>
-                                <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Unique Docs
-                                </th>
                             </tr>
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
-                            {Object.entries(groupBy ? {
-                                'FINANCIAL': sortedDocuments.filter(d => getCategory(d) === 'FINANCIAL'),
-                                'NON-FINANCIAL': sortedDocuments.filter(d => getCategory(d) === 'NON-FINANCIAL'),
-                                'Uncategorized': sortedDocuments.filter(d => {
-                                    const c = getCategory(d);
-                                    return c !== 'FINANCIAL' && c !== 'NON-FINANCIAL';
-                                })
-                            } : { 'All': sortedDocuments }).map(([groupName, groupDocs]) => {
+                            {Object.entries((() => {
+                                // Helper to get version_metadata
+                                const getMeta = (doc) => typeof doc.version_metadata === 'string' ? JSON.parse(doc.version_metadata) : doc.version_metadata || {};
+
+                                if (groupBy === 'functionality') {
+                                    return {
+                                        'EVIDENTIARY': sortedDocuments.filter(d => getCategory(d) === 'EVIDENTIARY'),
+                                        'COMPLIANCE': sortedDocuments.filter(d => getCategory(d) === 'COMPLIANCE'),
+                                        'ADMINISTRATIVE': sortedDocuments.filter(d => getCategory(d) === 'ADMINISTRATIVE'),
+                                        'Other': sortedDocuments.filter(d => !['EVIDENTIARY', 'COMPLIANCE', 'ADMINISTRATIVE'].includes(getCategory(d)))
+                                    };
+                                } else if (groupBy === 'process_stage') {
+                                    return {
+                                        'ORIGINATION': sortedDocuments.filter(d => getMeta(d).process_stage === 'ORIGINATION'),
+                                        'UNDERWRITING': sortedDocuments.filter(d => getMeta(d).process_stage === 'UNDERWRITING'),
+                                        'CLOSING': sortedDocuments.filter(d => getMeta(d).process_stage === 'CLOSING'),
+                                        'POST_CLOSING': sortedDocuments.filter(d => getMeta(d).process_stage === 'POST_CLOSING'),
+                                        'Unclassified': sortedDocuments.filter(d => !getMeta(d).process_stage)
+                                    };
+                                } else if (groupBy === 'document_purpose') {
+                                    return {
+                                        'EVIDENTIARY_FINANCIAL': sortedDocuments.filter(d => getMeta(d).document_purpose === 'EVIDENTIARY_FINANCIAL'),
+                                        'EVIDENTIARY_NON_FINANCIAL': sortedDocuments.filter(d => getMeta(d).document_purpose === 'EVIDENTIARY_NON_FINANCIAL'),
+                                        'COMPLIANCE': sortedDocuments.filter(d => getMeta(d).document_purpose === 'COMPLIANCE'),
+                                        'APPLICATION_FORMS': sortedDocuments.filter(d => getMeta(d).document_purpose === 'APPLICATION_FORMS'),
+                                        'OPERATIONAL': sortedDocuments.filter(d => getMeta(d).document_purpose === 'OPERATIONAL'),
+                                        'EVIDENTIARY': sortedDocuments.filter(d => getMeta(d).document_purpose === 'EVIDENTIARY'),
+                                        'ADMINISTRATIVE': sortedDocuments.filter(d => getMeta(d).document_purpose === 'ADMINISTRATIVE'),
+                                        'Unclassified': sortedDocuments.filter(d => !getMeta(d).document_purpose)
+                                    };
+                                } else {
+                                    return { 'All': sortedDocuments };
+                                }
+                            })()).map(([groupName, groupDocs]) => {
                                 if (groupDocs.length === 0) return null;
                                 const isGrouped = groupName !== 'All';
                                 const isCollapsed = isGrouped && collapsedGroups[groupName];
@@ -740,7 +1225,7 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                                                 className="bg-gray-100 cursor-pointer hover:bg-gray-200 transition-colors"
                                                 onClick={() => toggleGroup(groupName)}
                                             >
-                                                <td colSpan="7" className="px-6 py-2 text-xs font-bold text-gray-700 uppercase tracking-wider">
+                                                <td colSpan="4" className="px-6 py-2 text-xs font-bold text-gray-700 uppercase tracking-wider">
                                                     <div className="flex items-center">
                                                         <span className="mr-2 text-gray-500 w-4">{isCollapsed ? '▶' : '▼'}</span>
                                                         {groupName}
@@ -762,12 +1247,16 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                                             const borrower = analysis.borrower_name;
                                             const coBorrower = analysis.co_borrower_name;
                                             const isHighlighted = highlightDoc && (doc.filename === highlightDoc || doc.name === highlightDoc);
-                                            
+                                            // Get new classification from version_metadata
+                                            const verMeta = typeof doc.version_metadata === 'string' ? JSON.parse(doc.version_metadata) : doc.version_metadata || {};
+                                            const processStage = verMeta.process_stage;
+                                            const evidType = verMeta.evidentiary_type;
+
                                             return (
-                                                <tr 
-                                                    key={index} 
+                                                <tr
+                                                    key={index}
                                                     ref={isHighlighted ? highlightedDocRef : null}
-                                                    className={`hover:bg-blue-50 cursor-pointer transition-colors ${isHighlighted ? 'bg-yellow-100 ring-2 ring-yellow-400' : ''}`} 
+                                                    className={`hover:bg-blue-50 cursor-pointer transition-colors ${isHighlighted ? 'bg-yellow-100 ring-2 ring-yellow-400' : ''}`}
                                                     onClick={() => handleViewDocument(doc)}
                                                 >
                                                     <td className="px-6 py-4 whitespace-nowrap">
@@ -788,10 +1277,29 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                                                                     </div>
                                                                 )}
                                                                 <div className="flex flex-wrap gap-1.5 mt-1.5">
+                                                                    {/* Document Purpose Badge */}
                                                                     {category && (
-                                                                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${category === 'FINANCIAL' ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
+                                                                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${category === 'EVIDENTIARY_FINANCIAL' ? 'bg-emerald-100 text-emerald-800' :
+                                                                            category === 'EVIDENTIARY_NON_FINANCIAL' ? 'bg-teal-100 text-teal-800' :
+                                                                                category === 'COMPLIANCE' ? 'bg-blue-100 text-blue-800' :
+                                                                                    category === 'APPLICATION_FORMS' ? 'bg-violet-100 text-violet-800' :
+                                                                                        category === 'OPERATIONAL' ? 'bg-orange-100 text-orange-800' :
+                                                                                            category === 'ADMINISTRATIVE' ? 'bg-gray-100 text-gray-700' :
+                                                                                                'bg-gray-100 text-gray-800'
                                                                             }`}>
-                                                                            {category === 'FINANCIAL' ? 'Financial' : 'Non-Financial'}
+                                                                            {category.replace(/_/g, ' ')}
+                                                                        </span>
+                                                                    )}
+                                                                    {/* Evidentiary Type Badge */}
+                                                                    {evidType && (
+                                                                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                                                            {evidType}
+                                                                        </span>
+                                                                    )}
+                                                                    {/* Process Stage Badge */}
+                                                                    {processStage && (
+                                                                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">
+                                                                            {processStage}
                                                                         </span>
                                                                     )}
                                                                     {/* Signed/Unsigned badge */}
@@ -827,15 +1335,16 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{doc.type || 'PDF'}</td>
-                                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{doc.upload_date ? new Date(doc.upload_date).toLocaleDateString() : 'N/A'}</td>
-                                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{doc.size ? `${(doc.size / 1024).toFixed(2)} KB` : 'N/A'}</td>
+                                                    {/* Document Type Column */}
+                                                    <td className="px-3 py-2 text-xs text-gray-700 leading-tight">
+                                                        {verMeta.doc_type || docType || 'Unknown'}
+                                                    </td>
                                                     {(() => {
                                                         const dupCount = doc.aggregate_duplicate_count || doc.duplicate_count || 0;
                                                         return (
                                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                                 {dupCount > 0 ? (
-                                                                    <button onClick={() => handleViewDuplicates(doc)} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 hover:bg-yellow-200 transition-colors">
+                                                                    <button onClick={(e) => { e.stopPropagation(); handleViewDuplicates(doc); }} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 hover:bg-yellow-200 transition-colors">
                                                                         {dupCount} {dupCount === 1 ? 'duplicate' : 'duplicates'}
                                                                     </button>
                                                                 ) : (
@@ -846,20 +1355,10 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
                                                     })()}
                                                     <td className="px-6 py-4 whitespace-nowrap">
                                                         {doc.version_count > 1 ? (
-                                                            <button onClick={() => handleViewVersions(doc)} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 hover:bg-purple-200 transition-colors">
+                                                            <button onClick={(e) => { e.stopPropagation(); handleViewVersions(doc); }} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 hover:bg-purple-200 transition-colors">
                                                                 {doc.version_count} versions
                                                             </button>
                                                         ) : <span className="text-sm text-gray-400">-</span>}
-                                                    </td>
-                                                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                                        <div className="flex items-center justify-end gap-2">
-                                                            {(doc.latest_count || 1) > 1 && (
-                                                                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
-                                                                    {doc.latest_count} documents
-                                                                </span>
-                                                            )}
-                                                            <span className="text-gray-400 text-xs">Click to view →</span>
-                                                        </div>
                                                     </td>
                                                 </tr>
                                             );
@@ -888,7 +1387,7 @@ const DocumentsView = ({ documents, title, highlightDoc }) => {
             {showVersionModal && selectedVersionDoc && (
                 <VersionViewerModal
                     masterDoc={selectedVersionDoc}
-                    onClose={() => { setShowVersionModal(false); setDefaultTab('summary'); }}
+                    onClose={() => { setShowVersionModal(false); setDefaultTab('pdf'); }}
                     viewMode={viewMode}
                     defaultTab={defaultTab}
                 />
@@ -908,7 +1407,7 @@ const DocumentPreviewModal = ({ doc, onClose }) => {
     const { loanId } = useParams();
 
     const getDocumentUrl = (filename) => {
-        return `http://localhost:8006/api/admin/loans/${loanId}/documents/${encodeURIComponent(filename)}/content`;
+        return `http://localhost:8006/api/admin/loans/${loanId}/documents/${encodeURIComponent(filename)}/content#pagemode=none`;
     };
 
     return (
@@ -957,7 +1456,7 @@ const DuplicateViewerModal = ({ masterDoc, onClose }) => {
     // useParams is available since DuplicateViewerModal is rendered inside LoanDetailPage
 
     const getDocumentUrl = (filename) => {
-        return `http://localhost:8006/api/admin/loans/${loanId}/documents/${encodeURIComponent(filename)}/content`;
+        return `http://localhost:8006/api/admin/loans/${loanId}/documents/${encodeURIComponent(filename)}/content#pagemode=none`;
     };
 
     return (
@@ -1080,7 +1579,7 @@ const DuplicateViewerModal = ({ masterDoc, onClose }) => {
     );
 };
 
-const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab = 'summary' }) => {
+const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab = 'pdf' }) => {
     const { loanId } = useParams();
     const [allVersions, setAllVersions] = useState([]);
     const [latestVersions, setLatestVersions] = useState([]);
@@ -1088,7 +1587,7 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
     const [leftIndex, setLeftIndex] = useState(0);
     const [rightIndex, setRightIndex] = useState(0);
     const [leftTab, setLeftTab] = useState(defaultTab);
-    const [rightTab, setRightTab] = useState('summary');
+    const [rightTab, setRightTab] = useState('pdf');
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -1149,15 +1648,24 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
     };
 
     const getDocumentUrl = (filename) => {
-        return `http://localhost:8006/api/admin/loans/${loanId}/documents/${encodeURIComponent(filename)}/content`;
+        return `http://localhost:8006/api/admin/loans/${loanId}/documents/${encodeURIComponent(filename)}/content#pagemode=none`;
     };
 
     const renderMetadata = (doc) => {
+        // Check if doc is defined
+        if (!doc) {
+            return (
+                <div className="text-center text-gray-500 py-8">
+                    <p>No document selected</p>
+                </div>
+            );
+        }
+
         let meta = doc.version_metadata;
         if (typeof meta === 'string') {
             try { meta = JSON.parse(meta); } catch (e) { return null; }
         }
-        
+
         // Also get individual_analysis for additional details
         let analysis = doc.individual_analysis || {};
         if (typeof analysis === 'string') {
@@ -1166,7 +1674,7 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
 
         // Check for rich display_summary first
         const summary = meta?.display_summary;
-        
+
         if (summary) {
             return (
                 <div className="space-y-4">
@@ -1179,14 +1687,14 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                             )}
                         </div>
                     )}
-                    
+
                     {/* Description */}
                     {summary.brief_description && (
                         <p className="text-sm text-gray-700 bg-gray-50 p-3 rounded-lg border border-gray-200">
                             {summary.brief_description}
                         </p>
                     )}
-                    
+
                     {/* Key Parties */}
                     {summary.key_parties?.length > 0 && (
                         <div>
@@ -1200,7 +1708,7 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                             </div>
                         </div>
                     )}
-                    
+
                     {/* Key Dates */}
                     {summary.key_dates?.length > 0 && (
                         <div>
@@ -1215,7 +1723,7 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                             </div>
                         </div>
                     )}
-                    
+
                     {/* Key Amounts */}
                     {summary.key_amounts?.length > 0 && (
                         <div>
@@ -1230,25 +1738,24 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                             </div>
                         </div>
                     )}
-                    
+
                     {/* Status Indicators */}
                     {summary.status_indicators?.length > 0 && (
                         <div>
                             <h4 className="text-xs font-semibold text-gray-500 uppercase mb-2">Status</h4>
                             <div className="flex flex-wrap gap-2">
                                 {summary.status_indicators.map((item, i) => (
-                                    <span key={i} className={`px-2 py-1 rounded-md text-sm border ${
-                                        item.status === 'success' ? 'bg-green-50 text-green-700 border-green-200' :
+                                    <span key={i} className={`px-2 py-1 rounded-md text-sm border ${item.status === 'success' ? 'bg-green-50 text-green-700 border-green-200' :
                                         item.status === 'warning' ? 'bg-amber-50 text-amber-700 border-amber-200' :
-                                        'bg-gray-50 text-gray-700 border-gray-200'
-                                    }`}>
+                                            'bg-gray-50 text-gray-700 border-gray-200'
+                                        }`}>
                                         {item.label}: {item.value}
                                     </span>
                                 ))}
                             </div>
                         </div>
                     )}
-                    
+
                     {/* Important Notes */}
                     {summary.important_notes?.length > 0 && (
                         <div className="bg-amber-50 p-3 rounded-lg border border-amber-200">
@@ -1260,17 +1767,23 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                             </ul>
                         </div>
                     )}
-                    
-                    {/* Financial Category Badge */}
-                    {meta?.financial_category && (
+
+                    {/* Document Purpose Badge */}
+                    {(meta?.document_purpose || meta?.financial_category) && (
                         <div className="pt-2 border-t border-gray-200">
-                            <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                meta.financial_category === 'FINANCIAL' 
-                                    ? 'bg-green-100 text-green-800' 
-                                    : 'bg-gray-100 text-gray-700'
-                            }`}>
-                                {meta.financial_category}
+                            <span className={`px-2 py-1 rounded text-xs font-bold ${(meta.document_purpose || meta.financial_category) === 'EVIDENTIARY' ? 'bg-emerald-100 text-emerald-800' :
+                                (meta.document_purpose || meta.financial_category) === 'COMPLIANCE' ? 'bg-blue-100 text-blue-800' :
+                                    (meta.document_purpose || meta.financial_category) === 'ADMINISTRATIVE' ? 'bg-gray-100 text-gray-700' :
+                                        (meta.document_purpose || meta.financial_category) === 'FINANCIAL' ? 'bg-green-100 text-green-800' :
+                                            'bg-gray-100 text-gray-700'
+                                }`}>
+                                {meta.document_purpose || meta.financial_category}
                             </span>
+                            {meta.evidentiary_type && (
+                                <span className="ml-2 px-2 py-1 rounded text-xs bg-amber-100 text-amber-800">
+                                    {meta.evidentiary_type}
+                                </span>
+                            )}
                         </div>
                     )}
                 </div>
@@ -1288,7 +1801,7 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                         <h3 className="text-base font-semibold text-gray-900">{analysis.document_type}</h3>
                     </div>
                 )}
-                
+
                 {/* Borrower info */}
                 {analysis.borrower_name && (
                     <div className="flex flex-wrap gap-2">
@@ -1302,15 +1815,14 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                         )}
                     </div>
                 )}
-                
+
                 {/* Status badges */}
                 <div className="flex flex-wrap gap-2">
                     {analysis.has_signature !== undefined && (
-                        <span className={`px-2 py-1 rounded-md text-sm border ${
-                            analysis.has_signature 
-                                ? 'bg-green-50 text-green-700 border-green-200' 
-                                : 'bg-amber-50 text-amber-700 border-amber-200'
-                        }`}>
+                        <span className={`px-2 py-1 rounded-md text-sm border ${analysis.has_signature
+                            ? 'bg-green-50 text-green-700 border-green-200'
+                            : 'bg-amber-50 text-amber-700 border-amber-200'
+                            }`}>
                             {analysis.has_signature ? '✓ Signed' : 'Unsigned'}
                         </span>
                     )}
@@ -1325,17 +1837,22 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                         </span>
                     )}
                 </div>
-                
-                {/* Financial category */}
-                {meta?.financial_category && (
+
+                {/* Document Purpose */}
+                {(meta?.document_purpose || meta?.financial_category) && (
                     <div className="pt-2 border-t border-gray-200">
-                        <span className={`px-2 py-1 rounded text-xs font-bold ${
-                            meta.financial_category === 'FINANCIAL' 
-                                ? 'bg-green-100 text-green-800' 
-                                : 'bg-gray-100 text-gray-700'
-                        }`}>
-                            {meta.financial_category}
+                        <span className={`px-2 py-1 rounded text-xs font-bold ${(meta.document_purpose || meta.financial_category) === 'EVIDENTIARY' ? 'bg-emerald-100 text-emerald-800' :
+                            (meta.document_purpose || meta.financial_category) === 'COMPLIANCE' ? 'bg-blue-100 text-blue-800' :
+                                (meta.document_purpose || meta.financial_category) === 'ADMINISTRATIVE' ? 'bg-gray-100 text-gray-700' :
+                                    'bg-gray-100 text-gray-700'
+                            }`}>
+                            {meta.document_purpose || meta.financial_category}
                         </span>
+                        {meta.evidentiary_type && (
+                            <span className="ml-2 px-2 py-1 rounded text-xs bg-amber-100 text-amber-800">
+                                {meta.evidentiary_type}
+                            </span>
+                        )}
                     </div>
                 )}
 
@@ -1378,17 +1895,31 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                     )}
                 </div>
 
-                {(meta.financial_category || meta.financial_reason) && (
+                {(meta.document_purpose || meta.process_stage || meta.financial_category || meta.financial_reason) && (
                     <div className="bg-gray-50 p-1.5 rounded border border-gray-100">
-                        {meta.financial_category && (
-                            <span className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-bold mb-1 ${meta.financial_category === 'FINANCIAL' ? 'bg-green-100 text-green-800' : 'bg-gray-200 text-gray-800'
-                                }`}>
-                                {meta.financial_category}
-                            </span>
-                        )}
-                        {meta.financial_reason && (
+                        <div className="flex flex-wrap gap-1 mb-1">
+                            {(meta.document_purpose || meta.financial_category) && (
+                                <span className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-bold ${(meta.document_purpose || meta.financial_category) === 'EVIDENTIARY' ? 'bg-emerald-100 text-emerald-800' :
+                                    (meta.document_purpose || meta.financial_category) === 'COMPLIANCE' ? 'bg-blue-100 text-blue-800' :
+                                        'bg-gray-200 text-gray-800'
+                                    }`}>
+                                    {meta.document_purpose || meta.financial_category}
+                                </span>
+                            )}
+                            {meta.evidentiary_type && (
+                                <span className="inline-block px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800">
+                                    {meta.evidentiary_type}
+                                </span>
+                            )}
+                            {meta.process_stage && (
+                                <span className="inline-block px-1.5 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-800">
+                                    {meta.process_stage}
+                                </span>
+                            )}
+                        </div>
+                        {(meta.purpose_reason || meta.financial_reason) && (
                             <p className="text-gray-600 text-[10px] italic leading-snug">
-                                {meta.financial_reason}
+                                {meta.purpose_reason || meta.financial_reason}
                             </p>
                         )}
                     </div>
@@ -1494,6 +2025,40 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                     </button>
                 </div>
 
+                {/* AI Reasoning Narrative */}
+                {viewMode === 'full' && !isPeers && (
+                    <div className="px-6 py-3 bg-gradient-to-r from-blue-50 to-purple-50 border-b border-blue-200">
+                        <div className="flex items-start gap-3">
+                            <span className="text-lg">🤖</span>
+                            <div className="flex-1">
+                                <p className="text-sm font-medium text-gray-800 mb-1">AI Version Analysis</p>
+                                <div className="text-xs text-gray-600 space-y-1">
+                                    {leftDoc && (() => {
+                                        const meta = typeof leftDoc.version_metadata === 'string'
+                                            ? JSON.parse(leftDoc.version_metadata)
+                                            : leftDoc.version_metadata || {};
+                                        return meta.primary_reason ? (
+                                            <p><span className="font-medium text-green-700">✓ Latest Version:</span> {meta.primary_reason}</p>
+                                        ) : (
+                                            <p><span className="font-medium text-green-700">✓ Latest Version:</span> Selected as the current/primary document based on date, signature status, or content completeness.</p>
+                                        );
+                                    })()}
+                                    {rightDoc && (() => {
+                                        const meta = typeof rightDoc.version_metadata === 'string'
+                                            ? JSON.parse(rightDoc.version_metadata)
+                                            : rightDoc.version_metadata || {};
+                                        const signedStatus = meta.signed_status || 'Unknown';
+                                        const versionType = meta.version_type || 'Unknown';
+                                        return (
+                                            <p><span className="font-medium text-amber-700">◷ Older Version:</span> {versionType === 'PRELIMINARY' ? 'Preliminary/draft version' : signedStatus === 'UNSIGNED' ? 'Unsigned copy' : 'Earlier version'} - superseded by the latest version.</p>
+                                        );
+                                    })()}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
                 <div className="flex-1 flex overflow-hidden">
                     {/* LEFT PANE - SELECTION */}
                     <div className={`${rightDoc ? 'w-1/2 border-r' : 'w-full'} border-gray-200 flex flex-col transition-all duration-300`}>
@@ -1571,14 +2136,14 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                                     <button
                                         onClick={() => {
                                             // ALWAYS prefer individual_analysis if it has document_summary (deep extraction)
-                                            const jsonData = leftDoc?.individual_analysis?.document_summary 
-                                                ? leftDoc.individual_analysis 
+                                            const jsonData = leftDoc?.individual_analysis?.document_summary
+                                                ? leftDoc.individual_analysis
                                                 : (leftDoc?.individual_analysis || leftDoc?.vlm_analysis || { message: "No extracted JSON data available" });
                                             const displayData = leftDoc?.individual_analysis?.document_summary
                                                 ? leftDoc.individual_analysis
-                                                : ((leftDoc?.vlm_analysis?.error && leftDoc?.individual_analysis) 
-                                                ? leftDoc.individual_analysis 
-                                                : jsonData);
+                                                : ((leftDoc?.vlm_analysis?.error && leftDoc?.individual_analysis)
+                                                    ? leftDoc.individual_analysis
+                                                    : jsonData);
                                             const data = JSON.stringify(displayData, null, 2);
                                             const blob = new Blob([data], { type: 'application/json' });
                                             const url = URL.createObjectURL(blob);
@@ -1717,14 +2282,14 @@ const VersionViewerModal = ({ masterDoc, onClose, viewMode = 'full', defaultTab 
                                         <button
                                             onClick={() => {
                                                 // ALWAYS prefer individual_analysis if it has document_summary (deep extraction)
-                                                const jsonData = rightDoc?.individual_analysis?.document_summary 
-                                                    ? rightDoc.individual_analysis 
+                                                const jsonData = rightDoc?.individual_analysis?.document_summary
+                                                    ? rightDoc.individual_analysis
                                                     : (rightDoc?.individual_analysis || rightDoc?.vlm_analysis || { message: "No extracted JSON data available" });
                                                 const displayData = rightDoc?.individual_analysis?.document_summary
                                                     ? rightDoc.individual_analysis
-                                                    : ((rightDoc?.vlm_analysis?.error && rightDoc?.individual_analysis) 
-                                                    ? rightDoc.individual_analysis 
-                                                    : jsonData);
+                                                    : ((rightDoc?.vlm_analysis?.error && rightDoc?.individual_analysis)
+                                                        ? rightDoc.individual_analysis
+                                                        : jsonData);
                                                 const data = JSON.stringify(displayData, null, 2);
                                                 const blob = new Blob([data], { type: 'application/json' });
                                                 const url = URL.createObjectURL(blob);
@@ -1828,7 +2393,7 @@ const ImportantDocumentsView = ({ extractedData = [], loanId, calculationSteps =
 
     // Filter data
     let filteredData = extractedData;
-    
+
     // Filter by values - show only non-empty, non-zero values found on 1008 form
     let dataAfterValueFilter = extractedData;
     if (showOnlyWithValues) {
@@ -1846,12 +2411,12 @@ const ImportantDocumentsView = ({ extractedData = [], loanId, calculationSteps =
         });
         filteredData = dataAfterValueFilter;
     }
-    
+
     // Filter by verified status
     if (showVerifiedOnly) {
         filteredData = filteredData.filter(item => {
-            return item.evidence && item.evidence.length > 0 && 
-                   item.evidence.some(ev => ev.verification_status === 'verified');
+            return item.evidence && item.evidence.length > 0 &&
+                item.evidence.some(ev => ev.verification_status === 'verified');
         });
     }
 
@@ -1862,14 +2427,14 @@ const ImportantDocumentsView = ({ extractedData = [], loanId, calculationSteps =
         'Co-Borrower Info': 3,
         'Underwriting Info': 4
     };
-    
+
     const groupedData = filteredData.reduce((acc, item) => {
         const section = item.section || 'Other';
         if (!acc[section]) acc[section] = [];
         acc[section].push(item);
         return acc;
     }, {});
-    
+
     // Sort items within each section by display_order
     Object.keys(groupedData).forEach(section => {
         groupedData[section].sort((a, b) => {
@@ -1878,7 +2443,7 @@ const ImportantDocumentsView = ({ extractedData = [], loanId, calculationSteps =
             return orderA - orderB;
         });
     });
-    
+
     // Sort sections by predefined order
     const sortedSections = Object.keys(groupedData).sort((a, b) => {
         const orderA = sectionOrder[a] || 999;
@@ -1925,162 +2490,268 @@ const ImportantDocumentsView = ({ extractedData = [], loanId, calculationSteps =
                     {sortedSections.map((section) => {
                         const items = groupedData[section];
                         return (
-                        <div key={section} className="bg-white">
-                            <button
-                                onClick={() => toggleSection(section)}
-                                className="w-full px-3 py-2 bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition-colors"
-                            >
-                                <span className="font-medium text-xs text-slate-700">{section}</span>
-                                {expandedSections[section] ? (
-                                    <ChevronUp size={14} className="text-slate-400" />
-                                ) : (
-                                    <ChevronDown size={14} className="text-slate-400" />
-                                )}
-                            </button>
+                            <div key={section} className="bg-white">
+                                <button
+                                    onClick={() => toggleSection(section)}
+                                    className="w-full px-3 py-2 bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition-colors"
+                                >
+                                    <span className="font-medium text-xs text-slate-700">{section}</span>
+                                    {expandedSections[section] ? (
+                                        <ChevronUp size={14} className="text-slate-400" />
+                                    ) : (
+                                        <ChevronDown size={14} className="text-slate-400" />
+                                    )}
+                                </button>
 
-                            {expandedSections[section] && (
-                                <div className="overflow-x-auto">
-                                    <table className="w-full text-left border-collapse">
-                                                <thead className="bg-slate-50 text-slate-500 font-semibold">
-                                                    <tr>
-                                                        <th className="px-2 py-1.5 text-xs w-[5%] border border-slate-200">ID</th>
-                                                        <th className="px-2 py-1.5 text-xs w-[15%] border border-slate-200">Attribute</th>
-                                                        <th className="px-2 py-1.5 text-xs w-[12%] border border-slate-200">Extracted Value</th>
-                                                        <th className="px-2 py-1.5 text-xs w-[18%] border border-slate-200">Evidence Attribute</th>
-                                                        <th className="px-2 py-1.5 text-xs w-[12%] border border-slate-200">Evidence Value</th>
-                                                        <th className="px-2 py-1.5 text-xs w-[18%] border border-slate-200">Evidence Document</th>
-                                                        <th className="px-2 py-1.5 text-xs w-[10%] border border-slate-200">Verification</th>
-                                                    </tr>
-                                                </thead>
-                                        <tbody>
-                                            {items.map((item) => {
-                                                const hasEvidence = item.evidence && item.evidence.length > 0;
-                                                
-                                                // Get calculation steps - try new API first, fallback to old JSON
-                                                let steps = calculationSteps[item.attribute_id] || [];
-                                                
-                                                // Fallback: if few steps from API but more in old JSON, use old JSON
-                                                if (steps.length < 2 && hasEvidence) {
-                                                    const primaryEvidence = item.evidence.find(ev => {
-                                                        try {
-                                                            const notes = typeof ev.notes === 'string' ? JSON.parse(ev.notes) : ev.notes;
-                                                            return notes?.document_classification === 'primary';
-                                                        } catch { return false; }
-                                                    });
-                                                    
-                                                    if (primaryEvidence) {
-                                                        try {
-                                                            const notes = typeof primaryEvidence.notes === 'string' 
-                                                                ? JSON.parse(primaryEvidence.notes) 
-                                                                : primaryEvidence.notes;
-                                                            const oldSteps = notes?.step_by_step_calculation || [];
-                                                            // Only use old steps if there are MORE steps in old format
-                                                            if (oldSteps.length > steps.length) {
-                                                                // Convert old format to new format
-                                                                steps = oldSteps.map((s, idx) => {
-                                                                    // Determine document name
-                                                                    let docName = null;
-                                                                    
-                                                                    // Priority 1: Use 'document' field if present (direct filename)
-                                                                    if (s.document) {
-                                                                        docName = s.document;
-                                                                    }
-                                                                    // Priority 2: Try keyword matching on 'source' field
-                                                                    else if (s.source && !s.formula) {
-                                                                        const sourceKeywords = s.source.toLowerCase();
-                                                                        const matchingDoc = allDocuments.find(doc => {
-                                                                            const fileName = (doc.name || '').toLowerCase();
-                                                                            if (sourceKeywords.includes('purchase') && fileName.includes('purchase')) return true;
-                                                                            if (sourceKeywords.includes('tax') && fileName.includes('tax')) return true;
-                                                                            if (sourceKeywords.includes('appraisal') && fileName.includes('appraisal')) return true;
-                                                                            if (sourceKeywords.includes('urla') && fileName.includes('urla')) return true;
-                                                                            if (sourceKeywords.includes('credit') && fileName.includes('credit')) return true;
-                                                                            if (sourceKeywords.includes('note') && fileName.includes('note')) return true;
-                                                                            if (sourceKeywords.includes('loan estimate') && fileName.includes('loan_estimate')) return true;
-                                                                            if (sourceKeywords.includes('insurance') && fileName.includes('insurance')) return true;
-                                                                            if (sourceKeywords.includes('evidence') && fileName.includes('evidence')) return true;
-                                                                            return false;
-                                                                        });
-                                                                        docName = matchingDoc?.name || null;
-                                                                    }
-                                                                    
-                                                                    // Determine if calculated: has formula OR no document reference
-                                                                    const isCalculated = !!s.formula || (!s.document && !docName);
-                                                                    
-                                                                    return {
-                                                                        step_id: `temp-${item.id}-${idx}`,
-                                                                        step_order: s.step || idx + 1,
-                                                                        value: s.amount || s.value,
-                                                                        description: s.description || s.label,
-                                                                        document_name: docName,
-                                                                        page_number: s.page,
-                                                                        notes: s.notes || s.explanation || null,
-                                                                        source: s.source,
-                                                                        formula: s.formula,
-                                                                        is_calculated: isCalculated
-                                                                    };
-                                                                });
+                                {expandedSections[section] && (
+                                    <div className="overflow-x-auto">
+                                        <table className="w-full text-left border-collapse">
+                                            <thead className="bg-slate-50 text-slate-500 font-semibold">
+                                                <tr>
+                                                    <th className="px-2 py-1.5 text-xs w-[5%] border border-slate-200">ID</th>
+                                                    <th className="px-2 py-1.5 text-xs w-[15%] border border-slate-200">Attribute</th>
+                                                    <th className="px-2 py-1.5 text-xs w-[12%] border border-slate-200">Extracted Value</th>
+                                                    <th className="px-2 py-1.5 text-xs w-[18%] border border-slate-200">Evidence Attribute</th>
+                                                    <th className="px-2 py-1.5 text-xs w-[12%] border border-slate-200">Evidence Value</th>
+                                                    <th className="px-2 py-1.5 text-xs w-[18%] border border-slate-200">Evidence Document</th>
+                                                    <th className="px-2 py-1.5 text-xs w-[10%] border border-slate-200">Verification</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {items.map((item) => {
+                                                    const hasEvidence = item.evidence && item.evidence.length > 0;
+
+                                                    // Get calculation steps - try new API first, fallback to old JSON
+                                                    let steps = calculationSteps[item.attribute_id] || [];
+
+                                                    // Fallback: if few steps from API but more in old JSON, use old JSON
+                                                    if (steps.length < 2 && hasEvidence) {
+                                                        const primaryEvidence = item.evidence.find(ev => {
+                                                            try {
+                                                                const notes = typeof ev.notes === 'string' ? JSON.parse(ev.notes) : ev.notes;
+                                                                return notes?.document_classification === 'primary';
+                                                            } catch { return false; }
+                                                        });
+
+                                                        if (primaryEvidence) {
+                                                            try {
+                                                                const notes = typeof primaryEvidence.notes === 'string'
+                                                                    ? JSON.parse(primaryEvidence.notes)
+                                                                    : primaryEvidence.notes;
+                                                                const oldSteps = notes?.step_by_step_calculation || [];
+                                                                // Only use old steps if there are MORE steps in old format
+                                                                if (oldSteps.length > steps.length) {
+                                                                    // Convert old format to new format
+                                                                    steps = oldSteps.map((s, idx) => {
+                                                                        // Determine document name
+                                                                        let docName = null;
+
+                                                                        // Priority 1: Use 'document' field if present (direct filename)
+                                                                        if (s.document) {
+                                                                            docName = s.document;
+                                                                        }
+                                                                        // Priority 2: Try keyword matching on 'source' field
+                                                                        else if (s.source && !s.formula) {
+                                                                            const sourceKeywords = s.source.toLowerCase();
+                                                                            const matchingDoc = allDocuments.find(doc => {
+                                                                                const fileName = (doc.name || '').toLowerCase();
+                                                                                if (sourceKeywords.includes('purchase') && fileName.includes('purchase')) return true;
+                                                                                if (sourceKeywords.includes('tax') && fileName.includes('tax')) return true;
+                                                                                if (sourceKeywords.includes('appraisal') && fileName.includes('appraisal')) return true;
+                                                                                if (sourceKeywords.includes('urla') && fileName.includes('urla')) return true;
+                                                                                if (sourceKeywords.includes('credit') && fileName.includes('credit')) return true;
+                                                                                if (sourceKeywords.includes('note') && fileName.includes('note')) return true;
+                                                                                if (sourceKeywords.includes('loan estimate') && fileName.includes('loan_estimate')) return true;
+                                                                                if (sourceKeywords.includes('insurance') && fileName.includes('insurance')) return true;
+                                                                                if (sourceKeywords.includes('evidence') && fileName.includes('evidence')) return true;
+                                                                                return false;
+                                                                            });
+                                                                            docName = matchingDoc?.name || null;
+                                                                        }
+
+                                                                        // Determine if calculated: has formula OR no document reference
+                                                                        const isCalculated = !!s.formula || (!s.document && !docName);
+
+                                                                        return {
+                                                                            step_id: `temp-${item.id}-${idx}`,
+                                                                            step_order: s.step || idx + 1,
+                                                                            value: s.amount || s.value,
+                                                                            description: s.description || s.label,
+                                                                            document_name: docName,
+                                                                            page_number: s.page,
+                                                                            notes: s.notes || s.explanation || null,
+                                                                            source: s.source,
+                                                                            formula: s.formula,
+                                                                            is_calculated: isCalculated
+                                                                        };
+                                                                    });
+                                                                }
+                                                            } catch (e) {
+                                                                console.error(`Error parsing steps for ${item.attribute_label}:`, e);
                                                             }
-                                                        } catch(e) {
-                                                            console.error(`Error parsing steps for ${item.attribute_label}:`, e);
                                                         }
                                                     }
-                                                }
-                                                
-                                                // If has steps, render with rowspan
-                                                if (steps.length > 1) {
-                                                    // Multiple steps - show with rowspan
-                                                    return (
-                                                        <React.Fragment key={item.id}>
-                                                            {steps.map((step, idx) => (
-                                                                <tr key={`${item.id}-step-${step.step_id}`} className="hover:bg-blue-50/30 transition-colors">
-                                                                    {/* ID - only on first row */}
-                                                                    {idx === 0 && (
-                                                                        <td rowSpan={steps.length} className="px-2 py-2 font-medium text-xs text-slate-500 align-top border border-slate-200 bg-slate-50/30">
-                                                                            {item.attribute_id}
-                                                                        </td>
-                                                                    )}
-                                                                    {/* Attribute Name - only on first row */}
-                                                                    {idx === 0 && (
-                                                                        <td rowSpan={steps.length} className="px-2 py-2 font-medium text-xs text-slate-700 align-top border border-slate-200 bg-slate-50/30">
-                                                                            {item.attribute_label}
-                                                                        </td>
-                                                                    )}
-                                                                    {/* Extracted Value - only on first row */}
-                                                                    {idx === 0 && (
-                                                                        <td rowSpan={steps.length} className="px-2 py-2 text-xs font-semibold text-slate-900 align-top border border-slate-200 bg-slate-50/30">
-                                                                            {item.extracted_value}
-                                                                        </td>
-                                                                    )}
-                                                                    {/* Evidence Attribute Name */}
-                                                                    <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
-                                                                        <div>
-                                                                            <div>{step.description}</div>
-                                                                            {step.notes && (
-                                                                                <div className="text-slate-500 italic text-[11px] mt-0.5 leading-relaxed">
-                                                                                    {step.notes}
-                                                                                </div>
-                                                                            )}
-                                                                        </div>
-                                                                    </td>
-                                                                    {/* Evidence Value */}
-                                                                    <td className="px-2 py-1.5 text-xs font-medium text-slate-700 border border-slate-200">
-                                                                        {step.value}
-                                                                    </td>
-                                                                    {/* Evidence Document */}
-                                                                    <td className="px-2 py-1.5 border border-slate-200">
-                                                                        {/* Check if this is the final step that matches 1008 value */}
-                                                                        {idx === steps.length - 1 && step.value && item.extracted_value && 
-                                                                         step.value.toString().replace(/[\$,\s]/g, '') === item.extracted_value.toString().replace(/[\$,\s]/g, '') ? (
-                                                                            <div className="flex items-center">
-                                                                                <div className="flex items-center justify-center w-6 h-6 bg-green-100 border border-green-300 rounded-full" title="Matches 1008 extracted value">
-                                                                                    <CheckCircle2 size={14} className="text-green-600" />
-                                                                                </div>
+
+                                                    // If has steps, render with rowspan
+                                                    if (steps.length > 1) {
+                                                        // Multiple steps - show with rowspan
+                                                        return (
+                                                            <React.Fragment key={item.id}>
+                                                                {steps.map((step, idx) => (
+                                                                    <tr key={`${item.id}-step-${step.step_id}`} className="hover:bg-blue-50/30 transition-colors">
+                                                                        {/* ID - only on first row */}
+                                                                        {idx === 0 && (
+                                                                            <td rowSpan={steps.length} className="px-2 py-2 font-medium text-xs text-slate-500 align-top border border-slate-200 bg-slate-50/30">
+                                                                                {item.attribute_id}
+                                                                            </td>
+                                                                        )}
+                                                                        {/* Attribute Name - only on first row */}
+                                                                        {idx === 0 && (
+                                                                            <td rowSpan={steps.length} className="px-2 py-2 font-medium text-xs text-slate-700 align-top border border-slate-200 bg-slate-50/30">
+                                                                                {item.attribute_label}
+                                                                            </td>
+                                                                        )}
+                                                                        {/* Extracted Value - only on first row */}
+                                                                        {idx === 0 && (
+                                                                            <td rowSpan={steps.length} className="px-2 py-2 text-xs font-semibold text-slate-900 align-top border border-slate-200 bg-slate-50/30">
+                                                                                {item.extracted_value}
+                                                                            </td>
+                                                                        )}
+                                                                        {/* Evidence Attribute Name */}
+                                                                        <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
+                                                                            <div>
+                                                                                <div>{step.description}</div>
+                                                                                {step.notes && (
+                                                                                    <div className="text-slate-500 italic text-[11px] mt-0.5 leading-relaxed">
+                                                                                        {step.notes}
+                                                                                    </div>
+                                                                                )}
                                                                             </div>
-                                                                        ) : step.document_name && !step.is_calculated && !step.document_name.startsWith('See ID -') ? (
+                                                                        </td>
+                                                                        {/* Evidence Value */}
+                                                                        <td className="px-2 py-1.5 text-xs font-medium text-slate-700 border border-slate-200">
+                                                                            {step.value}
+                                                                        </td>
+                                                                        {/* Evidence Document */}
+                                                                        <td className="px-2 py-1.5 border border-slate-200">
+                                                                            {/* Check if this is the final step that matches 1008 value */}
+                                                                            {idx === steps.length - 1 && step.value && item.extracted_value &&
+                                                                                step.value.toString().replace(/[\$,\s]/g, '') === item.extracted_value.toString().replace(/[\$,\s]/g, '') ? (
+                                                                                <div className="flex items-center">
+                                                                                    <div className="flex items-center justify-center w-6 h-6 bg-green-100 border border-green-300 rounded-full" title="Matches 1008 extracted value">
+                                                                                        <CheckCircle2 size={14} className="text-green-600" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            ) : step.document_name && !step.is_calculated && !step.document_name.startsWith('See ID -') ? (
+                                                                                <button
+                                                                                    onClick={async () => {
+                                                                                        // Open document with step_id filter
+                                                                                        try {
+                                                                                            const token = localStorage.getItem('token');
+                                                                                            const response = await fetch(`http://localhost:8006/api/admin/loans/${loanId}/evidence-documents-v2`, {
+                                                                                                headers: {
+                                                                                                    'Authorization': `Bearer ${token}`
+                                                                                                }
+                                                                                            });
+                                                                                            const result = await response.json();
+                                                                                            const evidenceDocs = Array.isArray(result) ? result : (result.documents || []);
+                                                                                            const fullDoc = evidenceDocs.find(d => d.file_name === step.document_name);
+
+                                                                                            setDocumentModal({
+                                                                                                isOpen: true,
+                                                                                                document: {
+                                                                                                    ...(fullDoc || { file_name: step.document_name, usage: [] }),
+                                                                                                    initial_page: step.page_number || 1,
+                                                                                                    filter_step_id: step.step_id
+                                                                                                }
+                                                                                            });
+                                                                                        } catch (error) {
+                                                                                            console.error('Error fetching document:', error);
+                                                                                        }
+                                                                                    }}
+                                                                                    className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 rounded text-xs transition-colors text-left"
+                                                                                    title={`Click to view ${step.document_name}`}
+                                                                                >
+                                                                                    <FileText size={12} className="flex-shrink-0" />
+                                                                                    <span className="max-w-[140px] truncate">
+                                                                                        {step.document_name.replace(/\.(pdf|json)$/i, '').replace(/_/g, ' ')}
+                                                                                    </span>
+                                                                                </button>
+                                                                            ) : step.document_name && step.document_name.startsWith('See ID -') ? (
+                                                                                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-gray-100 text-gray-700 border border-gray-200 rounded text-xs">
+                                                                                    <code className="font-mono text-[10px]">{step.document_name}</code>
+                                                                                </span>
+                                                                            ) : step.is_calculated ? (
+                                                                                <span className="text-slate-400 text-xs italic">Calculated</span>
+                                                                            ) : (
+                                                                                <span className="text-slate-400 text-xs">-</span>
+                                                                            )}
+                                                                        </td>
+                                                                        {/* Verification Status - only on first row */}
+                                                                        {idx === 0 && hasEvidence && (
+                                                                            <td rowSpan={steps.length} className="px-2 py-2 align-middle border border-slate-200 bg-slate-50/30 text-center">
+                                                                                <button
+                                                                                    onClick={() => setEvidenceModal({
+                                                                                        isOpen: true,
+                                                                                        evidence: item.evidence,
+                                                                                        attributeLabel: item.attribute_label,
+                                                                                        attributeValue: item.extracted_value,
+                                                                                        attributeId: item.attribute_id,
+                                                                                        calculationSteps: calculationSteps[item.attribute_id] || []
+                                                                                    })}
+                                                                                    className={clsx(
+                                                                                        "inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium border cursor-pointer hover:shadow-sm transition-all min-w-[80px] justify-center",
+                                                                                        item.evidence[0].verification_status === 'verified'
+                                                                                            ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100"
+                                                                                            : "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100"
+                                                                                    )}
+                                                                                >
+                                                                                    {item.evidence[0].verification_status === 'verified' ? (
+                                                                                        <CheckCircle2 size={12} className="text-green-600" />
+                                                                                    ) : (
+                                                                                        <AlertCircle size={12} className="text-amber-600" />
+                                                                                    )}
+                                                                                    <span>
+                                                                                        {item.evidence[0].verification_status === 'verified' ? 'Verified' : 'Review'}
+                                                                                    </span>
+                                                                                </button>
+                                                                            </td>
+                                                                        )}
+                                                                    </tr>
+                                                                ))}
+                                                            </React.Fragment>
+                                                        );
+                                                    }
+
+                                                    // Regular single row for non-calculated attributes
+                                                    const uniqueDocs = hasEvidence
+                                                        ? [...new Set(item.evidence.map(e => e.file_name).filter(Boolean))]
+                                                        : [];
+
+                                                    return (
+                                                        <tr key={item.id} className="hover:bg-slate-50/50 transition-colors">
+                                                            <td className="px-2 py-1.5 font-medium text-xs text-slate-500 border border-slate-200">
+                                                                {item.attribute_id}
+                                                            </td>
+                                                            <td className="px-2 py-1.5 font-medium text-xs text-slate-700 border border-slate-200">
+                                                                {item.attribute_label}
+                                                            </td>
+                                                            <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
+                                                                {item.extracted_value || '-'}
+                                                            </td>
+                                                            <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
+                                                                {hasEvidence ? item.attribute_label : '-'}
+                                                            </td>
+                                                            <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
+                                                                {hasEvidence ? (item.extracted_value || '-') : '-'}
+                                                            </td>
+                                                            <td className="px-2 py-1.5 border border-slate-200">
+                                                                {uniqueDocs.length > 0 ? (
+                                                                    <div className="flex flex-wrap gap-1">
+                                                                        {uniqueDocs.slice(0, 2).map((docName, idx) => (
                                                                             <button
+                                                                                key={idx}
                                                                                 onClick={async () => {
-                                                                                    // Open document with step_id filter
                                                                                     try {
                                                                                         const token = localStorage.getItem('token');
                                                                                         const response = await fetch(`http://localhost:8006/api/admin/loans/${loanId}/evidence-documents-v2`, {
@@ -2090,220 +2761,114 @@ const ImportantDocumentsView = ({ extractedData = [], loanId, calculationSteps =
                                                                                         });
                                                                                         const result = await response.json();
                                                                                         const evidenceDocs = Array.isArray(result) ? result : (result.documents || []);
-                                                                                        const fullDoc = evidenceDocs.find(d => d.file_name === step.document_name);
-                                                                                        
+                                                                                        const fullDoc = evidenceDocs.find(d => d.file_name === docName);
+
+                                                                                        // Find step_id for this attribute from calculation_steps
+                                                                                        let matchingStepId = null;
+                                                                                        if (fullDoc?.usage) {
+                                                                                            // Look for step matching this attribute
+                                                                                            const match = fullDoc.usage.find(u =>
+                                                                                                u.attributes && u.attributes.some(attr =>
+                                                                                                    attr.attribute_label.includes(item.attribute_label)
+                                                                                                )
+                                                                                            );
+                                                                                            if (match) {
+                                                                                                matchingStepId = match.step_id;
+                                                                                            }
+                                                                                        }
+
                                                                                         setDocumentModal({
                                                                                             isOpen: true,
                                                                                             document: {
-                                                                                                ...(fullDoc || { file_name: step.document_name, usage: [] }),
-                                                                                                initial_page: step.page_number || 1,
-                                                                                                filter_step_id: step.step_id
+                                                                                                ...(fullDoc || { file_name: docName, usage: [] }),
+                                                                                                filter_step_id: matchingStepId
                                                                                             }
                                                                                         });
                                                                                     } catch (error) {
                                                                                         console.error('Error fetching document:', error);
+                                                                                        setDocumentModal({
+                                                                                            isOpen: true,
+                                                                                            document: { file_name: docName, usage: [] }
+                                                                                        });
                                                                                     }
                                                                                 }}
-                                                                                className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 rounded text-xs transition-colors text-left"
-                                                                                title={`Click to view ${step.document_name}`}
+                                                                                className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 rounded text-xs transition-colors"
+                                                                                title={`Click to view ${docName}`}
                                                                             >
-                                                                                <FileText size={12} className="flex-shrink-0" />
-                                                                                <span className="max-w-[140px] truncate">
-                                                                                    {step.document_name.replace(/\.(pdf|json)$/i, '').replace(/_/g, ' ')}
+                                                                                <FileText size={12} />
+                                                                                <span className="max-w-[120px] truncate">
+                                                                                    {docName.replace(/\.(pdf|json)$/i, '').replace(/_/g, ' ')}
                                                                                 </span>
                                                                             </button>
-                                                                        ) : step.document_name && step.document_name.startsWith('See ID -') ? (
-                                                                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-gray-100 text-gray-700 border border-gray-200 rounded text-xs">
-                                                                                <code className="font-mono text-[10px]">{step.document_name}</code>
-                                                                            </span>
-                                                                        ) : step.is_calculated ? (
-                                                                            <span className="text-slate-400 text-xs italic">Calculated</span>
-                                                                        ) : (
-                                                                            <span className="text-slate-400 text-xs">-</span>
-                                                                        )}
-                                                                    </td>
-                                                                    {/* Verification Status - only on first row */}
-                                                                    {idx === 0 && hasEvidence && (
-                                                                        <td rowSpan={steps.length} className="px-2 py-2 align-middle border border-slate-200 bg-slate-50/30 text-center">
+                                                                        ))}
+                                                                        {uniqueDocs.length > 2 && (
                                                                             <button
                                                                                 onClick={() => setEvidenceModal({
                                                                                     isOpen: true,
                                                                                     evidence: item.evidence,
                                                                                     attributeLabel: item.attribute_label,
                                                                                     attributeValue: item.extracted_value,
+                                                                                    initialTab: 'secondary',
                                                                                     attributeId: item.attribute_id,
                                                                                     calculationSteps: calculationSteps[item.attribute_id] || []
                                                                                 })}
-                                                                                className={clsx(
-                                                                                    "inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium border cursor-pointer hover:shadow-sm transition-all min-w-[80px] justify-center",
-                                                                                    item.evidence[0].verification_status === 'verified'
-                                                                                        ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100"
-                                                                                        : "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100"
-                                                                                )}
+                                                                                className="px-1.5 py-0.5 bg-slate-100 text-slate-600 hover:bg-slate-200 border border-slate-300 rounded text-xs transition-colors"
                                                                             >
-                                                                                {item.evidence[0].verification_status === 'verified' ? (
-                                                                                    <CheckCircle2 size={12} className="text-green-600" />
-                                                                                ) : (
-                                                                                    <AlertCircle size={12} className="text-amber-600" />
-                                                                                )}
-                                                                                <span>
-                                                                                    {item.evidence[0].verification_status === 'verified' ? 'Verified' : 'Review'}
-                                                                                </span>
+                                                                                +{uniqueDocs.length - 2} more
                                                                             </button>
-                                                                        </td>
-                                                                    )}
-                                                                </tr>
-                                                            ))}
-                                                        </React.Fragment>
+                                                                        )}
+                                                                    </div>
+                                                                ) : (
+                                                                    <span className="text-slate-400 text-xs">-</span>
+                                                                )}
+                                                            </td>
+                                                            <td className="px-2 py-1.5 border border-slate-200 text-center">
+                                                                {hasEvidence ? (
+                                                                    <button
+                                                                        onClick={() => setEvidenceModal({
+                                                                            isOpen: true,
+                                                                            evidence: item.evidence,
+                                                                            attributeLabel: item.attribute_label,
+                                                                            attributeValue: item.extracted_value,
+                                                                            attributeId: item.attribute_id,
+                                                                            calculationSteps: calculationSteps[item.attribute_id] || []
+                                                                        })}
+                                                                        className={clsx(
+                                                                            "inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium border cursor-pointer hover:shadow-sm transition-all min-w-[80px] justify-center",
+                                                                            item.evidence[0].verification_status === 'verified'
+                                                                                ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100"
+                                                                                : item.evidence[0].verification_status === 'needs_review'
+                                                                                    ? "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100"
+                                                                                    : "bg-red-50 text-red-700 border-red-200 hover:bg-red-100"
+                                                                        )}
+                                                                    >
+                                                                        {item.evidence[0].verification_status === 'verified' ? (
+                                                                            <CheckCircle2 size={12} className="text-green-600" />
+                                                                        ) : item.evidence[0].verification_status === 'needs_review' ? (
+                                                                            <AlertCircle size={12} className="text-amber-600" />
+                                                                        ) : (
+                                                                            <XCircle size={12} className="text-red-600" />
+                                                                        )}
+                                                                        <span>
+                                                                            {item.evidence[0].verification_status === 'verified'
+                                                                                ? 'Verified'
+                                                                                : item.evidence[0].verification_status === 'needs_review'
+                                                                                    ? 'Needs Review'
+                                                                                    : 'Not Verified'}
+                                                                        </span>
+                                                                    </button>
+                                                                ) : (
+                                                                    <span className="text-slate-400 text-xs">-</span>
+                                                                )}
+                                                            </td>
+                                                        </tr>
                                                     );
-                                                }
-                                                
-                                                // Regular single row for non-calculated attributes
-                                                const uniqueDocs = hasEvidence 
-                                                    ? [...new Set(item.evidence.map(e => e.file_name).filter(Boolean))]
-                                                    : [];
-                                                
-                                                return (
-                                                    <tr key={item.id} className="hover:bg-slate-50/50 transition-colors">
-                                                        <td className="px-2 py-1.5 font-medium text-xs text-slate-500 border border-slate-200">
-                                                            {item.attribute_id}
-                                                        </td>
-                                                        <td className="px-2 py-1.5 font-medium text-xs text-slate-700 border border-slate-200">
-                                                            {item.attribute_label}
-                                                        </td>
-                                                        <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
-                                                            {item.extracted_value || '-'}
-                                                        </td>
-                                                        <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
-                                                            {hasEvidence ? item.attribute_label : '-'}
-                                                        </td>
-                                                        <td className="px-2 py-1.5 text-xs text-slate-600 border border-slate-200">
-                                                            {hasEvidence ? (item.extracted_value || '-') : '-'}
-                                                        </td>
-                                                        <td className="px-2 py-1.5 border border-slate-200">
-                                                            {uniqueDocs.length > 0 ? (
-                                                                <div className="flex flex-wrap gap-1">
-                                                                    {uniqueDocs.slice(0, 2).map((docName, idx) => (
-                                                                        <button
-                                                                            key={idx}
-                                                                            onClick={async () => {
-                                                                                try {
-                                                                                    const token = localStorage.getItem('token');
-                                                                                    const response = await fetch(`http://localhost:8006/api/admin/loans/${loanId}/evidence-documents-v2`, {
-                                                                                        headers: {
-                                                                                            'Authorization': `Bearer ${token}`
-                                                                                        }
-                                                                                    });
-                                                                                    const result = await response.json();
-                                                                                    const evidenceDocs = Array.isArray(result) ? result : (result.documents || []);
-                                                                                    const fullDoc = evidenceDocs.find(d => d.file_name === docName);
-                                                                                    
-                                                                                    // Find step_id for this attribute from calculation_steps
-                                                                                    let matchingStepId = null;
-                                                                                    if (fullDoc?.usage) {
-                                                                                        // Look for step matching this attribute
-                                                                                        const match = fullDoc.usage.find(u => 
-                                                                                            u.attributes && u.attributes.some(attr => 
-                                                                                                attr.attribute_label.includes(item.attribute_label)
-                                                                                            )
-                                                                                        );
-                                                                                        if (match) {
-                                                                                            matchingStepId = match.step_id;
-                                                                                        }
-                                                                                    }
-                                                                                    
-                                                                                    setDocumentModal({
-                                                                                        isOpen: true,
-                                                                                        document: {
-                                                                                            ...(fullDoc || { file_name: docName, usage: [] }),
-                                                                                            filter_step_id: matchingStepId
-                                                                                        }
-                                                                                    });
-                                                                                } catch (error) {
-                                                                                    console.error('Error fetching document:', error);
-                                                                                    setDocumentModal({
-                                                                                        isOpen: true,
-                                                                                        document: { file_name: docName, usage: [] }
-                                                                                    });
-                                                                                }
-                                                                            }}
-                                                                            className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 rounded text-xs transition-colors"
-                                                                            title={`Click to view ${docName}`}
-                                                                        >
-                                                                            <FileText size={12} />
-                                                                            <span className="max-w-[120px] truncate">
-                                                                                {docName.replace(/\.(pdf|json)$/i, '').replace(/_/g, ' ')}
-                                                                            </span>
-                                                                        </button>
-                                                                    ))}
-                                                                    {uniqueDocs.length > 2 && (
-                                                                        <button
-                                                                            onClick={() => setEvidenceModal({
-                                                                                isOpen: true,
-                                                                                evidence: item.evidence,
-                                                                                attributeLabel: item.attribute_label,
-                                                                                attributeValue: item.extracted_value,
-                                                                                initialTab: 'secondary',
-                                                                                attributeId: item.attribute_id,
-                                                                                calculationSteps: calculationSteps[item.attribute_id] || []
-                                                                            })}
-                                                                            className="px-1.5 py-0.5 bg-slate-100 text-slate-600 hover:bg-slate-200 border border-slate-300 rounded text-xs transition-colors"
-                                                                        >
-                                                                            +{uniqueDocs.length - 2} more
-                                                                        </button>
-                                                                    )}
-                                                                </div>
-                                                            ) : (
-                                                                <span className="text-slate-400 text-xs">-</span>
-                                                            )}
-                                                        </td>
-                                                        <td className="px-2 py-1.5 border border-slate-200 text-center">
-                                                            {hasEvidence ? (
-                                                                <button
-                                                                    onClick={() => setEvidenceModal({
-                                                                        isOpen: true,
-                                                                        evidence: item.evidence,
-                                                                        attributeLabel: item.attribute_label,
-                                                                        attributeValue: item.extracted_value,
-                                                                        attributeId: item.attribute_id,
-                                                                        calculationSteps: calculationSteps[item.attribute_id] || []
-                                                                    })}
-                                                                    className={clsx(
-                                                                        "inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium border cursor-pointer hover:shadow-sm transition-all min-w-[80px] justify-center",
-                                                                        item.evidence[0].verification_status === 'verified'
-                                                                            ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100"
-                                                                            : item.evidence[0].verification_status === 'needs_review'
-                                                                            ? "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100"
-                                                                            : "bg-red-50 text-red-700 border-red-200 hover:bg-red-100"
-                                                                    )}
-                                                                >
-                                                                    {item.evidence[0].verification_status === 'verified' ? (
-                                                                        <CheckCircle2 size={12} className="text-green-600" />
-                                                                    ) : item.evidence[0].verification_status === 'needs_review' ? (
-                                                                        <AlertCircle size={12} className="text-amber-600" />
-                                                                    ) : (
-                                                                        <XCircle size={12} className="text-red-600" />
-                                                                    )}
-                                                                    <span>
-                                                                        {item.evidence[0].verification_status === 'verified' 
-                                                                            ? 'Verified' 
-                                                                            : item.evidence[0].verification_status === 'needs_review'
-                                                                            ? 'Needs Review'
-                                                                            : 'Not Verified'}
-                                                                    </span>
-                                                                </button>
-                                                            ) : (
-                                                                <span className="text-slate-400 text-xs">-</span>
-                                                            )}
-                                                        </td>
-                                                    </tr>
-                                                );
-                                            })}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            )}
-                        </div>
+                                                })}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                )}
+                            </div>
                         );
                     })}
                 </div>
@@ -2320,7 +2885,7 @@ const ImportantDocumentsView = ({ extractedData = [], loanId, calculationSteps =
                 calculationSteps={evidenceModal.calculationSteps || []}
                 initialTab={evidenceModal.initialTab}
             />
-            
+
             {/* Evidence Document Modal */}
             <EvidenceDocumentModal
                 isOpen={documentModal.isOpen}

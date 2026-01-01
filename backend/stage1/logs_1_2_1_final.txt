@@ -1,0 +1,522 @@
+
+================================================================================
+🚀 STAGE 1 STEP 2.1: Deep JSON Extraction (Page-wise) - Scanned PDFs - loan_1642451
+Model: Llama 4 Maverick 17B Instruct
+Format: Page-wise (matching Claude Opus)
+================================================================================
+
+📄 Found 25 scanned PDFs
+   Excluding: ['tax_returns_65.pdf']
+   Processing: 24 PDFs
+
+
+[1/24] 1103_final_1.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: 1103_final_1.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5204, Output=492
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=549, Output=509
+  ✓ Extraction complete in 6.65s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: 1103_final_1.json
+
+[2/24] 4506_c_3.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: 4506_c_3.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+     Page 1: Tokens: Input=5204, Output=628
+  🔄 Extracting page 2/2
+     Page 2: Tokens: Input=5204, Output=751
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=994, Output=886
+  ✓ Extraction complete in 12.77s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  💾 Saved: 4506_c_3.json
+
+[3/24] 4506_c_4.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: 4506_c_4.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+     Page 1: Tokens: Input=5494, Output=608
+  🔄 Extracting page 2/2
+     Page 2: Tokens: Input=4334, Output=2022
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=2060, Output=1643
+  ✓ Extraction complete in 21.08s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  💾 Saved: 4506_c_4.json
+
+[4/24] borrowers_certification_20.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: borrowers_certification_20.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5493, Output=926
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=492, Output=413
+  ✓ Extraction complete in 6.16s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: borrowers_certification_20.json
+
+[5/24] closing_disclosure_22.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: closing_disclosure_22.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 5 pages
+  📄 Processing 5 pages individually...
+  🔄 Extracting page 1/5
+     Page 1: Tokens: Input=5203, Output=776
+  🔄 Extracting page 2/5
+     Page 2: Tokens: Input=5493, Output=662
+  🔄 Extracting page 3/5
+     Page 3: Tokens: Input=5493, Output=637
+  🔄 Extracting page 4/5
+     Page 4: Tokens: Input=5493, Output=811
+  🔄 Extracting page 5/5
+     Page 5: Tokens: Input=5203, Output=917
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=2853, Output=984
+  ✓ Extraction complete in 28.05s
+  ✓ Extracted 5 pages
+  ✓ Generated document-level summary
+  💾 Saved: closing_disclosure_22.json
+
+[6/24] compliance_agreement___errors_and_omissions_25.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: compliance_agreement___errors_and_omissions_25.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5209, Output=693
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=585, Output=487
+  ✓ Extraction complete in 5.61s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: compliance_agreement___errors_and_omissions_25.json
+
+[7/24] first_payment_letter_32.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: first_payment_letter_32.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5203, Output=590
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=601, Output=591
+  ✓ Extraction complete in 6.04s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: first_payment_letter_32.json
+
+[8/24] flood_policy_and_coverage_limit_38.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: flood_policy_and_coverage_limit_38.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5496, Output=1086
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=1317, Output=918
+  ✓ Extraction complete in 9.01s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: flood_policy_and_coverage_limit_38.json
+
+[9/24] hazard_insurance_info__and_or_proof_of_insurance_39.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: hazard_insurance_info__and_or_proof_of_insurance_39.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 3 pages
+  📄 Processing 3 pages individually...
+  🔄 Extracting page 1/3
+     Page 1: Tokens: Input=5502, Output=697
+  🔄 Extracting page 2/3
+     Page 2: Tokens: Input=5502, Output=647
+  🔄 Extracting page 3/3
+     Page 3: Tokens: Input=5502, Output=836
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=1886, Output=983
+  ✓ Extraction complete in 18.72s
+  ✓ Extracted 3 pages
+  ✓ Generated document-level summary
+  💾 Saved: hazard_insurance_info__and_or_proof_of_insurance_39.json
+
+[10/24] hazard_insurance_prelim_40.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: hazard_insurance_prelim_40.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 3 pages
+  📄 Processing 3 pages individually...
+  🔄 Extracting page 1/3
+     Page 1: Tokens: Input=5496, Output=926
+  🔄 Extracting page 2/3
+     Page 2: Tokens: Input=5496, Output=123
+  🔄 Extracting page 3/3
+     Page 3: Tokens: Input=5496, Output=781
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=1658, Output=1062
+  ✓ Extraction complete in 15.59s
+  ✓ Extracted 3 pages
+  ✓ Generated document-level summary
+  💾 Saved: hazard_insurance_prelim_40.json
+
+[11/24] lender_loan_information___final_43.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: lender_loan_information___final_43.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 3 pages
+  📄 Processing 3 pages individually...
+  🔄 Extracting page 1/3
+     Page 1: Tokens: Input=5496, Output=695
+  🔄 Extracting page 2/3
+     Page 2: Tokens: Input=5206, Output=493
+  🔄 Extracting page 3/3
+     Page 3: Tokens: Input=5206, Output=720
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=1506, Output=819
+  ✓ Extraction complete in 15.62s
+  ✓ Extracted 3 pages
+  ✓ Generated document-level summary
+  💾 Saved: lender_loan_information___final_43.json
+
+[12/24] mortgage_or_deed_of_trust_52.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: mortgage_or_deed_of_trust_52.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 8 pages
+  📄 Processing 8 pages individually...
+  🔄 Extracting page 1/8
+     Page 1: Tokens: Input=5207, Output=926
+  🔄 Extracting page 2/8
+     Page 2: Tokens: Input=5497, Output=1161
+  🔄 Extracting page 3/8
+     Page 3: Tokens: Input=5497, Output=1292
+  🔄 Extracting page 4/8
+     Page 4: Tokens: Input=5497, Output=1404
+  🔄 Extracting page 5/8
+     Page 5: Tokens: Input=5207, Output=1046
+  🔄 Extracting page 6/8
+     Page 6: Tokens: Input=5207, Output=610
+  🔄 Extracting page 7/8
+     Page 7: Tokens: Input=5207, Output=278
+  🔄 Extracting page 8/8
+     Page 8: Tokens: Input=5497, Output=256
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=1507, Output=1101
+  ✓ Extraction complete in 51.56s
+  ✓ Extracted 8 pages
+  ✓ Generated document-level summary
+  💾 Saved: mortgage_or_deed_of_trust_52.json
+
+[13/24] name_and_or_signature_affidavit_53.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: name_and_or_signature_affidavit_53.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5207, Output=444
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=556, Output=528
+  ✓ Extraction complete in 4.37s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: name_and_or_signature_affidavit_53.json
+
+[14/24] note_2nd_lien_54.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: note_2nd_lien_54.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 3 pages
+  📄 Processing 3 pages individually...
+  🔄 Extracting page 1/3
+     Page 1: Tokens: Input=5206, Output=1074
+  🔄 Extracting page 2/3
+     Page 2: Tokens: Input=5496, Output=1098
+  🔄 Extracting page 3/3
+     Page 3: Tokens: Input=5206, Output=522
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=807, Output=844
+  ✓ Extraction complete in 19.55s
+  ✓ Extracted 3 pages
+  ✓ Generated document-level summary
+  💾 Saved: note_2nd_lien_54.json
+
+[15/24] payment_schedule_56.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: payment_schedule_56.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5202, Output=234
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=485, Output=389
+  ✓ Extraction complete in 3.02s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: payment_schedule_56.json
+
+[16/24] right_to_cancel_59.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: right_to_cancel_59.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5203, Output=626
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=588, Output=581
+  ✓ Extraction complete in 4.99s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: right_to_cancel_59.json
+
+[17/24] right_to_cancel___preliminary_60.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: right_to_cancel___preliminary_60.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5207, Output=550
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=512, Output=362
+  ✓ Extraction complete in 5.06s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: right_to_cancel___preliminary_60.json
+
+[18/24] right_to_cancel___preliminary_61.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: right_to_cancel___preliminary_61.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5207, Output=622
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=593, Output=572
+  ✓ Extraction complete in 5.31s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: right_to_cancel___preliminary_61.json
+
+[19/24] right_to_cancel___preliminary_62.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: right_to_cancel___preliminary_62.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5207, Output=627
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=592, Output=572
+  ✓ Extraction complete in 5.14s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: right_to_cancel___preliminary_62.json
+
+[20/24] tax_workup_sheet_66.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: tax_workup_sheet_66.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5204, Output=539
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=799, Output=763
+  ✓ Extraction complete in 6.62s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: tax_workup_sheet_66.json
+
+[21/24] taxpayer_consent_68.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: taxpayer_consent_68.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5493, Output=502
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=546, Output=502
+  ✓ Extraction complete in 4.71s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: taxpayer_consent_68.json
+
+[22/24] urla___final_70.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: urla___final_70.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 8 pages
+  📄 Processing 8 pages individually...
+  🔄 Extracting page 1/8
+     Page 1: Tokens: Input=5204, Output=648
+  🔄 Extracting page 2/8
+     Page 2: Tokens: Input=5494, Output=897
+  🔄 Extracting page 3/8
+     Page 3: Tokens: Input=5494, Output=605
+  🔄 Extracting page 4/8
+     Page 4: Tokens: Input=5494, Output=864
+  🔄 Extracting page 5/8
+     Page 5: Tokens: Input=5204, Output=1367
+  🔄 Extracting page 6/8
+     Page 6: Tokens: Input=5494, Output=714
+  🔄 Extracting page 7/8
+     Page 7: Tokens: Input=5204, Output=484
+  🔄 Extracting page 8/8
+     Page 8: Tokens: Input=5204, Output=541
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=2639, Output=1835
+  ✓ Extraction complete in 50.78s
+  ✓ Extracted 8 pages
+  ✓ Generated document-level summary
+  💾 Saved: urla___final_70.json
+
+[23/24] usa_patriot_act_verification_72.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: usa_patriot_act_verification_72.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5207, Output=560
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=659, Output=574
+  ✓ Extraction complete in 5.89s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  💾 Saved: usa_patriot_act_verification_72.json
+
+[24/24] w_9_73.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: w_9_73.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 6 pages
+  📄 Processing 6 pages individually...
+  🔄 Extracting page 1/6
+     Page 1: Tokens: Input=5203, Output=860
+  🔄 Extracting page 2/6
+     Page 2: Tokens: Input=5203, Output=1135
+  🔄 Extracting page 3/6
+     Page 3: Tokens: Input=5203, Output=2140
+  🔄 Extracting page 4/6
+     Page 4: Tokens: Input=5203, Output=776
+  🔄 Extracting page 5/6
+     Page 5: Tokens: Input=5203, Output=1453
+  🔄 Extracting page 6/6
+     Page 6: Tokens: Input=5203, Output=527
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=2399, Output=838
+  ✓ Extraction complete in 44.65s
+  ✓ Extracted 6 pages
+  ✓ Generated document-level summary
+  💾 Saved: w_9_73.json
+
+================================================================================
+📊 EXTRACTION SUMMARY
+================================================================================
+  Total files: 24
+  ✅ Successful: 24
+  ❌ Failed: 0
+  📁 Output dir: /Users/sunny/Applications/bts/jpmorgan/mortgage/modda/backend/stage1/output/loan_1642451/1_2_1_llama_extractions
+  💾 Summary: extraction_summary.json
+  📄 Format: Page-wise (matching Claude Opus)
+================================================================================
+
+✅ Extraction complete!

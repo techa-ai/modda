@@ -78,3 +78,6 @@ def batch_verify_property():
 if __name__ == "__main__":
     batch_verify_property()
 
+
+
+

@@ -190,3 +190,6 @@ The Loan Management page reads from `loan_profiles`:
 - Verification badges (I, D, C, V) from verification_status
 - DSCR shown instead of DTI for investment properties
 
+
+
+

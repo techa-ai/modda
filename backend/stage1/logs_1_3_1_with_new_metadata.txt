@@ -1,0 +1,147 @@
+
+================================================================================
+🔍 STAGE 1 STEP 3.1: Semantic Document Grouping - loan_1642451
+================================================================================
+
+📂 Loading extracted JSON files...
+   Loaded 73 documents
+   Total tokens: ~348,151
+
+🔧 Filtering and sorting documents...
+   Included: 73 documents
+   Excluded (>50 pages, single instance): 0 documents
+
+📦 Creating batches (~100k tokens each)...
+   Created 4 batches
+   Batch 1: 26 docs, ~94,859 tokens
+   Batch 2: 14 docs, ~97,248 tokens
+   Batch 3: 19 docs, ~98,578 tokens
+   Batch 4: 14 docs, ~57,466 tokens
+
+================================================================================
+🤖 SEMANTIC GROUPING WITH LLAMA 4 MAVERICK
+================================================================================
+
+🤖 Processing Batch 1/4
+   Documents: 26
+   Total tokens: ~94,859
+   ✅ Found 5 groups, 14 ungrouped
+
+🤖 Processing Batch 2/4
+   Documents: 14
+   Total tokens: ~97,248
+   ✅ Found 2 groups, 11 ungrouped
+
+🤖 Processing Batch 3/4
+   Documents: 19
+   Total tokens: ~98,578
+   ✅ Found 2 groups, 14 ungrouped
+
+🤖 Processing Batch 4/4
+   Documents: 14
+   Total tokens: ~57,466
+   ✅ Found 3 groups, 6 ungrouped
+
+================================================================================
+📊 CONSOLIDATING RESULTS
+================================================================================
+
+🔍 Validating and enriching groups with dates/form IDs...
+
+🔧 Deduplicating groups...
+
+✅ Semantic grouping complete!
+   Total documents analyzed: 73
+   Total groups found: 12
+   Ungrouped documents: 45
+
+💾 Results saved: 1_3_1_semantic_groups.json
+
+📋 GROUPS FOUND:
+
+   ✅ Group 1: Supplemental Consumer Information Form
+   Type: preliminary_final | Confidence: LOW
+   Documents: 2
+      - 1103_final_1.pdf (final) | Form: Supplemental Consumer Information Form | ⭕ Unsigned
+      - 1103_preliminary_2.pdf (preliminary) | Form: Supplemental Consumer Information Form | ⭕ Unsigned
+      ⚠️  Warnings: No documents have dates - cannot verify chronological order
+
+   ✅ Group 2: IVES Request for Transcript of Tax Return
+   Type: chronological | Confidence: MEDIUM
+   Documents: 3
+      - 4506_c_3.pdf (final) | Dates: effective_date=2023-08-21 | ⭕ Unsigned
+      - 4506_c_4.pdf (final) | Dates: effective_date=2023-08-21, signature_date=8-21-23 | ✍️ Signed
+      - 4506_c_5.pdf (final) | ⭕ Unsigned
+      ⚠️  Warnings: Only 2/3 documents have dates
+
+   ✅ Group 3: Borrower's Certification & Authorization
+   Type: signed_unsigned | Confidence: MEDIUM
+   Documents: 2
+      - borrowers_certification_20.pdf (unsigned) | Dates: effective_date=2025-08-21, date=AUGUST 21, 2025 | Form: 105742610 | ⭕ Unsigned
+      - borrowers_certification_21.pdf (unsigned) | Dates: effective_date=2025-08-04, date=AUGUST 4, 2025 | Form: 105742610 | ⭕ Unsigned
+      ⚠️  Warnings: All documents have same signature status
+
+   ✅ Group 4: Closing Disclosure
+   Type: preliminary_final | Confidence: HIGH
+   Documents: 3
+      - closing_disclosure_22.pdf (final) | Dates: effective_date=2025-08-20, date=8-21-23 | ⭕ Unsigned
+      - closing_disclosure___preliminary_23.pdf (preliminary) | Dates: effective_date=2025-08-13, closing_date=08/13/2025 | ⭕ Unsigned
+      - closing_disclosure___preliminary_24.pdf (preliminary) | Dates: effective_date=2025-08-21, closing_date=08/21/2025 | ⭕ Unsigned
+
+   ✅ Group 5: Florida Rate Lock Agreement
+   Type: signed_unsigned | Confidence: MEDIUM
+   Documents: 2
+      - borrower_rate_lock_agreement_18.pdf (unsigned) | Dates: effective_date=2025-08-04, agreement_date=08/04/25 | ⭕ Unsigned
+      - borrower_rate_lock_agreement_19.pdf (signed) | Dates: effective_date=2025-08-04 | ⭕ Unsigned
+      ⚠️  Warnings: All documents have same signature status
+
+   ⚠️ Group 1: Flood Notice to Borrower
+   Type: chronological | Confidence: LOW
+   Documents: 2
+      - flood_notice_to_borrower_35.pdf (final) | Dates: effective_date=2025-08-04 | ⭕ Unsigned
+      - flood_notice_to_borrower_36.pdf (final) | Dates: effective_date=2025-08-04, date=AUGUST 4, 2025 | Form: 105742610 | ⭕ Unsigned
+      ⚠️  Warnings: Mixed document types: {'Notice of Special Flood Hazards and Availability of Federal Disaster Relief Assistance', 'Flood Notice to Borrower'}
+
+   ⚠️ Group 2: Flood Notice to Borrower
+   Type: signed_unsigned | Confidence: LOW
+   Documents: 2
+      - flood_notice_to_borrower_36.pdf (unsigned) | Dates: effective_date=2025-08-04, date=AUGUST 4, 2025 | Form: 105742610 | ⭕ Unsigned
+      - flood_notice_to_borrower_37.pdf (signed) | Dates: effective_date=2025-08-04, acknowledgment_date=8/04/2025 | Form: 105742610 | ✍️ Signed
+      ⚠️  Warnings: Mixed document types: {'Unknown', 'Notice of Special Flood Hazards and Availability of Federal Disaster Relief Assistance'}
+
+   ✅ Group 1: Uniform Residential Loan Application - Lender Loan Information
+   Type: preliminary_final | Confidence: HIGH
+   Documents: 3
+      - lender_loan_information___final_43.pdf (final) | Form: Uniform Residential Loan Application - Lender Loan Information | ⭕ Unsigned
+      - lender_loan_information___preliminary_44.pdf (preliminary) | Dates: effective_date=2021-01, effective_date=1/2021 | Form: Freddie Mac Form 65 • Fannie Mae Form 1003 | ⭕ Unsigned
+      - lender_loan_information___preliminary_45.pdf (preliminary) | Dates: effective_date=2021-01, effective_date=1/2021 | Form: Freddie Mac Form 65 • Fannie Mae Form 1003 | ⭕ Unsigned
+
+   ✅ Group 2: Loan Estimate
+   Type: preliminary_final | Confidence: HIGH
+   Documents: 2
+      - loan_estimate_46.pdf (final) | Dates: effective_date=2025-08-04, date_issued=08/04/2025 | ⭕ Unsigned
+      - loan_estimate___preliminary_47.pdf (preliminary) | Dates: effective_date=2025-08-04, date_issued=08/04/2025 | ⭕ Unsigned
+
+   ✅ Group 1: NOTICE OF RIGHT TO CANCEL
+   Type: preliminary_final | Confidence: HIGH
+   Documents: 4
+      - right_to_cancel_59.pdf (final) | Dates: effective_date=2025-08-21 | Form: 105742610 | ⭕ Unsigned
+      - right_to_cancel___preliminary_60.pdf (preliminary) | ⭕ Unsigned
+      - right_to_cancel___preliminary_61.pdf (preliminary) | Dates: effective_date=2025-08-21 | Form: 105742610 | ⭕ Unsigned
+      - right_to_cancel___preliminary_62.pdf (preliminary) | Dates: effective_date=2025-08-21 | Form: 105742610 | ⭕ Unsigned
+
+   ✅ Group 2: TAXPAYER CONSENT FORM
+   Type: chronological | Confidence: HIGH
+   Documents: 2
+      - taxpayer_consent_67.pdf (earlier version) | Dates: effective_date=2025-08-04, date=AUGUST 4, 2025 | Form: 105742610 | ⭕ Unsigned
+      - taxpayer_consent_68.pdf (later version) | Dates: effective_date=2025-08-21, date=AUGUST 21, 2025 | Form: 105742610 | ⭕ Unsigned
+
+   ✅ Group 3: Uniform Residential Loan Application
+   Type: preliminary_final | Confidence: HIGH
+   Documents: 2
+      - urla___final_70.pdf (final) | Dates: effective_date=1/2021, date=8-21-23 | Form: Freddie Mac Form 65 / Fannie Mae Form 1003 | ✍️ Signed
+      - urla___preliminary_71.pdf (preliminary) | Dates: effective_date=1/2021 | Form: Freddie Mac Form 65 • Fannie Mae Form 1003 | ⭕ Unsigned
+
+================================================================================
+
+✅ Semantic grouping complete!

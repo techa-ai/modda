@@ -123,3 +123,6 @@ if __name__ == "__main__":
         print("\n⚠️  Llama 4 Maverick works with text but not images")
         print("Recommendation: Use OCR to extract text from PDFs first")
 
+
+
+

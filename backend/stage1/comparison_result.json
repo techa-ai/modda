@@ -1,0 +1,21 @@
+{
+  "document1": "../../documents/loan_1642451/flood_notice_to_borrower_36.pdf",
+  "document2": "../../documents/loan_1642451/flood_notice_to_borrower_37.pdf",
+  "comparison_result": {
+    "similarity_level": "IDENTICAL",
+    "confidence": "HIGH",
+    "document_type": "Notice of Special Flood Hazards and Availability of Federal Disaster Relief Assistance",
+    "identical_fields": [
+      "Property Address",
+      "Loan Number",
+      "Date",
+      "Flood Hazard Information",
+      "NFIP Participation",
+      "Flood Insurance Requirements"
+    ],
+    "different_fields": [],
+    "key_differences_summary": "No substantive differences found between the two documents.",
+    "recommendation": "KEEP_ONE",
+    "reasoning": "Both documents are identical in content and formatting, indicating they are duplicate copies of the same document."
+  }
+}

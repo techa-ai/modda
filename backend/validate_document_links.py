@@ -35,3 +35,6 @@ def validate_links(loan_id):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         validate_links(int(sys.argv[1]))
+
+
+

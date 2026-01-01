@@ -1,0 +1,543 @@
+
+================================================================================
+🚀 CONCURRENT EXTRACTION - loan_1642451
+Max concurrent workers: 10
+Max concurrent API requests: 30
+================================================================================
+
+📊 Total files to process: 50
+   1_2_3_text_with_tables: 25 files
+   1_2_4_text_no_tables: 24 files
+   1_2_5_large_files: 1 files
+
+  🔄 Processing: additional_other_disclosures_10.pdf
+  🔄 Processing: 1008___final_0.pdf  🔄 Processing: tax_returns_65.pdf
+
+================================================================================
+================================================================================
+
+
+🦙 Processing: tax_returns_65.pdf
+================================================================================
+
+================================================================================🦙 Processing: additional_other_disclosures_10.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 100)...
+
+  📄 Converting PDF to images (DPI: 150)...🦙 Processing: 1008___final_0.pdf
+
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages  ✓ Converted 1 pages
+
+  📄 Processing 1 pages individually...  📄 Processing 1 pages individually...
+
+  🔄 Extracting page 1/1
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5494, Output=556
+  📊 Generating document-level summary...
+     Page 1: Tokens: Input=5205, Output=754
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=542, Output=582
+  ✓ Extraction complete in 6.02s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: additional_other_disclosures_11.pdf
+
+================================================================================
+🦙 Processing: additional_other_disclosures_11.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Summary: Tokens: Input=920, Output=1002
+  ✓ Extraction complete in 8.67s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: 1103_preliminary_2.pdf
+
+================================================================================
+🦙 Processing: 1103_preliminary_2.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5494, Output=1238
+  📊 Generating document-level summary...
+     Page 1: Tokens: Input=5496, Output=484
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=575, Output=555
+  ✓ Extraction complete in 7.62s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: additional_other_disclosures_12.pdf
+
+================================================================================
+🦙 Processing: additional_other_disclosures_12.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Summary: Tokens: Input=608, Output=552
+  ✓ Extraction complete in 5.58s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: 4506_c_5.pdf
+
+================================================================================
+🦙 Processing: 4506_c_5.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+     Page 1: Tokens: Input=5494, Output=647
+  📊 Generating document-level summary...
+     Page 1: Tokens: Input=5494, Output=575
+  🔄 Extracting page 2/2
+     Summary: Tokens: Input=535, Output=461
+  ✓ Extraction complete in 5.76s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: additional_other_disclosures_7.pdf
+
+================================================================================
+🦙 Processing: additional_other_disclosures_7.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 2: Tokens: Input=5494, Output=1426
+  📊 Generating document-level summary...
+     Page 1: Tokens: Input=5494, Output=500
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=925, Output=748
+  ✓ Extraction complete in 14.12s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  🔄 Processing: aba_disclosure_6.pdf
+
+================================================================================
+🦙 Processing: aba_disclosure_6.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+     Summary: Tokens: Input=535, Output=547
+  ✓ Extraction complete in 9.10s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: additional_other_disclosures_8.pdf
+
+================================================================================
+🦙 Processing: additional_other_disclosures_8.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5494, Output=400
+  📊 Generating document-level summary...
+  ✓ Converted 2271 pages
+  📄 Processing 2271 pages individually...
+  🔄 Extracting page 1/2271
+     Summary: Tokens: Input=502, Output=427
+  ✓ Extraction complete in 4.25s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: additional_other_disclosures_9.pdf
+
+================================================================================
+🦙 Processing: additional_other_disclosures_9.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 5 pages
+  📄 Processing 5 pages individually...
+  🔄 Extracting page 1/5
+     Page 1: Tokens: Input=5493, Output=1077
+     Page 1: Tokens: Input=4333, Output=688
+  🔄 Extracting page 2/2
+  🔄 Extracting page 2/2271
+     Page 2: Tokens: Input=5493, Output=365
+  📊 Generating document-level summary...
+     Page 1: Tokens: Input=5494, Output=1118
+     Page 2: Tokens: Input=4333, Output=819
+     Summary: Tokens: Input=1283, Output=910
+  ✓ Extraction complete in 12.82s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  🔄 Processing: avm_report_15.pdf
+
+================================================================================
+🦙 Processing: avm_report_15.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  🔄 Extracting page 2/5
+  🔄 Extracting page 3/2271
+  ✓ Converted 8 pages
+  📄 Processing 8 pages individually...
+  🔄 Extracting page 1/8
+     Page 1: Tokens: Input=5493, Output=234
+  🔄 Extracting page 2/8
+     Page 3: Tokens: Input=4333, Output=1039
+  🔄 Extracting page 4/2271
+     Page 2: Tokens: Input=5493, Output=944
+  🔄 Extracting page 3/8
+     Page 2: Tokens: Input=5494, Output=1252
+     Page 4: Tokens: Input=4333, Output=659
+  🔄 Extracting page 3/5
+  🔄 Extracting page 5/2271
+     Page 5: Tokens: Input=4333, Output=455
+     Page 3: Tokens: Input=5493, Output=1753
+  🔄 Extracting page 6/2271
+     Page 3: Tokens: Input=5494, Output=898
+  🔄 Extracting page 4/8
+  🔄 Extracting page 4/5
+     Page 4: Tokens: Input=5494, Output=644
+  🔄 Extracting page 5/5
+     Page 4: Tokens: Input=5493, Output=1609
+     Page 6: Tokens: Input=4333, Output=1470
+  🔄 Extracting page 5/8
+  🔄 Extracting page 7/2271
+     Page 5: Tokens: Input=5494, Output=659
+  📊 Generating document-level summary...
+     Page 5: Tokens: Input=5493, Output=812
+     Summary: Tokens: Input=992, Output=859
+  ✓ Extraction complete in 35.72s
+  ✓ Extracted 5 pages
+  ✓ Generated document-level summary
+  🔄 Processing: anti_coercion_statement_13.pdf
+
+================================================================================
+🦙 Processing: anti_coercion_statement_13.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+  🔄 Extracting page 6/8
+     Page 7: Tokens: Input=4333, Output=1153
+  🔄 Extracting page 8/2271
+     Page 1: Tokens: Input=5495, Output=501
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=529, Output=548
+  ✓ Extraction complete in 5.03s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: appraisal_acknowledgement_14.pdf
+
+================================================================================
+🦙 Processing: appraisal_acknowledgement_14.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 8: Tokens: Input=4333, Output=599
+  🔄 Extracting page 9/2271
+     Page 6: Tokens: Input=5493, Output=1631
+  🔄 Extracting page 7/8
+     Page 1: Tokens: Input=5495, Output=511
+  📊 Generating document-level summary...
+     Page 9: Tokens: Input=4333, Output=521
+     Summary: Tokens: Input=505, Output=417
+  ✓ Extraction complete in 4.58s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: basic_income_worksheet_16.pdf
+
+================================================================================
+🦙 Processing: basic_income_worksheet_16.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+  🔄 Extracting page 10/2271
+     Page 7: Tokens: Input=5493, Output=1043
+     Page 1: Tokens: Input=5204, Output=460
+  📊 Generating document-level summary...
+  🔄 Extracting page 8/8
+     Summary: Tokens: Input=577, Output=497
+  ✓ Extraction complete in 4.92s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: borrower_authorization_form_17.pdf
+
+================================================================================
+🦙 Processing: borrower_authorization_form_17.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 10: Tokens: Input=4333, Output=862
+  🔄 Extracting page 11/2271
+     Page 8: Tokens: Input=5493, Output=864
+  📊 Generating document-level summary...
+     Page 11: Tokens: Input=4333, Output=598
+     Page 1: Tokens: Input=5494, Output=1000
+  📊 Generating document-level summary...
+  🔄 Extracting page 12/2271
+     Summary: Tokens: Input=562, Output=508
+  ✓ Extraction complete in 6.85s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: borrower_rate_lock_agreement_18.pdf
+
+================================================================================
+🦙 Processing: borrower_rate_lock_agreement_18.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+     Summary: Tokens: Input=4716, Output=1290
+  ✓ Extraction complete in 49.81s
+  ✓ Extracted 8 pages
+  ✓ Generated document-level summary
+  🔄 Processing: closing_disclosure___preliminary_23.pdf
+
+================================================================================
+🦙 Processing: closing_disclosure___preliminary_23.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 5 pages
+  📄 Processing 5 pages individually...
+  🔄 Extracting page 1/5
+     Page 12: Tokens: Input=4333, Output=834
+  🔄 Extracting page 13/2271
+     Page 1: Tokens: Input=5495, Output=859
+     Page 1: Tokens: Input=5497, Output=572
+  🔄 Extracting page 2/2
+  🔄 Extracting page 2/5
+     Page 2: Tokens: Input=5495, Output=594
+  📊 Generating document-level summary...
+     Page 2: Tokens: Input=5497, Output=821
+     Page 13: Tokens: Input=4333, Output=938
+  🔄 Extracting page 3/5
+  🔄 Extracting page 14/2271
+     Summary: Tokens: Input=768, Output=719
+  ✓ Extraction complete in 10.68s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  🔄 Processing: borrower_rate_lock_agreement_19.pdf
+
+================================================================================
+🦙 Processing: borrower_rate_lock_agreement_19.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+     Page 3: Tokens: Input=5497, Output=681
+     Page 14: Tokens: Input=4333, Output=771
+  🔄 Extracting page 4/5
+  🔄 Extracting page 15/2271
+     Page 1: Tokens: Input=5495, Output=859
+  🔄 Extracting page 2/2
+     Page 4: Tokens: Input=5497, Output=733
+     Page 15: Tokens: Input=4333, Output=830
+  🔄 Extracting page 5/5
+     Page 2: Tokens: Input=5495, Output=641
+  📊 Generating document-level summary...
+  🔄 Extracting page 16/2271
+     Summary: Tokens: Input=792, Output=778
+  ✓ Extraction complete in 11.95s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  🔄 Processing: borrowers_certification_21.pdf
+
+================================================================================
+🦙 Processing: borrowers_certification_21.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 16: Tokens: Input=4333, Output=602
+     Page 5: Tokens: Input=5497, Output=914
+  📊 Generating document-level summary...
+  🔄 Extracting page 17/2271
+     Page 17: Tokens: Input=4333, Output=545
+     Page 1: Tokens: Input=5493, Output=955
+  📊 Generating document-level summary...
+     Summary: Tokens: Input=3029, Output=1150
+  ✓ Extraction complete in 26.55s
+  ✓ Extracted 5 pages
+  ✓ Generated document-level summary
+  🔄 Processing: closing_disclosure___preliminary_24.pdf
+
+================================================================================
+🦙 Processing: closing_disclosure___preliminary_24.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  🔄 Extracting page 18/2271
+  ✓ Converted 5 pages
+  📄 Processing 5 pages individually...
+  🔄 Extracting page 1/5
+     Summary: Tokens: Input=494, Output=386
+  ✓ Extraction complete in 6.38s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: disclosure_tracking_report_28.pdf
+
+================================================================================
+🦙 Processing: disclosure_tracking_report_28.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 1: Tokens: Input=5493, Output=656
+  📊 Generating document-level summary...
+     Page 18: Tokens: Input=4333, Output=1207
+     Page 1: Tokens: Input=5497, Output=581
+  🔄 Extracting page 19/2271
+  🔄 Extracting page 2/5
+     Summary: Tokens: Input=962, Output=783
+  ✓ Extraction complete in 5.80s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: e_signature_disclosure_30.pdf
+
+================================================================================
+🦙 Processing: e_signature_disclosure_30.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 19: Tokens: Input=4333, Output=1573
+     Page 1: Tokens: Input=5494, Output=763
+  📊 Generating document-level summary...
+     Page 2: Tokens: Input=5497, Output=744
+  🔄 Extracting page 20/2271
+  🔄 Extracting page 3/5
+     Summary: Tokens: Input=558, Output=501
+  ✓ Extraction complete in 7.01s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: flood_notice_to_borrower_34.pdf
+
+================================================================================
+🦙 Processing: flood_notice_to_borrower_34.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+     Page 3: Tokens: Input=5497, Output=615
+     Page 1: Tokens: Input=5496, Output=401
+  📊 Generating document-level summary...
+  🔄 Extracting page 4/5
+     Page 20: Tokens: Input=4333, Output=977
+     Summary: Tokens: Input=621, Output=430
+  ✓ Extraction complete in 4.06s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: flood_notice_to_borrower_35.pdf
+
+================================================================================
+🦙 Processing: flood_notice_to_borrower_35.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 pages individually...
+  🔄 Extracting page 1/1
+  🔄 Extracting page 21/2271
+     Page 4: Tokens: Input=5497, Output=927
+     Page 1: Tokens: Input=5496, Output=834
+  📊 Generating document-level summary...
+  🔄 Extracting page 5/5
+     Page 21: Tokens: Input=4333, Output=1325
+     Summary: Tokens: Input=556, Output=565
+  ✓ Extraction complete in 6.67s
+  ✓ Extracted 1 pages
+  ✓ Generated document-level summary
+  🔄 Processing: flood_notice_to_borrower_36.pdf
+
+================================================================================
+🦙 Processing: flood_notice_to_borrower_36.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+  🔄 Extracting page 22/2271
+     Page 5: Tokens: Input=5497, Output=912
+  📊 Generating document-level summary...
+     Page 1: Tokens: Input=5496, Output=734
+  🔄 Extracting page 2/2
+     Page 2: Tokens: Input=5496, Output=470
+  📊 Generating document-level summary...
+     Page 22: Tokens: Input=4333, Output=1440
+     Summary: Tokens: Input=2738, Output=1111
+  ✓ Extraction complete in 33.34s
+  ✓ Extracted 5 pages
+  ✓ Generated document-level summary
+  🔄 Processing: compliance_report_26.pdf
+
+================================================================================
+🦙 Processing: compliance_report_26.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  🔄 Extracting page 23/2271
+  ✓ Converted 18 pages
+  📄 Processing 18 pages individually...
+  🔄 Extracting page 1/18
+     Summary: Tokens: Input=578, Output=551
+  ✓ Extraction complete in 9.66s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  🔄 Processing: flood_notice_to_borrower_37.pdf
+
+================================================================================
+🦙 Processing: flood_notice_to_borrower_37.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 pages individually...
+  🔄 Extracting page 1/2
+     Page 1: Tokens: Input=5492, Output=843
+     Page 1: Tokens: Input=5496, Output=793
+  🔄 Extracting page 2/18
+  🔄 Extracting page 2/2
+     Page 23: Tokens: Input=4333, Output=1530
+     Page 2: Tokens: Input=5496, Output=497
+  📊 Generating document-level summary...
+  🔄 Extracting page 24/2271
+     Page 2: Tokens: Input=5492, Output=1071
+     Summary: Tokens: Input=669, Output=755
+  ✓ Extraction complete in 10.12s
+  ✓ Extracted 2 pages
+  ✓ Generated document-level summary
+  🔄 Processing: home_ownership_counseling_disclosure_41.pdf
+
+================================================================================
+🦙 Processing: home_ownership_counseling_disclosure_41.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  🔄 Extracting page 3/18
+  ✓ Converted 3 pages
+  📄 Processing 3 pages individually...
+  🔄 Extracting page 1/3
+     Page 24: Tokens: Input=4333, Output=733
+  🔄 Extracting page 25/2271
+     Page 3: Tokens: Input=5492, Output=1013
+  🔄 Extracting page 4/18
+     Page 1: Tokens: Input=5498, Output=1012
+     Page 25: Tokens: Input=4333, Output=695
+  🔄 Extracting page 2/3
+  🔄 Extracting page 26/2271
+     Page 2: Tokens: Input=5498, Output=918
+     Page 26: Tokens: Input=4333, Output=934     Page 4: Tokens: Input=5492, Output=1141
+
+  🔄 Extracting page 3/3
+  🔄 Extracting page 27/2271
+  🔄 Extracting page 5/18

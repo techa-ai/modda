@@ -1,0 +1,8 @@
+# Ignore all loan-specific analysis outputs
+# These are generated files and can be regenerated
+
+*/
+!.gitignore
+
+
+

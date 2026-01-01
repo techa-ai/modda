@@ -38,8 +38,7 @@ import {
     ArrowUp,
     ArrowDown,
     Filter,
-    ChevronDown,
-    Eye
+    ChevronDown
 } from 'lucide-react';
 
 const AdminLoans = () => {
@@ -55,7 +54,7 @@ const AdminLoans = () => {
     const [logsLoading, setLogsLoading] = useState(false);
     const [activeTab, setActiveTab] = useState('summary'); // 'summary' or 'details'
     const [viewMode, setViewMode] = useState('list'); // 'grid' or 'list' (for summary tab)
-    
+
     // Sorting and filtering
     const [sortField, setSortField] = useState('rag');
     const [sortDirection, setSortDirection] = useState('asc');
@@ -63,12 +62,13 @@ const AdminLoans = () => {
     const [purposeFilter, setPurposeFilter] = useState('all');
     const [lienFilter, setLienFilter] = useState('all');
     const [statusFilter, setStatusFilter] = useState('all');
+    const [showKeyDecisionFactors, setShowKeyDecisionFactors] = useState(true);
 
     // Form states
     const [newLoan, setNewLoan] = useState({ loan_number: '', document_location: '', assigned_to: '' });
     const [assignUser, setAssignUser] = useState('');
     const [processing, setProcessing] = useState(false);
-    
+
     // Verification Modal State
     const [verificationModal, setVerificationModal] = useState({
         isOpen: false,
@@ -85,6 +85,9 @@ const AdminLoans = () => {
         loanData: null
     });
 
+    // MT360 Validation Status cache
+    const [mt360Validation, setMt360Validation] = useState({});
+
     useEffect(() => {
         fetchData();
     }, []);
@@ -97,6 +100,46 @@ const AdminLoans = () => {
             ]);
             setLoans(loansRes.data.loans);
             setUsers(usersRes.data.users);
+
+            // Fetch MT360 validation status for all loans
+            const validationPromises = loansRes.data.loans.map(async (loan) => {
+                try {
+                    // Get cached validation for ALL doc types (matching detail page)
+                    const docTypes = ['1008', 'URLA', 'Note', 'LoanEstimate', 'ClosingDisclosure', 'CreditReport', '1004'];
+                    let totalMatches = 0;
+                    let totalMismatches = 0;
+                    let hasAnyValidation = false;
+
+                    for (const docType of docTypes) {
+                        try {
+                            const resp = await api.get(`/admin/loans/${loan.id}/validation-cache/${docType}`);
+                            if (resp.data && resp.data.matches !== undefined) {
+                                totalMatches += resp.data.matches || 0;
+                                totalMismatches += resp.data.mismatches || 0;
+                                hasAnyValidation = true;
+                            }
+                        } catch (e) {
+                            // No cache for this doc type
+                        }
+                    }
+
+                    if (hasAnyValidation) {
+                        const total = totalMatches + totalMismatches;
+                        const accuracy = total > 0 ? ((totalMatches / total) * 100).toFixed(1) : 0;
+                        return { loanId: loan.id, accuracy, matches: totalMatches, mismatches: totalMismatches };
+                    }
+                    return { loanId: loan.id, accuracy: null };
+                } catch (e) {
+                    return { loanId: loan.id, accuracy: null };
+                }
+            });
+
+            const validationResults = await Promise.all(validationPromises);
+            const validationMap = {};
+            validationResults.forEach(r => {
+                validationMap[r.loanId] = r;
+            });
+            setMt360Validation(validationMap);
         } catch (error) {
             console.error('Error fetching data:', error);
         } finally {
@@ -200,7 +243,7 @@ const AdminLoans = () => {
             e.preventDefault();
             e.stopPropagation();
         }
-        
+
         // Map short code to attribute name/category
         const typeMap = {
             'income': 'Borrower Total Income Amount',
@@ -221,7 +264,7 @@ const AdminLoans = () => {
             const res = await api.get(`/user/loans/${loan.id}/essential-attributes`);
             const data = res.data;
             console.log('Verification data received:', data);
-            
+
             // Debug: Log Underwriting attributes for debt type
             if (type === 'debt' && data.Underwriting) {
                 console.log('Underwriting attributes:', data.Underwriting.map(a => ({
@@ -230,16 +273,16 @@ const AdminLoans = () => {
                     hasSteps: a.calculation_steps?.length || 0
                 })));
             }
-            
+
             // Flatten the categories to find our attribute
             let foundAttr = null;
-            
+
             // Collect all potential matches
             const allAttributes = Object.values(data).flat();
-            const candidates = allAttributes.filter(a => 
-                a.attribute_name === attributeName || 
+            const candidates = allAttributes.filter(a =>
+                a.attribute_name === attributeName ||
                 (type === 'income' && (
-                    a.attribute_label.includes('Total Monthly Income') || 
+                    a.attribute_label.includes('Total Monthly Income') ||
                     a.attribute_label === 'Total Income' ||
                     a.attribute_name === 'total_income'
                 )) ||
@@ -248,15 +291,15 @@ const AdminLoans = () => {
                     a.attribute_name === 'total_all_monthly_payments'
                 ))
             );
-            
+
             console.log('Candidates:', candidates);
-            
+
             // Prioritize candidates with calculation steps or evidence
-            foundAttr = candidates.find(a => 
-                (a.calculation_steps && a.calculation_steps.length > 0) || 
+            foundAttr = candidates.find(a =>
+                (a.calculation_steps && a.calculation_steps.length > 0) ||
                 (a.evidence && a.evidence.length > 0)
             );
-            
+
             // Fallback to first candidate if no evidence found
             if (!foundAttr && candidates.length > 0) {
                 foundAttr = candidates[0];
@@ -268,17 +311,17 @@ const AdminLoans = () => {
                 console.log('  - extracted_value:', foundAttr.extracted_value);
                 console.log('  - calculation_steps:', foundAttr.calculation_steps?.length || 0);
                 console.log('  - evidence:', foundAttr.evidence?.length || 0);
-                
+
                 setVerificationModal({
                     isOpen: true,
-                    evidence: foundAttr.evidence || [], 
+                    evidence: foundAttr.evidence || [],
                     attributeLabel: foundAttr.attribute_label,
                     attributeValue: foundAttr.extracted_value,
                     loanId: loan.id,
                     initialTab: 'summary',
                     calculationSteps: foundAttr.calculation_steps || []
                 });
-                
+
                 console.log('Modal state set:', {
                     isOpen: true,
                     stepsCount: foundAttr.calculation_steps?.length || 0,
@@ -365,7 +408,7 @@ const AdminLoans = () => {
         const ratios = profile.ratios || {};
         const borrowerInfo = profile.borrower_info || {};
         const creditProfile = profile.credit_profile || {};
-        
+
         switch (field) {
             case 'loan_number': return loan.loan_number || '';
             case 'borrower': return borrowerInfo.primary_borrower_name || '';
@@ -388,7 +431,7 @@ const AdminLoans = () => {
                 const dtiVal = parseFloat(ratios.dti_back_end_percent) || 0;
                 const cltvVal = parseFloat(ratios.cltv_percent) || 0;
                 const creditScore = creditProfile.credit_score ? parseInt(creditProfile.credit_score) : null;
-                
+
                 // Helper to determine badge status
                 const getBadgeStatus = (verificationData, profileValue) => {
                     if (!verificationData) return 'missing';
@@ -398,12 +441,12 @@ const AdminLoans = () => {
                     }
                     return 'missing';
                 };
-                
+
                 const incomeStatus = getBadgeStatus(verificationStatus.income, incomeProfile?.total_monthly_income);
                 const debtStatus = getBadgeStatus(verificationStatus.debt, creditProfile?.total_monthly_debts);
                 const creditStatus = getBadgeStatus(verificationStatus.credit_score, creditProfile?.credit_score);
                 const propertyStatus = getBadgeStatus(verificationStatus.property_value, propertyInfo?.appraised_value);
-                
+
                 // DTI/DSCR RAG: For Investment use DSCR rating, otherwise DTI thresholds
                 const getDtiDscrRag = () => {
                     if (isInvestment) {
@@ -416,7 +459,7 @@ const AdminLoans = () => {
                     if (dtiVal <= 49) return 'A';
                     return 'R';
                 };
-                
+
                 // CLTV RAG: ≤80 Green, >80 & ≤90 Amber, >90 Red
                 const getCltvRag = () => {
                     if (cltvVal <= 0) return null;
@@ -424,7 +467,7 @@ const AdminLoans = () => {
                     if (cltvVal <= 90) return 'A';
                     return 'R';
                 };
-                
+
                 // Credit Score RAG: ≥740 Green, 670-739 Amber, <670 Red
                 const getCreditScoreRag = () => {
                     if (!creditScore) return null;
@@ -432,12 +475,12 @@ const AdminLoans = () => {
                     if (creditScore >= 670) return 'A';
                     return 'R';
                 };
-                
+
                 // Verification Status RAG: All verified = Green, Any not verified = Amber
                 const getVerificationRag = () => {
-                    if (incomeStatus === 'verified' && 
-                        debtStatus === 'verified' && 
-                        creditStatus === 'verified' && 
+                    if (incomeStatus === 'verified' &&
+                        debtStatus === 'verified' &&
+                        creditStatus === 'verified' &&
                         propertyStatus === 'verified') {
                         return 'G';
                     }
@@ -449,13 +492,13 @@ const AdminLoans = () => {
                     }
                     return null;
                 };
-                
+
                 // Overall RAG: worst (max) of DTI/DSCR, CLTV, Credit Score, and Verification Status
                 const dtiDscrRag = getDtiDscrRag();
                 const cltvRag = getCltvRag();
                 const creditScoreRag = getCreditScoreRag();
                 const verificationRag = getVerificationRag();
-                
+
                 let overallRag = null;
                 // If any is Red, overall is Red
                 if (dtiDscrRag === 'R' || cltvRag === 'R' || creditScoreRag === 'R' || verificationRag === 'R') overallRag = 'R';
@@ -463,7 +506,7 @@ const AdminLoans = () => {
                 else if (dtiDscrRag === 'A' || cltvRag === 'A' || creditScoreRag === 'A' || verificationRag === 'A') overallRag = 'A';
                 // If all are Green (or some null), overall is Green
                 else if (dtiDscrRag === 'G' || cltvRag === 'G' || creditScoreRag === 'G') overallRag = 'G';
-                
+
                 // Return sortable value: G=1, A=2, R=3, null=4 (so G comes first)
                 if (overallRag === 'G') return 1;
                 if (overallRag === 'A') return 2;
@@ -480,7 +523,7 @@ const AdminLoans = () => {
             const profile = loan.profile || {};
             const loanInfo = profile.loan_info || {};
             const borrowerInfo = profile.borrower_info || {};
-            
+
             // Search filter
             if (searchTerm) {
                 const search = searchTerm.toLowerCase();
@@ -488,45 +531,45 @@ const AdminLoans = () => {
                 const matchesBorrower = borrowerInfo.primary_borrower_name?.toLowerCase().includes(search);
                 if (!matchesNumber && !matchesBorrower) return false;
             }
-            
+
             // Purpose filter (HELOC counts as a purpose, use formatted names)
             if (purposeFilter !== 'all') {
                 const isHeloc = loanInfo.is_heloc === true;
                 const effectivePurpose = isHeloc ? 'HELOC' : formatPurpose(loanInfo.loan_purpose);
                 if (effectivePurpose !== purposeFilter) return false;
             }
-            
+
             // Lien filter
             if (lienFilter !== 'all') {
                 const lien = loanInfo.lien_position || 'First';
                 if (lien !== lienFilter) return false;
             }
-            
+
             // Status filter
             if (statusFilter !== 'all' && loan.status !== statusFilter) return false;
-            
+
             return true;
         })
         .sort((a, b) => {
             const aVal = getSortValue(a, sortField);
             const bVal = getSortValue(b, sortField);
-            
+
             let comparison = 0;
             if (typeof aVal === 'number' && typeof bVal === 'number') {
                 comparison = aVal - bVal;
             } else {
                 comparison = String(aVal).localeCompare(String(bVal));
             }
-            
+
             const primaryComparison = sortDirection === 'asc' ? comparison : -comparison;
-            
+
             // If sorting by RAG and values are equal, use credit score as secondary sort (descending)
             if (sortField === 'rag' && primaryComparison === 0) {
                 const aCreditScore = getSortValue(a, 'credit_score');
                 const bCreditScore = getSortValue(b, 'credit_score');
                 return bCreditScore - aCreditScore; // Descending (highest first)
             }
-            
+
             return primaryComparison;
         });
 
@@ -540,7 +583,7 @@ const AdminLoans = () => {
 
     // Sort header component
     const SortHeader = ({ field, children, className = '' }) => (
-        <th 
+        <th
             className={`px-4 py-3 cursor-pointer hover:bg-slate-100 transition-colors select-none text-center ${className}`}
             onClick={() => handleSort(field)}
         >
@@ -559,10 +602,10 @@ const AdminLoans = () => {
     const LoanProfileCard = ({ loan }) => {
         const profile = loan.profile;
         const hasProfile = profile && !profile.error;
-        
+
         if (!hasProfile) {
             return (
-                <div 
+                <div
                     onClick={() => navigate(`/admin/loans/${loan.id}`)}
                     className="bg-white rounded-xl border border-slate-200 p-5 hover:shadow-lg hover:border-primary-300 transition-all cursor-pointer"
                 >
@@ -597,23 +640,21 @@ const AdminLoans = () => {
         const isHeloc = loanInfo.is_heloc === true;
 
         return (
-            <div 
+            <div
                 onClick={() => navigate(`/admin/loans/${loan.id}`)}
                 className="bg-white rounded-xl border border-slate-200 p-5 hover:shadow-lg hover:border-primary-300 transition-all cursor-pointer group"
             >
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
-                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                            loanInfo.lien_position === 'Second' 
-                                ? 'bg-amber-100' 
-                                : 'bg-emerald-100'
-                        }`}>
-                            <Home className={`w-5 h-5 ${
-                                loanInfo.lien_position === 'Second' 
-                                    ? 'text-amber-600' 
-                                    : 'text-emerald-600'
-                            }`} />
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${loanInfo.lien_position === 'Second'
+                            ? 'bg-amber-100'
+                            : 'bg-emerald-100'
+                            }`}>
+                            <Home className={`w-5 h-5 ${loanInfo.lien_position === 'Second'
+                                ? 'text-amber-600'
+                                : 'text-emerald-600'
+                                }`} />
                         </div>
                         <div>
                             <h3 className="font-semibold text-slate-900">#{loan.loan_number}</h3>
@@ -621,19 +662,17 @@ const AdminLoans = () => {
                         </div>
                     </div>
                     <div className="flex flex-col items-end gap-1">
-                        <span className={`px-2 py-0.5 text-xs font-medium rounded-full ${
-                            loan.status === 'completed' ? 'bg-green-100 text-green-700' :
+                        <span className={`px-2 py-0.5 text-xs font-medium rounded-full ${loan.status === 'completed' ? 'bg-green-100 text-green-700' :
                             loan.status === 'processing' ? 'bg-blue-100 text-blue-700' :
-                            loan.status === 'evidencing' ? 'bg-purple-100 text-purple-700' :
-                            'bg-amber-100 text-amber-700'
-                        }`}>
+                                loan.status === 'evidencing' ? 'bg-purple-100 text-purple-700' :
+                                    'bg-amber-100 text-amber-700'
+                            }`}>
                             {loan.status}
                         </span>
-                        <span className={`px-2 py-0.5 text-xs rounded-full ${
-                            loanInfo.lien_position === 'Second' 
-                                ? 'bg-amber-50 text-amber-700' 
-                                : 'bg-slate-100 text-slate-600'
-                        }`}>
+                        <span className={`px-2 py-0.5 text-xs rounded-full ${loanInfo.lien_position === 'Second'
+                            ? 'bg-amber-50 text-amber-700'
+                            : 'bg-slate-100 text-slate-600'
+                            }`}>
                             {loanInfo.lien_position || 'First'} Lien
                         </span>
                     </div>
@@ -656,9 +695,9 @@ const AdminLoans = () => {
                         {(() => {
                             const isAltSource = isAlternativeRateSource(loan.analysis_source);
                             const rate = formatPercent(loanInfo.interest_rate);
-                            
+
                             return isAltSource && rate !== 'N/A' ? (
-                                <p 
+                                <p
                                     className="font-semibold text-purple-600 cursor-help"
                                     title="Rate from alternative source (HELOC Agreement/Rate Lock)"
                                 >
@@ -684,14 +723,14 @@ const AdminLoans = () => {
                         {(() => {
                             const score = creditProfile.credit_score ? parseInt(creditProfile.credit_score) : null;
                             if (!score) return <p className="font-semibold text-slate-900">N/A</p>;
-                            
+
                             // Credit Score RAG: ≥740 Green, 670-739 Amber, <670 Red
                             const getCreditScoreColor = () => {
                                 if (score >= 740) return 'text-green-600';
                                 if (score >= 670) return 'text-amber-600';
                                 return 'text-red-600';
                             };
-                            
+
                             return (
                                 <p className={`font-semibold ${getCreditScoreColor()}`} title="Credit Score RAG: ≥740 Green, 670-739 Amber, <670 Red">
                                     {score}
@@ -792,12 +831,11 @@ const AdminLoans = () => {
                             <span>CLTV: {formatPercent(ratios.cltv_percent)}</span>
                         </div>
                         <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                            <div 
-                                className={`h-full transition-all ${
-                                    (ratios.cltv_percent || ratios.ltv_percent) > 80 
-                                        ? 'bg-amber-500' 
-                                        : 'bg-emerald-500'
-                                }`}
+                            <div
+                                className={`h-full transition-all ${(ratios.cltv_percent || ratios.ltv_percent) > 80
+                                    ? 'bg-amber-500'
+                                    : 'bg-emerald-500'
+                                    }`}
                                 style={{ width: `${Math.min(ratios.cltv_percent || ratios.ltv_percent || 0, 100)}%` }}
                             />
                         </div>
@@ -820,22 +858,20 @@ const AdminLoans = () => {
                     <div className="flex items-center bg-slate-100 rounded-lg p-1">
                         <button
                             onClick={() => setActiveTab('summary')}
-                            className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                                activeTab === 'summary' 
-                                    ? 'bg-white text-slate-900 shadow-sm' 
-                                    : 'text-slate-500 hover:text-slate-700'
-                            }`}
+                            className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${activeTab === 'summary'
+                                ? 'bg-white text-slate-900 shadow-sm'
+                                : 'text-slate-500 hover:text-slate-700'
+                                }`}
                         >
                             <LayoutGrid size={16} />
                             Summary
                         </button>
                         <button
                             onClick={() => setActiveTab('details')}
-                            className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                                activeTab === 'details' 
-                                    ? 'bg-white text-slate-900 shadow-sm' 
-                                    : 'text-slate-500 hover:text-slate-700'
-                            }`}
+                            className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${activeTab === 'details'
+                                ? 'bg-white text-slate-900 shadow-sm'
+                                : 'text-slate-500 hover:text-slate-700'
+                                }`}
                         >
                             <List size={16} />
                             Details
@@ -868,7 +904,7 @@ const AdminLoans = () => {
                                     className="w-full pl-9 pr-4 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                                 />
                             </div>
-                            
+
                             {/* Purpose Filter */}
                             <select
                                 value={purposeFilter}
@@ -880,7 +916,7 @@ const AdminLoans = () => {
                                     <option key={p} value={p}>{p}</option>
                                 ))}
                             </select>
-                            
+
                             {/* Lien Filter */}
                             <select
                                 value={lienFilter}
@@ -891,7 +927,7 @@ const AdminLoans = () => {
                                 <option value="First">First Lien</option>
                                 <option value="Second">Second Lien</option>
                             </select>
-                            
+
                             {/* Status Filter */}
                             <select
                                 value={statusFilter}
@@ -903,39 +939,48 @@ const AdminLoans = () => {
                                     <option key={s} value={s}>{s}</option>
                                 ))}
                             </select>
-                            
+
                             {/* View Toggle */}
                             <div className="flex items-center bg-slate-100 rounded-lg p-0.5 ml-auto">
                                 <button
                                     onClick={() => setViewMode('grid')}
-                                    className={`p-1.5 rounded-md transition-colors ${
-                                        viewMode === 'grid' 
-                                            ? 'bg-white text-slate-900 shadow-sm' 
-                                            : 'text-slate-500 hover:text-slate-700'
-                                    }`}
+                                    className={`p-1.5 rounded-md transition-colors ${viewMode === 'grid'
+                                        ? 'bg-white text-slate-900 shadow-sm'
+                                        : 'text-slate-500 hover:text-slate-700'
+                                        }`}
                                     title="Grid View"
                                 >
                                     <Grid3X3 size={16} />
                                 </button>
                                 <button
                                     onClick={() => setViewMode('list')}
-                                    className={`p-1.5 rounded-md transition-colors ${
-                                        viewMode === 'list' 
-                                            ? 'bg-white text-slate-900 shadow-sm' 
-                                            : 'text-slate-500 hover:text-slate-700'
-                                    }`}
+                                    className={`p-1.5 rounded-md transition-colors ${viewMode === 'list'
+                                        ? 'bg-white text-slate-900 shadow-sm'
+                                        : 'text-slate-500 hover:text-slate-700'
+                                        }`}
                                     title="List View"
                                 >
                                     <Rows3 size={16} />
                                 </button>
                             </div>
                         </div>
-                        
-                        {/* Results count */}
+
+                        {/* Results count and toggles */}
                         <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <p className="text-sm text-slate-500">
-                                Showing <span className="font-medium text-slate-700">{filteredAndSortedLoans.length}</span> of {loans.length} loans
-                            </p>
+                            <div className="flex items-center gap-4">
+                                <p className="text-sm text-slate-500">
+                                    Showing <span className="font-medium text-slate-700">{filteredAndSortedLoans.length}</span> of {loans.length} loans
+                                </p>
+                                <label className="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        checked={showKeyDecisionFactors}
+                                        onChange={(e) => setShowKeyDecisionFactors(e.target.checked)}
+                                        className="w-4 h-4 text-primary-600 bg-white border-slate-300 rounded focus:ring-primary-500 focus:ring-2"
+                                    />
+                                    <span>Show Loan Key Decision Factors</span>
+                                </label>
+                            </div>
                             {(searchTerm || purposeFilter !== 'all' || lienFilter !== 'all' || statusFilter !== 'all') && (
                                 <button
                                     onClick={() => {
@@ -971,21 +1016,22 @@ const AdminLoans = () => {
                     {viewMode === 'list' && (
                         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
                             <div className="overflow-x-auto">
-                                <table className="w-full text-left text-sm">
+                                <table className="w-full text-left text-xs">
                                     <thead className="bg-slate-50 text-slate-500 font-medium border-b border-slate-200">
                                         <tr>
                                             <SortHeader field="loan_number">Loan</SortHeader>
-                                            <SortHeader field="borrower">Borrower</SortHeader>
                                             <SortHeader field="purpose">Loan Characteristics</SortHeader>
-                                            <SortHeader field="amount" className="text-right">Loan Amount</SortHeader>
-                                            <SortHeader field="rate" className="text-right">Rate</SortHeader>
-                                            <SortHeader field="dti" className="text-right">DTI/DSCR</SortHeader>
-                                            <SortHeader field="cltv" className="text-right">CLTV</SortHeader>
-                                            <SortHeader field="credit_score" className="text-center">Credit Score</SortHeader>
+                                            {showKeyDecisionFactors && (
+                                                <>
+                                                    <SortHeader field="amount" className="text-right">Loan Amount</SortHeader>
+                                                    <SortHeader field="dti" className="text-right">DTI/DSCR</SortHeader>
+                                                    <SortHeader field="cltv" className="text-right">CLTV</SortHeader>
+                                                    <SortHeader field="credit_score" className="text-center">Credit Score</SortHeader>
+                                                </>
+                                            )}
+                                            <th className="px-4 py-3 text-center">MT360 OCR Validation Status</th>
                                             <th className="px-4 py-3 text-center">Data Verification Status</th>
                                             <SortHeader field="rag" className="text-center">RAG</SortHeader>
-                                            <th className="px-4 py-3 text-center">Source</th>
-                                            <th className="px-4 py-3 w-10"></th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-slate-100">
@@ -1002,23 +1048,23 @@ const AdminLoans = () => {
                                             const isInvestment = propertyInfo.occupancy?.toLowerCase().includes('investment');
                                             const dscrVal = dscrAnalysis.dscr ? parseFloat(dscrAnalysis.dscr) : null;
                                             const dscrRating = dscrAnalysis.dscr_rating;
-                                            
+
                                             // Format number to 3 decimal places
                                             const formatRate = (val) => {
                                                 if (!val) return '-';
                                                 const num = parseFloat(val);
                                                 return isNaN(num) ? '-' : `${num.toFixed(3)}%`;
                                             };
-                                            
+
                                             // Format DSCR to 3 decimal places
                                             const formatDscr = (val) => {
                                                 if (!val) return '-';
                                                 return val.toFixed(3);
                                             };
-                                            
+
                                             // Get verification statuses from profile
                                             const verificationStatus = profile?.verification_status || {};
-                                            
+
                                             // Helper to determine badge status: 'verified', 'mismatch', or 'missing'
                                             const getBadgeStatus = (verificationData, profileValue) => {
                                                 if (!verificationData) return 'missing';
@@ -1029,9 +1075,9 @@ const AdminLoans = () => {
                                                 }
                                                 return 'missing';
                                             };
-                                            
+
                                             const incomeStatus = getBadgeStatus(
-                                                verificationStatus.income, 
+                                                verificationStatus.income,
                                                 incomeProfile?.total_monthly_income
                                             );
                                             const debtStatus = getBadgeStatus(
@@ -1046,11 +1092,11 @@ const AdminLoans = () => {
                                                 verificationStatus.property_value,
                                                 propertyInfo?.appraised_value
                                             );
-                                            
+
                                             // RAG status calculation
                                             const dtiVal = parseFloat(ratios.dti_back_end_percent) || 0;
                                             const cltvVal = parseFloat(ratios.cltv_percent) || 0;
-                                            
+
                                             // DTI/DSCR RAG: For Investment use DSCR rating, otherwise DTI thresholds
                                             const getDtiDscrRag = () => {
                                                 if (isInvestment) {
@@ -1063,7 +1109,7 @@ const AdminLoans = () => {
                                                 if (dtiVal <= 49) return 'A';
                                                 return 'R';
                                             };
-                                            
+
                                             // CLTV RAG: ≤80 Green, >80 & ≤90 Amber, >90 Red
                                             const getCltvRag = () => {
                                                 if (cltvVal <= 0) return null;
@@ -1071,7 +1117,7 @@ const AdminLoans = () => {
                                                 if (cltvVal <= 90) return 'A';
                                                 return 'R';
                                             };
-                                            
+
                                             // Credit Score RAG: ≥740 Green, 670-739 Amber, <670 Red
                                             const getCreditScoreRag = () => {
                                                 const score = creditProfile.credit_score ? parseInt(creditProfile.credit_score) : null;
@@ -1080,13 +1126,13 @@ const AdminLoans = () => {
                                                 if (score >= 670) return 'A';
                                                 return 'R';
                                             };
-                                            
+
                                             // Verification Status RAG: All verified = Green, Any not verified = Amber
                                             const getVerificationRag = () => {
                                                 // If all 4 badges are verified, verification is Green
-                                                if (incomeStatus === 'verified' && 
-                                                    debtStatus === 'verified' && 
-                                                    creditStatus === 'verified' && 
+                                                if (incomeStatus === 'verified' &&
+                                                    debtStatus === 'verified' &&
+                                                    creditStatus === 'verified' &&
                                                     propertyStatus === 'verified') {
                                                     return 'G';
                                                 }
@@ -1099,14 +1145,14 @@ const AdminLoans = () => {
                                                 }
                                                 return null;
                                             };
-                                            
+
                                             // Overall RAG: worst (max) of DTI/DSCR, CLTV, Credit Score, and Verification Status
                                             const getOverallRag = () => {
                                                 const dtiDscrRag = getDtiDscrRag();
                                                 const cltvRag = getCltvRag();
                                                 const creditScoreRag = getCreditScoreRag();
                                                 const verificationRag = getVerificationRag();
-                                                
+
                                                 // If any is Red, overall is Red
                                                 if (dtiDscrRag === 'R' || cltvRag === 'R' || creditScoreRag === 'R' || verificationRag === 'R') return 'R';
                                                 // If any is Amber, overall is Amber
@@ -1115,218 +1161,220 @@ const AdminLoans = () => {
                                                 if (dtiDscrRag === 'G' || cltvRag === 'G' || creditScoreRag === 'G') return 'G';
                                                 return null;
                                             };
-                                            
+
                                             const overallRag = getOverallRag();
-                                            
+
                                             return (
                                                 <tr
                                                     key={loan.id}
                                                     className="hover:bg-slate-50/50 transition-colors"
                                                 >
                                                     <td className="px-4 py-3">
-                                                        <span className="font-medium text-slate-900">#{loan.loan_number}</span>
-                                                    </td>
-                                                    <td className="px-4 py-3">
-                                                        <span className="text-slate-700">{borrowerInfo.primary_borrower_name || '-'}</span>
+                                                        <button
+                                                            onClick={() => navigate(`/admin/loans/${loan.id}`)}
+                                                            className="font-medium text-primary-600 hover:text-primary-700 hover:underline"
+                                                        >
+                                                            #{loan.loan_number}
+                                                        </button>
                                                     </td>
                                                     <td className="px-4 py-3">
                                                         <div className="flex flex-wrap items-center gap-1">
                                                             {/* Purpose Badge */}
-                                                            <span className={`inline-flex px-2 py-0.5 text-xs rounded-full ${
-                                                                isHeloc ? 'bg-purple-100 text-purple-700 font-medium' : getPurposeStyle(loanInfo.loan_purpose)
-                                                            }`}>
+                                                            <span className={`inline-flex px-2 py-0.5 text-xs rounded-full ${isHeloc ? 'bg-purple-100 text-purple-700 font-medium' : getPurposeStyle(loanInfo.loan_purpose)
+                                                                }`}>
                                                                 {isHeloc ? 'HELOC' : formatPurpose(loanInfo.loan_purpose)}
                                                             </span>
-                                                            
+
                                                             {/* Lien Position Badge */}
-                                                            <span className={`inline-flex px-2 py-0.5 text-xs rounded-full font-medium ${
-                                                                loanInfo.lien_position === 'Second' 
-                                                                    ? 'bg-amber-100 text-amber-700' 
-                                                                    : 'bg-slate-100 text-slate-600'
-                                                            }`}>
+                                                            <span className={`inline-flex px-2 py-0.5 text-xs rounded-full font-medium ${loanInfo.lien_position === 'Second'
+                                                                ? 'bg-amber-100 text-amber-700'
+                                                                : 'bg-slate-100 text-slate-600'
+                                                                }`}>
                                                                 {loanInfo.lien_position || 'First'} Lien
                                                             </span>
-                                                            
+
                                                             {/* Investment Property Badge */}
                                                             {isInvestment && (
-                                                                <span 
+                                                                <span
                                                                     className="inline-flex px-2 py-0.5 text-xs rounded-full bg-orange-100 text-orange-700 font-medium"
                                                                     title="Investment Property"
                                                                 >
                                                                     Investment
                                                                 </span>
                                                             )}
-                                                            
-                                            {/* Bank Statement Badge - Only for non-DSCR bank statement loans */}
-                                            {(() => {
-                                                const underwritingNotes = profile?.underwriting_notes || {};
-                                                const incomeProfile = profile?.income_profile || {};
-                                                // Check if this is a bank statement loan (NOT DSCR)
-                                                const isBankStatementLoan = 
-                                                    (underwritingNotes.is_bank_statement_loan === true ||
-                                                    incomeProfile.documentation_type === 'Bank Statement') &&
-                                                    !isInvestment; // Exclude investment/DSCR loans
-                                                
-                                                if (isBankStatementLoan) {
-                                                    return (
-                                                        <span 
-                                                            className="inline-flex px-2 py-0.5 text-xs rounded-full bg-blue-100 text-blue-700 font-medium"
-                                                            title="Bank Statement Underwriting"
-                                                        >
-                                                            Bank Statement
-                                                        </span>
-                                                    );
-                                                }
-                                                return null;
-                                            })()}
+
+                                                            {/* Bank Statement Badge - Only for non-DSCR bank statement loans */}
+                                                            {(() => {
+                                                                const underwritingNotes = profile?.underwriting_notes || {};
+                                                                const incomeProfile = profile?.income_profile || {};
+                                                                // Check if this is a bank statement loan (NOT DSCR)
+                                                                const isBankStatementLoan =
+                                                                    (underwritingNotes.is_bank_statement_loan === true ||
+                                                                        incomeProfile.documentation_type === 'Bank Statement') &&
+                                                                    !isInvestment; // Exclude investment/DSCR loans
+
+                                                                if (isBankStatementLoan) {
+                                                                    return (
+                                                                        <span
+                                                                            className="inline-flex px-2 py-0.5 text-xs rounded-full bg-blue-100 text-blue-700 font-medium"
+                                                                            title="Bank Statement Underwriting"
+                                                                        >
+                                                                            Bank Statement
+                                                                        </span>
+                                                                    );
+                                                                }
+                                                                return null;
+                                                            })()}
                                                         </div>
                                                     </td>
-                                                    <td className="px-4 py-3 text-right font-medium text-slate-900">
-                                                        {loanInfo.loan_amount ? formatCurrency(loanInfo.loan_amount) : '-'}
-                                                    </td>
-                                                    <td className="px-4 py-3 text-right">
-                                                        {(() => {
-                                                            const isAltSource = isAlternativeRateSource(loan.analysis_source);
-                                                            const rate = formatRate(loanInfo.interest_rate);
-                                                            
-                                                            if (rate === '-') return <span className="text-slate-400">-</span>;
-                                                            
-                                                            return isAltSource ? (
-                                                                <span 
-                                                                    className="text-purple-600 font-medium cursor-help"
-                                                                    title="Rate from alternative source (HELOC Agreement/Rate Lock)"
+                                                    {showKeyDecisionFactors && (
+                                                        <>
+                                                            <td className="px-4 py-3 text-right font-medium text-slate-900">
+                                                                {loanInfo.loan_amount ? formatCurrency(loanInfo.loan_amount) : '-'}
+                                                            </td>
+                                                            <td className="px-4 py-3 text-right">
+                                                                {isInvestment ? (
+                                                                    <span
+                                                                        className={`font-medium cursor-help ${dscrRating === 'R' ? 'text-red-600' :
+                                                                            dscrRating === 'A' ? 'text-amber-600' :
+                                                                                dscrRating === 'G' ? 'text-green-600' :
+                                                                                    'text-slate-400'
+                                                                            }`}
+                                                                        title={dscrVal ? `DSCR: ${dscrVal.toFixed(3)} | RAG Criteria: ≥1.25 Green, 1.0-1.25 Amber, <1.0 Red` : 'DSCR not calculated'}
+                                                                    >
+                                                                        {dscrVal ? formatDscr(dscrVal) : '-'}
+                                                                    </span>
+                                                                ) : (
+                                                                    <span
+                                                                        className={`font-medium cursor-help ${dtiVal > 49 ? 'text-red-600' :
+                                                                            dtiVal > 36 ? 'text-amber-600' :
+                                                                                dtiVal > 0 ? 'text-green-600' :
+                                                                                    'text-slate-400'
+                                                                            }`}
+                                                                        title={ratios.dti_calculated
+                                                                            ? `DTI calculated: ${ratios.dti_calculation_method || 'Estimated from available data'}`
+                                                                            : "DTI RAG Criteria: ≤36% Green, 36-49% Amber, >49% Red"}
+                                                                    >
+                                                                        {formatRate(ratios.dti_back_end_percent)}{ratios.dti_calculated ? '*' : ''}
+                                                                    </span>
+                                                                )}
+                                                            </td>
+                                                            <td className="px-4 py-3 text-right">
+                                                                <span
+                                                                    className={`font-medium cursor-help ${cltvVal > 90 ? 'text-red-600' :
+                                                                        cltvVal > 80 ? 'text-amber-600' :
+                                                                            cltvVal > 0 ? 'text-green-600' :
+                                                                                'text-slate-400'
+                                                                        }`}
+                                                                    title="CLTV RAG Criteria: ≤80% Green, 80-90% Amber, >90% Red"
                                                                 >
-                                                                    {rate}*
+                                                                    {formatRate(ratios.cltv_percent)}
                                                                 </span>
-                                                            ) : (
-                                                                <span className="text-slate-700">{rate}</span>
-                                                            );
-                                                        })()}
-                                                    </td>
-                                                    <td className="px-4 py-3 text-right">
-                                                        {isInvestment ? (
-                                                            <span 
-                                                                className={`font-medium cursor-help ${
-                                                                    dscrRating === 'R' ? 'text-red-600' :
-                                                                    dscrRating === 'A' ? 'text-amber-600' :
-                                                                    dscrRating === 'G' ? 'text-green-600' :
-                                                                    'text-slate-400'
-                                                                }`}
-                                                                title={dscrVal ? `DSCR: ${dscrVal.toFixed(3)} | RAG Criteria: ≥1.25 Green, 1.0-1.25 Amber, <1.0 Red` : 'DSCR not calculated'}
-                                                            >
-                                                                {dscrVal ? formatDscr(dscrVal) : '-'}
-                                                            </span>
-                                                        ) : (
-                                                            <span 
-                                                                className={`font-medium cursor-help ${
-                                                                    dtiVal > 49 ? 'text-red-600' :
-                                                                    dtiVal > 36 ? 'text-amber-600' :
-                                                                    dtiVal > 0 ? 'text-green-600' :
-                                                                    'text-slate-400'
-                                                                }`}
-                                                                title={ratios.dti_calculated 
-                                                                    ? `DTI calculated: ${ratios.dti_calculation_method || 'Estimated from available data'}`
-                                                                    : "DTI RAG Criteria: ≤36% Green, 36-49% Amber, >49% Red"}
-                                                            >
-                                                                {formatRate(ratios.dti_back_end_percent)}{ratios.dti_calculated ? '*' : ''}
-                                                            </span>
-                                                        )}
-                                                    </td>
-                                                    <td className="px-4 py-3 text-right">
-                                                        <span 
-                                                            className={`font-medium cursor-help ${
-                                                                cltvVal > 90 ? 'text-red-600' :
-                                                                cltvVal > 80 ? 'text-amber-600' :
-                                                                cltvVal > 0 ? 'text-green-600' :
-                                                                'text-slate-400'
-                                                            }`}
-                                                            title="CLTV RAG Criteria: ≤80% Green, 80-90% Amber, >90% Red"
-                                                        >
-                                                            {formatRate(ratios.cltv_percent)}
-                                                        </span>
-                                                    </td>
+                                                            </td>
+                                                            <td className="px-4 py-3 text-center">
+                                                                {(() => {
+                                                                    const creditProfile = profile?.credit_profile || {};
+                                                                    const creditScore = creditProfile.credit_score;
+                                                                    const score = creditScore ? parseInt(creditScore) : null;
+
+                                                                    if (!score) return <span className="text-slate-400">-</span>;
+
+                                                                    // Credit Score RAG: ≥740 Green, 670-739 Amber, <670 Red
+                                                                    const getCreditScoreColor = () => {
+                                                                        if (score >= 740) return 'text-green-600';
+                                                                        if (score >= 670) return 'text-amber-600';
+                                                                        return 'text-red-600';
+                                                                    };
+
+                                                                    return (
+                                                                        <span
+                                                                            className={`font-medium cursor-help ${getCreditScoreColor()}`}
+                                                                            title="Credit Score RAG Criteria: ≥740 Green, 670-739 Amber, <670 Red"
+                                                                        >
+                                                                            {score}
+                                                                        </span>
+                                                                    );
+                                                                })()}
+                                                            </td>
+                                                        </>
+                                                    )}
                                                     <td className="px-4 py-3 text-center">
                                                         {(() => {
-                                                            const creditProfile = profile?.credit_profile || {};
-                                                            const creditScore = creditProfile.credit_score;
-                                                            const score = creditScore ? parseInt(creditScore) : null;
-                                                            
-                                                            if (!score) return <span className="text-slate-400">-</span>;
-                                                            
-                                                            // Credit Score RAG: ≥740 Green, 670-739 Amber, <670 Red
-                                                            const getCreditScoreColor = () => {
-                                                                if (score >= 740) return 'text-green-600';
-                                                                if (score >= 670) return 'text-amber-600';
-                                                                return 'text-red-600';
-                                                            };
-                                                            
+                                                            const validation = mt360Validation[loan.id];
+                                                            if (!validation || validation.accuracy === null) {
+                                                                return <span className="text-slate-400 text-xs">-</span>;
+                                                            }
+                                                            const accuracy = parseFloat(validation.accuracy);
+                                                            const colorClass = accuracy >= 90 ? 'text-green-600 bg-green-50 border-green-200' :
+                                                                accuracy >= 75 ? 'text-amber-600 bg-amber-50 border-amber-200' :
+                                                                    'text-red-600 bg-red-50 border-red-200';
                                                             return (
-                                                                <span 
-                                                                    className={`font-medium cursor-help ${getCreditScoreColor()}`}
-                                                                    title="Credit Score RAG Criteria: ≥740 Green, 670-739 Amber, <670 Red"
+                                                                <button
+                                                                    onClick={(e) => {
+                                                                        e.stopPropagation();
+                                                                        navigate(`/admin/loans/${loan.id}?tab=mt360-ocr`);
+                                                                    }}
+                                                                    className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${colorClass} hover:ring-2 hover:ring-offset-1 cursor-pointer`}
+                                                                    title={`${validation.matches} matches, ${validation.mismatches} mismatches - Click to view details`}
                                                                 >
-                                                                    {score}
-                                                                </span>
+                                                                    {validation.accuracy}%
+                                                                </button>
                                                             );
                                                         })()}
                                                     </td>
                                                     <td className="px-4 py-3">
                                                         <div className="flex gap-1 justify-center">
-                                                            <span 
-                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${
-                                                                    incomeStatus === 'verified'
-                                                                        ? 'bg-green-100 text-green-700 hover:ring-green-400' 
-                                                                        : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
-                                                                }`}
+                                                            <span
+                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${incomeStatus === 'verified'
+                                                                    ? 'bg-green-100 text-green-700 hover:ring-green-400'
+                                                                    : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
+                                                                    }`}
                                                                 title={
                                                                     incomeStatus === 'verified' ? 'Income Verified - Click for details' :
-                                                                    incomeStatus === 'mismatch' ? 'Income Mismatch/Gap - Click for details' :
-                                                                    'Income Not Available'
+                                                                        incomeStatus === 'mismatch' ? 'Income Mismatch/Gap - Click for details' :
+                                                                            'Income Not Available'
                                                                 }
                                                                 onClick={(e) => handleVerifyClick(loan, 'income', e)}
                                                             >
                                                                 I
                                                             </span>
-                                                            <span 
-                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${
-                                                                    debtStatus === 'verified'
-                                                                        ? 'bg-green-100 text-green-700 hover:ring-green-400' 
-                                                                        : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
-                                                                }`}
+                                                            <span
+                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${debtStatus === 'verified'
+                                                                    ? 'bg-green-100 text-green-700 hover:ring-green-400'
+                                                                    : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
+                                                                    }`}
                                                                 title={
                                                                     debtStatus === 'verified' ? 'Debt/Expense Verified - Click for details' :
-                                                                    debtStatus === 'mismatch' ? 'Debt/Expense Mismatch/Gap - Click for details' :
-                                                                    'Debt/Expense Not Available'
+                                                                        debtStatus === 'mismatch' ? 'Debt/Expense Mismatch/Gap - Click for details' :
+                                                                            'Debt/Expense Not Available'
                                                                 }
                                                                 onClick={(e) => handleVerifyClick(loan, 'debt', e)}
                                                             >
                                                                 D
                                                             </span>
-                                                            <span 
-                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${
-                                                                    creditStatus === 'verified'
-                                                                        ? 'bg-green-100 text-green-700 hover:ring-green-400' 
-                                                                        : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
-                                                                }`}
+                                                            <span
+                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${creditStatus === 'verified'
+                                                                    ? 'bg-green-100 text-green-700 hover:ring-green-400'
+                                                                    : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
+                                                                    }`}
                                                                 title={
                                                                     creditStatus === 'verified' ? 'Credit Score Verified - Click for details' :
-                                                                    creditStatus === 'mismatch' ? 'Credit Score Mismatch/Gap - Click for details' :
-                                                                    'Credit Score Not Available'
+                                                                        creditStatus === 'mismatch' ? 'Credit Score Mismatch/Gap - Click for details' :
+                                                                            'Credit Score Not Available'
                                                                 }
                                                                 onClick={(e) => handleVerifyClick(loan, 'credit', e)}
                                                             >
                                                                 C
                                                             </span>
-                                                            <span 
-                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${
-                                                                    propertyStatus === 'verified'
-                                                                        ? 'bg-green-100 text-green-700 hover:ring-green-400' 
-                                                                        : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
-                                                                }`}
+                                                            <span
+                                                                className={`inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 ${propertyStatus === 'verified'
+                                                                    ? 'bg-green-100 text-green-700 hover:ring-green-400'
+                                                                    : 'bg-amber-100 text-amber-700 hover:ring-amber-400'
+                                                                    }`}
                                                                 title={
                                                                     propertyStatus === 'verified' ? 'Property Value Verified - Click for details' :
-                                                                    propertyStatus === 'mismatch' ? 'Property Value Mismatch/Gap - Click for details' :
-                                                                    'Property Value Not Available'
+                                                                        propertyStatus === 'mismatch' ? 'Property Value Mismatch/Gap - Click for details' :
+                                                                            'Property Value Not Available'
                                                                 }
                                                                 onClick={(e) => handleVerifyClick(loan, 'property', e)}
                                                             >
@@ -1348,13 +1396,12 @@ const AdminLoans = () => {
                                                                         }
                                                                     });
                                                                 }}
-                                                                className={`inline-flex items-center justify-center w-6 h-6 text-xs font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 transition-all ${
-                                                                    overallRag === 'R' 
-                                                                        ? 'bg-red-100 text-red-700 hover:ring-red-400 hover:bg-red-200' 
-                                                                        : overallRag === 'A'
+                                                                className={`inline-flex items-center justify-center w-6 h-6 text-xs font-bold rounded cursor-pointer hover:ring-2 hover:ring-offset-1 transition-all ${overallRag === 'R'
+                                                                    ? 'bg-red-100 text-red-700 hover:ring-red-400 hover:bg-red-200'
+                                                                    : overallRag === 'A'
                                                                         ? 'bg-amber-100 text-amber-700 hover:ring-amber-400 hover:bg-amber-200'
                                                                         : 'bg-green-100 text-green-700 hover:ring-green-400 hover:bg-green-200'
-                                                                }`}
+                                                                    }`}
                                                                 title={`RAG Status: ${overallRag === 'R' ? 'Red' : overallRag === 'A' ? 'Amber' : 'Green'} - Click for details`}
                                                             >
                                                                 {overallRag}
@@ -1363,38 +1410,12 @@ const AdminLoans = () => {
                                                             <span className="text-slate-400">-</span>
                                                         )}
                                                     </td>
-                                                    <td className="px-4 py-3 text-center">
-                                                        {loan.source_document ? (
-                                                            <button
-                                                                onClick={(e) => {
-                                                                    e.stopPropagation();
-                                                                    window.open(`/admin/loans/${loan.id}?doc=${encodeURIComponent(loan.source_document)}`, '_blank');
-                                                                }}
-                                                                className="text-xs text-primary-600 hover:text-primary-700 hover:underline inline-flex items-center gap-1"
-                                                                title={`View ${loan.source_document}`}
-                                                            >
-                                                                <FileText size={12} />
-                                                                {formatSource(loan.analysis_source)}
-                                                            </button>
-                                                        ) : (
-                                                            <span className="text-xs text-slate-500">{formatSource(loan.analysis_source)}</span>
-                                                        )}
-                                                    </td>
-                                                    <td className="px-4 py-3">
-                                                        <button
-                                                            onClick={() => navigate(`/admin/loans/${loan.id}`)}
-                                                            className="p-1.5 text-slate-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
-                                                            title="View loan details"
-                                                        >
-                                                            <Eye size={16} />
-                                                        </button>
-                                                    </td>
                                                 </tr>
                                             );
                                         })}
                                         {filteredAndSortedLoans.length === 0 && !loading && (
                                             <tr>
-                                                <td colSpan="12" className="px-6 py-12 text-center text-slate-500">
+                                                <td colSpan={showKeyDecisionFactors ? 8 : 4} className="px-6 py-12 text-center text-slate-500">
                                                     No loans match your filters.
                                                 </td>
                                             </tr>

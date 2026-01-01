@@ -15,6 +15,7 @@ backup/
 documents/
 outputs/
 uploads/
+public/loans/
 *.log
 backend.log
 frontend.log

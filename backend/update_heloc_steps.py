@@ -71,3 +71,6 @@ def update_heloc_steps(loan_id):
 
 if __name__ == "__main__":
     update_heloc_steps(30)
+
+
+

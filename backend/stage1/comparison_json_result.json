@@ -1,0 +1,74 @@
+{
+  "document1": "output/loan_1642451/1_2_4_llama_extractions/flood_notice_to_borrower_36.json",
+  "document2": "output/loan_1642451/1_2_4_llama_extractions/flood_notice_to_borrower_37.json",
+  "comparison_result": {
+    "similarity_level": "VERY_SIMILAR",
+    "relationship": "signed_unsigned",
+    "confidence": "HIGH",
+    "document_type": "Flood Notice to Borrower",
+    "identical_fields": [
+      "filename_prefix",
+      "property_address",
+      "loan_number",
+      "date",
+      "financial_data.percentages",
+      "financial_data.loan_term",
+      "text_content.sections.content"
+    ],
+    "different_fields": [
+      {
+        "field": "borrower_signature",
+        "location": "page 2",
+        "doc1_value": null,
+        "doc2_value": "ROBERT M DUGAN",
+        "difference_type": "SUBSTANTIVE"
+      },
+      {
+        "field": "acknowledgment_date",
+        "location": "page 2",
+        "doc1_value": null,
+        "doc2_value": "8/04/2025",
+        "difference_type": "SUBSTANTIVE"
+      },
+      {
+        "field": "acknowledgment_time",
+        "location": "page 2",
+        "doc1_value": null,
+        "doc2_value": "09:40:52 AM MDT",
+        "difference_type": "SUBSTANTIVE"
+      },
+      {
+        "field": "signature_date",
+        "location": "page 2",
+        "doc1_value": null,
+        "doc2_value": "8/04/2025 09:40:52 AM MDT",
+        "difference_type": "SUBSTANTIVE"
+      }
+    ],
+    "signature_analysis": {
+      "doc1_has_signature": false,
+      "doc2_has_signature": true,
+      "signature_fields_doc1": [],
+      "signature_fields_doc2": [
+        "borrower_signature",
+        "signature_date"
+      ]
+    },
+    "date_analysis": {
+      "same_date": true,
+      "doc1_dates": [
+        "AUGUST 4, 2025",
+        "2025-12-18"
+      ],
+      "doc2_dates": [
+        "AUGUST 4, 2025",
+        "8/04/2025",
+        "8/04/2025 09:40:52 AM MDT",
+        "2025-12-18"
+      ]
+    },
+    "key_differences_summary": "The main difference between the two documents is the presence of a signature and acknowledgment date/time in Document 2, which is absent in Document 1.",
+    "recommendation": "KEEP_SIGNED_VERSION",
+    "reasoning": "Document 2 is a signed version of the same document represented by Document 1. The signed version should be kept as it represents a completed and acknowledged document."
+  }
+}

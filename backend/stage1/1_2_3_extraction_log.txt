@@ -1,0 +1,204 @@
+
+================================================================================
+🚀 STAGE 1 STEP 2.3: Deep JSON Extraction - Text PDFs with Tables - loan_1642451
+Model: Llama 4 Maverick 17B Instruct
+================================================================================
+
+📄 Found 25 text PDFs with tables
+   Excluding: ['tax_returns_65.pdf']
+   Processing: 25 PDFs
+
+
+[1/25] 1008___final_0.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: 1008___final_0.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 page(s) in single request
+     Tokens: Input=5738, Output=727
+  ✓ Extraction complete in 5.33s
+  💾 Saved: 1008___final_0.json
+
+[2/25] 1103_preliminary_2.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: 1103_preliminary_2.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 page(s) in single request
+     Tokens: Input=6030, Output=529
+  ✓ Extraction complete in 3.39s
+  💾 Saved: 1103_preliminary_2.json
+
+[3/25] 4506_c_5.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: 4506_c_5.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 page(s) in single request
+     Tokens: Input=10959, Output=541
+  ✓ Extraction complete in 3.74s
+  💾 Saved: 4506_c_5.json
+
+[4/25] aba_disclosure_6.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: aba_disclosure_6.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 2 pages
+  📄 Processing 2 page(s) in single request
+     Tokens: Input=10958, Output=1398
+  ✓ Extraction complete in 5.86s
+  💾 Saved: aba_disclosure_6.json
+
+[5/25] avm_report_15.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: avm_report_15.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 8 pages
+  📄 Processing 8 pages in batches (max 3 images/batch)
+  🔄 Batch 1/3: pages 1-3
+     Tokens: Input=15907, Output=1511
+  🔄 Batch 2/3: pages 4-6
+     Tokens: Input=15907, Output=1665
+  🔄 Batch 3/3: pages 7-8
+     Tokens: Input=10974, Output=904
+  ✓ Extraction complete in 22.05s
+  💾 Saved: avm_report_15.json
+
+[6/25] closing_disclosure___preliminary_23.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: closing_disclosure___preliminary_23.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 5 pages
+  📄 Processing 5 pages in batches (max 3 images/batch)
+  🔄 Batch 1/2: pages 1-3
+     Tokens: Input=15915, Output=1053
+  🔄 Batch 2/2: pages 4-5
+     Tokens: Input=10982, Output=1096
+  ✓ Extraction complete in 11.50s
+  💾 Saved: closing_disclosure___preliminary_23.json
+
+[7/25] closing_disclosure___preliminary_24.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: closing_disclosure___preliminary_24.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 5 pages
+  📄 Processing 5 pages in batches (max 3 images/batch)
+  🔄 Batch 1/2: pages 1-3
+     Tokens: Input=15915, Output=1014
+  🔄 Batch 2/2: pages 4-5
+     Tokens: Input=10982, Output=1105
+  ✓ Extraction complete in 13.67s
+  💾 Saved: closing_disclosure___preliminary_24.json
+
+[8/25] compliance_report_26.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: compliance_report_26.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 18 pages
+  📄 Processing 18 pages in batches (max 3 images/batch)
+  🔄 Batch 1/6: pages 1-3
+     Tokens: Input=15906, Output=1111
+  🔄 Batch 2/6: pages 4-6
+     Tokens: Input=15906, Output=1381
+  🔄 Batch 3/6: pages 7-9
+     Tokens: Input=15906, Output=1094
+  🔄 Batch 4/6: pages 10-12
+     Tokens: Input=15906, Output=1208
+  🔄 Batch 5/6: pages 13-15
+     Tokens: Input=15906, Output=1129
+  🔄 Batch 6/6: pages 16-18
+     Tokens: Input=15906, Output=899
+  ❌ Error: 'NoneType' object is not iterable
+
+[9/25] credit_report___final_27.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: credit_report___final_27.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 9 pages
+  📄 Processing 9 pages in batches (max 3 images/batch)
+  🔄 Batch 1/3: pages 1-3
+     Tokens: Input=15909, Output=991
+  🔄 Batch 2/3: pages 4-6
+     Tokens: Input=15909, Output=2934
+  🔄 Batch 3/3: pages 7-9
+     Tokens: Input=15909, Output=1413
+  ✓ Extraction complete in 25.97s
+  💾 Saved: credit_report___final_27.json
+
+[10/25] drive_report_29.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: drive_report_29.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 17 pages
+  📄 Processing 17 pages in batches (max 3 images/batch)
+  🔄 Batch 1/6: pages 1-3
+     Tokens: Input=15905, Output=974
+  🔄 Batch 2/6: pages 4-6
+     Tokens: Input=15905, Output=987
+  🔄 Batch 3/6: pages 7-9
+     Tokens: Input=15905, Output=1339
+  🔄 Batch 4/6: pages 10-12
+     Tokens: Input=15905, Output=1662
+  🔄 Batch 5/6: pages 13-15
+     Tokens: Input=15905, Output=3535
+  🔄 Batch 6/6: pages 16-17
+     Tokens: Input=10682, Output=738
+  ❌ Error: 'NoneType' object is not iterable
+
+[11/25] fees_worksheet_31.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: fees_worksheet_31.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 page(s) in single request
+     Tokens: Input=6026, Output=1064
+  ✓ Extraction complete in 5.31s
+  💾 Saved: fees_worksheet_31.json
+
+[12/25] flood_cert__33.pdf
+--------------------------------------------------------------------------------
+
+================================================================================
+🦙 Processing: flood_cert__33.pdf
+================================================================================
+  📄 Converting PDF to images (DPI: 150)...
+  ✓ Converted 1 pages
+  📄 Processing 1 page(s) in single request
+     Tokens: Input=6024, Output=821
+  ✓ Extraction complete in 3.69s
+  💾 Saved: flood_cert__33.json
+
+[13/25] initial_urla_42.pdf

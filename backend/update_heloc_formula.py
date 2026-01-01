@@ -25,3 +25,6 @@ def update_heloc_formula_clarity(loan_id):
 
 if __name__ == "__main__":
     update_heloc_formula_clarity(30)
+
+
+
