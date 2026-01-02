@@ -4,6 +4,7 @@ import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import EssentialAttributesView from '../components/EssentialAttributesView';
+import LoanSummaryRenderer from '../components/LoanSummaryRenderer';
 import {
     FileText,
     Copy,
@@ -225,7 +226,7 @@ const LoanDetailPage = () => {
         <div className="min-h-screen bg-gray-50">
             {/* Header */}
             <div className="bg-white border-b border-gray-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div className="px-4 sm:px-6 lg:px-8 py-6">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
                             <button
@@ -303,7 +304,7 @@ const LoanDetailPage = () => {
 
             {/* Tabs */}
             <div className="bg-white border-b border-gray-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="px-4 sm:px-6 lg:px-8">
                     <nav className="flex space-x-6">
                         {tabs.map((tab) => {
                             const Icon = tab.icon;
@@ -337,7 +338,7 @@ const LoanDetailPage = () => {
             </div>
 
             {/* Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div className="px-4 sm:px-6 lg:px-8 py-4">
                 {activeTab === 'stats' && <StatsView stats={stats} loan={loan} />}
                 {activeTab === 'raw' && <DocumentsView documents={documents.raw} title="Raw Documents" highlightDoc={selectedDocFromUrl} />}
                 {activeTab === 'unique' && <DocumentsView documents={documents.unique} title="Unique Documents" />}
@@ -358,6 +359,7 @@ const StatsView = ({ stats, loan }) => {
     const [generatingSummary, setGeneratingSummary] = useState(false);
     const [showRagModal, setShowRagModal] = useState(false);
     const [verificationModal, setVerificationModal] = useState({ isOpen: false, type: null });
+    const [hcltvModal, setHcltvModal] = useState({ isOpen: false });
     const [mt360Summary, setMt360Summary] = useState(null);
     const [mt360Errors, setMt360Errors] = useState([]);
     const { loanId } = useParams();
@@ -445,11 +447,19 @@ const StatsView = ({ stats, loan }) => {
                                 accuracy: validation.accuracy || 0
                             });
 
-                            // Collect mismatch details
-                            if (validation.mismatch_details && validation.mismatch_details.length > 0) {
+                            // Collect mismatch details from results array
+                            const mismatchResults = validation.results?.filter(r =>
+                                r.status === 'MISMATCH' || r.status === 'mismatch'
+                            ) || [];
+
+                            if (mismatchResults.length > 0) {
                                 errors.push({
                                     docType: typeNames[docType] || docType,
-                                    mismatches: validation.mismatch_details
+                                    mismatches: mismatchResults.map(m => ({
+                                        field: m.mt360_field_name || m.field,
+                                        mt360_value: m.mt360_value,
+                                        pdf_value: m.pdf_value
+                                    }))
                                 });
                             }
                         }
@@ -644,10 +654,18 @@ const StatsView = ({ stats, loan }) => {
     const propertyStatus = getBadgeStatus(verificationStatus.property_value, propertyInfo?.appraised_value);
 
     // RAG calculations
-    const dtiVal = parseFloat(ratios.dti_back_end_percent) || 0;
+    const dtiFrontVal = parseFloat(ratios.dti_front_end_percent) || 0;
+    const dtiBackVal = parseFloat(ratios.dti_back_end_percent) || 0;
+    const dtiVal = dtiBackVal; // Keep for compatibility
     const ltvVal = parseFloat(ratios.ltv_percent) || 0;
     const cltvVal = parseFloat(ratios.cltv_percent) || 0;
-    const hcltvVal = parseFloat(ratios.hcltv_percent) || 0;
+
+    // Calculate HCLTV: (Loan Amount + Existing Mortgage Balance) / Appraised Value × 100
+    const loanAmount = parseFloat(String(loanInfo.loan_amount || '0').replace(/[^0-9.-]/g, '')) || 0;
+    const existingMortgage = parseFloat(String(creditProfile.existing_mortgage_balance || '0').replace(/[^0-9.-]/g, '')) || 0;
+    const appraisedValue = parseFloat(String(propertyInfo.appraised_value || '0').replace(/[^0-9.-]/g, '')) || 0;
+    const hcltvVal = appraisedValue > 0 ? ((loanAmount + existingMortgage) / appraisedValue) * 100 : (parseFloat(ratios.hcltv_percent) || 0);
+
     const creditScore = creditProfile.credit_score ? parseInt(creditProfile.credit_score) : null;
 
     const getDtiRag = () => {
@@ -725,10 +743,8 @@ const StatsView = ({ stats, loan }) => {
                     </div>
                     <div className="flex-1 overflow-hidden">
                         {loanSummary ? (
-                            <div className="prose prose-sm max-w-none text-gray-700 text-xs leading-relaxed h-full overflow-y-auto pr-2">
-                                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                                    {loanSummary}
-                                </ReactMarkdown>
+                            <div className="h-full overflow-y-auto pr-2">
+                                <LoanSummaryRenderer summary={loanSummary} />
                             </div>
                         ) : generatingSummary ? (
                             <div className="text-center py-4">
@@ -744,232 +760,244 @@ const StatsView = ({ stats, loan }) => {
                 {/* RIGHT COLUMN - Financial Metrics and MT360 */}
                 <div className="space-y-4">
 
-                {/* Financial Metrics Grid */}
-                <div className="bg-white rounded-lg shadow p-4">
-                    <div className="flex items-center justify-between mb-4">
-                        <h3 className="text-sm font-semibold text-gray-900">Key Financial Metrics</h3>
-                    </div>
-
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                        {/* Row 1: Debt, Income, Purchase Price, Appraisal Value, Credit Score */}
-
-                        {/* Debt - with D badge */}
-                        <div
-                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
-                            onClick={() => handleVerifyClick('debt')}
-                        >
-                            <div className="flex items-center justify-between mb-1">
-                                <p className="text-xs text-gray-500">Monthly Debt</p>
-                                {debtStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
-                            </div>
-                            <p className="text-sm font-semibold text-gray-900">
-                                {formatCurrency(creditProfile.total_monthly_debts)}
-                            </p>
-                        </div>
-
-                        {/* Income - with I badge */}
-                        <div
-                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
-                            onClick={() => handleVerifyClick('income')}
-                        >
-                            <div className="flex items-center justify-between mb-1">
-                                <p className="text-xs text-gray-500">Monthly Income</p>
-                                {incomeStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
-                            </div>
-                            <p className="text-sm font-semibold text-gray-900">
-                                {formatCurrency(incomeProfile.total_monthly_income)}
-                            </p>
-                        </div>
-
-                        {/* Purchase Price */}
-                        <div className="bg-slate-50 rounded-lg p-3">
-                            <p className="text-xs text-gray-500 mb-1">Purchase Price</p>
-                            <p className="text-sm font-semibold text-gray-900">
-                                {formatCurrency(propertyInfo.purchase_price)}
-                            </p>
-                        </div>
-
-                        {/* Appraisal Value - with V badge */}
-                        <div
-                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
-                            onClick={() => handleVerifyClick('property')}
-                        >
-                            <div className="flex items-center justify-between mb-1">
-                                <p className="text-xs text-gray-500">Appraisal Value</p>
-                                {propertyStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
-                            </div>
-                            <p className="text-sm font-semibold text-gray-900">
-                                {formatCurrency(propertyInfo.appraised_value)}
-                            </p>
-                        </div>
-
-                        {/* Credit Score - with C badge */}
-                        <div
-                            className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
-                            onClick={() => handleVerifyClick('credit')}
-                        >
-                            <div className="flex items-center justify-between mb-1">
-                                <p className="text-xs text-gray-500">Credit Score</p>
-                                {creditStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
-                            </div>
-                            <p className={`text-sm font-semibold ${creditScore >= 740 ? 'text-green-600' : creditScore >= 670 ? 'text-amber-600' : creditScore ? 'text-red-600' : 'text-gray-900'}`}>
-                                {creditScore || 'N/A'}
-                            </p>
-                        </div>
-
-                        {/* Row 2: Loan Amount, DTI, LTV, CLTV, HCLTV */}
-
-                        {/* Loan Amount */}
-                        <div className="bg-slate-50 rounded-lg p-3">
-                            <p className="text-xs text-gray-500 mb-1">Loan Amount</p>
-                            <p className="text-sm font-semibold text-gray-900">
-                                {formatCurrency(loanInfo.loan_amount)}
-                            </p>
-                        </div>
-
-                        {/* DTI */}
-                        <div className="bg-slate-50 rounded-lg p-3">
-                            <p className="text-xs text-gray-500 mb-1">DTI</p>
-                            <p className={`text-sm font-semibold ${dtiVal > 49 ? 'text-red-600' : dtiVal > 36 ? 'text-amber-600' : dtiVal > 0 ? 'text-green-600' : 'text-gray-900'
-                                }`}>
-                                {formatPercent(ratios.dti_back_end_percent)}
-                            </p>
-                        </div>
-
-                        {/* LTV */}
-                        <div className="bg-slate-50 rounded-lg p-3">
-                            <p className="text-xs text-gray-500 mb-1">LTV</p>
-                            <p className={`text-sm font-semibold ${ltvVal > 90 ? 'text-red-600' : ltvVal > 80 ? 'text-amber-600' : ltvVal > 0 ? 'text-green-600' : 'text-gray-900'
-                                }`}>
-                                {formatPercent(ratios.ltv_percent)}
-                            </p>
-                        </div>
-
-                        {/* CLTV */}
-                        <div className="bg-slate-50 rounded-lg p-3">
-                            <p className="text-xs text-gray-500 mb-1">CLTV</p>
-                            <p className={`text-sm font-semibold ${cltvVal > 90 ? 'text-red-600' : cltvVal > 80 ? 'text-amber-600' : cltvVal > 0 ? 'text-green-600' : 'text-gray-900'
-                                }`}>
-                                {formatPercent(ratios.cltv_percent)}
-                            </p>
-                        </div>
-
-                        {/* HCLTV */}
-                        <div className="bg-slate-50 rounded-lg p-3">
-                            <p className="text-xs text-gray-500 mb-1">HCLTV</p>
-                            <p className={`text-sm font-semibold ${hcltvVal > 90 ? 'text-red-600' : hcltvVal > 80 ? 'text-amber-600' : hcltvVal > 0 ? 'text-green-600' : 'text-gray-900'
-                                }`}>
-                                {formatPercent(ratios.hcltv_percent)}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* MT360 OCR Validation Summary */}
-                {mt360Summary && mt360Summary.documents > 0 && (
+                    {/* Financial Metrics Grid */}
                     <div className="bg-white rounded-lg shadow p-4">
-                        <h3 className="text-sm font-semibold text-gray-900 mb-3">MT360 OCR Validation Summary</h3>
-
-                        {/* Summary Cards */}
-                        <div className="grid grid-cols-5 gap-2 mb-4">
-                            <div className="bg-blue-50 border border-blue-200 rounded-lg p-2">
-                                <p className="text-[10px] text-blue-700">Documents</p>
-                                <p className="text-lg font-bold text-blue-900">{mt360Summary.documents}</p>
-                            </div>
-                            <div className="bg-gray-50 border border-gray-200 rounded-lg p-2">
-                                <p className="text-[10px] text-gray-600">Total Attributes</p>
-                                <p className="text-lg font-bold text-gray-900">{mt360Summary.totalAttributes}</p>
-                            </div>
-                            <div className="bg-green-50 border border-green-200 rounded-lg p-2">
-                                <p className="text-[10px] text-green-700">Matches</p>
-                                <p className="text-lg font-bold text-green-700">{mt360Summary.matches}</p>
-                            </div>
-                            <div className="bg-red-50 border border-red-200 rounded-lg p-2">
-                                <p className="text-[10px] text-red-700">Mismatches</p>
-                                <p className="text-lg font-bold text-red-700">{mt360Summary.mismatches}</p>
-                            </div>
-                            <div className="bg-purple-50 border border-purple-200 rounded-lg p-2">
-                                <p className="text-[10px] text-purple-700">Accuracy</p>
-                                <p className="text-lg font-bold text-purple-700">{mt360Summary.accuracy}%</p>
-                            </div>
+                        <div className="flex items-center justify-between mb-4">
+                            <h3 className="text-sm font-semibold text-gray-900">Key Financial Metrics</h3>
                         </div>
 
-                        {/* Document Type Table */}
-                        {mt360Summary.docDetails.length > 0 && (
-                            <div className="border border-gray-200 rounded-lg overflow-hidden">
-                                <table className="min-w-full divide-y divide-gray-200">
-                                    <thead className="bg-gray-50">
-                                        <tr>
-                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500 uppercase">Document Type</th>
-                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500 uppercase">Attributes</th>
-                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-green-600 uppercase">Matches</th>
-                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-red-600 uppercase">Mismatches</th>
-                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-purple-600 uppercase">Accuracy</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="bg-white divide-y divide-gray-200">
-                                        {mt360Summary.docDetails.map((doc, idx) => (
-                                            <tr key={idx} className="hover:bg-gray-50">
-                                                <td className="px-2 py-1 text-[11px] font-medium text-gray-900">{doc.type}</td>
-                                                <td className="px-2 py-1 text-[11px] text-gray-500">{doc.attributes}</td>
-                                                <td className="px-2 py-1 text-[11px] text-green-700 font-medium">{doc.matches}</td>
-                                                <td className="px-2 py-1 text-[11px] text-red-700 font-medium">{doc.mismatches}</td>
-                                                <td className="px-2 py-1 text-[11px] text-purple-700 font-medium">{Number(doc.accuracy).toFixed(1)}%</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
-                        )}
+                        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                            {/* Row 1: Debt, Income, Purchase Price, Appraisal Value, Credit Score */}
 
-                        {/* MT360 OCR Errors by Document Type */}
-                        {mt360Errors.length > 0 && (
-                            <div className="mt-4">
-                                <h4 className="text-xs font-semibold text-red-600 mb-2 flex items-center gap-1">
-                                    <AlertTriangle className="w-3.5 h-3.5" />
-                                    MT360 OCR Errors by Document Type
-                                </h4>
-                                <div className="space-y-3">
-                                    {mt360Errors.map((docErrors, idx) => (
-                                        <div key={idx} className="border border-red-100 rounded-lg overflow-hidden">
-                                            <div className="bg-red-50 px-3 py-1.5">
-                                                <span className="text-xs font-semibold text-red-700">{docErrors.docType}</span>
-                                                <span className="text-[10px] text-red-500 ml-2">({docErrors.mismatches.length} mismatches)</span>
-                                            </div>
-                                            <table className="min-w-full">
-                                                <thead className="bg-gray-50">
-                                                    <tr>
-                                                        <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500">FIELD</th>
-                                                        <th className="px-2 py-1 text-left text-[10px] font-medium text-amber-600">MT360 VALUE</th>
-                                                        <th className="px-2 py-1 text-left text-[10px] font-medium text-red-600">PDF VALUE (TRUTH)</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody className="bg-white divide-y divide-gray-100">
-                                                    {docErrors.mismatches.slice(0, 5).map((m, midx) => (
-                                                        <tr key={midx}>
-                                                            <td className="px-2 py-1 text-[10px] text-gray-700">{m.field || m.attribute}</td>
-                                                            <td className="px-2 py-1 text-[10px] text-amber-700">{String(m.mt360_value ?? m.expected ?? 'N/A')}</td>
-                                                            <td className="px-2 py-1 text-[10px] text-red-700">{String(m.pdf_value ?? m.actual ?? 'N/A')}</td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                            {docErrors.mismatches.length > 5 && (
-                                                <div className="text-[10px] text-gray-500 px-3 py-1 bg-gray-50">
-                                                    ...and {docErrors.mismatches.length - 5} more
-                                                </div>
-                                            )}
-                                        </div>
-                                    ))}
+                            {/* Debt - with D badge */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => handleVerifyClick('debt')}
+                            >
+                                <div className="flex items-center justify-between mb-1">
+                                    <p className="text-xs text-gray-500">Monthly Debt</p>
+                                    {debtStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                                </div>
+                                <p className="text-sm font-semibold text-gray-900">
+                                    {formatCurrency(creditProfile.total_monthly_debts)}
+                                </p>
+                            </div>
+
+                            {/* Income - with I badge */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => handleVerifyClick('income')}
+                            >
+                                <div className="flex items-center justify-between mb-1">
+                                    <p className="text-xs text-gray-500">Monthly Income</p>
+                                    {incomeStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                                </div>
+                                <p className="text-sm font-semibold text-gray-900">
+                                    {formatCurrency(incomeProfile.total_monthly_income)}
+                                </p>
+                            </div>
+
+                            {/* Purchase Price */}
+                            <div className="bg-slate-50 rounded-lg p-3">
+                                <p className="text-xs text-gray-500 mb-1">Purchase Price</p>
+                                <p className="text-sm font-semibold text-gray-900">
+                                    {formatCurrency(propertyInfo.purchase_price)}
+                                </p>
+                            </div>
+
+                            {/* Appraisal Value - with V badge */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => handleVerifyClick('property')}
+                            >
+                                <div className="flex items-center justify-between mb-1">
+                                    <p className="text-xs text-gray-500">Appraisal Value</p>
+                                    {propertyStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                                </div>
+                                <p className="text-sm font-semibold text-gray-900">
+                                    {formatCurrency(propertyInfo.appraised_value)}
+                                </p>
+                            </div>
+
+                            {/* Credit Score - with C badge */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => handleVerifyClick('credit')}
+                            >
+                                <div className="flex items-center justify-between mb-1">
+                                    <p className="text-xs text-gray-500">Credit Score</p>
+                                    {creditStatus === 'verified' && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-medium bg-green-100 text-green-700 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>}
+                                </div>
+                                <p className={`text-sm font-semibold ${creditScore >= 740 ? 'text-green-600' : creditScore >= 670 ? 'text-amber-600' : creditScore ? 'text-red-600' : 'text-gray-900'}`}>
+                                    {creditScore || 'N/A'}
+                                </p>
+                            </div>
+
+                            {/* Row 2: Front DTI, Back DTI, LTV, CLTV, HCLTV - all clickable */}
+
+                            {/* Front-End DTI - clickable */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => alert('Front-End DTI verification coming soon')}
+                            >
+                                <p className="text-xs text-gray-500 mb-1">Front DTI</p>
+                                <p className={`text-sm font-semibold ${dtiFrontVal > 36 ? 'text-red-600' : dtiFrontVal > 28 ? 'text-amber-600' : dtiFrontVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                    }`}>
+                                    {formatPercent(ratios.dti_front_end_percent)}
+                                </p>
+                            </div>
+
+                            {/* Back-End DTI - clickable */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => alert('Back-End DTI verification coming soon')}
+                            >
+                                <p className="text-xs text-gray-500 mb-1">Back DTI</p>
+                                <p className={`text-sm font-semibold ${dtiBackVal > 49 ? 'text-red-600' : dtiBackVal > 36 ? 'text-amber-600' : dtiBackVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                    }`}>
+                                    {formatPercent(ratios.dti_back_end_percent)}
+                                </p>
+                            </div>
+
+                            {/* LTV - clickable */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => alert('LTV verification coming soon')}
+                            >
+                                <p className="text-xs text-gray-500 mb-1">LTV</p>
+                                <p className={`text-sm font-semibold ${ltvVal > 90 ? 'text-red-600' : ltvVal > 80 ? 'text-amber-600' : ltvVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                    }`}>
+                                    {formatPercent(ratios.ltv_percent)}
+                                </p>
+                            </div>
+
+                            {/* CLTV - clickable */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => alert('CLTV verification coming soon')}
+                            >
+                                <p className="text-xs text-gray-500 mb-1">CLTV</p>
+                                <p className={`text-sm font-semibold ${cltvVal > 90 ? 'text-red-600' : cltvVal > 80 ? 'text-amber-600' : cltvVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                    }`}>
+                                    {formatPercent(ratios.cltv_percent)}
+                                </p>
+                            </div>
+
+                            {/* HCLTV - clickable */}
+                            <div
+                                className="bg-slate-50 rounded-lg p-3 cursor-pointer hover:bg-slate-100 transition-colors"
+                                onClick={() => setHcltvModal({ isOpen: true })}
+                            >
+                                <p className="text-xs text-gray-500 mb-1">HCLTV</p>
+                                <p className={`text-sm font-semibold ${hcltvVal > 90 ? 'text-red-600' : hcltvVal > 80 ? 'text-amber-600' : hcltvVal > 0 ? 'text-green-600' : 'text-gray-900'
+                                    }`}>
+                                    {hcltvVal > 0 ? `${hcltvVal.toFixed(3)}%` : formatPercent(ratios.hcltv_percent)}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* MT360 OCR Validation Summary */}
+                    {mt360Summary && mt360Summary.documents > 0 && (
+                        <div className="bg-white rounded-lg shadow p-4">
+                            <h3 className="text-sm font-semibold text-gray-900 mb-3">MT360 OCR Validation Summary</h3>
+
+                            {/* Summary Cards */}
+                            <div className="grid grid-cols-5 gap-2 mb-4">
+                                <div className="bg-blue-50 border border-blue-200 rounded-lg p-2">
+                                    <p className="text-[10px] text-blue-700">Documents</p>
+                                    <p className="text-lg font-bold text-blue-900">{mt360Summary.documents}</p>
+                                </div>
+                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-2">
+                                    <p className="text-[10px] text-gray-600">Total Attributes</p>
+                                    <p className="text-lg font-bold text-gray-900">{mt360Summary.totalAttributes}</p>
+                                </div>
+                                <div className="bg-green-50 border border-green-200 rounded-lg p-2">
+                                    <p className="text-[10px] text-green-700">Matches</p>
+                                    <p className="text-lg font-bold text-green-700">{mt360Summary.matches}</p>
+                                </div>
+                                <div className="bg-red-50 border border-red-200 rounded-lg p-2">
+                                    <p className="text-[10px] text-red-700">Mismatches</p>
+                                    <p className="text-lg font-bold text-red-700">{mt360Summary.mismatches}</p>
+                                </div>
+                                <div className="bg-purple-50 border border-purple-200 rounded-lg p-2">
+                                    <p className="text-[10px] text-purple-700">Accuracy</p>
+                                    <p className="text-lg font-bold text-purple-700">{mt360Summary.accuracy}%</p>
                                 </div>
                             </div>
-                        )}
-                    </div>
-                )}
 
-                {/* End Right Column */}
-            </div>
-            {/* End Two Column Grid */}
+                            {/* Document Type Table */}
+                            {mt360Summary.docDetails.length > 0 && (
+                                <div className="border border-gray-200 rounded-lg overflow-hidden">
+                                    <table className="min-w-full divide-y divide-gray-200">
+                                        <thead className="bg-gray-50">
+                                            <tr>
+                                                <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500 uppercase">Document Type</th>
+                                                <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500 uppercase">Attributes</th>
+                                                <th className="px-2 py-1 text-left text-[10px] font-medium text-green-600 uppercase">Matches</th>
+                                                <th className="px-2 py-1 text-left text-[10px] font-medium text-red-600 uppercase">Mismatches</th>
+                                                <th className="px-2 py-1 text-left text-[10px] font-medium text-purple-600 uppercase">Accuracy</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="bg-white divide-y divide-gray-200">
+                                            {mt360Summary.docDetails.map((doc, idx) => (
+                                                <tr key={idx} className="hover:bg-gray-50">
+                                                    <td className="px-2 py-1 text-[11px] font-medium text-gray-900">{doc.type}</td>
+                                                    <td className="px-2 py-1 text-[11px] text-gray-500">{doc.attributes}</td>
+                                                    <td className="px-2 py-1 text-[11px] text-green-700 font-medium">{doc.matches}</td>
+                                                    <td className="px-2 py-1 text-[11px] text-red-700 font-medium">{doc.mismatches}</td>
+                                                    <td className="px-2 py-1 text-[11px] text-purple-700 font-medium">{Number(doc.accuracy).toFixed(1)}%</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            )}
+
+                            {/* MT360 OCR Errors by Document Type */}
+                            {mt360Errors.length > 0 && (
+                                <div className="mt-4">
+                                    <h4 className="text-xs font-semibold text-red-600 mb-2 flex items-center gap-1">
+                                        <AlertTriangle className="w-3.5 h-3.5" />
+                                        MT360 OCR Errors by Document Type
+                                    </h4>
+                                    <div className="space-y-3">
+                                        {mt360Errors.map((docErrors, idx) => (
+                                            <div key={idx} className="border border-red-100 rounded-lg overflow-hidden">
+                                                <div className="bg-red-50 px-3 py-1.5">
+                                                    <span className="text-xs font-semibold text-red-700">{docErrors.docType}</span>
+                                                    <span className="text-[10px] text-red-500 ml-2">({docErrors.mismatches.length} mismatches)</span>
+                                                </div>
+                                                <table className="min-w-full">
+                                                    <thead className="bg-gray-50">
+                                                        <tr>
+                                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-gray-500">FIELD</th>
+                                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-amber-600">MT360 VALUE</th>
+                                                            <th className="px-2 py-1 text-left text-[10px] font-medium text-green-600">PDF VALUE (TRUTH)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody className="bg-white divide-y divide-gray-100">
+                                                        {docErrors.mismatches.map((m, midx) => (
+                                                            <tr key={midx}>
+                                                                <td className="px-2 py-1 text-[10px] text-gray-700">{m.field || m.attribute}</td>
+                                                                <td className="px-2 py-1 text-[10px] text-amber-700">{String(m.mt360_value ?? m.expected ?? 'N/A')}</td>
+                                                                <td className="px-2 py-1 text-[10px] text-green-700">{String(m.pdf_value ?? m.actual ?? 'N/A')}</td>
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    )}
+
+                    {/* End Right Column */}
+                </div>
+                {/* End Two Column Grid */}
             </div>
 
             {/* RAG Status Modal */}
@@ -997,6 +1025,82 @@ const StatsView = ({ stats, loan }) => {
                     initialTab="summary"
                     calculationSteps={verificationModal.calculationSteps || []}
                 />
+            )}
+
+            {/* HCLTV Calculation Modal */}
+            {hcltvModal.isOpen && (
+                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+                    <div className="bg-white rounded-lg shadow-xl max-w-lg w-full mx-4 p-6">
+                        <div className="flex justify-between items-center mb-4">
+                            <h3 className="text-lg font-semibold text-gray-900">HCLTV Calculation</h3>
+                            <button
+                                onClick={() => setHcltvModal({ isOpen: false })}
+                                className="text-gray-400 hover:text-gray-600"
+                            >
+                                ✕
+                            </button>
+                        </div>
+
+                        <div className="space-y-4">
+                            <div className="bg-blue-50 p-3 rounded-lg">
+                                <p className="text-sm font-medium text-blue-800 mb-2">Formula:</p>
+                                <p className="text-xs text-blue-700 font-mono">
+                                    HCLTV = (Loan Amount + Existing Mortgage Balance) / Appraised Value × 100
+                                </p>
+                            </div>
+
+                            <div className="space-y-2">
+                                <div className="flex justify-between items-center py-2 border-b">
+                                    <span className="text-sm text-gray-600">Subject Loan Amount</span>
+                                    <span className="text-sm font-semibold text-gray-900">
+                                        ${loanAmount.toLocaleString('en-US', { minimumFractionDigits: 2 })}
+                                    </span>
+                                </div>
+                                <div className="flex justify-between items-center py-2 border-b">
+                                    <span className="text-sm text-gray-600">Existing Mortgage Balance</span>
+                                    <span className="text-sm font-semibold text-gray-900">
+                                        ${existingMortgage.toLocaleString('en-US', { minimumFractionDigits: 2 })}
+                                    </span>
+                                </div>
+                                <div className="flex justify-between items-center py-2 border-b bg-gray-50 px-2 rounded">
+                                    <span className="text-sm font-medium text-gray-700">Total Liens</span>
+                                    <span className="text-sm font-bold text-gray-900">
+                                        ${(loanAmount + existingMortgage).toLocaleString('en-US', { minimumFractionDigits: 2 })}
+                                    </span>
+                                </div>
+                                <div className="flex justify-between items-center py-2 border-b">
+                                    <span className="text-sm text-gray-600">Appraised Value</span>
+                                    <span className="text-sm font-semibold text-gray-900">
+                                        ${appraisedValue.toLocaleString('en-US', { minimumFractionDigits: 2 })}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className={`p-4 rounded-lg ${hcltvVal <= 80 ? 'bg-green-50' : hcltvVal <= 90 ? 'bg-amber-50' : 'bg-red-50'}`}>
+                                <div className="flex justify-between items-center">
+                                    <span className="text-lg font-semibold text-gray-800">HCLTV</span>
+                                    <span className={`text-2xl font-bold ${hcltvVal <= 80 ? 'text-green-700' : hcltvVal <= 90 ? 'text-amber-700' : 'text-red-700'}`}>
+                                        {hcltvVal.toFixed(3)}%
+                                    </span>
+                                </div>
+                                <p className={`text-xs mt-2 ${hcltvVal <= 80 ? 'text-green-600' : hcltvVal <= 90 ? 'text-amber-600' : 'text-red-600'}`}>
+                                    {hcltvVal <= 80 ? '✓ Excellent - Low risk, strong equity position' :
+                                        hcltvVal <= 90 ? '⚠ Acceptable - Moderate equity' :
+                                            '⚠ High - Limited equity, higher risk'}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 flex justify-end">
+                            <button
+                                onClick={() => setHcltvModal({ isOpen: false })}
+                                className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm font-medium"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     );
